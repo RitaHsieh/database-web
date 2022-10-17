@@ -3,7 +3,7 @@ import "../pages/index.js"
 import style from "../styles/brief-introduction.module.css"
 import {useState,useEffect} from 'react'
 
-export default function Home() {
+export default function Briefintroduction() {
 
   const [number,setNumber] = useState(0)
 

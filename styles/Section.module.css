@@ -1,0 +1,124 @@
+.herocontainer .background{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    /* filter:brightness(.5); */
+    position: fixed;
+    z-index: -1;
+
+}
+.herocontainer{
+    /*background: var(--img) center center/cover no-repeat;*/
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .2);
+    object-fit: contain;
+}
+.herocontainer > h1{
+    color: #fff;
+    font-size: 100px;
+    margin-top: -100px;
+    font-family: 'Dancing Script', cursive;
+
+}
+.herocontainer > p{
+    margin-top: 8px;
+    color:#fff;
+    font-size: 32px;
+}
+
+.hero-btns{
+    margin-top: 32px;
+
+}
+.hero-btns .btn{
+    margin: 6px;
+}
+.fa-play-circle{
+    margin-left: 4px;
+
+}
+.button {
+    display: inline-block;
+    padding: 0;
+    color: #000;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.scroll-indicator {
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.scroll-indicator__label {
+    opacity: .7;
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    letter-spacing: .2em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.scroll-indicator__line{
+    width: 2px;
+    height: 5vh;
+    background-color: #fff;
+    transform-origin: center center;
+    opacity: .5;
+    position: relative;
+    left: 49%;
+    
+}
+
+.translation{
+    color: #fff;
+    width: 10px;
+    right: 2.5%;
+    top: 2.5%;
+    font-size: 1.5rem;
+    position: absolute;
+    cursor: pointer;
+
+    
+}   
+.translation  :hover{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width:960px){
+    .hero-container > h1{
+        font-size: 75px;
+        margin-top: -150px;
+    
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .hero-container > h1{
+        font-size: 50px;
+        margin-top: -100px;
+    
+    }
+    .hero-container > p{
+        font-size: 30px;
+    
+    }
+    .btn-mobile{
+        display: block;
+        text-decoration: none;
+    }
+    .btn{
+        width: 100%;
+    }    
+}
