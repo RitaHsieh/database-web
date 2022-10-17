@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import "./index.js" 
+import "../pages/index.js" 
 import style from "../styles/brief-introduction.module.css"
 import {useState,useEffect} from 'react'
 
