@@ -1,11 +1,10 @@
 .searchcontainer{
-    height: 80px;
+    height: 70px;
     width: 850px;
     position: relative;
     background-color: aliceblue;
     font-family: Microsoft JhengHei;
     font-weight: bold;
-    font-size: 24pt;
     border-radius: 30px;
 
     padding: 1px;
@@ -25,7 +24,7 @@
     height: 70px;
     border: none;
     background-color: transparent;
-    font: 14px/44px 'Inter';
+    font-size: 14px;
     outline: none;
     text-align: center;
     margin-bottom: 10px;

@@ -20,8 +20,9 @@
     object-fit: contain;
 }
 .herocontainer > h1{
+    width: 850px;
     color: #fff;
-    font-size: 128px;
+    font-size: 96px;
     left: 100px;
     font-family: 'Courgette', cursive;
     position: relative;
