@@ -1,0 +1,29 @@
+.searchcontainer{
+    height: 100px;
+    width: 982px;
+
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    font-size: 32pt;
+
+    background-color: aliceblue;
+    padding: 1px;
+    margin: 50px;
+    border-radius: 30px;
+    
+    /* 水平、垂直置中 */
+    display: flex;
+    justify-content: center;    
+    align-items: center; 
+}
+
+.location,
+.people,
+.click{
+    margin: 40px;
+}
+
+.arrivetime,
+.leavetime{
+    margin: 20px;
+}
