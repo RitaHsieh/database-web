@@ -20,10 +20,7 @@
 
 .location,
 .people,
-.click{
-    margin: 40px;
-}
-
+.button,
 .arrivetime,
 .leavetime{
     margin: 20px;

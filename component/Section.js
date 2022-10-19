@@ -1,4 +1,5 @@
 import style from "../styles/Section.module.css"
+import Search from "../component/searchform"
 
 export default function Section() {
     return(
@@ -10,7 +11,7 @@ export default function Section() {
                 <div className={style.herocontainer}>
                     <img className={style.background} src="background.jpg" alt='alter'/>
                     <h1>Rent You on Sunday</h1>
-                    <div className="search-box"></div>
+                    <Search/>
                     
                     
                 </div>
