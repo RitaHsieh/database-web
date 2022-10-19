@@ -5,14 +5,10 @@
     background-color: aliceblue;
     font-family: Microsoft JhengHei;
     font-weight: bold;
-    font-size: 24pt;
+    font-size: 16pt;
     border-radius: 30px;
-
-    padding: 1px;
     left:100px;
-    
-    
-    /* 水平、垂直置中 */
+    /* 水平置中 */
     display: flex;
     justify-content: center;   
 }
@@ -21,12 +17,21 @@
 .people,
 .button,
 .arrivetime,
-.leavetime{
-    height: 70px;
+.leavetime{ 
+    height: 80px;
     border: none;
     background-color: transparent;
-    font: 14px/44px 'Inter';
+    width: 150px;
+    font-size: 16pt;
     outline: none;
     text-align: center;
-    margin-bottom: 10px;
+    font-weight: bold;
 }
+
+.location::placeholder,
+.people::placeholder,
+.arrivetime::placeholder,
+.leavetime::placeholder {
+    color:black;
+    font-size: 16pt;
+    }

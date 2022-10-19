@@ -1,0 +1,17 @@
+.container{
+    margin-top: 175px;
+    margin-left: 50px;
+    display: flex;
+    color: white;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+}
+
+.button{
+    color: white;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    font-size: 24pt;
+    background-color: transparent;
+    border: none;
+}
