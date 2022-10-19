@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <>
             <Section/>
-            <Briefintroduction/>
+            <Briefintroduction beforeintro="介紹" name="飯店名稱" intro="介紹" addr="地址" price="價格"/>
         </>
     )
 }
