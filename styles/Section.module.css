@@ -28,23 +28,7 @@
     position: relative;
 
 }
-.herocontainer > p{
-    margin-top: 8px;
-    color:#fff;
-    font-size: 32px;
-}
 
-.hero-btns{
-    margin-top: 32px;
-
-}
-.hero-btns .btn{
-    margin: 6px;
-}
-.fa-play-circle{
-    margin-left: 4px;
-
-}
 .button {
     display: inline-block;
     padding: 0;
