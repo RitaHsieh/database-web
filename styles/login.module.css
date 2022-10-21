@@ -1,17 +1,28 @@
 .container{ 
-    margin-top: 175px;
-    margin-left: 50px;
+    position:absolute;
+    left: 5%;
+    bottom: 5%;
+    width: 300px;
     display: flex;
     color: white;
+    align-items: center;
     font-family: Microsoft JhengHei;
     font-weight: bold;
+}
+.container p{
+    font-size: 17px;
 }
 
 .button{
     color: white;
     font-family: Microsoft JhengHei;
     font-weight: bold;
-    font-size: 24pt;
+    font-size: 16pt;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+}
+.container :hover .button{
+    transform: scale(1.1);
+    transition:all 1s ;
 }

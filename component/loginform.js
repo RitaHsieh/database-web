@@ -13,7 +13,7 @@ export default function loginform() {
                     data-login_uri="https://your.domain/your_login_endpoint"
                     data-auto_prompt="false">
                 </div>
-                <div class="g_id_signin"
+                <div className="g_id_signin"
                     data-type="standard"
                     data-size="large"
                     data-theme="outline"
@@ -24,20 +24,14 @@ export default function loginform() {
                 <hr className={style.line1}></hr>
             
                 <form className={style.form}>
-                    <p>
-                    <input type="text" name="acount" className={style.block} value="email address or phone number"></input>
-                    </p>
-                    <p>
-                    <input type="text" name="password" className={style.block} value="password"></input>
-                    </p>
-                    <p>
+                    <input type="text" name="acount" className={style.block} placeholder="email address or phone number"></input>
+                    
+                    <input type="text" name="password" className={style.block} placeholder="password"></input>
+            
                     <input type="checkbox" id="remember-account" value="remember-account"></input>
                     <label for="remember-account" className={style.checkbox}>Remember account for 30 days.</label>
-                    </p>
+                   
                 </form>
-                <a className={style.link} href="https://www.youtube.com/shorts/-hNK5kKW6HY">
-                    <h3 className={style.content}>Forgot your password?</h3>
-                </a>
                 <hr className={style.line2}></hr>
                 <h3 className={style.content}>Don't have an accout?</h3>
                 <a className={style.link} href="https://www.youtube.com/shorts/-hNK5kKW6HY">
