@@ -14,6 +14,7 @@ export default function Section({event}) {
                         <span className={style.scrollindicatorlabel}>introduction</span> 
                         <div className={style.scrollindicatorline}></div>
                     </button>
+                    <div className={style.mask}></div>
             </div>
         </>
     )
