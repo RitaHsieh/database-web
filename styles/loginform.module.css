@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.background {
+    background: #d9d9d9;
+    height: 700px;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    border-radius: 50px;
+}
+
+
+.logo {
+    top: 40px;
+} 
+
+.title {
+    top: 20px;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 40px;
+}
+
+.block {
+    margin-top: 5px; 
+}
+.button, .block {
+    top: 15px;
+    background: #ffffff;
+    height: 45px;
+    width: 300px;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    
+}
+
+.content {
+    width: 260px;
+}
+
+.line1, .line2 {
+    width: 300px;
+    border: 1px solid black;
+}
+
+.line1 {
+    margin-top: 40px;
+}
+
+.form {
+    width: 300px;
+}
+
+.button2 {
+    width: 56px;
+    height: 56px;
+    position: relative;
+    left: 75%;
+    top: -50px;
+    border-radius: 28px;
+    background-color: #d9d9d9;
+
+}
+
+.checkbox {
+    font-size: 18px;
+    font-weight: 650;
+}
+.link .content {
+    top: -15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: #4CB6C5;
+}
+
+.logo, .title, .button, .form, .content {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+

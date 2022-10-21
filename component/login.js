@@ -4,7 +4,7 @@ export default function Search() {
     return(
         <>
             <div className={style.container}>
-                <a href="https://www.youtube.com/watch?v=r8n4OnlDVqE&list=RDV91B6aQOn4k&index=2&ab_channel=SweetJohn%E7%94%9C%E7%B4%84%E7%BF%B0">
+                <a href="http://localhost:3000/login">
                     <input className={style.button} type="button" value="登入"/>
                 </a>
                 <p>/</p>
