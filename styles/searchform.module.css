@@ -26,7 +26,7 @@
     font-size: 16pt;
     outline: none;
     text-align: center;
-    font-weight: bold;
+    font-weight: bold;    
 }
 
 .location::placeholder,
@@ -35,4 +35,10 @@
 .leavetime::placeholder {
     color:black;
     font-size: 16pt;
-    }
+    position:relative;
+    top: 2px;
+}
+
+.searchcontainer p{
+    transform: translateY(-5%);
+}
