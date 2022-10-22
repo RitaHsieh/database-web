@@ -11,7 +11,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
             <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"/>
-            <link href="https://accounts.google.com/gsi/client" async defer></link>
+            
         </Head>
         <body>
           <Main />

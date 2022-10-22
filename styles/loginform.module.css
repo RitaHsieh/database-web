@@ -9,8 +9,6 @@
     right: 50%;
     transform: translate(50%,-50%);
     border-radius: 50px;
-    
-    
 }
 
 .logo,
@@ -24,24 +22,23 @@
     margin-bottom: 1rem;
 }
 .logo {
-    top: 40px;
+    top: 20px;
 } 
 
 .title {
-    top: 20px;
+    top: -10px;
     text-align: center;
     font-family: 'Courgette', cursive;
     font-size: 40px;
 }
 
 .block {
-    margin-top: 5px; 
     padding: 12px;
+    background: #ffffff;
+
 }
 .button, .block {
-    top: 15px;
-    background: #ffffff;
-    height: 45px;
+    height: 40px;
     width: 300px;
     border: none;
     border-radius: 15px;
@@ -61,19 +58,20 @@
 }
 
 .line1 {
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 .form {
     width: 300px;
+    top: -10px;
 }
 
 .button2 {
     width: 56px;
     height: 56px;
     position: relative;
-    left: 68%;
-    top: -40px;
+    left: 70%;
+    top: -66px;
     border: none;
     background-color: #d9d9d9;
 
@@ -101,5 +99,4 @@
     left: 50%;
     transform: translateX(-50%);
 }
-
 
