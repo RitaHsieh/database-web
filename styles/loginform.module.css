@@ -25,6 +25,7 @@
 
 .block {
     margin-top: 5px; 
+    padding: 12px;
 }
 .button, .block {
     top: 15px;
@@ -58,16 +59,22 @@
     width: 56px;
     height: 56px;
     position: relative;
-    left: 75%;
-    top: -50px;
-    border-radius: 28px;
+    left: 68%;
+    top: -40px;
+    border: none;
     background-color: #d9d9d9;
 
 }
 
 .checkbox {
+    height: 15px;
+    width: 15px;
+    margin-top: 2px;
+}
+.chcontent {
     font-size: 18px;
     font-weight: 650;
+    margin-top: 10px;
 }
 .link .content {
     top: -15px;
