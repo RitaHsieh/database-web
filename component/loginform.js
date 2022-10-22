@@ -39,9 +39,6 @@ export default function loginform() {
                     <label for="remember-account" className={style.chcontent}>Remember account for 30 days.</label>
                     </p>
                 </form>
-                <a className={style.link} href="https://www.youtube.com/shorts/-hNK5kKW6HY">
-                    <h3 className={style.content}>Forgot your password?</h3>
-                </a>
                 <hr className={style.line2}></hr>
                 <h3 className={style.content}>Don't have an accout?</h3>
                 <a className={style.link} href="https://www.youtube.com/shorts/-hNK5kKW6HY">

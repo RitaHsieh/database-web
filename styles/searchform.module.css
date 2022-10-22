@@ -1,5 +1,5 @@
 .searchcontainer{
-    height: 80px;
+    height: 60px;
     width: 850px;
     position: relative;
     background-color: aliceblue;
@@ -7,10 +7,11 @@
     font-weight: bold;
     font-size: 16pt;
     border-radius: 30px;
-    left:100px;
+    left:5%;
     /* 水平置中 */
     display: flex;
     justify-content: center;   
+    align-items: center;
 }
 
 .location,
@@ -18,14 +19,14 @@
 .button,
 .arrivetime,
 .leavetime{ 
-    height: 80px;
+    height: 50px;
     border: none;
     background-color: transparent;
     width: 150px;
     font-size: 16pt;
     outline: none;
     text-align: center;
-    font-weight: bold;
+    font-weight: bold;    
 }
 
 .location::placeholder,
@@ -34,4 +35,10 @@
 .leavetime::placeholder {
     color:black;
     font-size: 16pt;
-    }
+    position:relative;
+    top: 2px;
+}
+
+.searchcontainer p{
+    transform: translateY(-5%);
+}

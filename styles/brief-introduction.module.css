@@ -1,16 +1,16 @@
 .container{
     width:300px ; 
     height:500px;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     overflow: hidden;
+    margin-right:10%;
     
     
 }
 .container img{
     height:300px;
     width: 300px;
-    
     object-fit: cover;
 }
 .beforeintro{
@@ -65,6 +65,9 @@
 
 .container p{
     margin: 0;
+}
+.container:hover{
+    transform: translateY(-220px);
 }
 .container:hover img{
     height: 500px;

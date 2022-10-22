@@ -1,6 +1,6 @@
 import Loginform from "../component/loginform"
 
-export default function Home() {
+export default function login() {
     return (
         <>
             <Loginform/>
