@@ -1,0 +1,27 @@
+
+.searchcontainer{
+    position: absolute;
+    left:5%;
+    top: 10%;
+    height: 304px;
+    width: 952px;
+    background:white;
+    border-radius: 30px;
+    color:black;
+    display: flex;
+}
+
+.img{
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    border-radius: 20px;
+}
+
+.name{
+    width: 700px;
+    margin-top: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+}
