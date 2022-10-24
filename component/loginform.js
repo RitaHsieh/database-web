@@ -18,7 +18,7 @@ export default function loginform() {
                     data-auto_prompt="false">
                 </div>
                 <div class="g_id_signin"
-                    data-width="300"
+                    data-width="280"
                     data-type="standard"
                     data-size="large"
                     data-theme="outline"
