@@ -44,12 +44,12 @@ export default function loginform() {
                     <label for="remember-account" className={style.chcontent}> Remember account for 30 days.</label>
                     </p>
                 </form>
-                <a className={style.link} href="https://www.youtube.com/shorts/-hNK5kKW6HY">
+                <a className={style.link1} href="https://www.youtube.com/shorts/-hNK5kKW6HY">
                     <h3 className={style.content}> Forgot your password?</h3>
                 </a>
                 <hr className={style.line2}></hr>
                 <h3 className={style.content}>Don't have an accout?</h3>
-                <a className={style.link} href="https://www.youtube.com/shorts/-hNK5kKW6HY">
+                <a className={style.link2} href="https://www.youtube.com/shorts/-hNK5kKW6HY">
                     <h3 className={style.content}> Register!</h3>
                 </a>
                 <a className={style.button2} href="https://www.youtube.com/watch?v=4JNb4fiT1VA&list=RDV91B6aQOn4k&index=13&ab_channel=%E9%BA%8B%E5%85%88%E7%94%9FMIXER">
