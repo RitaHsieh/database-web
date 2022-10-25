@@ -12,7 +12,7 @@ export default function Home() {
     return (
         <>
             <Section event={scrollview}/>
-            <div className={style.intro} ref={ref}><PopularHotel/></div>
+            {/* <div className={style.intro} ref={ref}><PopularHotel/></div> */}
         </>
     )
 }

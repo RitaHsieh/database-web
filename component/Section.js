@@ -1,5 +1,5 @@
 import style from "../styles/Section.module.css"
-
+import Searchform from "../component/Searchform"
 import Login from "../component/login"
 
 export default function Section({event}) {
@@ -10,6 +10,7 @@ export default function Section({event}) {
                     <h1>Rent You on Sunday</h1>
                     
                     <Login/>
+                    <Searchform/>
                     <button className={`${style.button} ${style.scrollindicator}`} onClick={event}>
                         <span className={style.scrollindicatorlabel}>introduction</span> 
                         <div className={style.scrollindicatorline}></div>
