@@ -1,3 +1,4 @@
+import { StyleRegistry } from "styled-jsx"
 import style from "../styles/search_result.module.css"
 
 
@@ -12,9 +13,11 @@ export default function search_result() {
                         <p className={style.location}>旅館地址</p>
                         <p className={style.room}>訂購房型</p>
                     </div>
-                    <p>NT$價錢</p>
-                    <p>住宿時間</p>
-                    <p>訂單狀況</p>
+                    <div className={style.container}>
+                        <p className={style.money}>NT$價錢</p>
+                        <p className={style.time}>住宿時間</p>
+                        <p className={style.situation}>訂單狀況</p>
+                    </div>
                 </div>
             </div>
         </>

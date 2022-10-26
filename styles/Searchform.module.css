@@ -8,37 +8,23 @@
     font-size: 16pt;
     border-radius: 30px;
     left:5%;
-    /* 水平置中 */
     display: flex;
-    justify-content: center;   
+    justify-content:space-evenly;   
     align-items: center;
-}
-
-.location,
-.people,
-.button,
-.arrivetime,
-.leavetime{ 
-    height: 50px;
-    border: none;
-    background-color: transparent;
-    width: 150px;
-    font-size: 16pt;
-    outline: none;
-    text-align: center;
-    font-weight: bold;    
-}
-
-.location::placeholder,
-.people::placeholder,
-.arrivetime::placeholder,
-.leavetime::placeholder {
-    color:black;
-    font-size: 16pt;
-    position:relative;
-    top: 2px;
 }
 
 .searchcontainer p{
     transform: translateY(-5%);
 }
+
+.button{ 
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    font-size: 16pt;
+    outline: none;
+    text-align: center;
+    font-weight: bold;    
+    transform: translateY(-5%);
+}
+
