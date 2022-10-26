@@ -4,7 +4,6 @@ import Filter from "../component/Filter"
 export default function search_result() {
     return (
         <>
-            <Search_result/>
             <Filter/>
         </>
     )

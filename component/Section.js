@@ -30,6 +30,7 @@ export default function Section({event}) {
     309 municipalities in Finland and more than 19,000 regions,<br/>
     with a territorial area of ​​338,000. "There are about 18 thousand<br/>
     lakes, so there are about 18 countries".</>]
+    const title=["Denmark","Finland"]
   
     return(
         <>
@@ -39,13 +40,13 @@ export default function Section({event}) {
                     
                     <Login/>
                     <Searchform/>
-                    <button className={`${style.button} ${style.scrollindicator}`} onClick={show}>
+                    <button className={`${style.button} ${style.scrollindicator}`} >
                         <span className={style.scrollindicatorlabel}>introduction</span> 
                         <div className={style.scrollindicatorline}></div>
                     </button>
                     <div className={style.mask}></div>
 
-                    <Intro title="Denmark" content={p[(count%2)]}/>
+                    <Intro title={title[count%2]} content={p[(count%2)]}/>
             </div>
         </>
     )

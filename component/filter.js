@@ -4,16 +4,16 @@ export default function filter() {
     return(
         <>
             <div className={style.container}>
-                <h1 className={style.title}>類別</h1>
-                <hr className={style.line1}></hr>
-                <div className={style.optioncontainer}><button className={style.button}/><p>選項</p></div>
-                <div className={style.optioncontainer}><button className={style.button}/><p>選項</p></div>
-                <div className={style.optioncontainer}><button className={style.button}/><p>選項</p></div>
-                <div className={style.optioncontainer}><button className={style.button}/><p>選項</p></div>
-                <div className={style.optioncontainer}><button className={style.button}/><p>選項</p></div>
-                <hr className={style.line2}></hr>
+                <h2 className={style.title}>類別</h2>
+                <hr className={style.line}></hr>
+                <div className={style.optioncontainer}><button className={style.button}><span>選項 </span></button></div>
+                <div className={style.optioncontainer}><button className={style.button}><span>選項 </span></button></div>
+                <div className={style.optioncontainer}><button className={style.button}><span>選項 </span></button></div>
+                <div className={style.optioncontainer}><button className={style.button}><span>選項 </span></button></div>
+                <div className={style.optioncontainer}><button className={style.button}><span>選項 </span></button></div>
+                <hr className={style.line}></hr>
                 
-                <button className={style.submit}></button>
+                <button className={style.submit}><span>Next</span></button>
             </div>
         </>
     )
