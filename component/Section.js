@@ -19,10 +19,15 @@ export default function Section({event}) {
         return ()=>clearInterval(id)
     },[])
 
-    const p=<p>Denmark is a member of the European Union with a<br/>
+    const p=<>Denmark is a member of the European Union with a<br/>
     highly developed economy and a typical welfare<br/>
     state with a very small gap between the rich and <br/>
-    the poor.It is a highly developed country in the world</p>
+    the poor.It is a highly developed country in the world</>
+
+    const show=()=>{
+        p.style.visible=hidden;
+    }
+
     return(
         <>
                 <div className={style.herocontainer}>
@@ -31,12 +36,12 @@ export default function Section({event}) {
                     
                     <Login/>
                     <Searchform/>
-                    <button className={`${style.button} ${style.scrollindicator}`} onClick={event}>
+                    <button className={`${style.button} ${style.scrollindicator}`} onClick={show}>
                         <span className={style.scrollindicatorlabel}>introduction</span> 
                         <div className={style.scrollindicatorline}></div>
                     </button>
                     <div className={style.mask}></div>
-                    <Intro title="Denmark" content={p}/>
+                    <Intro title="Denmark" content={p} event={show}/>
             </div>
         </>
     )
