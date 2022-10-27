@@ -1,6 +1,8 @@
 import style from "../styles/Searchform.module.css"
+import {Head} from "next/head"
 
 export default function Search() {
+
     return(
         <>
             <div className={style.searchcontainer}>
