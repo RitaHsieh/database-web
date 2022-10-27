@@ -20,10 +20,9 @@ export default function Search() {
                 <p>→</p>
                 <p>離開時間</p>
                 <p>|</p>
-                
-                    <a href="https://www.youtube.com/shorts/-hNK5kKW6HY">
-                        <input className={style.button} type="button" value="→)"/>
-                    </a>
+                <a href="https://www.youtube.com/shorts/-hNK5kKW6HY">
+                    <input className={style.button} type="button" value="→)"/>
+                </a>
             </div>
         </>
     )
