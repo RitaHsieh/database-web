@@ -1,0 +1,22 @@
+.container {
+    padding: 10px;
+    width:15%;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+    padding:10px;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    font-weight:bolder; 
+}

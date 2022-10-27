@@ -26,3 +26,8 @@
     margin-top: 10px;
     font-size: 1.2rem;
 }
+.hidden{
+
+    color: transparent;
+    transition: 0.5s;
+}
