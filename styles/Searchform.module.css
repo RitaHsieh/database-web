@@ -28,3 +28,16 @@
     transform: translateY(-5%);
 }
 
+.selectform {
+    background: transparent;
+    font-size: 16pt;
+    font-weight: bold;
+    border: none;
+    outline:none;
+    transform: translateY(-5%);
+}
+
+.option {
+    font-weight: bold;
+    background: transparent;
+}
