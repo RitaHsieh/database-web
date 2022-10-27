@@ -19,6 +19,10 @@ export default function Section({event}) {
         return ()=>clearInterval(id)
     },[])
 
+    const [content,setcontent] = useState(true)
+    const handleClick = () => {
+        setcontent(content => !content);
+      };
 
     const p=[<>Denmark is a member of the European Union with a<br/>
     highly developed economy and a typical welfare<br/>
@@ -40,13 +44,13 @@ export default function Section({event}) {
                     
                     <Login/>
                     <Searchform/>
-                    <button className={`${style.button} ${style.scrollindicator}`} >
+                    <button className={`${style.button} ${style.scrollindicator}`} onClick={handleClick} >
                         <span className={style.scrollindicatorlabel}>introduction</span> 
                         <div className={style.scrollindicatorline}></div>
                     </button>
                     <div className={style.mask}></div>
 
-                    <Intro title={title[count%2]} content={p[(count%2)]}/>
+                    <Intro title={title[count%2]} content={p[(count%2)]} number={content}/>
             </div>
         </>
     )
