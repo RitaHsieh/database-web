@@ -31,9 +31,20 @@
     border-radius: 80px;
     border: transparent;
     margin: 30px;
+
+    cursor: pointer;
+    transition: .1s;
+    box-shadow: inset 0 0 0 0 transparent;
 }
+
+.button:hover {
+    box-shadow: inset 0 0 6px 2px gray;
+  }
+.button:active {
+    box-shadow: inset 0 0 6px 4px gray;
+  }
 
 .container p{
     font-weight: bold;
-    font-size: 40px;
+    font-size: 36px;
 }
