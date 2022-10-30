@@ -1,0 +1,39 @@
+.img{
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    height: 100px;
+}
+
+.container{
+    position: absolute;
+    top:125px;
+    right: 100px;
+    width: 791px;
+    height: 712px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+}
+
+.container_small{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.button{
+    width: 275px;
+    height: 255px;
+    background-color: #d9d9d9;
+    border-radius: 80px;
+    border: transparent;
+    margin: 30px;
+}
+
+.container p{
+    font-weight: bold;
+    font-size: 40px;
+}
