@@ -5,7 +5,7 @@ import Searchform_2 from "../component/Searchform-2"
 export default function search_result() {
     return (
         <>
-            <Searchform_2/>
+            <Search_result/>
         </>
     )
 }
