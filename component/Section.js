@@ -51,6 +51,7 @@ export default function Section({event}) {
                     <div className={style.mask}></div>
 
                     <Intro title={title[count%2]} content={p[(count%2)]} number={content}/>
+                
             </div>
         </>
     )
