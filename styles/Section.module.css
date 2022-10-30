@@ -70,9 +70,31 @@
     height: 100%;
     width:35%;
     left:3%;
+    z-index: -1;
     background-color: #000;
     opacity: 0.4;
-    z-index: -1;
     position: fixed;
 }
-
+.mask1{
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 1;
+    width:100%;
+    position: fixed; 
+}
+.daypicker{
+    visibility: hidden;
+    position: absolute;
+}
+.daypicker1{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%,-50%);
+    
+}

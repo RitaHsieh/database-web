@@ -1,7 +1,7 @@
 import style from "../styles/Searchform.module.css"
 import {Head} from "next/head"
 
-export default function Search() {
+export default function Search({buttonClick}) {
 
     return(
         <>
@@ -16,7 +16,7 @@ export default function Search() {
                     <option className={style.option} value="four">&nbsp;&nbsp;4人</option> 
                 </select>
                 <p>|</p>
-                <p>入住時間</p>
+                <button className={style.time} onClick={event => buttonClick()}>入住時間</button>
                 <p>→</p>
                 <p>離開時間</p>
                 <p>|</p>

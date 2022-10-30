@@ -41,3 +41,11 @@
     font-weight: bold;
     background: transparent;
 }
+.time{
+    border: 0;
+    background-color: aliceblue;
+    font-size: 16pt;
+    font-weight: bold;
+    transform: translateY(-5%);
+    cursor: pointer;
+}
