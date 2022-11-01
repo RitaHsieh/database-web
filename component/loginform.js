@@ -4,8 +4,6 @@ import Script from 'next/script'
 export default function loginform() {
     return(
         <>
-            
-            
             <div className={style.background}>
                 <img className={style.logo} src="logo.png" alt='alter'/>
                 <h1 className={style.title}>Rent You<br></br>on Sunday</h1>

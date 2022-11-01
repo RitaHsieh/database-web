@@ -6,9 +6,6 @@
 }
 
 .container{
-    position: absolute;
-    top:125px;
-    right: 100px;
     width: 791px;
     height: 712px;
     background-color: white;
@@ -16,6 +13,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items:center;
+}
+
+.container_big{
+    height: 100vh;
+    display: inline-block;
 }
 
 .container_small{

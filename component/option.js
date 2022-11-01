@@ -3,7 +3,7 @@ import style from "../styles/option.module.css"
 
 export default function search_result() {
     return(
-        <>  
+        <div className={style.container_big}>  
             <a href="http://localhost:3000/home"><img src="logo.png" alt="image" className={style.img}/></a>
             <div className={style.container}>
                 <div className={style.container_small}>
@@ -13,6 +13,6 @@ export default function search_result() {
                     <button type="button" className={style.button}><p>隱私設定</p></button>
                 </div>
             </div>
-        </>
+        </div>
     )
 }

@@ -1,4 +1,5 @@
-import Section from "../component/search_section"
+
+import Section from "../component/Search_section"
 
 export default function login() {
     return (
