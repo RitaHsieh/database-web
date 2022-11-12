@@ -8,7 +8,14 @@ export default function search_section() {
     return (
         <>
             <Order/>
-            <Search_result/>
+            <div className={style.hoteldata}>
+                <div>
+                <Search_result/>
+                </div>
+                <div>
+                <Search_result/>
+                </div>
+            </div>
             <Searchform_2  />
             <Filter/>
         </>

@@ -1,7 +1,7 @@
 
 .searchcontainer{
     position: relative;
-    left:5%;
+    left: 5%;
     top: 10%;
     height: 304px;
     width: 952px;
@@ -9,6 +9,7 @@
     border-radius: 30px;
     color:black;
     display: flex;
+    margin: 1rem;
     
 }
 
