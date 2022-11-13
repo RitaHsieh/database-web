@@ -1,4 +1,5 @@
-import style from "../styles/home.css"
+import style from "../styles/layout/home.module.css"
+
 
 export default function Search() {
     return(

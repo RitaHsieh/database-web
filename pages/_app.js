@@ -1,4 +1,4 @@
-import '../styles/main.css'
+import '../styles/globals.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
 function MyApp({ Component, pageProps }) {

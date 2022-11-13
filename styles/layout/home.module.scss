@@ -1,9 +1,8 @@
 // variables & functions
-@import 'functions';
+// @import 'functions';
 @import 'variables';
 
 // base & layout
-@import 'base';
 @import 'breakpoints';
 @import 'grid';
 
@@ -11,9 +10,10 @@
 // @import "colors";
 
 // components (button, card, navbar etc)
-@import 'components/home-info';
-@import 'components/home-login-bt';
-@import 'components/home-searchform';
+@import '../components/home-info';
+@import '../components/home-login-bt';
+@import '../components/home-searchform';
+@import '../components/home-section';
 
 // utilities (margin, padding, opacity, etc)
 @import 'utilities';
