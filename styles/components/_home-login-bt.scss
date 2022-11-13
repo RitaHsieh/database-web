@@ -6,23 +6,25 @@
     display: flex;
     color: white;
     align-items: center;
-    font-family: Microsoft JhengHei;
+    font-family: $heading-font;
     font-weight: bold;
-}
-.container p{
-    font-size: 17px;
+    p {
+        font-size: $base-font-size;
+    }
 }
 
 .button{
     color: white;
-    font-family: Microsoft JhengHei;
+    font-family: $heading-font;
     font-weight: bold;
-    font-size: 16pt;
+    font-size: $base-font-size;
     background-color: transparent;
-    border: none;
     cursor: pointer;
-}
-.container :hover .button{
-    transform: scale(1.1);
-    transition:all 1s ;
+
+    .container {
+        &:hover {
+            transform: scale(1.1);
+            transition:all 1s ;
+        }
+    }
 }
