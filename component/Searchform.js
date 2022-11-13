@@ -1,4 +1,4 @@
-import style from "../styles/Searchform.module.css";
+import style from "../styles/home.css";
 
 export default function Search({buttonClick}) {
 

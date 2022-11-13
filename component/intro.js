@@ -1,4 +1,4 @@
-import style from "/styles/intro.module.css"
+import style from "/styles/home.css"
 
 export default function intro(props) {
 

@@ -1,7 +1,7 @@
-import style from "../styles/Section.module.css"
 import Searchform from "../component/Searchform"
 import Login from "../component/login"
 import Intro from "../component/intro"
+import style from "../styles/home.css"
 import {useState,useEffect} from "react"
 import { format } from 'date-fns';
 import { DayPicker } from 'react-day-picker';
