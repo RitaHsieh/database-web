@@ -11,9 +11,9 @@
 // @import "colors";
 
 // components (button, card, navbar etc)
-// @import 'components/card';
-// @import 'components/button';
-// @import 'components/navbar';
+@import 'components/home-info';
+@import 'components/home-login-bt';
+@import 'components/home-searchform';
 
 // utilities (margin, padding, opacity, etc)
 @import 'utilities';

@@ -1,0 +1,50 @@
+.searchcontainer{
+    height: 60px;
+    width: 850px;
+    position: relative;
+    background-color: $secondary-color;
+    font-family: $heading-font;
+    font-weight: bold;
+    font-size: $base-font-size;
+    border-radius: 30px;
+    left:5%;
+    display: flex;
+    justify-content:space-evenly;   
+    align-items: center;
+}
+
+.searchcontainer p{
+    transform: translateY(-5%);
+}
+
+.button{ 
+    height: 50px;
+    background-color: transparent;
+    font-size: $base-font-size;
+    outline: none;
+    text-align: center;
+    font-weight: bold;    
+    transform: translateY(-5%);
+}
+
+.selectform {
+    background: transparent;
+    font-size: $base-font-size;
+    font-weight: bold;
+    outline:none;
+    transform: translateY(-5%);
+}
+
+.option {
+    font-weight: bold;
+    background: transparent;
+}
+.time{
+    border: 0;
+    background-color: aliceblue;
+    font-size: $base-font-size;
+    font-weight: bold;
+    transform: translateY(-5%);
+    cursor: pointer;
+}
+
