@@ -1,5 +1,19 @@
 .hoteldata {
+    position: absolute;
+    left: 37%;
+    top: 10%;
+}
+
+.block{
     position: relative;
-    top: 20%;
-    right: %;
+    margin-top: 5%;
+}
+
+.text{
+    position: relative;
+    margin-left:10%;
+    top: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 64px;
 }
