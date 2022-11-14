@@ -60,7 +60,7 @@ export default function Section({event}) {
                     
                     <Login/>
                     <Searchform buttonClick={buttonClick}/>
-                    <button className={`${style.button} ${style.scrollindicator}`} onClick={handleClick} >
+                    <button className={`${style.scrollbutton} ${style.scrollindicator}`} onClick={handleClick} >
                         <span className={style.scrollindicatorlabel}>introduction</span> 
                         <div className={style.scrollindicatorline}></div>
                     </button>

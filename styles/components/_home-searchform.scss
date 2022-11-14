@@ -11,40 +11,44 @@
     display: flex;
     justify-content:space-evenly;   
     align-items: center;
+
+    p{
+        transform: translateY(-5%);
+    }
+
+    .button{ 
+        height: 50px;
+        background-color: transparent;
+        color: black;
+        font-size: $base-font-size;
+        outline: none;
+        text-align: center;
+        font-weight: bold;    
+        transform: translateY(-5%);
+    }
+    .selectform {
+        background: transparent;
+        font-size: $base-font-size;
+        font-weight: bold;
+        outline:none;
+        transform: translateY(-5%);
+    }
+
+    .option {
+        font-weight: bold;
+        background: transparent;
+    }
+    .time{
+        border: 0;
+        background-color: aliceblue;
+        font-size: $base-font-size;
+        font-weight: bold;
+        transform: translateY(-5%);
+        cursor: pointer;
+    }
+
+
 }
 
-.searchcontainer p{
-    transform: translateY(-5%);
-}
 
-.button{ 
-    height: 50px;
-    background-color: transparent;
-    font-size: $base-font-size;
-    outline: none;
-    text-align: center;
-    font-weight: bold;    
-    transform: translateY(-5%);
-}
-
-.selectform {
-    background: transparent;
-    font-size: $base-font-size;
-    font-weight: bold;
-    outline:none;
-    transform: translateY(-5%);
-}
-
-.option {
-    font-weight: bold;
-    background: transparent;
-}
-.time{
-    border: 0;
-    background-color: aliceblue;
-    font-size: $base-font-size;
-    font-weight: bold;
-    transform: translateY(-5%);
-    cursor: pointer;
-}
 
