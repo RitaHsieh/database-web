@@ -1,4 +1,4 @@
-.container{ 
+.loginbtcontainer{ 
     position:absolute;
     left: 5%;
     bottom: 5%;
@@ -8,23 +8,24 @@
     align-items: center;
     font-family: $heading-font;
     font-weight: bold;
+
     p {
         font-size: $base-font-size;
+        color: white;
     }
-}
 
-.button{
-    color: white;
-    font-family: $heading-font;
-    font-weight: bold;
-    font-size: $base-font-size;
-    background-color: transparent;
-    cursor: pointer;
+    .button {
+        color: white;
+        font-family: $heading-font;
+        font-weight: bold;
+        font-size: $font-size-lg;
+        background-color: transparent;
+        cursor: pointer;
 
-    .container {
         &:hover {
             transform: scale(1.1);
             transition:all 1s ;
         }
     }
 }
+
