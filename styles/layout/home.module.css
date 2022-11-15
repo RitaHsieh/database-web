@@ -330,4 +330,180 @@
   width: 286px;
   margin-top: 0.75rem;
   text-align: left;
+}
+
+.userIndexOptionContainer {
+  width: 85%;
+  height: 75%;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.userIndexOptionContainer .button {
+  background-color: #D9D9D9;
+  border-radius: 20px;
+  border: transparent;
+  cursor: pointer;
+  transition: 0.1s;
+  box-shadow: inset 0 0 0 0 transparent;
+}
+.userIndexOptionContainer .button:hover {
+  box-shadow: inset 0 0 6px 2px gray;
+}
+.userIndexOptionContainer .button:active {
+  box-shadow: inset 0 0 6px 4px gray;
+}
+@media (min-width: 0) {
+  .userIndexOptionContainer .button {
+    width: 80%;
+    height: 20%;
+  }
+}
+@media (min-width: 960px) {
+  .userIndexOptionContainer .button {
+    width: 40%;
+    height: 40%;
+  }
+}
+.userIndexOptionContainer p {
+  font-weight: bold;
+}
+@media (min-width: 480px) {
+  .userIndexOptionContainer p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 720px) {
+  .userIndexOptionContainer p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 960px) {
+  .userIndexOptionContainer p {
+    font-size: 2rem;
+  }
+}
+
+.userIndexSettingContainer {
+  width: 20rem;
+  height: 100vh;
+  margin-left: 2rem;
+  padding: 3.5%;
+  padding-top: 5rem;
+  padding-bottom: 2%;
+  background-color: #858585;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.userIndexSettingContainer h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.userIndexSettingContainer .circle {
+  position: relative;
+  border-radius: 10rem;
+  background-color: #fff;
+}
+@media (min-width: 0) {
+  .userIndexSettingContainer .circle {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+@media (min-width: 480px) {
+  .userIndexSettingContainer .circle {
+    height: 6rem;
+    width: 6rem;
+  }
+}
+@media (min-width: 960px) {
+  .userIndexSettingContainer .circle {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+.userIndexSettingContainer .textcontainer {
+  align-self: flex-start;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 8%;
+  padding-bottom: 25%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.userIndexSettingContainer .textcontainer * {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.userIndexSettingContainer .btn {
+  height: 2.5rem;
+  width: 200px;
+  align-self: flex-start;
+  font-size: 1.2rem;
+  border: transparent;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  z-index: 1;
+}
+.userIndexSettingContainer h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.userIndexSettingContainer h2:hover {
+  color: black;
+  cursor: pointer;
+}
+.userIndexSettingContainer .contact {
+  align-self: flex-end;
+}
+
+.userIndexSectionContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.userIndexSectionContainer .columnContainer {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2.25rem;
+}
+@media (min-width: 0) {
+  .userIndexSectionContainer .columnContainer {
+    align-items: center;
+  }
+}
+@media (min-width: 960px) {
+  .userIndexSectionContainer .columnContainer {
+    align-items: flex-end;
+  }
+  .userIndexSectionContainer .columnContainer a {
+    margin-right: 8%;
+  }
+}
+.userIndexSectionContainer .columnContainer img {
+  height: 100px;
+  width: 100px;
 }/*# sourceMappingURL=home.module.css.map */

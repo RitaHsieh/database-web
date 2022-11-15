@@ -1,0 +1,91 @@
+
+.userIndexSettingContainer{
+    
+    width: 20rem;
+    height: 100vh;
+    margin-left: 2rem;
+    padding: 3.5%;
+    padding-top: 5rem;
+    padding-bottom: 2%;
+    background-color: $decorate-color;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    h1{
+        font-size: $font-size-xl;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: $base-margin;
+    }
+    .circle{
+        position: relative;
+        border-radius: 10rem;
+        background-color: #fff;
+        // left: 50%;
+        // transform: translateX(-50%);
+
+        @include xs {
+            height: 4rem;
+            width: 4rem;
+        }
+        @include sm {
+            height: 6rem;
+            width: 6rem;
+        }
+        @include lg {
+            height: 8rem;
+            width: 8rem;
+        }
+    }
+    .textcontainer {
+        align-self: flex-start;
+        font-size: $font-size-md;
+        color: white;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 8%;
+        padding-bottom: 25%;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        *{
+
+            margin-top: $base-margin * 1.2;
+            margin-bottom: $base-margin * 1.2;
+        }
+    }
+
+    .btn{
+        height: 2.5rem;
+        width: 200px;
+        align-self: flex-start;
+        font-size: $font-size-md;
+        border: transparent;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid black;
+        cursor: pointer;
+
+        z-index: 1;
+    }
+    h2 {
+        font-size: $font-size-lg;
+        margin-top: $base-margin * 2;
+        &:hover {
+            color: black;
+            cursor: pointer;
+        }
+    }
+    
+    .contact {
+        align-self: flex-end;
+    }
+
+}
+
