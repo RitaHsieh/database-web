@@ -2,12 +2,11 @@
 
     background: #cccccc;
     
-    height: 95%;
+    height: 720px;
     width: 420px;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%,-50%);
+    position: relative;
+    margin: auto;
+    margin-top: $base-margin * 3;
     border-radius: 50px;
     
     display: flex;
@@ -38,8 +37,8 @@
         background: #ffffff;
         width: 100%;
         height: 2.5rem;
-        margin-top: $base-margin;
-        margin-bottom: $base-margin;
+        // margin-top: $base-margin;
+        margin-bottom: $base-margin * 1.5;
         padding-left: $base-padding;
     }
     .button, .block {
@@ -51,13 +50,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-
         width: 69%;
     }
 
     .content {
         width: 68%;
-        margin-top: $base-margin;
+        // margin-top: $base-margin;
     }
 
     .checkbox {
@@ -70,14 +68,15 @@
     }
 
     .line {
-        margin-top: $base-margin;
+        margin-top: $base-margin * 1.5;
+        margin-bottom: $base-margin * 1.5;
         width: 70%;
         border: 1px solid #333333;
     }
 
     .button2 {
-        width: 5%;
-        height: 5%;
+        width: 50px;
+        height: 50px;
         border: none;
         background-color: none;
         margin-left: 50%;
@@ -86,7 +85,8 @@
 
     .link .content {
         color: #4CB6C5;
-        width: 290px;
+        width: 286px;
+        margin-top: $base-margin * 0.75;
         text-align: left;
 
     }
