@@ -1,5 +1,5 @@
 .hoteldata {
-    position: absolute;
+    position: r;
     left: 37%;
     top: 10%;
 }
@@ -16,4 +16,7 @@
     color: white;
     font-weight: bold;
     font-size: 64px;
+}
+.bottomcontainer{
+    display: flex;
 }

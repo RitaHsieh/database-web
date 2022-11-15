@@ -3,35 +3,36 @@ import Order from "./order"
 import Filter from "./Filter"
 import Searchform_2 from "./Searchform-2"
 import Search_result from "./search_result"
-import Filter_click from "./Fliter_click"
 
 export default function search_section() {
     return (
         <>
-            <div>
+            <div className={style.topcontainer}>
                 <p className={style.text}>AGODA</p>
-                <div><Searchform_2  /></div>
-                <Filter_click  />
+                <Order/>
+            </div>
+            <div className={style.bottomcontainer}>
+                <Searchform_2/>
+                <div className={style.hoteldata}>
+                    <div className={style.block}>
+                        <Search_result/>
+                    </div>
+                    <div className={style.block}>
+                        <Search_result/>
+                    </div>
+                    <div className={style.block}>
+                        <Search_result/>
+                    </div>
+                    <div className={style.block}>
+                        <Search_result/>
+                    </div>
+                    <div className={style.block}>
+                        <Search_result/>
+                    </div>
+                </div>
             </div>
 
-            <Order/>
-            <div className={style.hoteldata}>
-                <div className={style.block}>
-                    <Search_result/>
-                </div>
-                <div className={style.block}>
-                    <Search_result/>
-                </div>
-                <div className={style.block}>
-                    <Search_result/>
-                </div>
-                <div className={style.block}>
-                    <Search_result/>
-                </div>
-                <div className={style.block}>
-                    <Search_result/>
-                </div>
-            </div>
+            
             <Filter/>
         </>
     )
