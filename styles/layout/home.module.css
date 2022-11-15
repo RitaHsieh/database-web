@@ -11,10 +11,24 @@
   align-items: flex-end;
   text-align: right;
 }
+@media (min-width: 480px) {
+  .introcontainer {
+    visibility: hidden;
+  }
+}
+@media (min-width: 720px) {
+  .introcontainer {
+    visibility: hidden;
+  }
+}
+@media (min-width: 960px) {
+  .introcontainer {
+    visibility: visible;
+  }
+}
 .introcontainer .title {
   color: #fff;
   margin-top: 1rem;
-  margin-right: 2rem;
 }
 .introcontainer .line1 {
   width: 40%;
@@ -60,7 +74,6 @@
 
 .searchcontainer {
   height: 60px;
-  width: 850px;
   position: relative;
   background-color: aliceblue;
   font-family: Microsoft JhengHei;
@@ -71,6 +84,26 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (min-width: 480px) {
+  .searchcontainer {
+    width: 530px;
+  }
+}
+@media (min-width: 720px) {
+  .searchcontainer {
+    width: 620px;
+  }
+}
+@media (min-width: 960px) {
+  .searchcontainer {
+    width: 850px;
+  }
+}
+@media (min-width: 1200px) {
+  .searchcontainer {
+    width: 850px;
+  }
 }
 .searchcontainer p {
   transform: translateY(-5%);
@@ -105,7 +138,7 @@
   cursor: pointer;
 }
 
-.herocontainer {
+.homesectioncontainer {
   /*background: var(--img) center center/cover no-repeat;*/
   height: 100vh;
   width: 100%;
@@ -116,16 +149,26 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
-.herocontainer h1 {
-  width: 850px;
+.homesectioncontainer .webname {
   color: #fff;
-  font-size: 6rem;
   left: 5%;
   margin-bottom: 3%;
   font-family: "Courgette", cursive;
   position: relative;
 }
-.herocontainer .background {
+@media (min-width: 480px) {
+  .homesectioncontainer .webname {
+    font-size: 5rem;
+    width: 380px;
+  }
+}
+@media (min-width: 720px) {
+  .homesectioncontainer .webname {
+    font-size: 6rem;
+    width: 500px;
+  }
+}
+.homesectioncontainer .background {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
@@ -134,8 +177,7 @@
   position: fixed;
   z-index: -2;
 }
-
-.scrollbutton {
+.homesectioncontainer .scrollbutton {
   display: inline-block;
   padding: 0;
   right: 5%;
@@ -146,13 +188,26 @@
   outline: 0;
   cursor: pointer;
 }
-
-.scrollindicator {
+@media (min-width: 480px) {
+  .homesectioncontainer .scrollbutton {
+    visibility: hidden;
+  }
+}
+@media (min-width: 720px) {
+  .homesectioncontainer .scrollbutton {
+    visibility: hidden;
+  }
+}
+@media (min-width: 960px) {
+  .homesectioncontainer .scrollbutton {
+    visibility: visible;
+  }
+}
+.homesectioncontainer .scrollindicator {
   position: absolute;
   bottom: 0;
 }
-
-.scrollindicatorlabel {
+.homesectioncontainer .scrollindicatorlabel {
   display: block;
   margin-bottom: 2rem;
   font-size: 1rem;
@@ -160,8 +215,7 @@
   color: #fff;
   text-transform: uppercase;
 }
-
-.scrollindicatorline {
+.homesectioncontainer .scrollindicatorline {
   width: 2px;
   height: 5vh;
   background-color: #fff;
@@ -169,8 +223,7 @@
   position: relative;
   left: 49%;
 }
-
-.mask {
+.homesectioncontainer .mask {
   height: 100%;
   width: 35%;
   left: 3%;
@@ -179,8 +232,7 @@
   opacity: 0.4;
   position: fixed;
 }
-
-.mask1 {
+.homesectioncontainer .mask1 {
   height: 100%;
   background-color: #000;
   opacity: 0.4;
@@ -188,13 +240,11 @@
   width: 100%;
   position: fixed;
 }
-
-.daypicker {
+.homesectioncontainer .daypicker {
   visibility: hidden;
   position: absolute;
 }
-
-.daypicker1 {
+.homesectioncontainer .daypicker1 {
   background-color: #fff;
   border-radius: 20px;
   padding: 40px;

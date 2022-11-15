@@ -54,9 +54,9 @@ export default function Section({event}) {
     }
     return(
         <>
-                <div className={style.herocontainer}>
+                <div className={style.homesectioncontainer}>
                     <img className={style.background} src={images[(count%2)]} alt='alter'/>
-                    <h1>Rent You on Sunday</h1>
+                    <h1 className={style.webname}>Rent You on Sunday</h1>
                     
                     <Login/>
                     <Searchform buttonClick={buttonClick}/>

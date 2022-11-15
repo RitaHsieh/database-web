@@ -11,20 +11,32 @@
     align-items: flex-end;
     text-align: right;
 
+    @include sm {
+        visibility: hidden;
+    }
+    @include md {
+        visibility: hidden; 
+    }
+    @include lg {
+        visibility: visible;
+    }
+    
     .title{
         color: #fff;
         margin-top: 1rem;
-        margin-right: 2rem;
     }
+
     .line1{
         width:40%;
         position: relative;
     }
+
     .content{
         color:#fff;
         margin-top: 10px;
         font-size: $base-font-size * 1.2;
     }
+
     .hidden{
         color: transparent;
         transition: 0.5s;
