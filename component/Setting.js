@@ -1,17 +1,20 @@
-import style from "../styles/Setting.module.css"
+import style from "../styles/layout/home.module.css"
 
 export default function setting() {
     return (
        <>
-        <div className={style.container}>
-            <p className={style.title}>帳戶設定</p>
+        <div className={style.userIndexSettingContainer}>
+            <h1>帳戶設定</h1>
             <div className={style.circle}></div>
-            <p className={style.username}>使用者名稱</p>
-            <p className={style.realname}>真實名稱</p>
-            <p className={style.cellphone}>電話</p>
-            <p className={style.email}>電子信箱</p>
-            <button className={style.btn}>個人資訊更改</button>
-            <p className={style.contact}>聯絡我們Contact us</p>
+            <div className={style.textcontainer}>
+                <h2>使用者名稱</h2>
+                <p className={style.realname}>真實姓名</p>
+                <p className={style.cellphone}>電話號碼</p>
+                <p className={style.email}>電子郵件</p>
+                <button className={style.btn}>個人資訊更改</button>
+            </div>
+            <p className={style.contact}><a href="">聯絡我們Contact us</a></p>
+            
         </div>
        </>
     )
