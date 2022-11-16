@@ -1,11 +1,9 @@
 .selectform {
 
     background: #c7c2c2;
-    position: absolute;
-    top: 5%;
-    right: 5%;
+    position: relative;
     width: 15rem;
-    height: 6%;
+    height: 50%;
 
     font-size: 18px;
     font-weight: 600;

@@ -14,7 +14,7 @@ export default function Searchform_2(){
                 </select>
                 <input className={style.first} placeholder="出發時間"></input>
                 <input className={style.first} placeholder="抵達時間"></input>
-                <button className={style.btn}><span>篩選 →</span></button>
+                <button className={style.btn}><span>搜尋 →</span></button>
             </div>
         </>
     )

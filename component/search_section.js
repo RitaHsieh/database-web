@@ -8,11 +8,11 @@ export default function search_section() {
     return (
         <>
             <div className={style.topcontainer}>
-                <p className={style.text}>AGODA</p>
+                <p className={style.text}>Rent You on Sunday</p>
                 <Order/>
             </div>
             <div className={style.bottomcontainer}>
-                <Searchform_2/>
+                <div className={style.bottomleftcontainer}><Searchform_2/></div>
                 <div className={style.hoteldata}>
                     <div className={style.block}>
                         <Search_result/>
