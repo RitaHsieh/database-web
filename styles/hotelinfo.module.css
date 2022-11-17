@@ -1,0 +1,77 @@
+.heading{
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.searchcontainer{
+    left: 10%;
+    top: 3%;
+    position: relative;
+    background:white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    height:30%;
+    width: 50%;
+}
+
+.container{
+    display: flex;
+    position: relative;
+}
+
+.name{
+    margin-top: 3%;
+    margin-left: 3%;
+    font-size: 2rem;
+    font-weight: bolder;
+    position: relative;
+}
+
+.people{
+    font-size: 1rem;
+    position: relative;
+    margin-top: 5.5%;
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.bed{
+    margin-top: 1%;
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.intro{
+    margin-top: 5%;
+    margin-left: 3%;
+    font-size: 100%;
+}
+
+.money{
+    font-size: 150%;
+    font-weight: bold;
+    color: red;
+    margin-top: 6%;
+    margin-left: 35%;
+}
+
+.button{
+    font-size: 100%;
+    width: 10%;
+    height: 125%;
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.discount{
+    font-weight: bold;
+    font-size: 100%;
+    margin-top: 1%;
+    margin-left: 25.5%;
+}
+
+

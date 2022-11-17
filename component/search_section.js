@@ -3,38 +3,36 @@ import Order from "./order"
 import Filter from "./Filter"
 import Searchform_2 from "./Searchform-2"
 import Search_result from "./search_result"
+import Filter_click from "./Fliter_click"
 
 export default function search_section() {
     return (
         <>
-            <div className={style.topcontainer}>
-                <p className={style.text}>Rent You on Sunday</p>
-                <Order/>
-            </div>
-            <div className={style.bottomcontainer}>
-                <div className={style.bottomleftcontainer}>
-                    <Searchform_2/>
-                    <button className={style.btnfilter}>篩選</button>
-                </div>
-                <div className={style.hoteldata}>
-                    <div className={style.block}>
-                        <Search_result/>
-                    </div>
-                    <div className={style.block}>
-                        <Search_result/>
-                    </div>
-                    <div className={style.block}>
-                        <Search_result/>
-                    </div>
-                    <div className={style.block}>
-                        <Search_result/>
-                    </div>
-                    <div className={style.block}>
-                        <Search_result/>
-                    </div>
-                </div>
+            <div>
+                <p className={style.text}>AGODA</p>
+                <div><Searchform_2  /></div>
+                <Filter_click  />
             </div>
 
+            <Order/>
+            <div className={style.hoteldata}>
+                <div className={style.block}>
+                    <Search_result/>
+                </div>
+                <div className={style.block}>
+                    <Search_result/>
+                </div>
+                <div className={style.block}>
+                    <Search_result/>
+                </div>
+                <div className={style.block}>
+                    <Search_result/>
+                </div>
+                <div className={style.block}>
+                    <Search_result/>
+                </div>
+            </div>
+            <Filter/>
         </>
     )
 }
