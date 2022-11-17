@@ -7,7 +7,7 @@ export default function search_result() {
         <>
             <div className={style.searchcontainer}>
                 <img src="image.jpg" alt="image" className={style.img}/> 
-                <div>
+                <div className={style.content}>
                     <h1 className={style.name}>旅館名稱(旅館英文名稱)</h1>
                     <div>
                         <p className={style.location}>旅館地址</p>

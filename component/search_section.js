@@ -12,7 +12,10 @@ export default function search_section() {
                 <Order/>
             </div>
             <div className={style.bottomcontainer}>
-                <div className={style.bottomleftcontainer}><Searchform_2/></div>
+                <div className={style.bottomleftcontainer}>
+                    <Searchform_2/>
+                    <button className={style.btnfilter}>篩選</button>
+                </div>
                 <div className={style.hoteldata}>
                     <div className={style.block}>
                         <Search_result/>
@@ -32,8 +35,6 @@ export default function search_section() {
                 </div>
             </div>
 
-            
-            <Filter/>
         </>
     )
 }
