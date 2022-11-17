@@ -3,8 +3,16 @@ import Order from "./order"
 import Filter from "./Filter"
 import Searchform_2 from "./Searchform-2"
 import Search_result from "./search_result"
+import { useState } from "react"
 
 export default function search_section() {
+
+    const [float,setFloat] = useState(true);
+
+    const handleClick=()=>{
+       setFloat(float=!float);
+    }
+
     return (
         <>
             <div className={style.topcontainer}>
@@ -14,7 +22,7 @@ export default function search_section() {
             <div className={style.bottomcontainer}>
                 <div className={style.bottomleftcontainer}>
                     <Searchform_2/>
-                    <button className={style.btnfilter}>篩選</button>
+                    <button className={style.btnfilter} onClick={handleClick}>篩選</button>
                 </div>
                 <div className={style.hoteldata}>
                     <div className={style.block}>
@@ -34,6 +42,8 @@ export default function search_section() {
                     </div>
                 </div>
             </div>
+            <div className={float==true?style.mask:style.maskhidden}></div>
+            <Filter float={float===true?0:1}/>
 
         </>
     )
