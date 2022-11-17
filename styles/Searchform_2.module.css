@@ -4,8 +4,7 @@
     flex-direction: column;
     align-content: center;
     justify-content: center;
-
-    background-color: gray;
+    width:80%;
 }
 
 .first,

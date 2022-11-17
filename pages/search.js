@@ -1,10 +1,10 @@
 
-import Section from "../component/Search_section"
+import Search_section from "../component/Search_section"
 
 export default function login() {
     return (
         <>
-            <Section/>
+            <Search_section/>
         </>
     )
 }

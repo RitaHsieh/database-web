@@ -9,9 +9,13 @@ export default function search_section() {
 
     const [float,setFloat] = useState(true);
 
-    const handleClick=()=>{
-       setFloat(float=!float);
-    }
+    const mask=[style.mask,style.maskhidden];
+
+
+    const btnClick = () => {
+        setFloat(float => !float);
+        console.log(float);
+    };
 
     return (
         <>
@@ -22,7 +26,7 @@ export default function search_section() {
             <div className={style.bottomcontainer}>
                 <div className={style.bottomleftcontainer}>
                     <Searchform_2/>
-                    <button className={style.btnfilter} onClick={handleClick}>篩選</button>
+                    <button className={style.btnfilter} onClick={btnClick}>篩選</button>
                 </div>
                 <div className={style.hoteldata}>
                     <div className={style.block}>
@@ -42,7 +46,7 @@ export default function search_section() {
                     </div>
                 </div>
             </div>
-            <div className={float==true?style.mask:style.maskhidden}></div>
+            <div className={float===true?mask[0]:mask[1]} onClick={event=>btnClick()}></div>
             <Filter float={float===true?0:1}/>
 
         </>
