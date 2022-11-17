@@ -24,7 +24,6 @@ export default function Section({event}) {
     const title=["Denmark","Finland"]
     const buttonClick = () => {
         setFloat(float => !float);
-        console.log("hi")
     };
     const handleClick = () => {
         setcontent(content => !content);

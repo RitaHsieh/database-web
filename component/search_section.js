@@ -14,7 +14,6 @@ export default function search_section() {
 
     const btnClick = () => {
         setFloat(float => !float);
-        console.log(float);
     };
 
     return (
