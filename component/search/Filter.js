@@ -1,4 +1,4 @@
-import style from "../styles/filter.module.css"
+import style from "../../styles/filter.module.css"
 
 export default function filter({float}) {
     const container=[style.container,style.containerhidden];

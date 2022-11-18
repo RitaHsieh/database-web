@@ -1,5 +1,5 @@
 import { StyleRegistry } from "styled-jsx"
-import style from "../styles/search_result.module.css"
+import style from "../../styles/search_result.module.css"
 
 
 export default function search_result() {

@@ -1,4 +1,4 @@
-import style from "../styles/layout/home.module.css"
+import style from "../../styles/layout/home.module.css"
 import Script from 'next/script'
 
 export default function loginform() {

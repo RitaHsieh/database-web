@@ -1,4 +1,4 @@
-import style from "../styles/search-section.module.css"
+import style from "../../styles/search-section.module.css"
 import Order from "./order"
 import Filter from "./Filter"
 import Searchform_2 from "./Searchform-2"
@@ -7,7 +7,7 @@ import { useState } from "react"
 
 export default function search_section() {
 
-    const [float,setFloat] = useState(true);
+    const [float,setFloat] = useState(false);
 
     const mask=[style.mask,style.maskhidden];
 
