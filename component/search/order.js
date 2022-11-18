@@ -1,4 +1,4 @@
-import style from "../styles/order.module.css"
+import style from "../../styles/order.module.css"
 
 export default function loginform() {
     return(

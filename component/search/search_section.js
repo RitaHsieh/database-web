@@ -1,28 +1,31 @@
-import style from "../styles/search-section.module.css"
+import style from "../../styles/search-section.module.css"
 import Order from "./order"
 import Filter from "./Filter"
 import Searchform_2 from "./Searchform-2"
 import Search_result from "./search_result"
+import { useState } from "react"
 
 export default function search_section() {
 
-    const [float,setFloat] = useState(true);
+    const [float,setFloat] = useState(false);
 
-    const handleClick=()=>{
-       setFloat(float=!float);
-    }
+    const mask=[style.mask,style.maskhidden];
+
+
+    const btnClick = () => {
+        setFloat(float => !float);
+    };
 
     return (
         <>
-            <div>
-                <p className={style.text}>AGODA</p>
-                <div><Searchform_2  /></div>
-                <Filter_click  />
+            <div className={style.topcontainer}>
+                <p className={style.text}>Rent You on Sunday</p>
+                <Order/>
             </div>
             <div className={style.bottomcontainer}>
                 <div className={style.bottomleftcontainer}>
                     <Searchform_2/>
-                    <button className={style.btnfilter}>篩選</button>
+                    <button className={style.btnfilter} onClick={btnClick}>篩選</button>
                 </div>
                 <div className={style.hoteldata}>
                     <div className={style.block}>
@@ -42,6 +45,8 @@ export default function search_section() {
                     </div>
                 </div>
             </div>
+            <div className={float===true?mask[0]:mask[1]} onClick={event=>btnClick()}></div>
+            <Filter float={float===true?0:1}/>
 
         </>
     )

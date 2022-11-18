@@ -24,13 +24,13 @@
 }
 .bottomleftcontainer{
     height:100%;
-    padding: 3%;
     width: 20%;
     position: fixed;
     background-color: gray;
     top:20%;
     display: flex;
     flex-direction:column;
+    align-items: center;
 }
 .bottomcontainer{
     display: flex;
@@ -48,5 +48,25 @@
     height: 20%;
 }
 .btnfilter{
-    margin: auto;
+    height: 5%;
+    width:50%;
+    margin-top: 50%;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.mask{
+    height:100%;
+    width:100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 1;
+
+}
+.maskhidden{
+    visibility: hidden;
+    z-index: -2;
 }

@@ -1,9 +1,10 @@
-import style from "../styles/filter.module.css"
+import style from "../../styles/filter.module.css"
 
-export default function filter(props) {
+export default function filter({float}) {
+    const container=[style.container,style.containerhidden];
     return(
         <>
-            <div className={props.float===true?style.container:style.containerhidden}>
+            <div className={container[float]}>
                 <h2 className={style.title}>類別</h2>
                 <hr className={style.line}></hr>
                 <div className={style.optioncontainer}><button className={style.button}><span>選項 </span></button></div>

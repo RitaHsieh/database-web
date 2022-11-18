@@ -1,7 +1,7 @@
-import Searchform from "../component/Searchform"
-import Login from "../component/login"
-import Intro from "../component/intro"
-import style from "../styles/layout/home.module.css"
+import Searchform from "./Searchform"
+import Login from "./login"
+import Intro from "./intro"
+import style from "../../styles/layout/home.module.css"
 
 import {useState,useEffect} from "react"
 import { format } from 'date-fns';
@@ -24,7 +24,6 @@ export default function Section({event}) {
     const title=["Denmark","Finland"]
     const buttonClick = () => {
         setFloat(float => !float);
-        console.log("hi")
     };
     const handleClick = () => {
         setcontent(content => !content);

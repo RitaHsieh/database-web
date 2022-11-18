@@ -1,4 +1,4 @@
-import style from "../styles/Searchform_2.module.css"
+import style from "../../styles/Searchform_2.module.css"
 
 export default function Searchform_2(){
     return (
