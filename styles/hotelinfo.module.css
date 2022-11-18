@@ -1,24 +1,23 @@
 .heading{
-    margin-left: 10%;
+    margin-left: 5%;
     margin-top: 3%;
 }
 
 .searchcontainer{
-    left: 10%;
-    top: 3%;
     position: relative;
+    left: 10%;
+    margin-top: 2.5%;
     background:white;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    margin: 1%;
-    height:30%;
-    width: 50%;
+    height:250px;
+    width: 1000px;
 }
 
 .container{
     display: flex;
-    position: relative;
+    flex-direction: row;
 }
 
 .name{
@@ -74,4 +73,23 @@
     margin-left: 25.5%;
 }
 
+.button_container{
+    position: relative;
+    background:white;
+    border-radius: 10px;
+    height:250px;
+    width: 100px;
+    margin-left: 12.5%;
+    margin-top: 2.5%;
+}
+
+.right_container{
+    position: relative;
+    background:white;
+    border-radius: 10px;
+    height:805px;
+    width: 100px;
+    left: 30px;
+    margin-top: 27.5px;
+}
 
