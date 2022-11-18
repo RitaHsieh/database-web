@@ -506,4 +506,92 @@
 .userIndexSectionContainer .columnContainer img {
   height: 100px;
   width: 100px;
+}
+
+.hotelInfoRoomContainer {
+  display: flex;
+  flex-direction: row;
+}
+.hotelInfoRoomContainer .searchcontainer {
+  position: relative;
+  left: 10%;
+  margin-top: 2.5%;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 1000px;
+}
+.hotelInfoRoomContainer .container {
+  display: flex;
+  flex-direction: row;
+}
+.hotelInfoRoomContainer .name {
+  margin-top: 3%;
+  margin-left: 3%;
+  font-size: 2rem;
+  font-weight: bolder;
+  position: relative;
+}
+.hotelInfoRoomContainer .people {
+  font-size: 1rem;
+  position: relative;
+  margin-top: 5.5%;
+  margin-left: 3%;
+  font-weight: bold;
+  font-size: 100%;
+}
+.hotelInfoRoomContainer .bed {
+  margin-top: 1%;
+  margin-left: 3%;
+  font-weight: bold;
+  font-size: 100%;
+}
+.hotelInfoRoomContainer .intro {
+  margin-top: 5%;
+  margin-left: 3%;
+  font-size: 100%;
+}
+.hotelInfoRoomContainer .money {
+  font-size: 150%;
+  font-weight: bold;
+  color: red;
+  margin-top: 6%;
+  margin-left: 35%;
+}
+.hotelInfoRoomContainer .button {
+  font-size: 100%;
+  width: 10%;
+  height: 125%;
+  margin-top: 1%;
+  margin-left: 3%;
+}
+.hotelInfoRoomContainer .discount {
+  font-weight: bold;
+  font-size: 100%;
+  margin-top: 1%;
+  margin-left: 25.5%;
+}
+.hotelInfoRoomContainer .button_container {
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  height: 250px;
+  width: 100px;
+  margin-left: 12.5%;
+  margin-top: 2.5%;
+}
+.hotelInfoRoomContainer .heading {
+  margin-left: 5%;
+  margin-top: 3%;
+}
+.hotelInfoRoomContainer .right_container {
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  height: 805px;
+  width: 100px;
+  left: 30px;
+  margin-top: 27.5px;
 }/*# sourceMappingURL=home.module.css.map */
