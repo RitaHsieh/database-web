@@ -1,7 +1,7 @@
-import style from "../../styles/filter.module.css"
+import style from "../../styles/layout/home.module.css"
 
 export default function filter({float}) {
-    const container=[style.container,style.containerhidden];
+    const container=[style.searchFilterContainer,style.containerhidden];
     return(
         <>
             <div className={container[float]}>

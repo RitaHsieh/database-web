@@ -1,11 +1,12 @@
 import { StyleRegistry } from "styled-jsx"
-import style from "../../styles/search_result.module.css"
+import style from "../../styles/layout/home.module.css"
+
 
 
 export default function search_result() {
     return(
         <>
-            <div className={style.searchcontainer}>
+            <div className={style.searchResultContainer}>
                 <img src="image.jpg" alt="image" className={style.img}/> 
                 <div className={style.content}>
                     <h1 className={style.name}>旅館名稱(旅館英文名稱)</h1>

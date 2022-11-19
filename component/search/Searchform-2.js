@@ -1,9 +1,10 @@
-import style from "../../styles/Searchform_2.module.css"
+import style from "../../styles/layout/home.module.css"
+
 
 export default function Searchform_2(){
     return (
         <>
-            <div className={style.container}>
+            <div className={style.searchSearchformContainer}>
                 <input className={style.first} placeholder="地點"></input>
                 <select className={style.second}>
                     <option selected disabled hidden>人數</option>

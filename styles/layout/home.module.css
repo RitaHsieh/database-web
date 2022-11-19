@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 .introcontainer {
   position: absolute;
@@ -594,4 +595,273 @@
   width: 100px;
   left: 30px;
   margin-top: 27.5px;
+}
+
+.containerhidden {
+  visibility: hidden;
+  z-index: -3;
+}
+
+.searchFilterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  position: fixed;
+  width: 40%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+.searchFilterContainer .title {
+  margin: 10px;
+}
+.searchFilterContainer .line {
+  margin: 10px;
+  width: 70%;
+}
+.searchFilterContainer .optioncontainer {
+  margin: 5px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.searchFilterContainer .button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  width: 50%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.searchFilterContainer .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.searchFilterContainer .button span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -2%;
+  transition: 0.5s;
+}
+.searchFilterContainer .button:hover span {
+  padding-right: 15%;
+}
+.searchFilterContainer .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.searchFilterContainer .submit {
+  position: relative;
+  left: 40%;
+  width: 20%;
+  padding: 5px;
+  margin: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.searchFilterContainer .submit:active {
+  background-color: #d9d9d9;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+.searchFilterContainer .submit span {
+  font-size: 0.8rem;
+}
+
+.searchOrderContainer {
+  background: #c7c2c2;
+  position: relative;
+  width: 15rem;
+  height: 50%;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 0.6rem;
+  border: None;
+  border-radius: 0.5rem;
+}
+.searchOrderContainer .option {
+  font-weight: 600;
+  background: #FFFFFF;
+}
+
+.searchResultContainer {
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  margin: 1%;
+  height: 100%;
+  width: 100%;
+}
+.searchResultContainer .img {
+  width: 30%;
+  margin: 25px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.searchResultContainer .name {
+  width: 100%;
+  margin-top: 1%;
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+}
+.searchResultContainer .container {
+  display: flex;
+  width: 100%;
+  margin-top: 30%;
+}
+.searchResultContainer .room,
+.searchResultContainer .location {
+  font-size: 1rem;
+  position: relative;
+  margin-top: 1%;
+}
+.searchResultContainer .money,
+.searchResultContainer .time {
+  font-size: 1.2rem;
+  margin-right: 5%;
+}
+.searchResultContainer .content {
+  padding: 2%;
+}
+.searchResultContainer .situation {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 2%;
+  position: relative;
+  bottom: 10px;
+}
+
+.searchSearchformContainer {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 80%;
+}
+.searchSearchformContainer .first,
+.searchSearchformContainer .second,
+.searchSearchformContainer .third,
+.searchSearchformContainer .fourth {
+  padding: 10px;
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+.searchSearchformContainer .btn {
+  padding: 10px;
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 5px;
+  font-weight: bolder;
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.searchSearchformContainer .btn:active {
+  background-color: #d9d9d9;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+.searchSearchformContainer .btn span {
+  font-size: 0.8rem;
+}
+
+.searchBottomContainer {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+.searchBottomContainer .btnfilter {
+  height: 5%;
+  width: 50%;
+  margin-top: 50%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.searchBottomContainer .block {
+  position: relative;
+  height: 40%;
+  width: 100%;
+}
+.searchBottomContainer .bottomleftcontainer {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  background-color: gray;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.searchBottomContainer .hoteldata {
+  margin-top: 2%;
+  position: absolute;
+  padding: 2%;
+  height: 100%;
+  width: 80%;
+  right: 0%;
+  top: 20%;
+  z-index: -1;
+}
+
+.searchTopContainer {
+  background-color: dimgrey;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  height: 20%;
+}
+.searchTopContainer .text {
+  position: relative;
+  margin-left: 5%;
+  color: white;
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.searchMask {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #000;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.searchMaskHidden {
+  visibility: hidden;
+  z-index: -2;
 }/*# sourceMappingURL=home.module.css.map */

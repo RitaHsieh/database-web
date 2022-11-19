@@ -1,0 +1,72 @@
+.searchBottomContainer{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    .btnfilter{
+        height: 5%;
+        width:50%;
+        margin-top: 50%;
+        border-radius: 10px;
+        cursor: pointer;
+    
+    }
+    .block{
+        position: relative;
+        height:40%;
+        width:100%; 
+    }
+    .bottomleftcontainer{
+        height:100%;
+        width: 20%;
+        position: fixed;
+        background-color: gray;
+        top:20%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    .hoteldata {
+        margin-top: 2%;
+        position: absolute;
+        padding:2%;
+        height:100%;
+        width:80%;
+        right:0%;
+        top:20%;
+        z-index: -1;
+    }
+}
+
+.searchTopContainer{
+    background-color: dimgrey;
+    display:flex;
+    justify-content: space-between;
+    padding: 2%;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    height: 20%;
+    .text{
+        position: relative;
+        margin-left: 5%;
+        color: white;
+        font-weight: bold;
+        font-size: 64px;
+    }
+}
+
+.searchMask{
+    height:100%;
+    width:100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 1;
+
+}
+.searchMaskHidden{
+    visibility: hidden;
+    z-index: -2;
+}
