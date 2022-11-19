@@ -15,21 +15,17 @@
     color:black;
 
     @include sm {
-        background-color: red;
         height: 38%;
         width: 85%;
     }
     @include md {
-        background-color: orange;
         height: 35%;
         width: 85%;
     }
     @include lg {
-        background-color: yellow;
         width: 80%;
     }
     @include xl {
-        background-color: green;
         width: 75%;
     }
     .img{

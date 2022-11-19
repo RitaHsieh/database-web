@@ -609,8 +609,8 @@
   flex-direction: column;
   border-radius: 10px;
   position: fixed;
-  width: 40%;
-  height: 50%;
+  width: 380px;
+  height: 60%;
   top: 50%;
   left: 50%;
   z-index: 2;
@@ -618,10 +618,10 @@
   background-color: #fff;
 }
 .searchFilterContainer .title {
-  margin: 10px;
+  margin: 1rem;
 }
 .searchFilterContainer .line {
-  margin: 10px;
+  margin: 5px;
   width: 70%;
 }
 .searchFilterContainer .optioncontainer {
@@ -636,8 +636,8 @@
   border-radius: 4px;
   border: none;
   text-align: center;
-  font-size: 14px;
-  padding: 5px;
+  font-size: 1rem;
+  padding: 0.75rem;
   width: 50%;
   transition: all 0.5s;
   cursor: pointer;
@@ -684,19 +684,32 @@
 }
 
 .searchOrderContainer {
-  background: #c7c2c2;
-  width: 10rem;
-  height: 2rem;
-  font-size: 18px;
+  background: #D9D9D9;
+  font-size: 1rem;
   font-weight: 600;
-  padding-left: 0.6rem;
-  margin-right: 2.5rem;
+  padding-left: 0.75rem;
   border: None;
   border-radius: 0.5rem;
 }
 .searchOrderContainer .option {
   font-weight: 600;
   background: #FFFFFF;
+}
+@media (min-width: 480px) {
+  .searchOrderContainer {
+    margin-top: 0;
+    margin-right: 1.2rem;
+    width: 7rem;
+    height: 1.5rem;
+  }
+}
+@media (min-width: 720px) {
+  .searchOrderContainer {
+    width: 10rem;
+    height: 2rem;
+    margin-right: 2.5rem;
+    margin-top: 1rem;
+  }
 }
 
 .searchResultContainer {
@@ -711,27 +724,23 @@
 }
 @media (min-width: 480px) {
   .searchResultContainer {
-    background-color: red;
     height: 38%;
     width: 85%;
   }
 }
 @media (min-width: 720px) {
   .searchResultContainer {
-    background-color: orange;
     height: 35%;
     width: 85%;
   }
 }
 @media (min-width: 960px) {
   .searchResultContainer {
-    background-color: yellow;
     width: 80%;
   }
 }
 @media (min-width: 1200px) {
   .searchResultContainer {
-    background-color: green;
     width: 75%;
   }
 }
@@ -815,7 +824,9 @@
   width: 100%;
   align-items: center;
   height: 15%;
-  padding: 3%;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 0.75rem;
 }
 .searchTopContainer .text {
   position: relative;
@@ -823,6 +834,11 @@
   font-weight: bold;
 }
 @media (min-width: 480px) {
+  .searchTopContainer .text {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 720px) {
   .searchTopContainer .text {
     font-size: 3rem;
   }
@@ -854,10 +870,15 @@
 }
 @media (min-width: 720px) {
   .searchBottomContainer .bottomleftcontainer {
-    width: 20%;
+    width: 23%;
   }
 }
 @media (min-width: 960px) {
+  .searchBottomContainer .bottomleftcontainer {
+    width: 23%;
+  }
+}
+@media (min-width: 1200px) {
   .searchBottomContainer .bottomleftcontainer {
     width: 18%;
   }

@@ -1,21 +1,33 @@
 .searchOrderContainer {
 
-    background: #c7c2c2;
-    width: 10rem;
-    height: 2rem;
+    background: $background-color;
 
-    font-size: 18px;
+    font-size: $base-font-size;
     font-weight: 600;
-    padding-left: 0.6rem;
-    margin-right: $edge-margin;
+    padding-left: $base-padding;
 
     border: None;
     border-radius: 0.5rem;
 
-
+    // align-self: flex-end;
     .option {
         font-weight: 600;
         background: #FFFFFF;
+    }
+
+    @include sm {
+        margin-top: 0;
+        margin-right: $base-margin * 1.2;
+        width: 7rem;
+        height: 1.5rem;
+    }
+    @include md {
+
+        width: 10rem;
+        height: 2rem;
+
+        margin-right: $edge-margin;
+        margin-top: $base-margin ;  
     }
 
 }

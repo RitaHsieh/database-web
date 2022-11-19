@@ -9,8 +9,8 @@
     flex-direction: column;
     border-radius: 10px;
     position: fixed;
-    width: 40%;
-    height: 50%;
+    width: 380px;
+    height: 60%;
     top:50%;
     left: 50%;
     z-index: 2;
@@ -18,12 +18,11 @@
     background-color: #fff;
 
     .title{
-    
-        margin: 10px;
+        margin: $base-margin;
     }
     .line{
-        margin: 10px;
-        width: 70%;
+      margin: 5px;
+      width: 70%;
     }
     .optioncontainer{
         margin: 5px;
@@ -37,8 +36,8 @@
         border-radius: 4px;
         border: none;
         text-align: center;
-        font-size: 14px;
-        padding: 5px;
+        font-size: $base-font-size;
+        padding: $base-padding;
         width: 50%;
         transition: all 0.5s;
         cursor: pointer;
