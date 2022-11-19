@@ -28,21 +28,11 @@ export default function search_section() {
                     <button className={style.btnfilter} onClick={btnClick}>篩選</button>
                 </div>
                 <div className={style.hoteldata}>
-                    <div className={style.block}>
-                        <Search_result/>
-                    </div>
-                    <div className={style.block}>
-                        <Search_result/>
-                    </div>
-                    <div className={style.block}>
-                        <Search_result/>
-                    </div>
-                    <div className={style.block}>
-                        <Search_result/>
-                    </div>
-                    <div className={style.block}>
-                        <Search_result/>
-                    </div>
+                    <Search_result/>
+                    <Search_result/>
+                    <Search_result/>
+                    <Search_result/>
+                    <Search_result/>
                 </div>
             </div>
             <div className={float===true?mask[0]:mask[1]} onClick={event=>btnClick()}></div>

@@ -685,12 +685,12 @@
 
 .searchOrderContainer {
   background: #c7c2c2;
-  position: relative;
-  width: 15rem;
-  height: 50%;
+  width: 10rem;
+  height: 2rem;
   font-size: 18px;
   font-weight: 600;
   padding-left: 0.6rem;
+  margin-right: 2.5rem;
   border: None;
   border-radius: 0.5rem;
 }
@@ -700,89 +700,105 @@
 }
 
 .searchResultContainer {
-  position: relative;
-  background: white;
-  border-radius: 10px;
-  color: black;
   display: flex;
-  margin: 1%;
-  height: 100%;
-  width: 100%;
+  padding: 0.9rem;
+  margin: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  background: white;
+  border-radius: 20px;
+  color: black;
+}
+@media (min-width: 480px) {
+  .searchResultContainer {
+    background-color: red;
+    height: 38%;
+    width: 85%;
+  }
+}
+@media (min-width: 720px) {
+  .searchResultContainer {
+    background-color: orange;
+    height: 35%;
+    width: 85%;
+  }
+}
+@media (min-width: 960px) {
+  .searchResultContainer {
+    background-color: yellow;
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .searchResultContainer {
+    background-color: green;
+    width: 75%;
+  }
 }
 .searchResultContainer .img {
-  width: 30%;
-  margin: 25px;
+  width: 35%;
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.searchResultContainer .name {
-  width: 100%;
-  margin-top: 1%;
-  font-size: 2rem;
-  font-weight: bold;
-  position: relative;
-}
-.searchResultContainer .container {
-  display: flex;
-  width: 100%;
-  margin-top: 30%;
-}
-.searchResultContainer .room,
-.searchResultContainer .location {
-  font-size: 1rem;
-  position: relative;
-  margin-top: 1%;
-}
-.searchResultContainer .money,
-.searchResultContainer .time {
-  font-size: 1.2rem;
-  margin-right: 5%;
-}
 .searchResultContainer .content {
-  padding: 2%;
+  padding: 0.6rem;
+  padding-left: 1.5rem;
+  padding-bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-.searchResultContainer .situation {
-  font-size: 36px;
+.searchResultContainer .content h1 {
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-left: 2%;
-  position: relative;
-  bottom: 10px;
+}
+.searchResultContainer .content * {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.searchResultContainer .content .container {
+  display: flex;
+  justify-content: space-between;
+  justify-self: end;
+  width: 100%;
+  padding-right: 0.75rem;
+  margin-top: auto;
+}
+@media (min-width: 480px) {
+  .searchResultContainer .content .container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 720px) {
+  .searchResultContainer .content .container {
+    flex-direction: row;
+    align-items: flex-end;
+  }
 }
 
 .searchSearchformContainer {
-  padding: 10px;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  width: 80%;
+  margin-top: 2rem;
 }
-.searchSearchformContainer .first,
-.searchSearchformContainer .second,
-.searchSearchformContainer .third,
-.searchSearchformContainer .fourth {
+.searchSearchformContainer * {
+  height: 2.4rem;
   padding: 10px;
   display: flex;
-  margin: 10px;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   align-items: center;
   justify-content: center;
   background-color: #fff;
   border-radius: 5px;
   font-weight: bolder;
+  font-size: 1rem;
 }
 .searchSearchformContainer .btn {
-  padding: 10px;
-  display: flex;
-  margin: 10px;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  border-radius: 5px;
-  font-weight: bolder;
-  position: relative;
-  background-color: #fff;
-  border-radius: 5px;
   cursor: pointer;
 }
 .searchSearchformContainer .btn:active {
@@ -790,8 +806,31 @@
   box-shadow: 0 2px #666;
   transform: translateY(2px);
 }
-.searchSearchformContainer .btn span {
-  font-size: 0.8rem;
+
+.searchTopContainer {
+  background-color: dimgrey;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+  height: 15%;
+  padding: 3%;
+}
+.searchTopContainer .text {
+  position: relative;
+  color: white;
+  font-weight: bold;
+}
+@media (min-width: 480px) {
+  .searchTopContainer .text {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 960px) {
+  .searchTopContainer .text {
+    font-size: 3.5rem;
+  }
 }
 
 .searchBottomContainer {
@@ -799,55 +838,62 @@
   height: 100%;
   justify-content: space-between;
 }
-.searchBottomContainer .btnfilter {
-  height: 5%;
-  width: 50%;
-  margin-top: 50%;
-  border-radius: 10px;
-  cursor: pointer;
-}
-.searchBottomContainer .block {
-  position: relative;
-  height: 40%;
-  width: 100%;
-}
 .searchBottomContainer .bottomleftcontainer {
   height: 100%;
-  width: 20%;
   position: fixed;
   background-color: gray;
-  top: 20%;
+  top: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 480px) {
+  .searchBottomContainer .bottomleftcontainer {
+    width: 25%;
+  }
+}
+@media (min-width: 720px) {
+  .searchBottomContainer .bottomleftcontainer {
+    width: 20%;
+  }
+}
+@media (min-width: 960px) {
+  .searchBottomContainer .bottomleftcontainer {
+    width: 18%;
+  }
+}
+@media (min-width: 480px) {
+  .searchBottomContainer .bottomleftcontainer .searchSearchformContainer, .searchBottomContainer .bottomleftcontainer .btnfilter {
+    width: 80%;
+  }
+}
+@media (min-width: 960px) {
+  .searchBottomContainer .bottomleftcontainer .searchSearchformContainer, .searchBottomContainer .bottomleftcontainer .btnfilter {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .searchBottomContainer .bottomleftcontainer .searchSearchformContainer, .searchBottomContainer .bottomleftcontainer .btnfilter {
+    width: 65%;
+  }
+}
+.searchBottomContainer .bottomleftcontainer .btnfilter {
+  border-radius: 5px;
+  cursor: pointer;
+  height: 2.4rem;
+  padding: 10px;
+  margin: 0.75rem;
+  margin-top: 20%;
+  font-weight: bolder;
+  font-size: 1rem;
+}
 .searchBottomContainer .hoteldata {
-  margin-top: 2%;
   position: absolute;
-  padding: 2%;
   height: 100%;
   width: 80%;
-  right: 0%;
   top: 20%;
   z-index: -1;
-}
-
-.searchTopContainer {
-  background-color: dimgrey;
-  display: flex;
-  justify-content: space-between;
-  padding: 2%;
-  position: fixed;
-  width: 100%;
-  align-items: center;
-  height: 20%;
-}
-.searchTopContainer .text {
-  position: relative;
-  margin-left: 5%;
-  color: white;
-  font-weight: bold;
-  font-size: 64px;
+  right: 0%;
 }
 
 .searchMask {

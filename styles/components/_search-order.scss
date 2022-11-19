@@ -1,16 +1,17 @@
 .searchOrderContainer {
 
     background: #c7c2c2;
-    position: relative;
-    width: 15rem;
-    height: 50%;
+    width: 10rem;
+    height: 2rem;
 
     font-size: 18px;
     font-weight: 600;
     padding-left: 0.6rem;
+    margin-right: $edge-margin;
 
     border: None;
     border-radius: 0.5rem;
+
 
     .option {
         font-weight: 600;
