@@ -9,10 +9,12 @@ import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
 
 export default function Section({event}) {
-    const [selected, setSelected] = useState();
+    const [startselected, setStartSelected] = useState();
+    const [endselected, setEndSelected] = useState();
     const [content,setcontent] = useState(true);
     const [count,setCount]=useState(0);
-    const [float,setFloat]=useState(true);
+    const [startfloat,setStartFloat]=useState(true);
+    const [endfloat,setEndFloat]=useState(true);
 
     const mask=[style.mask,style.mask1]
     const daypicker=[style.daypicker,style.daypicker1]
@@ -22,8 +24,11 @@ export default function Section({event}) {
         "home-background-2.jpg"
     ]
     const title=["Denmark","Finland"]
-    const buttonClick = () => {
-        setFloat(float => !float);
+    const startbuttonClick = () => {
+        setStartFloat(startfloat => !startfloat);
+    };
+    const endbuttonClick = () => {
+        setEndFloat(endfloat => !endfloat);
     };
     const handleClick = () => {
         setcontent(content => !content);
@@ -49,8 +54,13 @@ export default function Section({event}) {
 
 
     let footer = <p>Please pick a day.</p>;
-    if (selected) {
-        footer = <p>You picked {format(selected, 'PP')}.</p>;
+    if (startselected) {
+        footer = <p>You picked {format(startselected, 'PP')}.</p>;
+        
+    }
+    if (endselected) {
+        footer = <p>You picked {format(endselected, 'PP')}.</p>;
+        
     }
     return(
         <>
@@ -59,20 +69,28 @@ export default function Section({event}) {
                     <h1 className={style.webname}>Rent You on Sunday</h1>
                     
                     <Login/>
-                    <Searchform buttonClick={buttonClick}/>
+                    <Searchform startbuttonClick={startbuttonClick} endbuttonClick={endbuttonClick} startselected={startselected} endselected={endselected}/>
                     <button className={`${style.scrollbutton} ${style.scrollindicator}`} onClick={handleClick} >
                         <span className={style.scrollindicatorlabel}>introduction</span> 
                         <div className={style.scrollindicatorline}></div>
                     </button>
-                    <div className={mask[float===true?0:1]} onClick={event=>buttonClick()}></div>
+                    <div className={mask[startfloat===true?0:1]} onClick={event=>startbuttonClick()}></div>
+                    <div className={mask[endfloat===true?0:1]} onClick={event=>endbuttonClick()}></div>
                     
                     <Intro title={title[count%2]} content={p[(count%2)]} number={content}/>
                     <DayPicker
                         mode="single"
-                        selected={selected}
-                        onSelect={setSelected}
+                        selected={startselected}
+                        onSelect={setStartSelected}
                         footer={footer}
-                        className={daypicker[float===true?0:1]}
+                        className={daypicker[startfloat===true?0:1]}
+                    />
+                    <DayPicker
+                        mode="single"
+                        selected={endselected}
+                        onSelect={setEndSelected}
+                        footer={footer}
+                        className={daypicker[endfloat===true?0:1]}
                     />
                     
             </div>
