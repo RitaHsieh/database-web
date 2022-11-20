@@ -1,0 +1,91 @@
+.containerhidden{
+    visibility: hidden;
+    z-index: -3;
+}
+.searchFilterContainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    position: fixed;
+    width: 380px;
+    height: 60%;
+    top:50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+
+    .title{
+        margin: $base-margin;
+    }
+    .line{
+      margin: 5px;
+      width: 70%;
+    }
+    .optioncontainer{
+        margin: 5px;
+        display: flex;
+        width:100%; 
+        justify-content: center;
+        align-items: center;
+    }
+    .button {
+        display: inline-block;
+        border-radius: 4px;
+        border: none;
+        text-align: center;
+        font-size: $base-font-size;
+        padding: $base-padding;
+        width: 50%;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      
+      .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -2%;
+        transition: 0.5s;
+      }
+      
+      .button:hover span {
+        padding-right: 15%;
+      }
+      
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+      
+    .submit{
+        position: relative;
+        left:40%;
+        width: 20%;
+        padding: 5px;
+        margin: 5px;
+        background-color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .submit:active {
+        background-color: #d9d9d9;
+        box-shadow: 0 2px #666;
+        transform: translateY(2px);
+    }
+    .submit span{
+        font-size: 0.8rem;
+    }
+}
+

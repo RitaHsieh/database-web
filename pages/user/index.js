@@ -1,4 +1,4 @@
-import User from "../../component/userIndex-section"
+import User from "../../component/user/userIndex-section"
 
 export default function login() {
     return (

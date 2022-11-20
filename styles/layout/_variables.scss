@@ -7,6 +7,7 @@ $decorate-color: #858585;
 // spacing
 $base-padding: 0.75rem;
 $base-margin: 1rem;
+$edge-margin: $base-margin * 2.5;
 
 // borders
 $base-border-thickness: 1px;
@@ -23,8 +24,9 @@ $font-size-md: $base-font-size * 1.2;
 $font-size-lg: $base-font-size * 1.5;
 $font-size-xl: $base-font-size * 2;
 $font-size-xxl: $base-font-size * 3;
-$font-size-title: $base-font-size * 6;
+
 $font-size-sm-title: $base-font-size * 5;
+$font-size-title: $base-font-size * 6;
 
 //font family
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');

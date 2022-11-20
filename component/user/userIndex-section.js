@@ -1,6 +1,6 @@
-import Setting from "../component/Setting"
-import Option from "../component/option"
-import style from "../styles/layout/home.module.css"
+import Setting from "./Setting"
+import Option from "./option"
+import style from "../../styles/layout/home.module.css"
 
 export default function account() {
     return (
