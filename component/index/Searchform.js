@@ -5,7 +5,7 @@ export default function Search({buttonClick}) {
 
     return(
         <>  
-            <div className={style.searchcontainer}>
+            <div className={style.homeSearchContainer}>
                 <p>地點</p>
                 <p>|</p>
                 <select className={style.selectform} name="people" id="people"> 
