@@ -1,6 +1,6 @@
 import User from "../../component/user/userIndex-section"
 
-export default function login() {
+export default function user() {
     return (
         <>
             <User/>
