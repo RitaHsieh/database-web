@@ -1,4 +1,17 @@
+
 .hotelInfoRoomContainer{
+    @include sm{
+        background-color: pink;
+    }
+
+    @include md{
+        background-color: blue;
+    }
+
+    @include lg{
+        background-color: red;
+    }
+    
     display: flex;
     flex-direction: row;
 

@@ -1,4 +1,4 @@
-import Section from "../component/hotelInfo/hotelinfo"
+import Section from "../component/hotelInfo/room"
 export default function Home() {
     return (
         <>

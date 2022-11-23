@@ -512,6 +512,21 @@
   display: flex;
   flex-direction: row;
 }
+@media (min-width: 480px) {
+  .hotelInfoRoomContainer {
+    background-color: pink;
+  }
+}
+@media (min-width: 720px) {
+  .hotelInfoRoomContainer {
+    background-color: blue;
+  }
+}
+@media (min-width: 960px) {
+  .hotelInfoRoomContainer {
+    background-color: red;
+  }
+}
 .hotelInfoRoomContainer .searchcontainer {
   position: relative;
   left: 10%;
