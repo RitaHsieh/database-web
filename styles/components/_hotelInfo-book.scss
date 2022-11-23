@@ -1,11 +1,23 @@
 
 .hotelInfoBookContainer{
 
+    @include sm{
+        background-color: pink;
+    }
+
+    @include md{
+        background-color: blue;
+    }
+
+    @include lg{
+        background-color: red;
+    }
+
     .right_container{//右邊那個立即訂房
         position: relative;
         background:white;
         border-radius: 10px;
-        height:805px;
+        height:880px;
         width: 100px;
         left: 30px;
         margin-top: 27.5px;

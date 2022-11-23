@@ -536,7 +536,7 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  height: 290px;
+  height: 275px;
   width: 1000px;
 }
 .hotelInfoRoomContainer .container {
@@ -574,7 +574,7 @@
   font-weight: bold;
   color: red;
   margin-top: 6%;
-  margin-left: 37.5%;
+  margin-left: 30%;
 }
 .hotelInfoRoomContainer .button {
   font-size: 100%;
@@ -587,13 +587,13 @@
   font-weight: bold;
   font-size: 100%;
   margin-top: 1%;
-  margin-left: 27.5%;
+  margin-left: 20%;
 }
 .hotelInfoRoomContainer .button_container {
   position: relative;
   background: white;
   border-radius: 10px;
-  height: 290px;
+  height: 275px;
   width: 100px;
   margin-left: 12.5%;
   margin-top: 2.5%;
@@ -608,11 +608,26 @@
   margin-top: 27.5px;
 }
 
+@media (min-width: 480px) {
+  .hotelInfoBookContainer {
+    background-color: pink;
+  }
+}
+@media (min-width: 720px) {
+  .hotelInfoBookContainer {
+    background-color: blue;
+  }
+}
+@media (min-width: 960px) {
+  .hotelInfoBookContainer {
+    background-color: red;
+  }
+}
 .hotelInfoBookContainer .right_container {
   position: relative;
   background: white;
   border-radius: 10px;
-  height: 805px;
+  height: 880px;
   width: 100px;
   left: 30px;
   margin-top: 27.5px;
