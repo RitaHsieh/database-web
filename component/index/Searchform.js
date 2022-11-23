@@ -1,11 +1,11 @@
 import style from "../../styles/layout/home.module.css"
+import { format } from 'date-fns';
 
-
-export default function Search({buttonClick}) {
+export default function Search({startbuttonClick,endbuttonClick,startselected,endselected}) {
 
     return(
         <>  
-            <div className={style.searchcontainer}>
+            <div className={style.homeSearchContainer}>
                 <p>地點</p>
                 <p>|</p>
                 <select className={style.selectform} name="people" id="people"> 
@@ -16,9 +16,9 @@ export default function Search({buttonClick}) {
                     <option className={style.option} value="four">&nbsp;&nbsp;4人</option> 
                 </select>
                 <p>|</p>
-                <button className={style.time} onClick={event => buttonClick()}>入住時間</button>
+                <button className={style.time} onClick={event => startbuttonClick()}>{startselected==null?"入住時間":format(startselected, 'PP')}</button>
                 <p>→</p>
-                <p>離開時間</p>
+                <button className={style.time} onClick={event => endbuttonClick()}>{endselected==null?"離開時間":format(endselected, 'PP')}</button>
                 <p>|</p>
                 <a href="/search">
                     <input className={style.button} type="button" value="→)"/>

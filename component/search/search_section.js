@@ -1,4 +1,4 @@
-import style from "../../styles/search-section.module.css"
+import style from "../../styles/layout/home.module.css"
 import Order from "./order"
 import Filter from "./Filter"
 import Searchform_2 from "./Searchform-2"
@@ -9,7 +9,7 @@ export default function search_section() {
 
     const [float,setFloat] = useState(false);
 
-    const mask=[style.mask,style.maskhidden];
+    const mask=[style.searchMask,style.searchMaskHidden];
 
 
     const btnClick = () => {
@@ -18,31 +18,21 @@ export default function search_section() {
 
     return (
         <>
-            <div className={style.topcontainer}>
+            <div className={style.searchTopContainer}>
                 <p className={style.text}>Rent You on Sunday</p>
                 <Order/>
             </div>
-            <div className={style.bottomcontainer}>
+            <div className={style.searchBottomContainer}>
                 <div className={style.bottomleftcontainer}>
                     <Searchform_2/>
                     <button className={style.btnfilter} onClick={btnClick}>篩選</button>
                 </div>
                 <div className={style.hoteldata}>
-                    <div className={style.block}>
-                        <Search_result/>
-                    </div>
-                    <div className={style.block}>
-                        <Search_result/>
-                    </div>
-                    <div className={style.block}>
-                        <Search_result/>
-                    </div>
-                    <div className={style.block}>
-                        <Search_result/>
-                    </div>
-                    <div className={style.block}>
-                        <Search_result/>
-                    </div>
+                    <Search_result/>
+                    <Search_result/>
+                    <Search_result/>
+                    <Search_result/>
+                    <Search_result/>
                 </div>
             </div>
             <div className={float===true?mask[0]:mask[1]} onClick={event=>btnClick()}></div>
