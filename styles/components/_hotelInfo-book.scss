@@ -1,26 +1,44 @@
 
 .hotelInfoBookContainer{
-
     @include sm{
         background-color: pink;
+        .right_container{//右邊那個立即訂房
+            position: relative;
+            background:white;
+            border-radius: 10px;
+            height:750px;
+            width: 80px;
+            left: 15px;
+            margin-top: 12px;
+        }
     }
 
     @include md{
         background-color: blue;
+        .right_container{//右邊那個立即訂房
+            position: relative;
+            background:white;
+            border-radius: 10px;
+            height:820px;
+            width: 80px;
+            left: 15px;
+            margin-top: 17.5px;
+        }
     }
 
     @include lg{
         background-color: red;
+        .right_container{//右邊那個立即訂房
+            position: relative;
+            background:white;
+            border-radius: 10px;
+            height:880px;
+            width: 100px;
+            left: 30px;
+            margin-top: 27.5px;
+        }
     }
 
-    .right_container{//右邊那個立即訂房
-        position: relative;
-        background:white;
-        border-radius: 10px;
-        height:880px;
-        width: 100px;
-        left: 30px;
-        margin-top: 27.5px;
-    }
+    
     
 }
