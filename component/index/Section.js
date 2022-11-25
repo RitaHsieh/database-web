@@ -64,7 +64,7 @@ export default function Section({event}) {
     }
     return(
         <>
-                <div className={style.homesectioncontainer}>
+                <div className={style.homeSectionContainer}>
                     <img className={style.background} src={images[(count%2)]} alt='alter'/>
                     <h1 className={style.webname}>Rent You on Sunday</h1>
                     

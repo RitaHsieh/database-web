@@ -4,7 +4,7 @@ import style from "../../styles/layout/home.module.css"
 export default function Search() {
     return(
         <>
-            <div className={style.loginbtcontainer}>
+            <div className={style.homeLoginbtContainer}>
                 <a href="http://localhost:3000/login">
                     <input className={style.button} type="button" value="登入"/>
                 </a>

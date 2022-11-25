@@ -1,12 +1,12 @@
-.loginformcontainer {
+.loginFormContainer {
 
+    position: relative;
+    top: 7%;
     background: #cccccc;
     
     height: 720px;
     width: 420px;
-    position: relative;
     margin: auto;
-    margin-top: $base-margin * 3;
     border-radius: 50px;
     
     display: flex;
