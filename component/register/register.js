@@ -2,24 +2,12 @@ import style from "../../styles/layout/home.module.css"
 import Script from 'next/script'
 
 export default function loginform() {
-    const click = () => {
-        alert("HI")
-        gapi.auth2.init()
-        if (auth2.isSignedIn.get()) {
-        var profile = auth2.currentUser.get().getBasicProfile();
-        console.log('ID: ' + profile.getId());
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log('Image URL: ' + profile.getImageUrl());
-        console.log('Email: ' + profile.getEmail());
-      }
-    }
+    
     return(
         <>
             <div className={style.loginFormContainer}>
                 <img className={style.logo} src="logo.png" alt='alter'/>
-                <h1 className={style.title}>Rent You<br></br>on Sunday</h1>
+                <h1 className={style.title}>Register</h1>
                 
                 <div className={style.button}>
                     <Script src="https://accounts.google.com/gsi/client" async defer />
@@ -46,28 +34,31 @@ export default function loginform() {
             
                 <form className={style.form}>
                     <p>
-                    <input type="text" name="acount" className={style.block} placeholder="email address or phone number"></input>
+                    <input type="text" name="username" className={style.block} placeholder="username"></input>
+                    </p>
+                    <p>
+                    <input type="text" name="email" className={style.block} placeholder="email"></input>
                     </p>
                     <p>
                     <input type="text" name="password" className={style.block} placeholder="password"></input>
                     </p>
                     <p>
-                    <input type="checkbox" id="remember-account" value="remember-account" className={style.checkbox}></input>
-                    <label for="remember-account" className={style.chcontent}> Remember account for 30 days.</label>
+                    <select className={style.block}>
+                        <option className={style.option} value="none" selected disabled hidden>性別</option> 
+                        <option className={style.option} value="male">男</option> 
+                        <option className={style.option} value="female">女 </option> 
+                        <option className={style.option} value="other">其他</option> 
+                    </select>
+                    </p>
+                    <p>
+                    <input type="text" name="phone" className={style.block} placeholder="phone number"></input>
                     </p>
                 </form>
-                <a className={style.link} href="https://www.youtube.com/shorts/-hNK5kKW6HY">
-                    <h3 className={style.content}> Forgot your password?</h3>
-                </a>
+
                 <hr className={style.line}></hr>
-                <h3 className={style.content}>Don't have an accout?</h3>
-                <a className={style.link} href="http://localhost:3000/register">
-                    <h3 className={style.content}> Register!</h3>
-                </a>
                 <a className={style.button2} href="https://www.youtube.com/watch?v=4JNb4fiT1VA&list=RDV91B6aQOn4k&index=13&ab_channel=%E9%BA%8B%E5%85%88%E7%94%9FMIXER">
                     <img src="arrow.png" alt='alter'/>
                 </a>
-                <button onClick={event=>click()}>Hi</button>
             </div>
         </>
     )

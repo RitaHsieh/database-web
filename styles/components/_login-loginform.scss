@@ -26,22 +26,27 @@
         font-family: $title-font;
         font-size: $font-size-xxl;
         text-align: center;
-        margin-top: -$base-font-size;
+        margin-top: $base-margin;
+        margin-bottom: $base-margin;
     }
 
     .button {
+
+        // margin-top: $base-margin * 0.75;
+        margin-bottom: $base-margin * 0.75;
         width: 68%;
-        margin-top: $base-margin;
     }
     .block {
         background: #ffffff;
         width: 100%;
         height: 2.5rem;
-        // margin-top: $base-margin;
-        margin-bottom: $base-margin * 1.5;
+        // margin-top: $base-margin * 0.75;
+        // margin-bottom: $base-margin * 0.75;
         padding-left: $base-padding;
     }
     .button, .block {
+        margin-top: $base-margin * 0.75;
+        margin-bottom: $base-margin * 0.75;
         border-radius: $base-border-radius * 0.75;
         font-size: $base-font-size;
     }
@@ -68,8 +73,8 @@
     }
 
     .line {
-        margin-top: $base-margin * 1.5;
-        margin-bottom: $base-margin * 1.5;
+        margin-top: $base-margin * 0.3;
+        margin-bottom: $base-margin * 0.3;
         width: 70%;
         border: 1px solid #333333;
     }
@@ -79,6 +84,7 @@
         height: 50px;
         border: none;
         background-color: none;
+        margin-top: $base-margin * 0.5;
         margin-left: 50%;
 
     }
@@ -87,6 +93,7 @@
         color: #4CB6C5;
         width: 286px;
         margin-top: $base-margin * 0.75;
+        margin-bottom: $base-margin * 0.75;
         text-align: left;
 
     }
