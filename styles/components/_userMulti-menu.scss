@@ -2,13 +2,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:$background-color;
-    height: 85%;
-    width: 13%;
+    background-color: $decorate-color;
+    color: white;
+    height: 100%;
     font-family: $heading-font;
     font-size: $font-size-md;
     padding: $base-padding;
     padding-top: $base-padding * 2;
+
+    @include sm {
+        width: 30%;
+    }
+    @include lg {
+        width: 18%;
+    }
+    @include xl {
+        width: 15%;
+    }
     .title {
         display: inline-flex;
         align-items: center;
@@ -32,8 +42,19 @@
         i {
             margin-right: $base-margin;
         }
+        a {
+            @include sm {
+                width: 90px;
+            }
+            @include md {
+                width: 115px;
+            }
+            &:hover {
+                color: black;
+            }
+        }
         hr {
-            border: 0.5px $decorate-color solid;
+            border: 0.5px white solid;
             width: 80%;
             margin: $base-margin;
         }
