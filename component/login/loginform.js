@@ -5,7 +5,7 @@ export default function loginform() {
     return(
         <>
             <div className={style.loginFormContainer}>
-                <img className={style.logo} src="logo.png" alt='alter'/>
+                <img className={style.logo} src="logo2.png" alt='alter'/>
                 <h1 className={style.title}>Rent You<br></br>on Sunday</h1>
                 
                 <div className={style.button}>
@@ -52,7 +52,7 @@ export default function loginform() {
                     <h3 className={style.content}> Register!</h3>
                 </a>
                 <a className={style.button2} href="https://www.youtube.com/watch?v=4JNb4fiT1VA&list=RDV91B6aQOn4k&index=13&ab_channel=%E9%BA%8B%E5%85%88%E7%94%9FMIXER">
-                    <img src="arrow.png" alt='alter'/>
+                    <img src="304.png" alt='alter'/>
                 </a>
             </div>
         </>
