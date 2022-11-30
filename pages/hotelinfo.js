@@ -1,8 +1,18 @@
-import Section from "../component/hotelInfo/hotelinfo"
+import Left from "../component/hotelInfo/room"
+import Right from "../component/hotelInfo/book"
+
 export default function Home() {
     return (
         <>
-            <Section/>
+            <div style={{display:"flex"}}>
+                <div>
+                    <Left/>
+                    <Left/>
+                    <Left/>
+                </div>
+                <Right/>
+            </div>
+            
         </>
     )
 }

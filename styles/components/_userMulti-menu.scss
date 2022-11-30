@@ -1,0 +1,42 @@
+.userMultiMenuContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:$background-color;
+    height: 85%;
+    width: 13%;
+    font-family: $heading-font;
+    font-size: $font-size-md;
+    padding: $base-padding;
+    padding-top: $base-padding * 2;
+    .title {
+        display: inline-flex;
+        align-items: center;
+        i {
+            font-size: 35px;
+        } 
+        h1 {
+            font-size: $font-size-lg;
+            margin: $base-margin;
+        }
+    }
+    .options {
+        display: flex;
+        flex-direction: column;
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            margin: $base-margin;
+        }
+        i {
+            margin-right: $base-margin;
+        }
+        hr {
+            border: 0.5px $decorate-color solid;
+            width: 80%;
+            margin: $base-margin;
+        }
+    }
+    
+}
