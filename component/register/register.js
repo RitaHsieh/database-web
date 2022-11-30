@@ -2,11 +2,19 @@ import style from "../../styles/layout/home.module.css"
 import Script from 'next/script'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from "react"
 
 import logo from '../../public/image/logo.png'
 import arrow from '../../public/image/arrow.png'
 
+
 export default function loginform() {
+    const [username,setUsername] = useState('');
+    const [email,setEmail] = useState('');
+    const [password,setPassword] = useState('');
+    const [gender,setGender] = useState('');
+    const [phonenumber,setPhonenumber] = useState('');
+
     
     return(
         <>
@@ -39,24 +47,24 @@ export default function loginform() {
             
                 <form className={style.form}>
                     <p>
-                    <input type="text" name="username" className={style.block} placeholder="username"></input>
+                    <input type="text" name="username" className={style.block} placeholder="username" onChange={event=>{setUsername(event.target.value)}}></input>
                     </p>
                     <p>
-                    <input type="text" name="email" className={style.block} placeholder="email"></input>
+                    <input type="text" name="email" className={style.block} placeholder="email" onChange={event=>{setEmail(event.target.value)}}></input>
                     </p>
                     <p>
-                    <input type="text" name="password" className={style.block} placeholder="password"></input>
+                    <input type="text" name="password" className={style.block} placeholder="password" onChange={event=>{setPassword(event.target.value)}}></input>
                     </p>
                     <p>
                     <select className={style.block}>
-                        <option className={style.option} value="none" selected disabled hidden>性別</option> 
+                        <option className={style.option} value="none" selected disabled hidden onChange={event=>{setGender(event.target.value)}}>性別</option> 
                         <option className={style.option} value="male">男</option> 
                         <option className={style.option} value="female">女 </option> 
                         <option className={style.option} value="other">其他</option> 
                     </select>
                     </p>
                     <p>
-                    <input type="text" name="phone" className={style.block} placeholder="phone number"></input>
+                    <input type="text" name="phone" className={style.block} placeholder="phone number" onChange={event=>{setPhonenumber(event.target.value)}}></input>
                     </p>
                 </form>
 
