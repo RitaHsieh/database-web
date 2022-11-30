@@ -1,5 +1,7 @@
+import Image from "next/image"
 import { StyleRegistry } from "styled-jsx"
 import style from "../../styles/layout/home.module.css"
+import image from '../../public/image/image.jpg'
 
 
 
@@ -7,7 +9,7 @@ export default function search_result() {
     return(
         <>
             <div className={style.searchResultContainer}>
-                <img src="image.jpg" alt="image" className={style.img}/> 
+                <Image src={image} alt="image" className={style.img}/> 
                 <div className={style.content}>
                     <h1>旅館名稱(旅館英文名稱)</h1>
                     <p className={style.location}>旅館地址</p>

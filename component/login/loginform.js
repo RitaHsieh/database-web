@@ -3,6 +3,8 @@ import Script from 'next/script'
 import {useState,useEffect} from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
+import logo from '../../public/image/logo.png'
+import arrow from '../../public/image/304.png'
 
 
 export default function loginform() {
@@ -28,7 +30,7 @@ export default function loginform() {
     return(
         <>
             <div className={style.loginFormContainer}>
-                <img className={style.logo} src="logo2.png" alt='alter'/>
+                <Image className={style.logo} src={logo} alt='alter'/>
                 <h1 className={style.title}>Rent You<br></br>on Sunday</h1>
                 
                 <div className={style.button}>
@@ -72,13 +74,17 @@ export default function loginform() {
                 <hr className={style.line}></hr>
                 <h3 className={style.content}>Don't have an accout?</h3>
 
-                <a className={style.link} href="http://localhost:3000/register">
+                
+                <Link href="/register" className={style.link}>
                     <h3 className={style.content}> Register!</h3>
-                </a>
-                <a className={style.button2} href="https://www.youtube.com/watch?v=4JNb4fiT1VA&list=RDV91B6aQOn4k&index=13&ab_channel=%E9%BA%8B%E5%85%88%E7%94%9FMIXER">
-                    <img src="304.png" alt='alter'/>
-                </a>
-                <button onClick={event=>click()}>Hi</button>
+                </Link>
+                
+                <Link href="https://www.youtube.com/watch?v=4JNb4fiT1VA&list=RDV91B6aQOn4k&index=13&ab_channel=%E9%BA%8B%E5%85%88%E7%94%9FMIXER" className={style.button2}>
+                    <Image src={arrow} alt='alter'/>
+                
+                </Link>
+                
+                <button onClick={click}>Hi</button>
             </div>
         </>
     )

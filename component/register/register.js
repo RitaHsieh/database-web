@@ -1,12 +1,17 @@
 import style from "../../styles/layout/home.module.css"
 import Script from 'next/script'
+import Image from 'next/image'
+import Link from 'next/link'
+
+import logo from '../../public/image/logo.png'
+import arrow from '../../public/image/arrow.png'
 
 export default function loginform() {
     
     return(
         <>
             <div className={style.loginFormContainer}>
-                <img className={style.logo} src="logo.png" alt='alter'/>
+                <Image className={style.logo} src={logo} alt='alter'/>
                 <h1 className={style.title}>Register</h1>
                 
                 <div className={style.button}>
@@ -56,9 +61,9 @@ export default function loginform() {
                 </form>
 
                 <hr className={style.line}></hr>
-                <a className={style.button2} href="https://www.youtube.com/watch?v=4JNb4fiT1VA&list=RDV91B6aQOn4k&index=13&ab_channel=%E9%BA%8B%E5%85%88%E7%94%9FMIXER">
-                    <img src="arrow.png" alt='alter'/>
-                </a>
+                <Link className={style.button2} href="https://www.youtube.com/watch?v=4JNb4fiT1VA&list=RDV91B6aQOn4k&index=13&ab_channel=%E9%BA%8B%E5%85%88%E7%94%9FMIXER">
+                    <Image src={arrow} alt='alter' />
+                </Link>
             </div>
         </>
     )

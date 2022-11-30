@@ -1,7 +1,10 @@
 import Searchform from "./Searchform"
 import Login from "./login"
 import Intro from "./intro"
+import Image from 'next/image'
 import style from "../../styles/layout/home.module.css"
+import background1 from '../../public/image/home-background-1.jpg'
+import background2 from '../../public/image/home-background-2.jpg'
 
 import {useState,useEffect} from "react"
 import { format } from 'date-fns';
@@ -28,7 +31,6 @@ export default function Section() {
 
     const startbuttonClick = () => {
         setStartFloat(startfloat => !startfloat);
-        console.log(startselected);
     };
 
     const endbuttonClick = () => {
@@ -47,8 +49,8 @@ export default function Section() {
 
     //image
     const images=[
-        "home-background-1.jpg",
-        "home-background-2.jpg"
+        background1,
+        background2
     ]
     const title=["Denmark","Finland"]
     const p=[<>Denmark is a member of the European Union with a<br/>
@@ -78,7 +80,7 @@ export default function Section() {
     return(
         <>
                 <div className={style.homeSectionContainer}>
-                    <img className={style.background} src={images[(count%2)]} alt='alter'/>
+                    <Image className={style.background} src={images[(count%2)]} alt='alter'/>
                     <h1 className={style.webname}>Rent You on Sunday</h1>
                     
                     <Login/>
@@ -105,8 +107,6 @@ export default function Section() {
                         footer={footer}
                         className={daypicker[endfloat===true?0:1]}
                     />
-                    <div>{people}</div>
-                    <div>{city}</div>
                     
             </div>
         </>
