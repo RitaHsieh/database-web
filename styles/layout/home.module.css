@@ -279,20 +279,22 @@
   font-family: "Courgette", cursive;
   font-size: 3rem;
   text-align: center;
-  margin-top: -1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .loginFormContainer .button {
+  margin-bottom: 0.75rem;
   width: 68%;
-  margin-top: 1rem;
 }
 .loginFormContainer .block {
   background: #ffffff;
   width: 100%;
   height: 2.5rem;
-  margin-bottom: 1.5rem;
   padding-left: 0.75rem;
 }
 .loginFormContainer .button, .loginFormContainer .block {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   border-radius: 15px;
   font-size: 1rem;
 }
@@ -314,8 +316,8 @@
   font-weight: 650;
 }
 .loginFormContainer .line {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
   width: 70%;
   border: 1px solid #333333;
 }
@@ -324,12 +326,14 @@
   height: 50px;
   border: none;
   background-color: none;
+  margin-top: 0.5rem;
   margin-left: 50%;
 }
 .loginFormContainer .link .content {
   color: #4CB6C5;
   width: 286px;
   margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   text-align: left;
 }
 
@@ -1116,13 +1120,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #D9D9D9;
-  height: 85%;
-  width: 13%;
+  background-color: #858585;
+  color: white;
+  height: 100%;
   font-family: Microsoft JhengHei;
   font-size: 1.2rem;
   padding: 0.75rem;
   padding-top: 1.5rem;
+}
+@media (min-width: 480px) {
+  .userMultiMenuContainer {
+    width: 30%;
+  }
+}
+@media (min-width: 960px) {
+  .userMultiMenuContainer {
+    width: 18%;
+  }
+}
+@media (min-width: 1200px) {
+  .userMultiMenuContainer {
+    width: 15%;
+  }
 }
 .userMultiMenuContainer .title {
   display: inline-flex;
@@ -1147,8 +1166,21 @@
 .userMultiMenuContainer .options i {
   margin-right: 1rem;
 }
+@media (min-width: 480px) {
+  .userMultiMenuContainer .options a {
+    width: 90px;
+  }
+}
+@media (min-width: 720px) {
+  .userMultiMenuContainer .options a {
+    width: 115px;
+  }
+}
+.userMultiMenuContainer .options a:hover {
+  color: black;
+}
 .userMultiMenuContainer .options hr {
-  border: 0.5px #858585 solid;
+  border: 0.5px white solid;
   width: 80%;
   margin: 1rem;
 }
@@ -1158,13 +1190,190 @@
   top: 15%;
   right: 0%;
   width: 100%;
+  height: 85%;
+  display: flex;
+}
+.userPersonalInfoButtonContainer .userinfoblock {
+  margin: auto;
+  background-color: white;
+}
+@media (min-width: 480px) {
+  .userPersonalInfoButtonContainer .userinfoblock {
+    padding: 1.5rem;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 960px) {
+  .userPersonalInfoButtonContainer .userinfoblock {
+    padding: 3rem;
+    width: 70%;
+    height: 84%;
+    border-radius: 20px;
+    border: 1px solid aliceblue;
+  }
+}
+.userPersonalInfoButtonContainer .userinfoblock h1 {
+  font-size: 1.5rem;
 }
 .userPersonalInfoButtonContainer .usersetting {
-  background-color: white;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 15%;
-  left: 30%;
   margin: auto;
+  margin-top: 2vh;
+  display: flex;
+  font-size: 1.2rem;
+}
+@media (min-width: 480px) {
+  .userPersonalInfoButtonContainer .usersetting {
+    flex-direction: column;
+  }
+  .userPersonalInfoButtonContainer .usersetting * {
+    margin: 1.8vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 720px) {
+  .userPersonalInfoButtonContainer .usersetting {
+    flex-direction: row;
+  }
+  .userPersonalInfoButtonContainer .usersetting * {
+    font-size: 1.1rem;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+  }
+}
+@media (min-width: 960px) {
+  .userPersonalInfoButtonContainer .usersetting * {
+    font-size: 1.2rem;
+    margin-top: 1.8vh;
+    margin-bottom: 1.8vh;
+  }
+}
+@media (min-width: 1200px) {
+  .userPersonalInfoButtonContainer .usersetting {
+    justify-content: space-around;
+  }
+  .userPersonalInfoButtonContainer .usersetting * {
+    margin: 1.8vh;
+  }
+}
+.userPersonalInfoButtonContainer .usersetting .userbutton, .userPersonalInfoButtonContainer .usersetting .submit {
+  background-color: white;
+  border: 1px solid #858585;
+  border-radius: 5px;
+  height: 2.3rem;
+  font-size: 1.2rem;
+}
+.userPersonalInfoButtonContainer .usersetting .userbutton:hover, .userPersonalInfoButtonContainer .usersetting .submit:hover {
+  background-color: #858585;
+  color: white;
+}
+@media (min-width: 480px) {
+  .userPersonalInfoButtonContainer .usersetting .userbutton, .userPersonalInfoButtonContainer .usersetting .submit {
+    font-size: 1rem;
+    width: 90px;
+  }
+}
+@media (min-width: 960px) {
+  .userPersonalInfoButtonContainer .usersetting .userbutton, .userPersonalInfoButtonContainer .usersetting .submit {
+    font-size: 1.2rem;
+    width: 100px;
+  }
+}
+.userPersonalInfoButtonContainer .usertitle {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 480px) {
+  .userPersonalInfoButtonContainer .usertitle {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .userPersonalInfoButtonContainer .usertitle .userbutton {
+    margin-top: auto;
+  }
+}
+@media (min-width: 720px) {
+  .userPersonalInfoButtonContainer .usertitle {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .userPersonalInfoButtonContainer .usertitle .userbutton {
+    margin-top: 1rem;
+  }
+}
+.userPersonalInfoButtonContainer .usertitle .image {
+  background-color: #D9D9D9;
+  border-radius: 50px;
+}
+@media (min-width: 480px) {
+  .userPersonalInfoButtonContainer .usertitle .image {
+    height: 75px;
+    width: 75px;
+  }
+}
+@media (min-width: 720px) {
+  .userPersonalInfoButtonContainer .usertitle .image {
+    height: 100px;
+    width: 100px;
+  }
+}
+.userPersonalInfoButtonContainer .usertitle h2 {
+  font-weight: 400;
+}
+@media (min-width: 480px) {
+  .userPersonalInfoButtonContainer .usertitle h2 {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 960px) {
+  .userPersonalInfoButtonContainer .usertitle h2 {
+    font-size: 1.5rem;
+  }
+}
+.userPersonalInfoButtonContainer .userinfo {
+  display: grid;
+  grid-template-columns: 1fr, 2fr, 1fr;
+}
+@media (min-width: 480px) {
+  .userPersonalInfoButtonContainer .userinfo {
+    width: 100%;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 720px) {
+  .userPersonalInfoButtonContainer .userinfo {
+    margin-left: 4%;
+  }
+}
+@media (min-width: 960px) {
+  .userPersonalInfoButtonContainer .userinfo {
+    margin-left: 6%;
+  }
+}
+@media (min-width: 1200px) {
+  .userPersonalInfoButtonContainer .userinfo {
+    width: 65%;
+    margin-left: 8%;
+  }
+}
+.userPersonalInfoButtonContainer .userinfo input {
+  border: 1px solid #858585;
+  border-radius: 3px;
+  height: 2rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.userPersonalInfoButtonContainer .userinfo p {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.userPersonalInfoButtonContainer .userinfo .submit {
+  margin-top: 3vh;
+  margin-left: auto;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }/*# sourceMappingURL=home.module.css.map */
