@@ -65,12 +65,13 @@
         }
         .userbutton, .submit {
             background-color: white;
-            border: 1px solid $decorate-color;
+            border: 2px solid $decorate-color;
             border-radius: 5px;
             height: 2.3rem;
             font-size: $font-size-md;
             &:hover {
-                background-color: $decorate-color;
+                background-color: #AAA;
+                border: none;
                 color: white;
             }
             @include sm {

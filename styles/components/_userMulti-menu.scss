@@ -30,6 +30,25 @@
             margin: $base-margin;
         }
     }
+    .small {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        p {
+            display: none;
+        }
+        .button {
+            font-size: $font-size-lg;
+            margin: auto;
+            margin-top: $base-margin ;
+            margin-bottom: $base-margin ;
+        }
+        hr {
+            border: 0.5px white solid;
+            width: 60%;
+            margin: $base-margin;
+        }
+    }
     .options {
         display: flex;
         flex-direction: column;

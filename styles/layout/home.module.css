@@ -1154,6 +1154,25 @@
   font-size: 1.5rem;
   margin: 1rem;
 }
+.userMultiMenuContainer .small {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.userMultiMenuContainer .small p {
+  display: none;
+}
+.userMultiMenuContainer .small .button {
+  font-size: 1.5rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.userMultiMenuContainer .small hr {
+  border: 0.5px white solid;
+  width: 60%;
+  margin: 1rem;
+}
 .userMultiMenuContainer .options {
   display: flex;
   flex-direction: column;
@@ -1260,13 +1279,14 @@
 }
 .userPersonalInfoButtonContainer .usersetting .userbutton, .userPersonalInfoButtonContainer .usersetting .submit {
   background-color: white;
-  border: 1px solid #858585;
+  border: 2px solid #858585;
   border-radius: 5px;
   height: 2.3rem;
   font-size: 1.2rem;
 }
 .userPersonalInfoButtonContainer .usersetting .userbutton:hover, .userPersonalInfoButtonContainer .usersetting .submit:hover {
-  background-color: #858585;
+  background-color: #AAA;
+  border: none;
   color: white;
 }
 @media (min-width: 480px) {

@@ -1,7 +1,12 @@
 import style from "../../styles/layout/home.module.css"
+import React from 'react';
+import { useMediaQuery } from 'react-responsive'
 
 
 export default function menu() {
+    const matches = useMediaQuery({
+        query: '(max-width: 720px)'
+      })
     return(
         <div className={style.userMultiMenuContainer}>  
              <div className={style.title}>
@@ -9,7 +14,7 @@ export default function menu() {
                 <i class="bi bi-gear"></i>
                 <h1>設定</h1>
              </div>
-             <div className={style.options}>
+             <div className={matches?style.small:style.options}>
                 <a className={style.button} href="">
                 <i class="bi bi-receipt"></i>
                 <p>歷史訂單</p>

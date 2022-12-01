@@ -40,10 +40,10 @@ export default function account() {
                             
                             <p>性別</p>
                             <select>
-                                <option className={style.option} value="none" selected disabled hidden>性別</option> 
-                                <option className={style.option} value="male">男</option> 
-                                <option className={style.option} value="female">女 </option> 
-                                <option className={style.option} value="other">其他</option> 
+                                <option value="none" selected disabled hidden>性別</option> 
+                                <option value="male">男</option> 
+                                <option value="female">女 </option> 
+                                <option value="other">其他</option> 
                             </select>
                             <p>聯絡地址</p>
                             <input type="text" name="address" placeholder="address"></input>
