@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
-.introcontainer {
+.homeIntroContainer {
   position: absolute;
   display: flex;
   margin-right: 3%;
@@ -13,39 +13,39 @@
   text-align: right;
 }
 @media (min-width: 480px) {
-  .introcontainer {
+  .homeIntroContainer {
     visibility: hidden;
   }
 }
 @media (min-width: 720px) {
-  .introcontainer {
+  .homeIntroContainer {
     visibility: hidden;
   }
 }
 @media (min-width: 960px) {
-  .introcontainer {
+  .homeIntroContainer {
     visibility: visible;
   }
 }
-.introcontainer .title {
+.homeIntroContainer .title {
   color: #fff;
   margin-top: 1rem;
 }
-.introcontainer .line1 {
+.homeIntroContainer .line1 {
   width: 40%;
   position: relative;
 }
-.introcontainer .content {
+.homeIntroContainer .content {
   color: #fff;
   margin-top: 10px;
   font-size: 1.2rem;
 }
-.introcontainer .hidden {
+.homeIntroContainer .hidden {
   color: transparent;
   transition: 0.5s;
 }
 
-.loginbtcontainer {
+.homeLoginbtContainer {
   position: absolute;
   left: 5%;
   bottom: 5%;
@@ -56,11 +56,11 @@
   font-family: Microsoft JhengHei;
   font-weight: bold;
 }
-.loginbtcontainer p {
+.homeLoginbtContainer p {
   font-size: 1rem;
   color: white;
 }
-.loginbtcontainer .button {
+.homeLoginbtContainer .button {
   color: white;
   font-family: Microsoft JhengHei;
   font-weight: bold;
@@ -68,12 +68,12 @@
   background-color: transparent;
   cursor: pointer;
 }
-.loginbtcontainer .button:hover {
+.homeLoginbtContainer .button:hover {
   transform: scale(1.1);
   transition: all 1s;
 }
 
-.searchcontainer {
+.homeSearchContainer {
   height: 60px;
   position: relative;
   background-color: aliceblue;
@@ -87,29 +87,29 @@
   align-items: center;
 }
 @media (min-width: 480px) {
-  .searchcontainer {
+  .homeSearchContainer {
     width: 530px;
   }
 }
 @media (min-width: 720px) {
-  .searchcontainer {
+  .homeSearchContainer {
     width: 620px;
   }
 }
 @media (min-width: 960px) {
-  .searchcontainer {
+  .homeSearchContainer {
     width: 850px;
   }
 }
 @media (min-width: 1200px) {
-  .searchcontainer {
+  .homeSearchContainer {
     width: 850px;
   }
 }
-.searchcontainer p {
+.homeSearchContainer p {
   transform: translateY(-5%);
 }
-.searchcontainer .button {
+.homeSearchContainer .button {
   height: 50px;
   background-color: transparent;
   color: black;
@@ -119,18 +119,18 @@
   font-weight: bold;
   transform: translateY(-5%);
 }
-.searchcontainer .selectform {
+.homeSearchContainer .selectform {
   background: transparent;
   font-size: 1rem;
   font-weight: bold;
   outline: none;
   transform: translateY(-5%);
 }
-.searchcontainer .option {
+.homeSearchContainer .option {
   font-weight: bold;
   background: transparent;
 }
-.searchcontainer .time {
+.homeSearchContainer .time {
   border: 0;
   background-color: aliceblue;
   font-size: 1rem;
@@ -139,7 +139,7 @@
   cursor: pointer;
 }
 
-.homesectioncontainer {
+.homeSectionContainer {
   /*background: var(--img) center center/cover no-repeat;*/
   height: 100vh;
   width: 100%;
@@ -150,7 +150,7 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
-.homesectioncontainer .webname {
+.homeSectionContainer .webname {
   color: #fff;
   left: 5%;
   margin-bottom: 3%;
@@ -158,18 +158,18 @@
   position: relative;
 }
 @media (min-width: 480px) {
-  .homesectioncontainer .webname {
+  .homeSectionContainer .webname {
     font-size: 5rem;
     width: 380px;
   }
 }
 @media (min-width: 720px) {
-  .homesectioncontainer .webname {
+  .homeSectionContainer .webname {
     font-size: 6rem;
     width: 500px;
   }
 }
-.homesectioncontainer .background {
+.homeSectionContainer .background {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
@@ -178,7 +178,7 @@
   position: fixed;
   z-index: -2;
 }
-.homesectioncontainer .scrollbutton {
+.homeSectionContainer .scrollbutton {
   display: inline-block;
   padding: 0;
   right: 5%;
@@ -190,25 +190,25 @@
   cursor: pointer;
 }
 @media (min-width: 480px) {
-  .homesectioncontainer .scrollbutton {
+  .homeSectionContainer .scrollbutton {
     visibility: hidden;
   }
 }
 @media (min-width: 720px) {
-  .homesectioncontainer .scrollbutton {
+  .homeSectionContainer .scrollbutton {
     visibility: hidden;
   }
 }
 @media (min-width: 960px) {
-  .homesectioncontainer .scrollbutton {
+  .homeSectionContainer .scrollbutton {
     visibility: visible;
   }
 }
-.homesectioncontainer .scrollindicator {
+.homeSectionContainer .scrollindicator {
   position: absolute;
   bottom: 0;
 }
-.homesectioncontainer .scrollindicatorlabel {
+.homeSectionContainer .scrollindicatorlabel {
   display: block;
   margin-bottom: 2rem;
   font-size: 1rem;
@@ -216,7 +216,7 @@
   color: #fff;
   text-transform: uppercase;
 }
-.homesectioncontainer .scrollindicatorline {
+.homeSectionContainer .scrollindicatorline {
   width: 2px;
   height: 5vh;
   background-color: #fff;
@@ -224,7 +224,7 @@
   position: relative;
   left: 49%;
 }
-.homesectioncontainer .mask {
+.homeSectionContainer .mask {
   height: 100%;
   width: 35%;
   left: 3%;
@@ -233,7 +233,7 @@
   opacity: 0.4;
   position: fixed;
 }
-.homesectioncontainer .mask1 {
+.homeSectionContainer .mask1 {
   height: 100%;
   background-color: #000;
   opacity: 0.4;
@@ -241,11 +241,11 @@
   width: 100%;
   position: fixed;
 }
-.homesectioncontainer .daypicker {
+.homeSectionContainer .daypicker {
   visibility: hidden;
   position: absolute;
 }
-.homesectioncontainer .daypicker1 {
+.homeSectionContainer .daypicker1 {
   background-color: #fff;
   border-radius: 20px;
   padding: 40px;
@@ -256,80 +256,84 @@
   transform: translate(-50%, -50%);
 }
 
-.loginformcontainer {
-  background: #cccccc;
-  height: 720px;
-  width: 420px;
+.loginFormContainer {
   position: relative;
+  background: #cccccc;
+  top: 4%;
+  height: 93%;
+  width: 420px;
   margin: auto;
-  margin-top: 3rem;
   border-radius: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding-top: 2.5rem;
-  padding-bottom: 5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
-.loginformcontainer .logo {
+.loginFormContainer .logo {
   height: 80px;
   width: 80px;
 }
-.loginformcontainer .title {
+.loginFormContainer .title {
   font-family: "Courgette", cursive;
   font-size: 3rem;
   text-align: center;
-  margin-top: -1rem;
-}
-.loginformcontainer .button {
-  width: 68%;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-.loginformcontainer .block {
+.loginFormContainer .button {
+  margin-bottom: 0.75rem;
+  width: 68%;
+}
+.loginFormContainer .block {
   background: #ffffff;
   width: 100%;
   height: 2.5rem;
-  margin-bottom: 1.5rem;
   padding-left: 0.75rem;
 }
-.loginformcontainer .button, .loginformcontainer .block {
+.loginFormContainer .button, .loginFormContainer .block {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   border-radius: 15px;
   font-size: 1rem;
 }
-.loginformcontainer .form {
+.loginFormContainer .form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 69%;
 }
-.loginformcontainer .content {
+.loginFormContainer .content {
   width: 68%;
 }
-.loginformcontainer .checkbox {
+.loginFormContainer .checkbox {
   height: 1rem;
   width: 1rem;
 }
-.loginformcontainer .chcontent {
+.loginFormContainer .chcontent {
   font-size: 1rem;
   font-weight: 650;
 }
-.loginformcontainer .line {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.loginFormContainer .line {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
   width: 70%;
   border: 1px solid #333333;
 }
-.loginformcontainer .button2 {
+.loginFormContainer .button2 {
   width: 50px;
   height: 50px;
   border: none;
   background-color: none;
+  margin-top: 0.5rem;
   margin-left: 50%;
 }
-.loginformcontainer .link .content {
+.loginFormContainer .link .content {
   color: #4CB6C5;
   width: 286px;
   margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   text-align: left;
 }
 
@@ -513,88 +517,267 @@
   display: flex;
   flex-direction: row;
 }
-.hotelInfoRoomContainer .searchcontainer {
-  position: relative;
-  left: 10%;
-  margin-top: 2.5%;
-  background: white;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  height: 250px;
-  width: 1000px;
-}
 .hotelInfoRoomContainer .container {
   display: flex;
   flex-direction: row;
 }
-.hotelInfoRoomContainer .name {
-  margin-top: 3%;
-  margin-left: 3%;
-  font-size: 2rem;
-  font-weight: bolder;
-  position: relative;
+@media (min-width: 480px) {
+  .hotelInfoRoomContainer {
+    background-color: pink;
+  }
+  .hotelInfoRoomContainer .searchcontainer {
+    position: relative;
+    left: 10%;
+    margin-top: 2.5%;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    width: 450px;
+  }
+  .hotelInfoRoomContainer .name {
+    margin-top: 3%;
+    margin-left: 3%;
+    font-size: 2rem;
+    font-weight: bolder;
+    position: relative;
+  }
+  .hotelInfoRoomContainer .people {
+    font-size: 1rem;
+    position: relative;
+    margin-top: 7.5%;
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: 100%;
+  }
+  .hotelInfoRoomContainer .bed {
+    margin-top: 1%;
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: 100%;
+  }
+  .hotelInfoRoomContainer .intro {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 3%;
+    font-size: 90%;
+  }
+  .hotelInfoRoomContainer .money {
+    font-size: 150%;
+    font-weight: bold;
+    color: red;
+    margin-top: 70px;
+    margin-left: 16%;
+  }
+  .hotelInfoRoomContainer .button {
+    font-size: 100%;
+    width: 60px;
+    height: 30px;
+    margin-top: 1.5%;
+    margin-left: 3%;
+  }
+  .hotelInfoRoomContainer .discount {
+    font-weight: bold;
+    font-size: 90%;
+    margin-top: 1%;
+    margin-left: 20px;
+  }
+  .hotelInfoRoomContainer .button_container {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    height: 240px;
+    width: 80px;
+    margin-left: 12.5%;
+    margin-top: 2.5%;
+  }
 }
-.hotelInfoRoomContainer .people {
-  font-size: 1rem;
-  position: relative;
-  margin-top: 5.5%;
-  margin-left: 3%;
-  font-weight: bold;
-  font-size: 100%;
+@media (min-width: 720px) {
+  .hotelInfoRoomContainer {
+    background-color: blue;
+  }
+  .hotelInfoRoomContainer .searchcontainer {
+    position: relative;
+    left: 10%;
+    margin-top: 2.5%;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    width: 650px;
+  }
+  .hotelInfoRoomContainer .name {
+    margin-top: 3%;
+    margin-left: 3%;
+    font-size: 2rem;
+    font-weight: bolder;
+    position: relative;
+  }
+  .hotelInfoRoomContainer .people {
+    font-size: 1rem;
+    position: relative;
+    margin-top: 6.5%;
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: 100%;
+  }
+  .hotelInfoRoomContainer .bed {
+    margin-top: 1%;
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: 100%;
+  }
+  .hotelInfoRoomContainer .intro {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 3%;
+    font-size: 100%;
+  }
+  .hotelInfoRoomContainer .money {
+    font-size: 150%;
+    font-weight: bold;
+    color: red;
+    margin-top: 70px;
+    margin-left: 17%;
+  }
+  .hotelInfoRoomContainer .button {
+    font-size: 100%;
+    width: 80px;
+    height: 40px;
+    margin-top: 1.5%;
+    margin-left: 3%;
+  }
+  .hotelInfoRoomContainer .discount {
+    font-weight: bold;
+    font-size: 100%;
+    margin-top: 1%;
+    margin-left: 10px;
+  }
+  .hotelInfoRoomContainer .button_container {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    height: 260px;
+    width: 80px;
+    margin-left: 12.5%;
+    margin-top: 2.5%;
+  }
 }
-.hotelInfoRoomContainer .bed {
-  margin-top: 1%;
-  margin-left: 3%;
-  font-weight: bold;
-  font-size: 100%;
+@media (min-width: 960px) {
+  .hotelInfoRoomContainer {
+    background-color: red;
+  }
+  .hotelInfoRoomContainer .searchcontainer {
+    position: relative;
+    left: 10%;
+    margin-top: 2.5%;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 275px;
+    width: 1000px;
+  }
+  .hotelInfoRoomContainer .name {
+    margin-top: 3%;
+    margin-left: 3%;
+    font-size: 2rem;
+    font-weight: bolder;
+    position: relative;
+  }
+  .hotelInfoRoomContainer .people {
+    font-size: 1rem;
+    position: relative;
+    margin-top: 5.5%;
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: 100%;
+  }
+  .hotelInfoRoomContainer .bed {
+    margin-top: 1%;
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: 100%;
+  }
+  .hotelInfoRoomContainer .intro {
+    margin-top: 5%;
+    margin-left: 3%;
+    font-size: 100%;
+  }
+  .hotelInfoRoomContainer .money {
+    font-size: 150%;
+    font-weight: bold;
+    color: red;
+    margin-top: 6%;
+    margin-left: 30%;
+  }
+  .hotelInfoRoomContainer .button {
+    font-size: 100%;
+    width: 100px;
+    height: 40px;
+    margin-top: 1.5%;
+    margin-left: 3%;
+  }
+  .hotelInfoRoomContainer .discount {
+    font-weight: bold;
+    font-size: 100%;
+    margin-top: 1%;
+    margin-left: 20%;
+  }
+  .hotelInfoRoomContainer .button_container {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    height: 275px;
+    width: 100px;
+    margin-left: 12.5%;
+    margin-top: 2.5%;
+  }
 }
-.hotelInfoRoomContainer .intro {
-  margin-top: 5%;
-  margin-left: 3%;
-  font-size: 100%;
+
+@media (min-width: 480px) {
+  .hotelInfoBookContainer {
+    background-color: pink;
+  }
+  .hotelInfoBookContainer .right_container {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    height: 750px;
+    width: 80px;
+    left: 15px;
+    margin-top: 12px;
+  }
 }
-.hotelInfoRoomContainer .money {
-  font-size: 150%;
-  font-weight: bold;
-  color: red;
-  margin-top: 6%;
-  margin-left: 35%;
+@media (min-width: 720px) {
+  .hotelInfoBookContainer {
+    background-color: blue;
+  }
+  .hotelInfoBookContainer .right_container {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    height: 820px;
+    width: 80px;
+    left: 15px;
+    margin-top: 17.5px;
+  }
 }
-.hotelInfoRoomContainer .button {
-  font-size: 100%;
-  width: 10%;
-  height: 125%;
-  margin-top: 1%;
-  margin-left: 3%;
-}
-.hotelInfoRoomContainer .discount {
-  font-weight: bold;
-  font-size: 100%;
-  margin-top: 1%;
-  margin-left: 25.5%;
-}
-.hotelInfoRoomContainer .button_container {
-  position: relative;
-  background: white;
-  border-radius: 10px;
-  height: 250px;
-  width: 100px;
-  margin-left: 12.5%;
-  margin-top: 2.5%;
-}
-.hotelInfoRoomContainer .heading {
-  margin-left: 5%;
-  margin-top: 3%;
-}
-.hotelInfoRoomContainer .right_container {
-  position: relative;
-  background: white;
-  border-radius: 10px;
-  height: 805px;
-  width: 100px;
-  left: 30px;
-  margin-top: 27.5px;
+@media (min-width: 960px) {
+  .hotelInfoBookContainer {
+    background-color: red;
+  }
+  .hotelInfoBookContainer .right_container {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    height: 880px;
+    width: 100px;
+    left: 30px;
+    margin-top: 27.5px;
+  }
 }
 
 .hotelInfoAttraction {
@@ -921,6 +1104,7 @@
 }
 .searchResultContainer .img {
   width: 35%;
+  height:100%;
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1106,4 +1290,266 @@
 .searchMaskHidden {
   visibility: hidden;
   z-index: -2;
+}
+
+.userMultiMenuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #858585;
+  color: white;
+  height: 100%;
+  font-family: Microsoft JhengHei;
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  padding-top: 1.5rem;
+}
+@media (min-width: 480px) {
+  .userMultiMenuContainer {
+    width: 30%;
+  }
+}
+@media (min-width: 960px) {
+  .userMultiMenuContainer {
+    width: 18%;
+  }
+}
+@media (min-width: 1200px) {
+  .userMultiMenuContainer {
+    width: 15%;
+  }
+}
+.userMultiMenuContainer .title {
+  display: inline-flex;
+  align-items: center;
+}
+.userMultiMenuContainer .title i {
+  font-size: 35px;
+}
+.userMultiMenuContainer .title h1 {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.userMultiMenuContainer .options {
+  display: flex;
+  flex-direction: column;
+}
+.userMultiMenuContainer .options .button {
+  display: inline-flex;
+  align-items: center;
+  margin: 1rem;
+}
+.userMultiMenuContainer .options i {
+  margin-right: 1rem;
+}
+@media (min-width: 480px) {
+  .userMultiMenuContainer .options a {
+    width: 90px;
+  }
+}
+@media (min-width: 720px) {
+  .userMultiMenuContainer .options a {
+    width: 115px;
+  }
+}
+.userMultiMenuContainer .options a:hover {
+  color: black;
+}
+.userMultiMenuContainer .options hr {
+  border: 0.5px white solid;
+  width: 80%;
+  margin: 1rem;
+}
+
+.userPersonalInfoButtonContainer {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+.userPersonalInfoButtonContainer .userinfoblock {
+  margin: auto;
+  background-color: white;
+}
+@media (min-width: 480px) {
+  .userPersonalInfoButtonContainer .userinfoblock {
+    padding: 1.5rem;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 960px) {
+  .userPersonalInfoButtonContainer .userinfoblock {
+    padding: 3rem;
+    width: 70%;
+    height: 84%;
+    border-radius: 20px;
+    border: 1px solid aliceblue;
+  }
+}
+.userPersonalInfoButtonContainer .userinfoblock h1 {
+  font-size: 1.5rem;
+}
+.userPersonalInfoButtonContainer .usersetting {
+  margin: auto;
+  margin-top: 2vh;
+  display: flex;
+  font-size: 1.2rem;
+}
+@media (min-width: 480px) {
+  .userPersonalInfoButtonContainer .usersetting {
+    flex-direction: column;
+  }
+  .userPersonalInfoButtonContainer .usersetting * {
+    margin: 1.8vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 720px) {
+  .userPersonalInfoButtonContainer .usersetting {
+    flex-direction: row;
+  }
+  .userPersonalInfoButtonContainer .usersetting * {
+    font-size: 1.1rem;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+  }
+}
+@media (min-width: 960px) {
+  .userPersonalInfoButtonContainer .usersetting * {
+    font-size: 1.2rem;
+    margin-top: 1.8vh;
+    margin-bottom: 1.8vh;
+  }
+}
+@media (min-width: 1200px) {
+  .userPersonalInfoButtonContainer .usersetting {
+    justify-content: space-around;
+  }
+  .userPersonalInfoButtonContainer .usersetting * {
+    margin: 1.8vh;
+  }
+}
+.userPersonalInfoButtonContainer .usersetting .userbutton, .userPersonalInfoButtonContainer .usersetting .submit {
+  background-color: white;
+  border: 1px solid #858585;
+  border-radius: 5px;
+  height: 2.3rem;
+  font-size: 1.2rem;
+}
+.userPersonalInfoButtonContainer .usersetting .userbutton:hover, .userPersonalInfoButtonContainer .usersetting .submit:hover {
+  background-color: #858585;
+  color: white;
+}
+@media (min-width: 480px) {
+  .userPersonalInfoButtonContainer .usersetting .userbutton, .userPersonalInfoButtonContainer .usersetting .submit {
+    font-size: 1rem;
+    width: 90px;
+  }
+}
+@media (min-width: 960px) {
+  .userPersonalInfoButtonContainer .usersetting .userbutton, .userPersonalInfoButtonContainer .usersetting .submit {
+    font-size: 1.2rem;
+    width: 100px;
+  }
+}
+.userPersonalInfoButtonContainer .usertitle {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 480px) {
+  .userPersonalInfoButtonContainer .usertitle {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .userPersonalInfoButtonContainer .usertitle .userbutton {
+    margin-top: auto;
+  }
+}
+@media (min-width: 720px) {
+  .userPersonalInfoButtonContainer .usertitle {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .userPersonalInfoButtonContainer .usertitle .userbutton {
+    margin-top: 1rem;
+  }
+}
+.userPersonalInfoButtonContainer .usertitle .image {
+  background-color: #D9D9D9;
+  border-radius: 50px;
+}
+@media (min-width: 480px) {
+  .userPersonalInfoButtonContainer .usertitle .image {
+    height: 75px;
+    width: 75px;
+  }
+}
+@media (min-width: 720px) {
+  .userPersonalInfoButtonContainer .usertitle .image {
+    height: 100px;
+    width: 100px;
+  }
+}
+.userPersonalInfoButtonContainer .usertitle h2 {
+  font-weight: 400;
+}
+@media (min-width: 480px) {
+  .userPersonalInfoButtonContainer .usertitle h2 {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 960px) {
+  .userPersonalInfoButtonContainer .usertitle h2 {
+    font-size: 1.5rem;
+  }
+}
+.userPersonalInfoButtonContainer .userinfo {
+  display: grid;
+  grid-template-columns: 1fr, 2fr, 1fr;
+}
+@media (min-width: 480px) {
+  .userPersonalInfoButtonContainer .userinfo {
+    width: 100%;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 720px) {
+  .userPersonalInfoButtonContainer .userinfo {
+    margin-left: 4%;
+  }
+}
+@media (min-width: 960px) {
+  .userPersonalInfoButtonContainer .userinfo {
+    margin-left: 6%;
+  }
+}
+@media (min-width: 1200px) {
+  .userPersonalInfoButtonContainer .userinfo {
+    width: 65%;
+    margin-left: 8%;
+  }
+}
+.userPersonalInfoButtonContainer .userinfo input {
+  border: 1px solid #858585;
+  border-radius: 3px;
+  height: 2rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.userPersonalInfoButtonContainer .userinfo p {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.userPersonalInfoButtonContainer .userinfo .submit {
+  margin-top: 3vh;
+  margin-left: auto;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }/*# sourceMappingURL=home.module.css.map */

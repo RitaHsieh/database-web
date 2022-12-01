@@ -1,28 +1,35 @@
 import style from "../../styles/layout/home.module.css"
+import { format } from 'date-fns';
+import Link from 'next/link';
 
-
-export default function Search({buttonClick}) {
+export default function Search({startbuttonClick,endbuttonClick,startselected,endselected,Setpeople,Setcity}) {
+    const options = [
+        {value: '', text: '--Choose an option--'},
+        {value: 1 , text: '一人'},
+        {value: 2 , text: '兩人'},
+        {value: 3 , text: '三人'},
+      ];
 
     return(
         <>  
-            <div className={style.searchcontainer}>
-                <p>地點</p>
+            <div className={style.homeSearchContainer}>
+                <input className={style.input} placeholder="地點" onChange={event=>{Setcity(event.target.value)}}/>
                 <p>|</p>
-                <select className={style.selectform} name="people" id="people"> 
-                    <option className={style.option} value="none" selected disabled hidden>人數</option> 
-                    <option className={style.option} value="one">&nbsp;&nbsp;1人</option> 
-                    <option className={style.option} value="two">&nbsp;&nbsp;2人</option> 
-                    <option className={style.option} value="three">&nbsp;&nbsp;3人</option> 
-                    <option className={style.option} value="four">&nbsp;&nbsp;4人</option> 
+                <select className={style.selectform} onChange={event=>Setpeople(event.target.value)}> 
+                    {options.map(option => (
+                        <option className={style.option} key={option.value} value={option.value}>
+                            {option.text}
+                        </option>
+                    ))}
                 </select>
                 <p>|</p>
-                <button className={style.time} onClick={event => buttonClick()}>入住時間</button>
+                <button className={style.time} onClick={event => startbuttonClick()}>{startselected==null?"入住時間":format(startselected, 'PP')}</button>
                 <p>→</p>
-                <p>離開時間</p>
+                <button className={style.time} onClick={event => endbuttonClick()}>{endselected==null?"離開時間":format(endselected, 'PP')}</button>
                 <p>|</p>
-                <a href="/search">
+                <Link href="/search">
                     <input className={style.button} type="button" value="→)"/>
-                </a>
+                </Link>
             </div>
         </>
     )
