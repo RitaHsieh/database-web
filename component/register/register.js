@@ -1,12 +1,25 @@
 import style from "../../styles/layout/home.module.css"
 import Script from 'next/script'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from "react"
+
+import logo from '../../public/image/logo.png'
+import arrow from '../../public/image/arrow.png'
+
 
 export default function loginform() {
+    const [username,setUsername] = useState('');
+    const [email,setEmail] = useState('');
+    const [password,setPassword] = useState('');
+    const [gender,setGender] = useState('');
+    const [phonenumber,setPhonenumber] = useState('');
+
     
     return(
         <>
             <div className={style.loginFormContainer}>
-                <img className={style.logo} src="logo.png" alt='alter'/>
+                <Image className={style.logo} src={logo} alt='alter'/>
                 <h1 className={style.title}>Register</h1>
                 
                 <div className={style.button}>
@@ -34,31 +47,31 @@ export default function loginform() {
             
                 <form className={style.form}>
                     <p>
-                    <input type="text" name="username" className={style.block} placeholder="username"></input>
+                    <input type="text" name="username" className={style.block} placeholder="username" onChange={event=>{setUsername(event.target.value)}}></input>
                     </p>
                     <p>
-                    <input type="text" name="email" className={style.block} placeholder="email"></input>
+                    <input type="text" name="email" className={style.block} placeholder="email" onChange={event=>{setEmail(event.target.value)}}></input>
                     </p>
                     <p>
-                    <input type="text" name="password" className={style.block} placeholder="password"></input>
+                    <input type="text" name="password" className={style.block} placeholder="password" onChange={event=>{setPassword(event.target.value)}}></input>
                     </p>
                     <p>
                     <select className={style.block}>
-                        <option className={style.option} value="none" selected disabled hidden>性別</option> 
+                        <option className={style.option} value="none" selected disabled hidden onChange={event=>{setGender(event.target.value)}}>性別</option> 
                         <option className={style.option} value="male">男</option> 
                         <option className={style.option} value="female">女 </option> 
                         <option className={style.option} value="other">其他</option> 
                     </select>
                     </p>
                     <p>
-                    <input type="text" name="phone" className={style.block} placeholder="phone number"></input>
+                    <input type="text" name="phone" className={style.block} placeholder="phone number" onChange={event=>{setPhonenumber(event.target.value)}}></input>
                     </p>
                 </form>
 
                 <hr className={style.line}></hr>
-                <a className={style.button2} href="https://www.youtube.com/watch?v=4JNb4fiT1VA&list=RDV91B6aQOn4k&index=13&ab_channel=%E9%BA%8B%E5%85%88%E7%94%9FMIXER">
-                    <img src="arrow.png" alt='alter'/>
-                </a>
+                <Link className={style.button2} href="https://www.youtube.com/watch?v=4JNb4fiT1VA&list=RDV91B6aQOn4k&index=13&ab_channel=%E9%BA%8B%E5%85%88%E7%94%9FMIXER">
+                    <Image src={arrow} alt='alter' />
+                </Link>
             </div>
         </>
     )

@@ -1,7 +1,19 @@
 import style from "../../styles/layout/home.module.css"
 import Script from 'next/script'
+import {useState,useEffect} from 'react'
+import Link from 'next/link';
+import Image from 'next/image';
+import logo from '../../public/image/logo.png'
+import arrow from '../../public/image/304.png'
+
 
 export default function loginform() {
+
+
+    const [account,setAccount] = useState();
+    const [password,setPassword] = useState();
+    
+
     const click = () => {
         alert("HI")
         gapi.auth2.init()
@@ -18,7 +30,7 @@ export default function loginform() {
     return(
         <>
             <div className={style.loginFormContainer}>
-                <img className={style.logo} src="logo.png" alt='alter'/>
+                <Image className={style.logo} src={logo} alt='alter'/>
                 <h1 className={style.title}>Rent You<br></br>on Sunday</h1>
                 
                 <div className={style.button}>
@@ -46,28 +58,33 @@ export default function loginform() {
             
                 <form className={style.form}>
                     <p>
-                    <input type="text" name="acount" className={style.block} placeholder="email address or phone number"></input>
+                    <input type="text" name="acount" className={style.block} placeholder="email address or phone number" onChange={event=>{setAccount(event.target.value)}}></input>
                     </p>
                     <p>
-                    <input type="text" name="password" className={style.block} placeholder="password"></input>
+                    <input type="text" name="password" className={style.block} placeholder="password" onChange={event=>{setPassword(event.target.value)}}></input>
                     </p>
                     <p>
                     <input type="checkbox" id="remember-account" value="remember-account" className={style.checkbox}></input>
                     <label for="remember-account" className={style.chcontent}> Remember account for 30 days.</label>
                     </p>
                 </form>
-                <a className={style.link} href="https://www.youtube.com/shorts/-hNK5kKW6HY">
+                <Link className={style.link} href="https://www.youtube.com/shorts/-hNK5kKW6HY">
                     <h3 className={style.content}> Forgot your password?</h3>
-                </a>
+                </Link>
                 <hr className={style.line}></hr>
                 <h3 className={style.content}>Don't have an accout?</h3>
-                <a className={style.link} href="http://localhost:3000/register">
+
+                
+                <Link href="/register" className={style.link}>
                     <h3 className={style.content}> Register!</h3>
-                </a>
-                <a className={style.button2} href="https://www.youtube.com/watch?v=4JNb4fiT1VA&list=RDV91B6aQOn4k&index=13&ab_channel=%E9%BA%8B%E5%85%88%E7%94%9FMIXER">
-                    <img src="arrow.png" alt='alter'/>
-                </a>
-                <button onClick={event=>click()}>Hi</button>
+                </Link>
+                
+                <Link href="https://www.youtube.com/watch?v=4JNb4fiT1VA&list=RDV91B6aQOn4k&index=13&ab_channel=%E9%BA%8B%E5%85%88%E7%94%9FMIXER" className={style.button2}>
+                    <Image src={arrow} alt='alter'/>
+                
+                </Link>
+                
+                <button onClick={click}>Hi</button>
             </div>
         </>
     )
