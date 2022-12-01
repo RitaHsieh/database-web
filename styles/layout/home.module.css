@@ -597,6 +597,181 @@
   margin-top: 27.5px;
 }
 
+.hotelInfoAttraction {
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.hotelInfoAttraction .attraction {
+  padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+}
+.hotelInfoAttraction .attractionDetailB {
+  width: 28.57%;
+}
+.hotelInfoAttraction .attractionDetailS {
+  width: 14.285%;
+}
+.hotelInfoAttraction .title {
+  margin-bottom: 1%;
+  font-size: 2rem;
+  font-weight: bolder;
+  position: relative;
+}
+.hotelInfoAttraction .name {
+  font-size: 1rem;
+  position: relative;
+}
+.hotelInfoAttraction .containerB {
+  display: grid;
+  grid-template-rows: repeat(3, 50px);
+  grid-template-columns: 50% 50%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.hotelInfoAttraction .containerS {
+  display: grid;
+  grid-template-rows: repeat(3, 50px);
+  grid-template-columns: 100%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.hotelInfoEvaluate {
+  padding-top: 2%;
+  width: 100%;
+  padding-left: 10%;
+}
+.hotelInfoEvaluate .name {
+  font-size: 1rem;
+  position: relative;
+  word-wrap: break-word;
+}
+.hotelInfoEvaluate .evaluate_gradenumber {
+  font-size: 1rem;
+  font-weight: bold;
+  font-size: 500%;
+}
+.hotelInfoEvaluate .evaluate_grade {
+  font-size: 1rem;
+  font-size: 100%;
+}
+.hotelInfoEvaluate .inline {
+  width: 100%;
+  margin-top: 1%;
+}
+.hotelInfoEvaluate .container {
+  display: grid;
+  grid-template-rows: 220px;
+  grid-template-columns: repeat(3, 300px);
+  grid-column-gap: 2%;
+  margin-top: 2%;
+}
+.hotelInfoEvaluate .evaluatecontainer {
+  position: relative;
+  display: inline-block;
+  padding-top: 7%;
+  padding-left: 7%;
+  padding-right: 7%;
+  background: white;
+  border-radius: 10px;
+  height: 200px;
+  width: 300px;
+  left: 0px;
+}
+.hotelInfoEvaluate .evaluatecontainergray {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 2%;
+  padding: 2%;
+  background: rgb(180, 180, 180);
+  border-radius: 10px;
+  height: 22px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  left: 0px;
+}
+.hotelInfoEvaluate .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.hotelInfoEvaluate .imgname {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hotelInfoInformation {
+  padding-top: 2%;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.hotelInfoInformation .title {
+  font-size: 2rem;
+  font-weight: bolder;
+  position: relative;
+}
+.hotelInfoInformation .searchcontainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  padding-top: 5%;
+  padding-left: 8%;
+  padding-right: 8%;
+  background: white;
+  border-radius: 10px;
+  height: 600px;
+  width: 100%;
+  left: 0px;
+}
+.hotelInfoInformation .searchcontainerALL {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+}
+.hotelInfoInformation .searchcontainerTitle {
+  width: 30%;
+  height: 100%;
+}
+.hotelInfoInformation .searchcontainerName {
+  width: 70%;
+  height: 100%;
+}
+.hotelInfoInformation .name {
+  font-size: 1rem;
+  position: relative;
+}
+
+.hotelInfoTransportation {
+  padding-top: 2%;
+  width: 20%;
+  padding-left: 10%;
+}
+.hotelInfoTransportation .title {
+  margin-top: 10%;
+  margin-bottom: 15%;
+  font-size: 2rem;
+  font-weight: bolder;
+  position: relative;
+}
+.hotelInfoTransportation .name {
+  font-size: 1rem;
+  position: relative;
+}
+
 .containerhidden {
   visibility: hidden;
   z-index: -3;
