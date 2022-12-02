@@ -11,16 +11,19 @@
     padding-top: $base-padding * 2;
 
     @include sm {
-        width: 30%;
+        width: 150px;
     }
-    @include lg {
-        width: 18%;
-    }
-    @include xl {
-        width: 15%;
+    @include md {
+        width: 240px;
     }
     .title {
-        display: inline-flex;
+        @include sm {
+            display: none;
+        }
+        @include md {
+            display: inline-flex;
+        }
+        
         align-items: center;
         i {
             font-size: 35px;
@@ -30,18 +33,28 @@
             margin: $base-margin;
         }
     }
-    .small {
+    .smoptions {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        justify-content: space-around;
+        height: 90%;
+        margin: auto;
+        margin-bottom: 10%;
+        margin-top: 8%;
         p {
             display: none;
         }
+        i {
+            margin-right: $base-margin;
+            font-size: 45px;
+        }
         .button {
-            font-size: $font-size-lg;
-            margin: auto;
-            margin-top: $base-margin ;
-            margin-bottom: $base-margin ;
+            &:hover {
+                color: black;
+            }
+            width: 50px;
+            height:50px;
+            margin: $base-margin;
         }
         hr {
             border: 0.5px white solid;
@@ -57,20 +70,13 @@
             display: inline-flex;
             align-items: center;
             margin: $base-margin;
-        }
-        i {
-            margin-right: $base-margin;
-        }
-        a {
-            @include sm {
-                width: 90px;
-            }
-            @include md {
-                width: 115px;
-            }
             &:hover {
                 color: black;
             }
+        }
+        i {
+            margin-right: $base-margin;
+            font-size: 30px;
         }
         hr {
             border: 0.5px white solid;

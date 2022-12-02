@@ -145,7 +145,7 @@
             margin-left: 8%;
         }
         
-        input {
+        input, button {
             border: 1px solid $decorate-color;
             border-radius: 3px;
             height: 2rem;
@@ -153,6 +153,7 @@
             padding-right: $base-padding;
             grid-column-start: 2;
             grid-column-end: 4;
+            background-color: white;
         }
         
         p {
@@ -165,5 +166,30 @@
             grid-column-start: 3;
             grid-column-end: 4;
         }  
+    }
+    .mask{
+        visibility: hidden;
+    }
+    .mask1{
+        height: 100%;
+        background-color: #000;
+        opacity: 0.4;
+        z-index: 1;
+        width:100%;
+        position: fixed; 
+    }
+    .daypicker{
+        visibility: hidden;
+        position: absolute;
+    }
+    .daypicker1{
+        background-color: #fff;
+        border-radius: $base-border-radius;
+        padding: 40px;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        z-index: 2;
+        transform: translate(-50%,-50%);
     }
 }

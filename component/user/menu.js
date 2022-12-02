@@ -1,7 +1,7 @@
 import style from "../../styles/layout/home.module.css"
 import React from 'react';
 import { useMediaQuery } from 'react-responsive'
-
+import Link from 'next/link';
 
 export default function menu() {
     const matches = useMediaQuery({
@@ -14,32 +14,32 @@ export default function menu() {
                 <i class="bi bi-gear"></i>
                 <h1>設定</h1>
              </div>
-             <div className={matches?style.small:style.options}>
-                <a className={style.button} href="">
+             <div className={matches?style.smoptions:style.options}>
+                <Link className={style.button} href="">
                 <i class="bi bi-receipt"></i>
                 <p>歷史訂單</p>
-                </a>
-                <a className={style.button} href="">
+                </Link>
+                <Link className={style.button} href="">
                 <i class="bi bi-credit-card"></i>
                 <p>付款資訊</p>
-                </a>
-                <a className={style.button} href="">
+                </Link>
+                <Link className={style.button} href="">
                 <i class="bi bi-bag-heart"></i>
                 <p>收藏紀錄</p>
-                </a>
-                <a className={style.button} href="">
+                </Link>
+                <Link className={style.button} href="">
                 <i class="bi bi-shield-lock"></i>
                 <p>隱私設定</p>
-                </a>
+                </Link>
                 <hr></hr>
-                <a className={style.button} href="">
+                <Link className={style.button} href="">
                 <i class="bi bi-house"></i>
                 <p>旅館管理</p>
-                </a>
-                <a className={style.button} href="">
+                </Link>
+                <Link className={style.button} href="">
                 <i class="bi bi-ui-checks-grid"></i>
                 <p>銷售管理</p>
-                </a>
+                </Link>
              </div>
         </div>
     )
