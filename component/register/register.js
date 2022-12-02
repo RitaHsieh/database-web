@@ -4,8 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from "react"
 
-import logo from '../../public/image/logo.png'
-import arrow from '../../public/image/arrow.png'
+import logo from '../../public/image/logo2.png'
+import arrow from '../../public/image/304.png'
 
 
 export default function loginform() {
@@ -26,7 +26,7 @@ export default function loginform() {
                     <Script src="https://accounts.google.com/gsi/client" async defer />
                     <div id="g_id_onload"
                         data-client_id="278424498443-1su4ostu34uq6m9lqavag4pm8e916pt9.apps.googleusercontent.com"
-                        data-login_uri="http://localhost:3000/login"
+                        data-login_uri="/login"
                         data-auto_prompt="false">
                     </div>
                     <div class="g_id_signin"

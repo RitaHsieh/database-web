@@ -2,14 +2,33 @@ import Menu from "../menu"
 // import Option from "./option"
 import style from "../../../styles/layout/home.module.css"
 import {useState,useEffect} from "react"
+import { DayPicker } from 'react-day-picker'
+import 'react-day-picker/dist/style.css';
 export default function account() {
     
-    const [changing, setChanging] = useState(true);
-    
-    
-    const dosth = () => {
-        setChanging(changing => !changing);
+    const daypicker=[style.daypicker,style.daypicker1]
+    const mask=[style.mask,style.mask1]
+
+    const [bdselected, setBdSelected] = useState();
+    const [bdfloat, setBdFloat]=useState(true);
+
+    const bdbuttonClick = () => {
+        console.log("change the float")
+        setBdFloat(startfloat => !startfloat);
     };
+    let footer = <p>Please pick a day.</p>;
+    if (bdselected) {
+        footer = <p>You picked {format(bdselected, 'PP')}.</p>;
+        
+    }
+
+    useEffect(()=>{
+        let id=setInterval(()=>{
+            setCount(count=>count+1)
+        },10000)
+        return ()=>clearInterval(id)
+    },[])
+    
     return (
         <>
         
@@ -34,16 +53,16 @@ export default function account() {
                             <p>電子信箱</p>
                             <input type="text" name="email" placeholder="email"></input>
                             <p>電話號碼</p>
-                            <input type="text" name="phone" placeholder="phone numver"></input>
+                            <input type="text" name="phone" placeholder="phone number"></input>
                             <p>出生日期</p>
-                            <input type="text" name="birthday" placeholder="birthday"></input>
-                            
+                            {/* <input type="text" name="birthday" placeholder="birthday"></input> */}
+                            <button onClick={event => bdbuttonClick()}>{bdselected==null?"出生日期":format(bdselected, 'PP')}</button>
                             <p>性別</p>
                             <select>
-                                <option className={style.option} value="none" selected disabled hidden>性別</option> 
-                                <option className={style.option} value="male">男</option> 
-                                <option className={style.option} value="female">女 </option> 
-                                <option className={style.option} value="other">其他</option> 
+                                <option value="none" selected disabled hidden>性別</option> 
+                                <option value="male">男</option> 
+                                <option value="female">女 </option> 
+                                <option value="other">其他</option> 
                             </select>
                             <p>聯絡地址</p>
                             <input type="text" name="address" placeholder="address"></input>
@@ -56,7 +75,15 @@ export default function account() {
                         <button className={style.changeinfo} onClick={event=>dosth()}>{changing?"Yes":"No"}</button>
                     </div> */}
                 </div>
-                
+
+                <div className={mask[bdfloat===true?0:1]} onClick={bdbuttonClick}></div>
+                <DayPicker
+                    mode="single"
+                    selected={bdselected}
+                    onSelect={setBdSelected}
+                    footer={footer}
+                    className={daypicker[bdfloat===true?0:1]}
+                />
             </div>
         </>
     )
