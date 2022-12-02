@@ -25,6 +25,7 @@ export default function hotelinfo() {
                     </div>
                 </div>            
                 <div className={style.button_container}></div>
+
             </div>
         </>
     )

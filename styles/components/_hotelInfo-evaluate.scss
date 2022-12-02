@@ -1,0 +1,78 @@
+.hotelInfoEvaluate{
+    padding-top: 2%;
+    width: 100%;
+    padding-left: 10%;
+
+    .name {
+      font-size: $base-font-size;
+      position: relative;
+      word-wrap: break-word;
+      }
+
+      .evaluate_gradenumber {
+        font-size: 1rem;
+        font-weight: bold;
+        font-size: 500%;
+      }
+      
+      .evaluate_grade {
+        font-size: 1rem;
+        font-size: 100%;
+      }
+
+      .inline{
+        width: 100%;
+        margin-top: 1%;
+      }
+
+      .container {
+        display: grid;
+        grid-template-rows: 220px;
+        grid-template-columns: repeat(3, 300px);
+        grid-column-gap: 2%;
+        margin-top: 2%;
+      }
+
+      .evaluatecontainer {
+        position: relative;
+        display: inline-block;  
+        padding-top: 7%;
+        padding-left: 7%;
+        padding-right: 7%;
+        background: white;
+        border-radius: 10px;
+        height: 200px;
+        width: 300px;
+        left: 0px;
+    }
+
+    .evaluatecontainergray {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 2%;
+      padding: 2%;
+      background: rgb(180, 180, 180);
+      border-radius: 10px;
+      height: 22px;
+      width:fit-content;
+      left: 0px;
+  }
+
+    .circle{
+      width:50px; 
+      height:50px; 
+      border-radius:50%;
+      margin-right: 20px;
+    }
+
+    .imgname{
+      height: 50px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+  }
