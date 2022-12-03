@@ -4,21 +4,24 @@ import Evaluate from "../component/hotelInfo/evaluate"
 import Attraction from "../component/hotelInfo/attraction"
 import Information from "../component/hotelInfo/information"
 import Transportation from "../component/hotelInfo/transportation"
+import style from "../styles/layout/home.module.css"
 export default function Home() {
     return (
         <>
-            <div style={{display:"flex"}}>
-                <div>
-                    <Left/>
-                    <Left/>
-                    <Left/>
+            <div className={style.hotelinfoSectionContainer}>
+                <div className={style.roominfo}>
+                    <div>
+                        <Left/>
+                        <Left/>
+                        <Left/>
+                    </div>
+                    <Right/>
                 </div>
-                <Right/>
+                <Evaluate/>
+                <Attraction/>
+                <Information/>
+                <Transportation/>
             </div>
-            <Evaluate/>
-            <Attraction/>
-            <Information/>
-            <Transportation/>
         </>
     )
 }
