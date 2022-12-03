@@ -516,6 +516,7 @@
 .hotelInfoRoomContainer {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 .hotelInfoRoomContainer * {
   font-size: 1rem;
@@ -523,7 +524,7 @@
 .hotelInfoRoomContainer .searchcontainer {
   background: white;
   height: 200px;
-  width: 700px;
+  width: 88%;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -567,14 +568,9 @@
   border-radius: 20px;
   margin: 1rem;
   height: 200px;
-  width: 100px;
+  width: 12%;
 }
 
-.hotelInfoAttraction {
-  padding-top: 2%;
-  padding-left: 10%;
-  padding-right: 10%;
-}
 .hotelInfoAttraction .attraction {
   padding-top: 2%;
   display: flex;
@@ -614,9 +610,7 @@
 }
 
 .hotelInfoEvaluate {
-  padding-top: 2%;
   width: 100%;
-  padding-left: 10%;
 }
 .hotelInfoEvaluate .name {
   font-size: 1rem;
@@ -685,10 +679,7 @@
 }
 
 .hotelInfoInformation {
-  padding-top: 2%;
   width: 100%;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 .hotelInfoInformation .title {
   font-size: 2rem;
@@ -706,7 +697,7 @@
   background: white;
   border-radius: 10px;
   height: 600px;
-  width: 100%;
+  width: 95%;
   left: 0px;
 }
 .hotelInfoInformation .searchcontainerALL {
@@ -729,9 +720,7 @@
 }
 
 .hotelInfoTransportation {
-  padding-top: 2%;
   width: 20%;
-  padding-left: 10%;
 }
 .hotelInfoTransportation .title {
   margin-top: 10%;
@@ -753,28 +742,201 @@
     background-color: red;
   }
   .hotelInfoBookContainer .right_container {
-    position: relative;
     background: white;
     border-radius: 10px;
     height: 100%;
-    width: 100px;
+    width: 100%;
   }
+}
+
+.searchBottomContainer {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.searchBottomContainer .bottomleftcontainer {
+  width: 400px;
+  height: 760px;
+  position: relative;
+  background-color: dimgrey;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchBottomContainer .bottomrightcontainer {
+  width: 1150px;
+  height: 760px;
+  position: relative;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex2 {
+  width: 975px;
+  height: 150px;
+  position: relative;
+  top: 5%;
+  left: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex2 .collection {
+  width: 100px;
+  height: 50px;
+  position: relative;
+  background-color: #CDCDCD;
+  border-radius: 10px;
+  top: 15%;
+  right: -870px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex {
+  width: 975px;
+  height: 500px;
+  position: relative;
+  background-color: #CDCDCD;
+  top: 10%;
+  left: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex .bottomrightpicture {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background-color: white;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex .bottomrightpicture2 {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background-color: white;
+  top: 180px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex .bottomrightpicture3 {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background-color: white;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex .bottomrightpicture4 {
+  position: absolute;
+  width: 775px;
+  height: 300px;
+  background-color: white;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex .bottomrightpicture5 {
+  position: absolute;
+  width: 378px;
+  height: 140px;
+  background-color: white;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex .bottomrightpicture6 {
+  position: absolute;
+  width: 378px;
+  height: 140px;
+  background-color: white;
+  bottom: 20px;
+  right: 415px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .hotelinfoSectionContainer {
   display: flex;
   flex-direction: column;
-  width: 70%;
   margin: auto;
-  background-color: burlywood;
 }
-.hotelinfoSectionContainer .roominfo, .hotelinfoSectionContainer .hotelInfoEvaluate, .hotelinfoSectionContainer .hotelInfoInformation, .hotelinfoSectionContainer .hotelInfoAttraction {
+@media (min-width: 480px) {
+  .hotelinfoSectionContainer {
+    background-color: burlywood;
+    width: 100%;
+  }
+}
+@media (min-width: 720px) {
+  .hotelinfoSectionContainer {
+    background-color: beige;
+    width: 85%;
+  }
+}
+@media (min-width: 960px) {
+  .hotelinfoSectionContainer {
+    background-color: aquamarine;
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .hotelinfoSectionContainer {
+    background-color: aqua;
+    width: 70%;
+  }
+}
+.hotelinfoSectionContainer .hotelInfoEvaluate, .hotelinfoSectionContainer .hotelInfoInformation,
+.hotelinfoSectionContainer .hotelInfoAttraction, .hotelinfoSectionContainer .hotelInfoTransportation {
+  margin: 1rem;
+}
+.hotelinfoSectionContainer .roominfo, .hotelinfoSectionContainer .hotelInfoEvaluate, .hotelinfoSectionContainer .hotelInfoInformation,
+.hotelinfoSectionContainer .hotelInfoAttraction, .hotelinfoSectionContainer .hotelInfoTransportation {
   margin-top: 3%;
-  margin-bottom: 3%;
+  margin-bottom: 5%;
 }
 
 .roominfo {
-  display: flex;
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+}
+.roominfo .right {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: red;
+}
+.roominfo .left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: green;
 }
 
 .containerhidden {

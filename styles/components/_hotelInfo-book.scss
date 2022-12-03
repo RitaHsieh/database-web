@@ -4,11 +4,11 @@
     @include lg{
         background-color: red;
         .right_container{//右邊那個立即訂房
-            position: relative;
+            // position: relative;
             background:white;
             border-radius: 10px;
             height: 100%;
-            width: 100px;
+            width: 100%;
         }
     }
 
