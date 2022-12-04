@@ -40,7 +40,7 @@ export default function loginform() {
 
 
 
-    const { data } = useSWR(shouldFetch ? ['/test/auth/register', username,email,password,gender,phonenumber] : null, fetcher)
+    const { data } = useSWR(shouldFetch ? ['https://dhkmj1jao2.execute-api.us-east-1.amazonaws.com/test/auth/register', username,email,password,gender,phonenumber] : null, fetcher)
 
     
     return(
