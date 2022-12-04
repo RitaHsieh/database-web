@@ -3,7 +3,7 @@ import Script from 'next/script'
 import {useState,useEffect} from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../../public/image/logo.png'
+import logo from '../../public/image/logo2.png'
 import arrow from '../../public/image/304.png'
 
 

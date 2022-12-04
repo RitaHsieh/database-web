@@ -1,5 +1,5 @@
 import style from "../../styles/lee.module.css"
-import Filter from "./Filter"
+import Filter from "../search/Filter"
 import { useState } from "react"
 
 export default function search_section_copy() {

@@ -8,8 +8,8 @@ export default function attraction() {
         <div className={style.hotelInfoAttraction}>
             <h1 className={style.title}>熱門景點</h1>
             <div className={style.attraction}>
-                <div className={style.attractionDetailB}>
-                    <p className={style.name}>熱門景觀</p>
+                <div className={style.attractionDetail}>
+                    <p className={style.subtitle}>熱門景觀</p>
                     <div className={style.containerB}>
                         <div><p className={style.name}>XXXX</p></div>
                         <div><p className={style.name}>XXXX</p></div>
@@ -18,8 +18,8 @@ export default function attraction() {
                         <div><p className={style.name}>XXXX</p></div>
                     </div>
                 </div>
-                <div className={style.attractionDetailB}>
-                    <p className={style.name}>自然景觀</p>
+                <div className={style.attractionDetail}>
+                    <p className={style.subtitle}>自然景觀</p>
                     <div className={style.containerB}>
                         <div><p className={style.name}>XXXX</p></div>
                         <div><p className={style.name}>XXXX</p></div>
@@ -28,8 +28,8 @@ export default function attraction() {
                         <div><p className={style.name}>XXXX</p></div>
                     </div>
                 </div>
-                <div className={style.attractionDetailB}>                        
-                    <p className={style.name}>人文景點</p>
+                <div className={style.attractionDetail}>                        
+                    <p className={style.subtitle}>人文景點</p>
                     <div className={style.containerB}>
                         <div><p className={style.name}>XXXX</p></div>
                         <div><p className={style.name}>XXXX</p></div>
@@ -38,8 +38,8 @@ export default function attraction() {
                         <div><p className={style.name}>XXXX</p></div>
                     </div>
                 </div>
-                <div className={style.attractionDetailS}>
-                    <p className={style.name}>其他</p>
+                <div className={style.attractionDetail}>
+                    <p className={style.subtitle}>其他</p>
                     <div className={style.containerS}>
                         <div><p className={style.name}>XXXX</p></div>
                         <div><p className={style.name}>XXXX</p></div>

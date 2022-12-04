@@ -2,246 +2,235 @@
 .hotelInfoRoomContainer{
     display: flex;
     flex-direction: row; 
-    .container{
+    width: 100%;
+    * {
+        font-size: $base-font-size;
+    }
+    .searchcontainer, .button_container{
+        @include sm {
+            margin: $base-margin * 0.5;
+        }
+        @include md {
+            margin: $base-margin;
+        }
+    }
+    .searchcontainer{
+        
+        background:white;
+        height: 200px;
+        width: 88%;
+        border-radius: $base-border-radius;
+        
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding: $base-padding * 1.5;
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            * {
+                margin-right: $base-margin;
+            }
+
+            .bed, .people, .money, .discount{
+                font-weight: bold;
+            }
+            
+            .money, .discount {
+                margin-left: auto;
+                margin-right: 0;
+            }
+
+            .name{
+                font-size: $font-size-lg
+            }
+            
+            .people{
+                align-self: flex-end;
+            }
+            
+            .money{
+                color: red;
+                align-self: flex-end;
+            }
+            
+            .button{
+                width: 10%;
+                height: 30px;
+                border-radius: 0.3rem;
+                background-color: #CCCCCC;
+            }
+        }
+    }
+    .button_container{
+        background:white;
+        border-radius: $base-border-radius;
+        height: 200px;
+        width: 12%;
     }
 
-    @include sm{
-        background-color: pink;
-        .searchcontainer{
-            position: relative;
-            left: 10%;
-            margin-top: 2.5%;
-            background:white;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            height: 240px;
-            width: 450px;
-        }
+    // @include sm{
+    //     background-color: pink;
+    //     .searchcontainer{
+    //         position: relative;
+    //         left: 10%;
+    //         margin-top: 2.5%;
+    //         background:white;
+    //         border-radius: 10px;
+    //         display: flex;
+    //         flex-direction: column;
+    //         height: 240px;
+    //         width: 450px;
+    //     }
         
-        .name{
-            margin-top: 3%;
-            margin-left: 3%;
-            font-size: 2rem;
-            font-weight: bolder;
-            position: relative;
-        }
+    //     .name{
+    //         margin-top: 3%;
+    //         margin-left: 3%;
+    //         font-size: 2rem;
+    //         font-weight: bolder;
+    //         position: relative;
+    //     }
         
-        .people{
-            font-size: 1rem;
-            position: relative;
-            margin-top: 7.5%;
-            margin-left: 3%;
-            font-weight: bold;
-            font-size: 100%;
-        }
+    //     .people{
+    //         font-size: 1rem;
+    //         position: relative;
+    //         margin-top: 7.5%;
+    //         margin-left: 3%;
+    //         font-weight: bold;
+    //         font-size: 100%;
+    //     }
         
-        .bed{
-            margin-top: 1%;
-            margin-left: 3%;
-            font-weight: bold;
-            font-size: 100%;
-        }
+    //     .bed{
+    //         margin-top: 1%;
+    //         margin-left: 3%;
+    //         font-weight: bold;
+    //         font-size: 100%;
+    //     }
         
-        .intro{
-            width: 50%;
-            margin-top: 5%;
-            margin-left: 3%;
-            font-size: 90%;
-        }
+    //     .intro{
+    //         width: 50%;
+    //         margin-top: 5%;
+    //         margin-left: 3%;
+    //         font-size: 90%;
+    //     }
         
-        .money{
-            font-size: 150%;
-            font-weight: bold;
-            color: red;
-            margin-top: 70px;
-            margin-left: 16%;
-        }
+    //     .money{
+    //         font-size: 150%;
+    //         font-weight: bold;
+    //         color: red;
+    //         margin-top: 70px;
+    //         margin-left: 16%;
+    //     }
         
-        .button{
-            font-size: 100%;
-            width: 60px;
-            height: 30px;
-            margin-top: 1.5%;
-            margin-left: 3%;
-        }
+    //     .button{
+    //         font-size: 100%;
+    //         width: 60px;
+    //         height: 30px;
+    //         margin-top: 1.5%;
+    //         margin-left: 3%;
+    //     }
         
-        .discount{
-            font-weight: bold;
-            font-size: 90%;
-            margin-top: 1%;
-            margin-left: 20px;
-        }
+    //     .discount{
+    //         font-weight: bold;
+    //         font-size: 90%;
+    //         margin-top: 1%;
+    //         margin-left: 20px;
+    //     }
         
-        .button_container{
-            position: relative;
-            background:white;
-            border-radius: 10px;
-            height:240px;
-            width: 80px;
-            margin-left: 12.5%;
-            margin-top: 2.5%;
-        }
-    }
+    //     .button_container{
+    //         position: relative;
+    //         background:white;
+    //         border-radius: 10px;
+    //         height:240px;
+    //         width: 80px;
+    //         margin-left: 12.5%;
+    //         margin-top: 2.5%;
+    //     }
+    // }
 
-    @include md{
-        background-color: blue;
-        .searchcontainer{
-            position: relative;
-            left: 10%;
-            margin-top: 2.5%;
-            background:white;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            height: 260px;
-            width: 650px;
-        }
+    // @include md{
+    //     background-color: blue;
+    //     .searchcontainer{
+    //         position: relative;
+    //         left: 10%;
+    //         margin-top: 2.5%;
+    //         background:white;
+    //         border-radius: 10px;
+    //         display: flex;
+    //         flex-direction: column;
+    //         height: 260px;
+    //         width: 650px;
+    //     }
         
-        .name{
-            margin-top: 3%;
-            margin-left: 3%;
-            font-size: 2rem;
-            font-weight: bolder;
-            position: relative;
-        }
+    //     .name{
+    //         margin-top: 3%;
+    //         margin-left: 3%;
+    //         font-size: 2rem;
+    //         font-weight: bolder;
+    //         position: relative;
+    //     }
         
-        .people{
-            font-size: 1rem;
-            position: relative;
-            margin-top: 6.5%;
-            margin-left: 3%;
-            font-weight: bold;
-            font-size: 100%;
-        }
+    //     .people{
+    //         font-size: 1rem;
+    //         position: relative;
+    //         margin-top: 6.5%;
+    //         margin-left: 3%;
+    //         font-weight: bold;
+    //         font-size: 100%;
+    //     }
         
-        .bed{
-            margin-top: 1%;
-            margin-left: 3%;
-            font-weight: bold;
-            font-size: 100%;
-        }
+    //     .bed{
+    //         margin-top: 1%;
+    //         margin-left: 3%;
+    //         font-weight: bold;
+    //         font-size: 100%;
+    //     }
         
-        .intro{
-            width: 50%;
-            margin-top: 5%;
-            margin-left: 3%;
-            font-size: 100%;
-        }
+    //     .intro{
+    //         width: 50%;
+    //         margin-top: 5%;
+    //         margin-left: 3%;
+    //         font-size: 100%;
+    //     }
         
-        .money{
-            font-size: 150%;
-            font-weight: bold;
-            color: red;
-            margin-top: 70px;
-            margin-left: 17%;
-        }
+    //     .money{
+    //         font-size: 150%;
+    //         font-weight: bold;
+    //         color: red;
+    //         margin-top: 70px;
+    //         margin-left: 17%;
+    //     }
         
-        .button{
-            font-size: 100%;
-            width: 80px;
-            height: 40px;
-            margin-top: 1.5%;
-            margin-left: 3%;
-        }
+    //     .button{
+    //         font-size: 100%;
+    //         width: 80px;
+    //         height: 40px;
+    //         margin-top: 1.5%;
+    //         margin-left: 3%;
+    //     }
         
-        .discount{
-            font-weight: bold;
-            font-size: 100%;
-            margin-top: 1%;
-            margin-left: 10px;
-        }
+    //     .discount{
+    //         font-weight: bold;
+    //         font-size: 100%;
+    //         margin-top: 1%;
+    //         margin-left: 10px;
+    //     }
         
-        .button_container{
-            position: relative;
-            background:white;
-            border-radius: 10px;
-            height:260px;
-            width: 80px;
-            margin-left: 12.5%;
-            margin-top: 2.5%;
-        }
-    }
+    //     .button_container{
+    //         position: relative;
+    //         background:white;
+    //         border-radius: 10px;
+    //         height:260px;
+    //         width: 80px;
+    //         margin-left: 12.5%;
+    //         margin-top: 2.5%;
+    //     }
+    // }
 
-    @include lg{
-        background-color: red;
-        .searchcontainer{
-            position: relative;
-            left: 10%;
-            margin-top: 2.5%;
-            background:white;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            height: 275px;
-            width: 1000px;
-        }
-        
-        .name{
-            margin-top: 3%;
-            margin-left: 3%;
-            font-size: 2rem;
-            font-weight: bolder;
-            position: relative;
-        }
-        
-        .people{
-            font-size: 1rem;
-            position: relative;
-            margin-top: 5.5%;
-            margin-left: 3%;
-            font-weight: bold;
-            font-size: 100%;
-        }
-        
-        .bed{
-            margin-top: 1%;
-            margin-left: 3%;
-            font-weight: bold;
-            font-size: 100%;
-        }
-        
-        .intro{
-            margin-top: 5%;
-            margin-left: 3%;
-            font-size: 100%;
-        }
-        
-        .money{
-            font-size: 150%;
-            font-weight: bold;
-            color: red;
-            margin-top: 6%;
-            margin-left: 30%;
-        }
-        
-        .button{
-            font-size: 100%;
-            width: 100px;
-            height: 40px;
-            margin-top: 1.5%;
-            margin-left: 3%;
-        }
-        
-        .discount{
-            font-weight: bold;
-            font-size: 100%;
-            margin-top: 1%;
-            margin-left: 20%;
-        }
-        
-        .button_container{
-            position: relative;
-            background:white;
-            border-radius: 10px;
-            height:275px;
-            width: 100px;
-            margin-left: 12.5%;
-            margin-top: 2.5%;
-        }
-    }
+    // background-color: red;S
     
 }
 
