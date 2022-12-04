@@ -3,19 +3,19 @@
     flex-direction: column;
     margin: auto;
     @include sm {
-        background-color: burlywood;
+        // background-color: burlywood;
         width: 100%;
     }
     @include md {
-        background-color: beige;
+        // background-color: beige;
         width: 85%;
     }
     @include lg {
-        background-color: aquamarine;
+        // background-color: aquamarine;
         width: 80%;
     }
     @include xl {
-        background-color: aqua;
+        // background-color: aqua;
         width: 70%;
     }
     .hotelInfoEvaluate, .hotelInfoInformation,

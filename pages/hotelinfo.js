@@ -10,7 +10,7 @@ import style from "../styles/layout/home.module.css"
 export default function Home() {
     return (
         <>
-            {/* <Title/> */}
+            <Title/>
             <div className={style.hotelinfoSectionContainer}>
                 
                 <div className={style.roominfo}>

@@ -5,44 +5,43 @@
     .title {
         font-size: $font-size-xl;
         font-weight: bolder;
-        position: relative;
     }
 
     .searchcontainer {
-        position: relative;
         display: flex;
         flex-direction: column;
-        margin-top: 5%;
-        padding-top: 5%;
-        padding-left: 8%;
-        padding-right: 8%;
+
+        justify-content: space-between;
+        margin-top: $base-margin * 2;
+        padding: $base-padding * 3;
         background: white;
-        border-radius: 10px;
+        border-radius: $base-border-radius;
         height: 600px;
         width: 95%;
-        left: 0px;
     }
 
     .searchcontainerALL {
         width: 100%;
-        height: 15%;
         display: flex;
         flex-direction: row;
+        margin-top: $base-margin;
+        margin-bottom: $base-margin;
+
+        .searchcontainerTitle {
+            width: 30%;
+            height: 100%;
+        }
+
+        .searchcontainerName {
+            width: 70%;
+            height: 100%;
+        }
+
+        .name {
+            font-size: $base-font-size;
+            position: relative;
+        }
     }
 
-    .searchcontainerTitle {
-        width: 30%;
-        height: 100%;
-    }
-
-    .searchcontainerName {
-        width: 70%;
-        height: 100%;
-    }
-
-    .name {
-        font-size: $base-font-size;
-        position: relative;
-    }
 
 }
