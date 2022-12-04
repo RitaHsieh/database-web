@@ -31,17 +31,28 @@
 }
 
 .roominfo {
+
     display: grid;
-    grid-template-columns: 7fr 1fr;
-    .right {
-        grid-column-start: 2;
-        grid-column-end:3;
-        // grid-row-end: -1;
-        background-color: red;
+
+    @include sm {
+        
+        grid-template-columns: 1fr;
+        .right, .left{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
     }
-    .left {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        background-color: green;
+    @include lg {
+
+        grid-template-columns: 7fr 1fr;
+        .right {
+            grid-column-start: 2;
+            grid-column-end:3;
+        }
+        .left {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
     }
+    
 }
