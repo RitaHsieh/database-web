@@ -1,9 +1,9 @@
-import Search_section_copy from "../component/hotelInfo/title"
+import Title_copy from "../component/hotelInfo/title_copy"
 
 export default function login() {
     return (
         <>
-            <Search_section_copy/>
+            <Title_copy/>
         </>
     )
 }
