@@ -9,22 +9,14 @@ import logo from '../../public/image/logo2.png'
 import arrow from '../../public/image/304.png'
 
 
-const fetcher = (url,username,email,password,gender,phonenumber) => fetch(url, {
-    body: JSON.stringify({  
-    "email": email,
-    "password": password,
-    "name": username,
-    "gender": gender,
-    "phone": phonenumber,
-    "member_type": 0}), 
-    method: 'POST'})
+
 
 export default function loginform() {
 
     const [username,setUsername] = useState('');
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
-    const [gender,setGender] = useState('');
+    const [gender,setGender] = useState(1);
     const [phonenumber,setPhonenumber] = useState('');
     const [shouldFetch,setShouldFetch] = useState(false);
 
@@ -32,10 +24,28 @@ export default function loginform() {
         {value: 1 , text: '男'},
         {value: 2 , text: '女'},
         {value: 0 , text: '其他'},
-      ];
+    ];
 
     const buttonClick=()=>{
         setShouldFetch(shouldFetch => !shouldFetch);
+    }
+
+    const fetcher = (url,username,email,password,gender,phonenumber) => {fetch(url, {
+        headers: {
+            'content-type': 'application/json',
+        },
+        body: JSON.stringify({  
+            "email": email,
+            "password": password,
+            "name": username,
+            "gender": gender,
+            "phone": phonenumber,
+            "member_type": 0
+        }),
+        method: 'POST'}).then((response)=>{
+            setShouldFetch(shouldFetch => !shouldFetch);
+        })
+    
     }
 
 
