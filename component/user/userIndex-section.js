@@ -1,6 +1,10 @@
 import Setting from "./Setting"
 import Option from "./option"
 import style from "../../styles/layout/home.module.css"
+import Image from 'next/image'
+import Link from 'next/link'
+
+import logo from '../../public/image/logo2.png'
 
 export default function account() {
     return (
@@ -8,7 +12,7 @@ export default function account() {
 
             <Setting/>
             <div className={style.columnContainer}>
-                <a href="http://localhost:3000/home"><img src="logo.png" alt="image" /></a>
+                <Link href="/"><Image className={style.logo} src={logo} alt='alter'/></Link>
                 <Option/>
             </div>
             

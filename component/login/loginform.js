@@ -109,9 +109,6 @@ export default function loginform() {
                 </Link>
                 
                 <Image src={arrow} alt='alter' onClick={buttonClick}/>
-                
-                
-                <button onClick={click}>Hi</button>
             </div>
         </>
     )

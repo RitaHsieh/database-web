@@ -1,7 +1,7 @@
 import Menu from "../menu";
+import Header from "../../multi/header";
 // import Option from "./option"
 import style from "../../../styles/layout/home.module.css";
-
 import React, {useState} from 'react'
 import { format } from 'date-fns';
 import { DayPicker } from 'react-day-picker';
@@ -37,9 +37,7 @@ export default function account() {
     return (
         <>
         
-            <div className={style.searchTopContainer}>
-                <p className={style.text}>Rent You on Sunday</p>
-            </div>
+            <Header/>
             <div className={style.userPersonalInfoButtonContainer}>
                 <Menu/>
                 
