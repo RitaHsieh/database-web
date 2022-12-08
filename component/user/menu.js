@@ -36,7 +36,7 @@ export default function menu() {
                 <i class="bi bi-house"></i>
                 <p>旅館管理</p>
                 </Link>
-                <Link className={style.button} href="">
+                <Link className={style.button} href="/user/sell/">
                 <i class="bi bi-ui-checks-grid"></i>
                 <p>銷售管理</p>
                 </Link>

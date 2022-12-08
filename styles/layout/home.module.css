@@ -1,5 +1,83 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+.searchTopContainer {
+  background-color: dimgrey;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  align-items: center;
+  height: 15%;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 0.75rem;
+}
+.searchTopContainer .text {
+  color: white;
+  font-weight: bold;
+}
+@media (min-width: 480px) {
+  .searchTopContainer .text {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 960px) {
+  .searchTopContainer .text {
+    font-size: 3.5rem;
+  }
+}
+.searchTopContainer .logo {
+  margin: 2rem;
+  height: 65px;
+  width: 65px;
+}
+.searchTopContainer .loginbt {
+  margin-left: auto;
+  margin-top: 1.5rem;
+  align-self: flex-start;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.searchTopContainer .loginbt .humanicon {
+  height: 59px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: dimgrey;
+}
+.searchTopContainer .loginbt .humanicon * {
+  font-size: 50px;
+  margin: auto;
+  color: white;
+}
+.searchTopContainer .hide {
+  display: none;
+  height: 0;
+}
+.searchTopContainer .menu {
+  width: 100%;
+  height: 100%;
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+.searchTopContainer .menu * {
+  list-style-type: none;
+  position: relative;
+}
+.searchTopContainer .menu .display {
+  width: 100px;
+  background-color: #858585;
+  color: white;
+  padding: 0.5rem;
+}
+.searchTopContainer .menu .display:hover {
+  background-color: #D9D9D9;
+}
+
 .homeIntroContainer {
   position: absolute;
   display: flex;
@@ -137,6 +215,15 @@
   font-weight: bold;
   transform: translateY(-5%);
   cursor: pointer;
+}
+.homeSearchContainer .input {
+  background-color: aliceblue;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 70%;
+  width: 12%;
+  padding: 0.75rem;
+  border-radius: 20px;
 }
 
 .homeSectionContainer {
@@ -946,7 +1033,7 @@
 }
 .hotelinfoSectionContainer .roominfo, .hotelinfoSectionContainer .hotelInfoEvaluate, .hotelinfoSectionContainer .hotelInfoInformation,
 .hotelinfoSectionContainer .hotelInfoAttraction, .hotelinfoSectionContainer .hotelInfoTransportation {
-  margin-top: 3%;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
 
@@ -974,6 +1061,11 @@
     grid-column-start: 1;
     grid-column-end: 2;
   }
+}
+.roominfo .title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem;
 }
 
 .containerhidden {
@@ -1063,6 +1155,7 @@
 }
 
 .searchOrderContainer {
+  align-self: flex-end;
   background: #D9D9D9;
   font-size: 1rem;
   font-weight: 600;
@@ -1077,7 +1170,7 @@
 @media (min-width: 480px) {
   .searchOrderContainer {
     margin-top: 0;
-    margin-right: 1.2rem;
+    margin-right: 8%;
     width: 7rem;
     height: 1.5rem;
   }
@@ -1086,7 +1179,7 @@
   .searchOrderContainer {
     width: 10rem;
     height: 2rem;
-    margin-right: 2.5rem;
+    margin-right: 12.5%;
     margin-top: 1rem;
   }
 }
@@ -1095,7 +1188,7 @@
   display: flex;
   padding: 0.9rem;
   margin: auto;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   background: white;
   border-radius: 20px;
@@ -1124,10 +1217,21 @@
   }
 }
 .searchResultContainer .img {
-  width: 35%;
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 480px) {
+  .searchResultContainer .img {
+    width: 40%;
+    height: 250px;
+  }
+}
+@media (min-width: 720px) {
+  .searchResultContainer .img {
+    width: 45%;
+    height: 200px;
+  }
 }
 .searchResultContainer .content {
   padding: 0.6rem;
@@ -1153,6 +1257,7 @@
   width: 100%;
   padding-right: 0.75rem;
   margin-top: auto;
+  margin-bottom: 0;
 }
 @media (min-width: 480px) {
   .searchResultContainer .content .container {
@@ -1193,34 +1298,6 @@
   background-color: #d9d9d9;
   box-shadow: 0 2px #666;
   transform: translateY(2px);
-}
-
-.searchTopContainer {
-  background-color: dimgrey;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  align-items: center;
-  height: 15%;
-  padding-right: 3%;
-  padding-left: 3%;
-  padding-top: 0.75rem;
-}
-.searchTopContainer .text {
-  position: relative;
-  color: white;
-  font-weight: bold;
-}
-@media (min-width: 480px) {
-  .searchTopContainer .text {
-    font-size: 3rem;
-  }
-}
-@media (min-width: 960px) {
-  .searchTopContainer .text {
-    font-size: 3.5rem;
-  }
 }
 
 .searchBottomContainer {
@@ -1284,11 +1361,12 @@
 }
 .searchBottomContainer .hoteldata {
   position: absolute;
-  height: 100%;
   width: 80%;
   top: 20%;
   z-index: -1;
   right: 0%;
+  display: flex;
+  flex-direction: column;
 }
 
 .searchMask {
@@ -1479,6 +1557,8 @@
   border-radius: 5px;
   height: 2.3rem;
   font-size: 1.2rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
 .userPersonalInfoButtonContainer .usersetting .userbutton:hover, .userPersonalInfoButtonContainer .usersetting .submit:hover {
   background-color: #AAA;
@@ -1488,13 +1568,11 @@
 @media (min-width: 480px) {
   .userPersonalInfoButtonContainer .usersetting .userbutton, .userPersonalInfoButtonContainer .usersetting .submit {
     font-size: 1rem;
-    width: 90px;
   }
 }
 @media (min-width: 960px) {
   .userPersonalInfoButtonContainer .usersetting .userbutton, .userPersonalInfoButtonContainer .usersetting .submit {
     font-size: 1.2rem;
-    width: 100px;
   }
 }
 .userPersonalInfoButtonContainer .usertitle {
