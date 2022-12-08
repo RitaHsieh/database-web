@@ -1,4 +1,4 @@
-import UserSellOrder from "../component/userSellOrder/userSellOrder"
+import UserSellOrder from "../../../component/user/sell/order-section"
 
 export default function hi() {
     return (
