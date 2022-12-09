@@ -1,8 +1,7 @@
-import Menu from "../user/menu"
-import style from "../../styles/layout/home.module.css"
+import Menu from "../menu"
+import style from "../../../styles/layout/home.module.css"
 import Link from 'next/link';
-import Image from 'next/image';
-import logo from '../../public/image/logo2.png'
+import Header from "../../multi/header";
 
 export default function Home() {
 
@@ -15,15 +14,12 @@ export default function Home() {
 
     return (
         <>
-            <div className={style.searchTopContainer}>
-                <p className={style.text}>Rent You on Sunday</p>
-                <Link className={style.logo} href="/"><Image src={logo} alt='logo'/></Link>
-            </div>
+            <Header/>
             <div className={style.userSellOrder_SettingContainer}>
                 <Menu/>
                 <div className={style.container}>
                     <div className={style.switch}>
-                        <button className={style.innerbutton} type="button"><Link href="/userSellIndex">單日銷售情形</Link></button>
+                        <button className={style.innerbutton} type="button"><Link href="/user/sell/">單日銷售情形</Link></button>
                         <p className={style.buttontext}>單筆訂單</p>
                     </div>
                     <div className={style.filterblock}>

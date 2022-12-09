@@ -1,5 +1,8 @@
 .searchOrderContainer {
 
+    // margin-left: auto;
+    align-self: flex-end;
+
     background: $background-color;
 
     font-size: $base-font-size;
@@ -17,7 +20,7 @@
 
     @include sm {
         margin-top: 0;
-        margin-right: $base-margin * 1.2;
+        margin-right: 8%;
         width: 7rem;
         height: 1.5rem;
     }
@@ -26,7 +29,7 @@
         width: 10rem;
         height: 2rem;
 
-        margin-right: $edge-margin;
+        margin-right: 12.5%;
         margin-top: $base-margin ;  
     }
 

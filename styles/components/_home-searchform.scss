@@ -7,7 +7,7 @@
     font-weight: bold;
     font-size: $base-font-size;
     border-radius: 30px;
-    left:5%;
+    left: 5%;
     
     display: flex;
     justify-content:space-evenly;   
@@ -60,6 +60,15 @@
         font-weight: bold;
         transform: translateY(-5%);
         cursor: pointer;
+    }
+    .input {
+        background-color: aliceblue;
+        font-size: $base-font-size;
+        font-weight: bold;
+        height: 70%;
+        width: 12%;
+        padding: $base-padding;
+        border-radius: $base-border-radius;
     }
 
 

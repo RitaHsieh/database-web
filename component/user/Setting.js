@@ -1,4 +1,5 @@
 import style from "../../styles/layout/home.module.css"
+import Link from 'next/link';
 
 export default function setting() {
     return (
@@ -11,7 +12,7 @@ export default function setting() {
                 <p className={style.realname}>真實姓名</p>
                 <p className={style.cellphone}>電話號碼</p>
                 <p className={style.email}>電子郵件</p>
-                <button className={style.btn}>個人資訊更改</button>
+                <Link href='/user/personalinfo'><button className={style.btn}>個人資訊更改</button></Link>
             </div>
             <p className={style.contact}><a href="">聯絡我們Contact us</a></p>
             
