@@ -21,7 +21,7 @@ export default function Title_copy() {
                     <div className = {style.titleRightTopContainer}>
                         <div className = {style.titleRightTopWordContainer}>
                             <br/>
-                            <h1>旅館名稱</h1>
+                            <h1 className = {style.title}>旅館名稱</h1>
                             <br/>
                             <p>地址：台北市大安區忠孝東路3段1號</p>
                             <div className = {style.collection}>
@@ -37,7 +37,11 @@ export default function Title_copy() {
                                 <div className = {style.pictureType1}/>
                             </div>
                             <div className = {style.rightBoard}>
-
+                                <div className = {style.rightTopBoard}/>
+                                <div className = {style.rightBottomBoard}>
+                                    <div className = {style.pictureType2}/>
+                                    <div className = {style.pictureType2}/>
+                                </div>
                             </div>
                         </div>
                     </div>
