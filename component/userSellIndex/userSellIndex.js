@@ -3,6 +3,7 @@ import style from "../../styles/layout/home.module.css"
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../../public/image/logo2.png'
+import Table from './table'
 
 export default function Home() {
 
@@ -46,11 +47,14 @@ export default function Home() {
                         </select>
                     </div>
                     <div className={style.salesfiguresblock}>
-                        <p className={style.title}>售出房型</p>
-                        <div className={style.moneycontainer}>
-                            <p className={style.sale}>總銷售額：</p>
-                            <p className={style.money}>NTD 10000$</p>
+                        <div className={style.textcontainer}>
+                            <p className={style.title}>售出房型</p>
+                            <div className={style.moneycontainer}>
+                                <p className={style.sale}>總銷額：</p>
+                                <p className={style.money}>NTD 10000$</p>
+                            </div>
                         </div>
+                        <Table/>
                     </div>
                 </div>
             </div>

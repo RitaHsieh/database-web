@@ -96,11 +96,12 @@
         
 
         .salesfiguresblock {
+            display: flex;
             position: relative;
             top:10%;
             left: 10%;
             background-color: white;
-            padding: $base-padding * 4;
+            padding: $base-padding * 3;
             width: 100%;
             height: 67.5%;
             border-radius: $base-border-radius;
@@ -109,17 +110,25 @@
             .title{
                 font-size: 2rem;
                 font-weight: bold;
-                width: 20%;
+                width: 50%;
             }
-    
+            
+            .textcontainer{
+                height: 100%;
+                width: 58%;
+                display: flex;
+                flex-direction: column;
+            }
+
             .moneycontainer{
                 display: flex;
                 position: relative;
-                top:70%;
+                top: 75%;
+                width: 100%;
 
                 .sale{
                     margin-top: 1%;
-                    font-size: 1rem;
+                    font-size: 1.25rem;
                 }
 
                 .money{
