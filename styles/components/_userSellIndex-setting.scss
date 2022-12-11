@@ -1,10 +1,23 @@
 .userSellIndex_SettingContainer{
     position: absolute;
     top: 15%;
-    right: 0%;
     width: 100%;
     height: 85%;
     display: flex;
+
+    //test
+    @include sm {
+        background-color: red;
+    }
+    @include md {
+        background-color: green;
+    }
+    @include lg {
+        background-color: yellow;
+    }
+    @include xl {
+        background-color: #d3d3d3;
+    }
 
     .container{
         width:70%;
@@ -13,9 +26,7 @@
         flex-direction: column;
         align-items: center;
 
-        .switch{
-            width: 20%;
-            height: 7.5%;
+        .switch{ 
             display: flex;
             position: relative;
             left: 10%;
@@ -24,25 +35,27 @@
             border-radius: 50px;
             justify-content: center;
             align-items: center;
-        }
-    
-        .innerbutton{
-            font-weight: bold;
-            font-size: 1rem;
-            color: white;
-            height: 50%;
-            width: 40%;
-            border-radius: 15px;
-            background-color: transparent;
-        }
-    
-        .buttontext{
-            background-color: white;
-            font-weight: bold;
-            font-size: 1rem;
-            padding: 3%;
-            border-radius: 50px;
-            margin-left: 3.5%;
+            width: 23%;
+            height: 8%;
+
+            .innerbutton{
+                font-weight: bold;
+                color: white;
+                border-radius: 15px;
+                background-color: transparent;
+                font-size: 1rem;
+                height: 50%;
+                width: 50%;
+            }
+        
+            .buttontext{
+                background-color: white;
+                font-weight: bold;
+                border-radius: 50px;
+                font-size: 1rem;
+                padding: 3%;
+                margin-left: 7.5%;
+            }
         }
     
         .logo{
@@ -55,27 +68,67 @@
             height: 10%;
             display: flex;
             position: relative;
-            left: 10%;
             top:7.5%;
-            font-size: 1rem;
+            
             justify-content: center;
             align-items: center;
+            @include md {
+                left: 3%;
+                font-size: 0.6rem;
+            }
+            @include lg {
+                left: 6.5%;
+                font-size: 0.8rem;
+            }
+            @include xl {
+                left: 10%;
+                font-size: 1rem;
+            }
 
             .filterp{
                 height: 50%;
-                width: 5%;
                 font-size: 1.25rem;
                 font-weight: bold;
                 margin-top: 0.5%;
+                @include sm {
+                    visibility: hidden;
+                }
+                @include md {          
+                    width: 10%;
+                    visibility: visible;
+                }
+                @include lg {          
+                    width: 7.5%;
+                    visibility: visible;
+                }
+                @include xl {          
+                    width: 5%;
+                    visibility: visible;
+                }
             }
 
             .filterp2{
                 height: 50%;
-                width: 5%;
                 font-size: 1.25rem;
                 font-weight: bold;
                 margin-top: 0.5%;
-                margin-left: 3%;
+                margin-left: 5%;
+                @include sm {
+                    visibility: hidden;
+                }
+                @include md {
+                    width: 10%;    
+                    visibility: visible;
+                }
+                @include lg {          
+                    width: 7.5%;
+                    visibility: visible;
+                }
+                @include xl {          
+                    width: 5%;
+                    visibility: visible;
+                }
+                
             }
 
             .selectform{
@@ -88,29 +141,46 @@
             }
 
             .option{
-                font-size: 1.25rem;
                 font-weight: bold;
+                font-size: 1.25rem;
             }
         }
     
-        
-
+//下方響應式已完成
         .salesfiguresblock {
             display: flex;
             position: relative;
             top:10%;
-            left: 10%;
-            background-color: white;
-            padding: $base-padding * 3;
             width: 100%;
             height: 67.5%;
+            background-color: white;
+            padding: $base-padding * 3;
             border-radius: $base-border-radius;
             border: 1px solid $secondary-color;
+            @include sm {
+                left: 6%;
+            }
+            @include md {
+                left: 3%;
+            }
+            @include lg {
+                left: 6.5%;
+            }
+            @include xl {
+                left: 10%;
+            }
     
             .title{
-                font-size: 2rem;
                 font-weight: bold;
-                width: 50%;
+                @include sm {
+                    font-size: 1.65rem;   
+                }
+                @include md {
+                    font-size: 1.75rem;
+                }
+                @include lg {
+                    font-size: 2rem;
+                }
             }
             
             .textcontainer{
@@ -122,20 +192,41 @@
 
             .moneycontainer{
                 display: flex;
+                flex-direction: column;
                 position: relative;
-                top: 75%;
-                width: 100%;
-
-                .sale{
-                    margin-top: 1%;
-                    font-size: 1.25rem;
+                @include sm {
+                    top: 80%;  
+                }
+                @include md {
+                    top: 72.5%;
+                }
+                @include lg {
+                    top: 67.5%;
                 }
 
-                .money{
-                    font-size: 3rem;
+                .sale{
+                    @include md {
+                        font-size: 1rem;
+                        margin-top: 1%;
+                    }
+                    @include lg {
+                        font-size: 1.25rem;
+                        margin-top: 1%;
+                    }
+                }
+
+                .money{              
                     font-weight: bold;
                     color: red;
-                    margin-left: 2%;
+                    @include sm {
+                        font-size: 1.15rem;
+                    }
+                    @include md {
+                        font-size: 1.5rem;
+                    }
+                    @include lg {
+                        font-size: 2rem;
+                    }
                 }
             }
         }
