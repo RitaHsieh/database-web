@@ -15,7 +15,6 @@ export default function Home() {
 
     return (
         <>
-            
             <Header/>
             <div className={style.userSellIndex_SettingContainer}>
                 <Menu/>
