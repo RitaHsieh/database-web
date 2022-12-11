@@ -69,6 +69,8 @@
             border-radius: 5px;
             height: 2.3rem;
             font-size: $font-size-md;
+            padding-right: $base-padding;
+            padding-left: $base-padding;
             &:hover {
                 background-color: #AAA;
                 border: none;
@@ -76,11 +78,9 @@
             }
             @include sm {
                 font-size: $base-font-size;
-                width: 90px;
             }
             @include lg {
                 font-size: $font-size-md;
-                width: 100px;
             }
         }
     }
