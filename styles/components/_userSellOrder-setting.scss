@@ -1,7 +1,6 @@
 .userSellOrder_SettingContainer{
     position: absolute;
     top: 15%;
-    right: 0%;
     width: 100%;
     height: 85%;
     display: flex;
@@ -14,8 +13,8 @@
         align-items: center;
 
         .switch{
-            width: 20%;
-            height: 7.5%;
+            width: 23%;
+            height: 8%;
             display: flex;
             position: relative;
             left: 10%;
@@ -64,7 +63,7 @@
 
             .filterp{
                 height: 50%;
-                width: 5%;
+                width: 5.5%;
                 font-size: 1.25rem;
                 font-weight: bold;
                 margin-top: 0.5%;
@@ -72,7 +71,7 @@
 
             .filterp2{
                 height: 50%;
-                width: 5%;
+                width: 5.5%;
                 font-size: 1.25rem;
                 font-weight: bold;
                 margin-top: 0.5%;
@@ -81,7 +80,7 @@
 
             .filterp3{
                 height: 50%;
-                width: 7.5%;
+                width: 9%;
                 font-size: 1.25rem;
                 font-weight: bold;
                 margin-top: 0.5%;
@@ -95,6 +94,7 @@
                 font-weight: bold;
                 background-color: white;
                 border-radius: 10px;
+                padding-left: 10px; //加padding
             }
 
             .option{
@@ -121,6 +121,7 @@
                 font-size: 2rem;
                 font-weight: bold;
                 width: 20%;
+                margin-left: 10%;
             }
             
             .infoblock{
@@ -132,15 +133,17 @@
                 font-size: 1.25rem;
                 margin-top: 2%;
                 width: 30%;
+                margin-left: 10%;
             }
             .info2{
                 font-size: 1.25rem;
                 margin-top: 2%;
-                margin-left: 10%;;
+                margin-left: 17.5%;;
             }
             .info3{
                 font-size: 1.25rem;
                 margin-top: 2%;
+                margin-left: 10%;
             }
             .button{
                 font-size: 1.25rem;
