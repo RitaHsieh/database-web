@@ -1,132 +1,138 @@
-.searchBottomContainer {
-    display: flex;
+.infoTitleContainer {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  margin-bottom: 5%;
+
+  .title{
+    font-size: 3rem;
+  }
+
+  .titleLeftContainer {
+    
+    position: relative;
+    top: 0%;
     height: 100%;
-    justify-content: space-between;
-  }
-  .searchBottomContainer .bottomleftcontainer {
-    width: 400px;
-    height: 760px;
-    position: relative;
+
     background-color: dimgrey;
-    top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
 
-  .searchBottomContainer .bottomrightcontainer{
-    width: 1150px;
-    height: 760px;
-    position: relative;
-    top: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-  .searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex2{
-    width: 975px;
-    height: 150px;
-    position: relative;
-    top: 5%;
-    left: 7%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-  .searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex2 .collection{
-    width: 100px;
-    height: 50px;
-    position: relative;
-    background-color: #CDCDCD;
-    border-radius: 10px;
-    top: 15%;
-    right: -870px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex{
-    width: 975px;
-    height: 500px;
-    position: relative;
-    background-color: #CDCDCD;
-    top: 10%;
-    left: 7%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
+    @include leftsearchbar;
+    .logo {
+      margin: auto;
+      margin-top: $base-margin * 5;
+      margin-bottom: $base-margin * 2;
+      height: 100px;
+      width: 100px;
+    }
 
- .searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex .bottomrightpicture{
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    background-color: white;
-    top: 20px;
-    left: 20px;
+  }
+  
+  .titleRightContainer{
+    width: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
-    
-}
-.searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex .bottomrightpicture2{
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    background-color: white;
-    top: 180px;
-    left: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    
-}
-.searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex .bottomrightpicture3{
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    background-color: white;
-    bottom: 20px;
-    left: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    
-}
-.searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex .bottomrightpicture4{
-    position: absolute;
-    width: 775px;
-    height: 300px;
-    background-color: white;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    
-}
-.searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex .bottomrightpicture5{
-    position: absolute;
-    width: 378px;
-    height: 140px;
-    background-color: white;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    
-}
-.searchBottomContainer .bottomrightcontainer .bottomrightcontainer_ex .bottomrightpicture6{
-    position: absolute;
-    width: 378px;
-    height: 140px;
-    background-color: white;
-    bottom: 20px;
-    right: 415px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    
+
+    .titleRightTopContainer{
+      width: 80%;
+      height: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      margin: auto;
+
+      * {
+        margin: $base-margin/4;
+      }
+
+      .collection{
+        height: 30px;
+        width: 75px;
+        font-size: $base-font-size;
+        background-color: white;
+        border-radius: 5px;
+        margin-top: auto;
+        margin-bottom: auto;
+        @include sm {
+          align-self: flex-start;
+        }
+        @include md {
+          align-self: flex-end;
+        }
+      }
+    }
+
+    .titleRightBottomContainer{
+      margin: auto;
+      background: #cdcdcd;
+      width: 80%;
+      height: 80%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .leftBoard{
+        width: 25%;
+        height: 100%;
+        padding: $base-padding/2;
+        display: grid;
+
+        @include sm {
+          display: grid;
+          width: 100%;
+          padding-right: $base-padding;
+          * {
+            margin-right: $base-padding/2;
+          }
+        }
+        @include md {
+          display: none;
+        }
+        @include lg {
+          display: grid;
+          width: 25%;
+          margin-right: 0;
+          padding-right: 0;
+        }
+        .pictureType1{
+          background-color: white;
+          margin: $base-padding/2;
+          margin-right: 0;
+        }
+      }
+
+      .rightBoard{
+        height: 100%;
+        padding: $base-padding/2;  
+        * {
+          margin: $base-padding/2;
+        }
+        @include sm {
+          display: none;
+        }
+        @include md {
+          display: grid;
+          width: 100%;
+        }
+        @include lg {
+          width: 75%;
+        }
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+
+        .rightTopBoard{
+          background-color: white;
+          grid-column: 1/-1; 
+        }
+        .rightBottomBoard{
+          background-color: white;  
+        }
+      
+      }
+    }
+  }
 }

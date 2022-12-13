@@ -1,0 +1,41 @@
+@mixin leftsearchbar {
+
+    @include sm {
+        width: 25%;
+    }
+    @include md{
+        width: 23%;
+    }
+    @include lg {
+        width: 23%;
+    }
+    @include xl {
+        width: 18%;
+    }
+
+    .searchSearchformContainer, .btnfilter  {
+        @include sm {
+            width: 80%;
+        }
+        @include lg {
+            width: 70%;
+        }
+        @include xl {
+            width: 65%;
+        }
+    }
+
+    .btnfilter{
+        border-radius: 5px;
+        cursor: pointer;
+        
+        height: 2.4rem;
+        padding: 10px;
+        margin: $base-margin * 0.75;
+        margin-top: 20%;
+        font-weight:bolder;
+        font-size: $base-font-size; 
+        
+    }
+
+}
