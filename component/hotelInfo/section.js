@@ -12,16 +12,8 @@ export default function HotelinfoSection() {
         <>
             <Title/>
             <div className={style.hotelinfoSectionContainer}>
-                
-                <div className={style.roominfo}>
-                    <div className={style.title}><p>房型</p></div>
-                    <div className={style.left}>
-                        <Left className={style.left}/>
-                        <Left className={style.left}/>
-                        <Left className={style.left}/>
-                    </div>
-                    <Right className={style.right}/> 
-                </div>
+                <Introduciton/>
+                <Roominfo/>
                 <Evaluate/>
                 <Attraction/>
                 <Information/>
