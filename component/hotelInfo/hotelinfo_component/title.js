@@ -1,5 +1,5 @@
-import style from "../../styles/lee.module.css"
-import Filter from "../search/Filter"
+import style from "../../../styles/lee.module.css"
+import Filter from "../../search/Filter"
 import { useState } from "react"
 
 export default function search_section_copy() {
@@ -36,7 +36,6 @@ export default function search_section_copy() {
             </div>
                 
             <div className={float===true?mask[0]:mask[1]} onClick={event=>btnClick()}></div>
-            <Filter float={float===true?0:1}/>
 
         </>
     )
