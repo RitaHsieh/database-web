@@ -841,6 +841,11 @@
   position: relative;
 }
 
+.hotelInfoBookContainer .right_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (min-width: 480px) {
   .hotelInfoBookContainer {
     padding: 0.5rem;
@@ -864,6 +869,12 @@
     height: 100%;
     width: 100%;
   }
+}
+.hotelInfoBookContainer .button {
+  height: 30px;
+  width: 60px;
+  border-radius: 0.3rem;
+  background-color: #CCCCCC;
 }
 
 .searchBottomContainer {
@@ -1717,11 +1728,6 @@
 }
 @media (min-width: 960px) {
   .userSellIndex_SettingContainer {
-    background-color: yellow;
-  }
-}
-@media (min-width: 1200px) {
-  .userSellIndex_SettingContainer {
     background-color: #d3d3d3;
   }
 }
@@ -1735,14 +1741,33 @@
 .userSellIndex_SettingContainer .container .switch {
   display: flex;
   position: relative;
-  left: 10%;
   top: 5%;
   background-color: #858585;
   border-radius: 50px;
   justify-content: center;
   align-items: center;
-  width: 23%;
+  width: 240px;
   height: 8%;
+}
+@media (min-width: 480px) {
+  .userSellIndex_SettingContainer .container .switch {
+    left: 5%;
+  }
+}
+@media (min-width: 720px) {
+  .userSellIndex_SettingContainer .container .switch {
+    left: 3%;
+  }
+}
+@media (min-width: 960px) {
+  .userSellIndex_SettingContainer .container .switch {
+    left: 6.5%;
+  }
+}
+@media (min-width: 1200px) {
+  .userSellIndex_SettingContainer .container .switch {
+    left: 10%;
+  }
 }
 .userSellIndex_SettingContainer .container .switch .innerbutton {
   font-weight: bold;
@@ -1752,14 +1777,22 @@
   font-size: 1rem;
   height: 50%;
   width: 50%;
+  margin-right: 10px;
 }
-.userSellIndex_SettingContainer .container .switch .buttontext {
+.userSellIndex_SettingContainer .container .switch .buttonwhite {
   background-color: white;
-  font-weight: bold;
   border-radius: 50px;
-  font-size: 1rem;
   padding: 3%;
   margin-left: 7.5%;
+  height: 70%;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userSellIndex_SettingContainer .container .switch .buttonwhite .buttontext {
+  font-weight: bold;
+  font-size: 1rem;
 }
 .userSellIndex_SettingContainer .container .logo {
   position: relative;

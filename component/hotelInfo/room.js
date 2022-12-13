@@ -24,7 +24,9 @@ export default function hotelinfo() {
                         <p className={style.discount}>原價3600,現省1200元</p>
                     </div>
                 </div>            
-                <div className={style.button_container}></div>
+                <div className={style.button_container}>
+                    {/* 計數器按鈕== */}
+                </div>
 
             </div>
         </>

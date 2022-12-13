@@ -2,7 +2,7 @@ import style from "../../styles/layout/home.module.css";
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '../../public/image/logo2.png'
-import { Menu, MenuItem, MenuButton } from '@szhsin/react-menu';
+// import { Menu, MenuItem, MenuButton } from '@szhsin/react-menu';
 import {useState} from 'react';
 
 export default function header() {
