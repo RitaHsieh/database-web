@@ -1,4 +1,4 @@
-import Title from "./title"
+import Title from "./hoteltitle"
 import Left from "./room"
 import Right from "./book"
 import Evaluate from "./evaluate"
