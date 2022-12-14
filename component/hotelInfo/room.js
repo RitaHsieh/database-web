@@ -1,6 +1,14 @@
 import style from "../../styles/layout/home.module.css"
+import {useState} from 'react';
 
 export default function hotelinfo() {
+    const [number,setNumber] = useState(1);
+    const add_btnClick = ()=>{
+        setNumber(number+1);
+    }
+    const minus_btnClick = ()=>{
+        setNumber(number-1);
+    }
 
     return (
         <>
@@ -25,8 +33,9 @@ export default function hotelinfo() {
                     </div>
                 </div>            
                 <div className={style.button_container}>
-                    {/* 計數器按鈕== */}
-                
+                    <button className={style.btn} style={{visibility: number >= 10 && 'hidden'}} onClick={add_btnClick}></button>
+                    <div className={style.content}>{number}</div>
+                    <button className={style.btn} style={{visibility: number <= 0 && 'hidden'}} onClick={minus_btnClick}></button>
                 </div>
 
             </div>
