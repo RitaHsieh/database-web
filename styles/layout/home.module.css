@@ -603,7 +603,7 @@
 .hotelInfoRoomContainer {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 100%;
 }
 .hotelInfoRoomContainer * {
   font-size: 1rem;
@@ -668,14 +668,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .hotelInfoRoomContainer .button_container .btn {
   height: 50px;
   width: 50px;
+  border-radius: 0.5rem;
 }
 .hotelInfoRoomContainer .button_container .content {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .hotelInfoAttraction .attraction {

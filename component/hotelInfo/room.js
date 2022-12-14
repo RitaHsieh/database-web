@@ -33,9 +33,9 @@ export default function hotelinfo() {
                     </div>
                 </div>            
                 <div className={style.button_container}>
-                    <button className={style.btn} style={{visibility: number >= 10 && 'hidden'}} onClick={add_btnClick}></button>
+                    <button className={style.btn} style={{visibility: number >= 10 && 'hidden'}} onClick={add_btnClick}>▲</button>
                     <div className={style.content}>{number}</div>
-                    <button className={style.btn} style={{visibility: number <= 0 && 'hidden'}} onClick={minus_btnClick}></button>
+                    <button className={style.btn} style={{visibility: number <= 0 && 'hidden'}} onClick={minus_btnClick}>▼</button>
                 </div>
 
             </div>
