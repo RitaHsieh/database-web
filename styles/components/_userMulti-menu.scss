@@ -1,4 +1,5 @@
-.userMultiMenuContainer {
+.userMultiMenuContainer {position: fixed;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,10 +12,7 @@
     padding-top: $base-padding * 2;
 
     @include sm {
-        width: 150px;
-    }
-    @include md {
-        width: 240px;
+        width: 20%;
     }
     .title {
         @include sm {

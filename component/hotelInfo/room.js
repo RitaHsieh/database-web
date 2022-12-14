@@ -26,6 +26,7 @@ export default function hotelinfo() {
                 </div>            
                 <div className={style.button_container}>
                     {/* 計數器按鈕== */}
+                
                 </div>
 
             </div>
