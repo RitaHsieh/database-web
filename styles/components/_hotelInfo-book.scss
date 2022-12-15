@@ -1,8 +1,14 @@
 
 .hotelInfoBookContainer{
+    .right_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     @include sm{
         padding: $base-margin * 0.5;
-        .right_container{//右邊那個立即訂房
+        .right_container{
             background:white;
             border-radius: $base-border-radius;
             height: 60px;
@@ -13,7 +19,7 @@
         padding: $base-margin;
     }
     @include lg{
-        .right_container{//右邊那個立即訂房
+        .right_container{
             // position: relative;
             background:white;
             border-radius: $base-border-radius;
@@ -22,23 +28,10 @@
         }
     }
 
-    // @include sm{
-    //     background-color: pink;
-    //     .right_container{//右邊那個立即訂房
-    //         position: relative;
-    //         background:white;
-    //         border-radius: 10px;
-    //         height:750px;
-    //         width: 80px;
-    //         left: 15px;
-    //         margin-top: 12px;
-    //     }
-    // }
-
-    
-
-    
-
-    
-    
+    .button{
+        height: 30px;
+        width: 60px;
+        border-radius: 0.3rem;
+        background-color: #CCCCCC;
+    }
 }

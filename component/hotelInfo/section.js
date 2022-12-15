@@ -3,6 +3,8 @@ import Evaluate from "./hotelinfo_component/evaluate"
 import Attraction from "./hotelinfo_component/attraction"
 import Information from "./hotelinfo_component/information"
 import Transportation from "./hotelinfo_component/transportation"
+import Roominfo from "./hotelinfo_component/roominfo_component/roominfo"
+import Introduction from "./hotelinfo_component/introduction"
 import style from "../../styles/layout/home.module.css"
 
 export default function HotelinfoSection() {
@@ -10,7 +12,7 @@ export default function HotelinfoSection() {
         <>
             <Title/>
             <div className={style.hotelinfoSectionContainer}>
-                <Introduciton/>
+                <Introduction/>
                 <Roominfo/>
                 <Evaluate/>
                 <Attraction/>
