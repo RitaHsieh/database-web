@@ -4,7 +4,7 @@ export default function introduction() {
 
     return (
         <>
-            <div className={style.block_1}>
+            <div className={style.hotelInfoIntroduction}>
                 <p className={style.title}>旅館特色簡介</p>
                 <p className={style.content}>旅館的簡介</p>
                 

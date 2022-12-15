@@ -3,15 +3,26 @@ import style from "../../../styles/layout/home.module.css"
 import Link from 'next/link';
 import Header from "../../multi/header";
 import Table from './table'
+import { useState } from "react";
 
 export default function Home() {
 
-    const options = [
+    const [hotel,setHotel] = useState('');
+    const [date,setDate] = useState('');
+
+    const hotel_options = [
         {value: '', text: '選擇旅館'},
         {value: 1 , text: '旅館A'},
         {value: 2 , text: '旅館B'},
         {value: 3 , text: '旅館C'},
-      ];
+    ];
+
+    const date_options = [
+        {value: '', text: '選擇日期'},
+        {value: 1 , text: '1'},
+        {value: 2 , text: '2'},
+        {value: 3 , text: '3'},
+    ];
 
     return (
         <>
@@ -25,16 +36,16 @@ export default function Home() {
                     </div>
                     <div className={style.filterblock}>
                         <p className={style.filterp}>旅館</p>
-                        <select className={style.selectform} onChange={event=>Setpeople(event.target.value)}> 
-                            {options.map(option => (
+                        <select className={style.selectform} onChange={event=>setHotel(event.target.value)}> 
+                            {hotel_options.map(option => (
                                 <option className={style.option} key={option.value} value={option.value}>
                                     {option.text}
                                 </option>
                             ))}
                         </select>
                         <p className={style.filterp2}>日期</p>
-                        <select className={style.selectform} onChange={event=>Setpeople(event.target.value)}> 
-                            {options.map(option => (
+                        <select className={style.selectform} onChange={event=>setDate(event.target.value)}> 
+                            {date_options.map(option => (
                                 <option className={style.option} key={option.value} value={option.value}>
                                     {option.text}
                                 </option>
