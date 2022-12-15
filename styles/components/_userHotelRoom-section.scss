@@ -1,0 +1,117 @@
+.userHotelRoomContainer {
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    width: 100%;
+    height: 85%;
+    display: flex;
+
+    .leftContainer {
+        height: 100%;
+        width: 100%;
+        padding: 2.5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+        .title {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            h1 {
+                font-size: $font-size-xxl;
+                margin: 0;
+                margin-left: $base-margin;
+                margin-right: auto;
+            }       
+            
+
+        }
+
+        * {
+            margin: $base-margin;
+            font-size: $base-font-size;
+            p {
+                font-size: $font-size-md;
+            } 
+        }
+        .roomform {
+            padding: 3%;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            align-items: center;
+            border-radius: $base-border-radius;
+            
+            p, .input, input, .textarea{
+                margin-left: 0;
+            }
+            
+            p{
+                grid-column: 1/2;
+            }
+            .input {
+                grid-column: 2/3;
+                display: flex;
+                align-items: center;
+                p {
+                    margin-right: $base-margin * 3;
+                }
+                input {
+                    width: 10%;
+                }
+            }
+            input {
+                border: 2px solid #999;
+                border-radius: 5px;
+                padding: 5px;
+                width: 30%;
+                min-width: 100px;
+            }
+
+            .labelcontainer {
+                grid-column: 1/-1;
+                display: flex;
+                margin: 0;
+                margin-bottom: $base-margin;
+            }
+
+            .textarea {
+                height: 10em;
+                width: 100%;
+                @include textarea;
+                grid-column: 1/-1;
+            }
+            .add {
+                @include button;
+                background-color: white;
+                border: 2px solid #999;
+                &:hover {
+                    background-color: #999;
+                    color: white;
+                }
+                i {
+                    margin-left: $base-margin;
+                }
+            }
+        } 
+        .added {
+            @include button;
+            margin-bottom: $base-margin;
+        }
+        .hotelbutton, .btn {
+            @include button;
+            margin-top: $base-margin;
+            margin-bottom: $base-margin;
+        }
+        .btn_content {
+            margin-top: auto;
+            display: flex;
+            justify-content: flex-end;
+            height: 10%;
+        }
+    }
+}
