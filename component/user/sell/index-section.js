@@ -20,7 +20,7 @@ export default function Home() {
                 <Menu/>
                 <div className={style.container}>
                     <div className={style.switch}>
-                        <p className={style.buttontext}>單日銷售情形</p>
+                        <div className={style.buttonwhite}><p className={style.buttontext}>單日銷售情形</p></div>
                         <button className={style.innerbutton} type="button"><Link href="/user/sell/order">單筆訂單</Link></button>
                     </div>
                     <div className={style.filterblock}>

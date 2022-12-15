@@ -1,4 +1,4 @@
-import style from "../../styles/layout/home.module.css"
+import style from "../../../styles/layout/home.module.css"
 import React from 'react';
 import Link from 'next/link';
 
