@@ -1767,13 +1767,339 @@
   transform: translate(-50%, -50%);
 }
 
-.userHotelDetailContainer {
+.userHotelInfoContainer {
   position: absolute;
   top: 15%;
   right: 0%;
   width: 100%;
   height: 85%;
   display: flex;
+}
+.userHotelInfoContainer .main {
+  padding: 2.5%;
+  height: 100%;
+  width: 100%;
+}
+.userHotelInfoContainer .main .content {
+  margin-bottom: 2%;
+  width: 100%;
+  display: flex;
+}
+.userHotelInfoContainer .main .content .title {
+  font-size: 2.5rem;
+  margin-bottom: 1%;
+}
+.userHotelInfoContainer .main .content .contentname {
+  margin-right: 2%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.userHotelInfoContainer .main .content .short_input {
+  border-radius: 7px;
+  width: 30%;
+}
+.userHotelInfoContainer .main .content .long_input {
+  border-radius: 7px;
+  width: 40%;
+}
+.userHotelInfoContainer .main .pic_content {
+  margin-bottom: 2%;
+  height: 55%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.userHotelInfoContainer .main .pic_content .contentname {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.userHotelInfoContainer .main .pic_content .image {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userHotelInfoContainer .main .pic_content .image i {
+  font-size: 1.5rem;
+}
+.userHotelInfoContainer .main .pic_content .image i:hover {
+  font-size: 2rem;
+  transition: linear 0.1s;
+}
+.userHotelInfoContainer .main .btn_content {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.userHotelInfoContainer .main .btn_content .btn {
+  margin-right: 1%;
+  margin-left: 1%;
+  height: 40%;
+  width: 5%;
+  border-radius: 5px;
+  background-color: white;
+}
+.userHotelInfoContainer .main .btn_content .btn:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+
+.userHotelFeatureContainer {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+.userHotelFeatureContainer .leftContainer {
+  height: 100%;
+  width: 100%;
+  padding: 2.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.userHotelFeatureContainer .leftContainer .title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.userHotelFeatureContainer .leftContainer .title h1 {
+  font-size: 3rem;
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: auto;
+}
+.userHotelFeatureContainer .leftContainer * {
+  margin: 1rem;
+  font-size: 1rem;
+}
+.userHotelFeatureContainer .leftContainer * p {
+  font-size: 1.2rem;
+}
+.userHotelFeatureContainer .leftContainer form .labelcontainer {
+  display: flex;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.userHotelFeatureContainer .leftContainer form .textarea {
+  height: 10em;
+  width: 100%;
+  padding: 0.75rem;
+  resize: none;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+.userHotelFeatureContainer .leftContainer form .add {
+  padding: 6px;
+  border-radius: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-height: 40px;
+  min-width: 80px;
+  margin-bottom: 1rem;
+  background-color: white;
+  border: 2px solid #999;
+}
+.userHotelFeatureContainer .leftContainer form .add:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #858585;
+}
+.userHotelFeatureContainer .leftContainer form .add:hover {
+  background-color: #999;
+  color: white;
+}
+.userHotelFeatureContainer .leftContainer .added {
+  padding: 6px;
+  border-radius: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-height: 40px;
+  min-width: 80px;
+  margin-bottom: 1rem;
+}
+.userHotelFeatureContainer .leftContainer .added:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #858585;
+}
+.userHotelFeatureContainer .leftContainer .hotelbutton, .userHotelFeatureContainer .leftContainer .btn {
+  padding: 6px;
+  border-radius: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-height: 40px;
+  min-width: 80px;
+}
+.userHotelFeatureContainer .leftContainer .hotelbutton:hover, .userHotelFeatureContainer .leftContainer .btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #858585;
+}
+.userHotelFeatureContainer .leftContainer .btn_content {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  height: 10%;
+}
+
+.userHotelRoomContainer {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+.userHotelRoomContainer .leftContainer {
+  height: 100%;
+  width: 100%;
+  padding: 2.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.userHotelRoomContainer .leftContainer .title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.userHotelRoomContainer .leftContainer .title h1 {
+  font-size: 3rem;
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: auto;
+}
+.userHotelRoomContainer .leftContainer * {
+  margin: 1rem;
+  font-size: 1rem;
+}
+.userHotelRoomContainer .leftContainer * p {
+  font-size: 1.2rem;
+}
+.userHotelRoomContainer .leftContainer .roomform {
+  padding: 3%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  border-radius: 20px;
+}
+.userHotelRoomContainer .leftContainer .roomform p, .userHotelRoomContainer .leftContainer .roomform .input, .userHotelRoomContainer .leftContainer .roomform input, .userHotelRoomContainer .leftContainer .roomform .textarea {
+  margin-left: 0;
+}
+.userHotelRoomContainer .leftContainer .roomform p {
+  grid-column: 1/2;
+}
+.userHotelRoomContainer .leftContainer .roomform .input {
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+}
+.userHotelRoomContainer .leftContainer .roomform .input p {
+  margin-right: 3rem;
+}
+.userHotelRoomContainer .leftContainer .roomform .input input {
+  width: 10%;
+}
+.userHotelRoomContainer .leftContainer .roomform input {
+  border: 2px solid #999;
+  border-radius: 5px;
+  padding: 5px;
+  width: 30%;
+  min-width: 100px;
+}
+.userHotelRoomContainer .leftContainer .roomform .labelcontainer {
+  grid-column: 1/-1;
+  display: flex;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.userHotelRoomContainer .leftContainer .roomform .textarea {
+  height: 10em;
+  width: 100%;
+  padding: 0.75rem;
+  resize: none;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  grid-column: 1/-1;
+}
+.userHotelRoomContainer .leftContainer .roomform .add {
+  padding: 6px;
+  border-radius: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-height: 40px;
+  min-width: 80px;
+  background-color: white;
+  border: 2px solid #999;
+}
+.userHotelRoomContainer .leftContainer .roomform .add:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #858585;
+}
+.userHotelRoomContainer .leftContainer .roomform .add:hover {
+  background-color: #999;
+  color: white;
+}
+.userHotelRoomContainer .leftContainer .roomform .add i {
+  margin-left: 1rem;
+}
+.userHotelRoomContainer .leftContainer .added {
+  padding: 6px;
+  border-radius: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-height: 40px;
+  min-width: 80px;
+  margin-bottom: 1rem;
+}
+.userHotelRoomContainer .leftContainer .added:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #858585;
+}
+.userHotelRoomContainer .leftContainer .hotelbutton, .userHotelRoomContainer .leftContainer .btn {
+  padding: 6px;
+  border-radius: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-height: 40px;
+  min-width: 80px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.userHotelRoomContainer .leftContainer .hotelbutton:hover, .userHotelRoomContainer .leftContainer .btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #858585;
+}
+.userHotelRoomContainer .leftContainer .btn_content {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  height: 10%;
 }
 
 .userHotelInfoContainer {
