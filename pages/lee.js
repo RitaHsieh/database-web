@@ -1,9 +1,9 @@
-import Title_copy from "../component/hotelInfo/title_copy"
+import Title from "../component/hotelInfo/hoteltitle"
 
 export default function login() {
     return (
         <>
-            <Title_copy/>
+            <Title/>
         </>
     )
 }
