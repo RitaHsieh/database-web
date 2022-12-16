@@ -43,7 +43,10 @@ export default function room() {
                         <p>原價</p><input className={style.input} type="text"></input>
                         <p>房型總數量</p><input className={style.input} type="text"></input>
                     </form>
-                    <div className={style.newroom}></div>
+                    <div className={style.newroom}>
+                        <i class="bi bi-plus"></i>
+                        <p>新增房型</p>
+                    </div>
                     <div className={style.btn_content}>
                         <button className={style.btn}>上一步</button>
                         <button className={style.btn}>下一步</button>

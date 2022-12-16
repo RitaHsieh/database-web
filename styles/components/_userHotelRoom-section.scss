@@ -7,8 +7,10 @@
     display: flex;
 
     .leftContainer {
+        position: absolute;
+        width:80%;
         height: 100%;
-        width: 100%;
+        right: 0%;
         padding: 2.5%;
         padding-top: 1%;
         padding-bottom: 1%;
@@ -112,6 +114,20 @@
             display: flex;
             justify-content: flex-end;
             height: 10%;
+        } 
+        .newroom {
+            * {
+                font-size: $font-size-xl;
+                font-weight: bold;
+            }
+            i {
+                font-size: $font-size-xxl;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: $base-border-radius;
         }
     }
 }
