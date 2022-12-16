@@ -1,37 +1,18 @@
 .userHotelNoticeContainer {
-    position: absolute;
-    top: 15%;
-    right: 0%;
-    width: 100%;
-    height: 85%;
-    display: flex;
+    @include pageContainer;
     .main{
-        position: absolute;
-        height:100%;
-        width:85%;
-        right: 0%;
-        padding: 2.5%;
-        .content{
-            margin-bottom: 2%;
+        @include template;
+        .short_input{
+            @include input(30%);
+        }
+        .long_input{
+            @include input(40%);
+        }
+        textarea {
+            @include textarea;
+            height: 7rem;
             width: 100%;
-            display: flex;
-            .title{
-                font-size: 2.5rem;
-                margin-bottom: 1%;
-            }
-            .contentname{
-                margin-right: 2%;
-                font-size: 1.5rem;
-                font-weight: bold;
-            }
-            .short_input{
-                border-radius: 7px;  
-                width: 30%;  
-            }
-            .long_input{
-                border-radius: 7px;
-                width: 40%;
-            }
+            margin-bottom: 2%;
         }
         .pic_content{
             margin-bottom: 2%;
@@ -97,20 +78,8 @@
             display: flex;
             align-items: center;
             justify-content: end;
-            .btn{
-                margin-right: 1%;
-                margin-left: 1%;
-                margin-bottom: 1%;
-                height: 50%;
-                width: 5%;
-                border-radius: 5px;
-                background-color: white;
-                &:hover{
-                    background-color: black;
-                    color: white;
-                    transition: linear 0.2s;
-                }
-                
+            .btn {
+                @include button;
             }
         }
     }

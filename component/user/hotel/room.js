@@ -14,8 +14,8 @@ export default function room() {
             <Header/>
             <div className={style.userHotelRoomContainer}>
                 <Menu/>
-                <div className={style.leftContainer}>
-                    <div className={style.title}>
+                <div className={style.main}>
+                    <div className={style.content}>
                         <h1>STEP 3/4 房型資訊設定</h1>
                         <button className={style.hotelbutton}><Link href="/">預覽畫面</Link></button>
                     </div>
@@ -48,8 +48,8 @@ export default function room() {
                         <p>新增房型</p>
                     </div>
                     <div className={style.btn_content}>
-                        <button className={style.btn}>上一步</button>
-                        <button className={style.btn}>下一步</button>
+                        <button className={style.btn}><Link href="/user/hotel/feature">上一步</Link></button>
+                        <button className={style.btn}><Link href="/user/hotel/notice">下一步</Link></button>
                     </div>
                 </div>
             
