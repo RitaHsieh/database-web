@@ -1,16 +1,21 @@
 .hotelInfoTransportation{
-    width: 20%;
-
+    width: 100%;
+    
     .title {
-        margin-top: 10%;
-        margin-bottom: 15%;
         font-size: $font-size-xl;
         font-weight: bolder;
         position: relative;
       }
     .name {
+        margin-top: $base-margin * 2;
+        width: 60%;
         font-size: $base-font-size;
         position: relative;
+        background-color: white;
+        padding: $base-padding * 2;
+        font-weight: bold;
+        border-radius: $base-border-radius;
+
     }
 
   }

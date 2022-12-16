@@ -3,9 +3,9 @@ import Header from "../../multi/header";
 // import Option from "./option"
 import style from "../../../styles/layout/home.module.css";
 import React, {useState} from 'react'
-import { format } from 'date-fns';
-import { DayPicker } from 'react-day-picker';
+import Link from "next/link";
 import 'react-day-picker/dist/style.css';
+
 
 export default function account() {
 
@@ -38,7 +38,7 @@ export default function account() {
                         </div>
                     </div>
                     <div className={style.btn_content}>
-                        <button className={style.btn}>上一步</button>
+                        <Link href="/user/hotel/room"></Link>
                         <button className={style.btn}>下一步</button>
                     </div>
 
