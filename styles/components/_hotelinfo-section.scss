@@ -1,23 +1,9 @@
 .hotelinfoSectionContainer {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    @include sm {
-        // background-color: burlywood;
-        width: 100%;
-    }
-    @include md {
-        // background-color: beige;
-        width: 85%;
-    }
-    @include lg {
-        // background-color: aquamarine;
-        width: 80%;
-    }
-    @include xl {
-        // background-color: aqua;
-        width: 70%;
-    }
+    position: absolute;
+    top: 15%;
+    right: 0;
+    width: 100%;
+    height: 85%;
     .hotelInfoEvaluate, .hotelInfoInformation,
     .hotelInfoAttraction, .hotelInfoTransportation {
         margin: $base-margin;
@@ -27,6 +13,35 @@
     {
         margin-top: 5%;
         margin-bottom: 5%;
+    }
+    .titleLeftContainer{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $decorate-color;
+        color: white;
+        height: 100%;
+        font-family: $heading-font;
+        font-size: $font-size-md;
+        padding: $base-padding;
+        padding-top: $base-padding * 2;
+        width: 20%;
+        @include leftsearchbar;
+            .logo{
+                margin: auto;
+                margin-top: $base-margin * 5;
+                margin-bottom: $base-margin * 2;
+                height: 100px;
+                width: 100px;
+            }
+    }
+    .main{
+        position: absolute;
+        width:80%;
+        height: 100%;
+        right: 0%;
+        padding: 2.5%;
     }
 }
 

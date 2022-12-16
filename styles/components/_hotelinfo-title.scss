@@ -1,56 +1,34 @@
 .infoTitleContainer {
   display: flex;
   height: 100%;
+  width: 100%;
   justify-content: space-between;
   margin-bottom: 5%;
+  flex-direction: column;
+  align-items: start;
+  padding: 1.5%;
 
   .title{
     font-size: 3rem;
   }
-
-  .titleLeftContainer {
-    
-    position: relative;
-    top: 0%;
-    height: 100%;
-
-    background-color: dimgrey;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @include leftsearchbar;
-    .logo {
-      margin: auto;
-      margin-top: $base-margin * 5;
-      margin-bottom: $base-margin * 2;
-      height: 100px;
-      width: 100px;
-    }
-
-  }
-  
-  .titleRightContainer{
-    width: 80%;
-    height: 100%;
+  .titleRightTopContainer{
+    width: 100%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     align-items: start;
+    margin: auto;
 
-    .titleRightTopContainer{
-      width: 80%;
-      height: 30%;
+    * {
+      margin: $base-margin/4;
+    }
+    .content{
       display: flex;
-      flex-direction: column;
-      align-items: start;
-      margin: auto;
-
-      * {
-        margin: $base-margin/4;
-      }
-
+      flex-direction: row;
+      justify-content: space-between;
+      width: 90%;
       .collection{
-        height: 30px;
+        height: 25px;
         width: 75px;
         font-size: $base-font-size;
         background-color: white;
@@ -65,73 +43,72 @@
         }
       }
     }
+  }
 
-    .titleRightBottomContainer{
-      margin: auto;
-      background: #cdcdcd;
-      width: 80%;
-      height: 80%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+  .titleRightBottomContainer{
+    margin: auto;
+    background: #cdcdcd;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-      .leftBoard{
-        width: 25%;
-        height: 100%;
-        padding: $base-padding/2;
+    .leftBoard{
+      width: 25%;
+      height: 100%;
+      padding: $base-padding/2;
+      display: grid;
+
+      @include sm {
         display: grid;
-
-        @include sm {
-          display: grid;
-          width: 100%;
-          padding-right: $base-padding;
-          * {
-            margin-right: $base-padding/2;
-          }
-        }
-        @include md {
-          display: none;
-        }
-        @include lg {
-          display: grid;
-          width: 25%;
-          margin-right: 0;
-          padding-right: 0;
-        }
-        .pictureType1{
-          background-color: white;
-          margin: $base-padding/2;
-          margin-right: 0;
+        width: 100%;
+        padding-right: $base-padding;
+        * {
+          margin-right: $base-padding/2;
         }
       }
+      @include md {
+        display: none;
+      }
+      @include lg {
+        display: grid;
+        width: 25%;
+        margin-right: 0;
+        padding-right: 0;
+      }
+      .pictureType1{
+        background-color: white;
+        margin: $base-padding/2;
+        margin-right: 0;
+      }
+    }
 
-      .rightBoard{
-        height: 100%;
-        padding: $base-padding/2;  
-        * {
-          margin: $base-padding/2;
-        }
-        @include sm {
-          display: none;
-        }
-        @include md {
-          display: grid;
-          width: 100%;
-        }
-        @include lg {
-          width: 75%;
-        }
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2fr 1fr;
+    .rightBoard{
+      height: 100%;
+      padding: $base-padding/2;  
+      * {
+        margin: $base-padding/2;
+      }
+      @include sm {
+        display: none;
+      }
+      @include md {
+        display: grid;
+        width: 100%;
+      }
+      @include lg {
+        width: 75%;
+      }
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 2fr 1fr;
 
-        .rightTopBoard{
-          background-color: white;
-          grid-column: 1/-1; 
-        }
-        .rightBottomBoard{
-          background-color: white;  
-        }
-      
+      .rightTopBoard{
+        background-color: white;
+        grid-column: 1/-1; 
+      }
+      .rightBottomBoard{
+        background-color: white;  
       }
     }
   }
