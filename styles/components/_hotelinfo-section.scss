@@ -6,13 +6,12 @@
     height: 85%;
     .hotelInfoEvaluate, .hotelInfoInformation,
     .hotelInfoAttraction, .hotelInfoTransportation {
-        margin: $base-margin;
+        padding: 1.5%;
     }
     .roominfo, .hotelInfoEvaluate, .hotelInfoInformation, 
     .hotelInfoAttraction, .hotelInfoTransportation
     {
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin-top: 2%;
     }
     .titleLeftContainer{
         position: fixed;
@@ -30,8 +29,8 @@
         @include leftsearchbar;
             .logo{
                 margin: auto;
-                margin-top: $base-margin * 5;
-                margin-bottom: $base-margin * 2;
+                margin-top: $base-margin * 1;
+                margin-bottom: $base-margin * 1;
                 height: 100px;
                 width: 100px;
             }
@@ -41,7 +40,9 @@
         width:80%;
         height: 100%;
         right: 0%;
-        padding: 2.5%;
+        padding-left: 2%;
+        padding-right: 2%;
+
     }
 }
 

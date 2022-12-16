@@ -13,33 +13,32 @@
 
         justify-content: space-between;
         margin-top: $base-margin * 2;
-        padding: $base-padding * 3;
+        padding: $base-padding * 2;
         background: white;
         border-radius: $base-border-radius;
-        height: 600px;
-        width: 95%;
+        height: 300px;
+        width: 60%;
     }
 
     .searchcontainerALL {
         width: 100%;
         display: flex;
         flex-direction: row;
-        margin-top: $base-margin;
-        margin-bottom: $base-margin;
 
         .searchcontainerTitle {
-            width: 30%;
+            width: 40%;
             height: 100%;
         }
 
         .searchcontainerName {
-            width: 70%;
+            width: 60%;
             height: 100%;
         }
 
         .name {
             font-size: $base-font-size;
             position: relative;
+            font-weight: bold;
         }
     }
 
