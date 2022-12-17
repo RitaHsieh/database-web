@@ -69,7 +69,7 @@ export default function Home() {
                         </div>
 
                         <div className={style.infoblock}>
-                            <p className={style.info1}>22/10/30-22/11/2</p>
+                            <p className={style.info1}>22/10/30-22/11/02</p>
                             <p className={style.info3}>旅館已確認 : 22/10/23 15:30</p>
                         </div>
                         

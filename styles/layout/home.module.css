@@ -2658,7 +2658,7 @@
 }
 @media (min-width: 480px) {
   .userSellOrder_SettingContainer .container .salesfiguresblock .title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 720px) {
@@ -2671,6 +2671,7 @@
   .userSellOrder_SettingContainer .container .salesfiguresblock .title {
     font-size: 2rem;
     margin-left: 5%;
+    margin-bottom: 2%;
   }
 }
 @media (min-width: 1200px) {
@@ -2683,22 +2684,22 @@
   display: flex;
 }
 .userSellOrder_SettingContainer .container .salesfiguresblock .info1 {
-  margin-top: 1.5%;
+  margin-top: 1%;
 }
 @media (min-width: 480px) {
   .userSellOrder_SettingContainer .container .salesfiguresblock .info1 {
-    font-size: 0.75rem;
+    font-size: 0.3rem;
   }
 }
 @media (min-width: 720px) {
   .userSellOrder_SettingContainer .container .salesfiguresblock .info1 {
-    font-size: 1rem;
+    font-size: 0.85rem;
     margin-left: 2%;
   }
 }
 @media (min-width: 960px) {
   .userSellOrder_SettingContainer .container .salesfiguresblock .info1 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     margin-left: 5%;
   }
 }
@@ -2709,61 +2710,61 @@
   }
 }
 .userSellOrder_SettingContainer .container .salesfiguresblock .info2 {
-  margin-top: 1.5%;
+  margin-top: 1%;
 }
 @media (min-width: 480px) {
   .userSellOrder_SettingContainer .container .salesfiguresblock .info2 {
-    font-size: 0.75rem;
-    margin-left: 10%;
+    font-size: 0.3rem;
+    margin-left: 20px;
   }
 }
 @media (min-width: 720px) {
   .userSellOrder_SettingContainer .container .salesfiguresblock .info2 {
-    font-size: 1rem;
-    margin-left: 12.5%;
+    font-size: 0.85rem;
+    margin-left: 67.5px;
   }
 }
 @media (min-width: 960px) {
   .userSellOrder_SettingContainer .container .salesfiguresblock .info2 {
-    font-size: 1.25rem;
-    margin-left: 12.5%;
+    font-size: 1.1rem;
+    margin-left: 100px;
   }
 }
 @media (min-width: 1200px) {
   .userSellOrder_SettingContainer .container .salesfiguresblock .info2 {
     font-size: 1.25rem;
-    margin-left: 17.5%;
+    margin-left: 150px;
   }
 }
 .userSellOrder_SettingContainer .container .salesfiguresblock .info3 {
-  margin-top: 1.5%;
+  margin-top: 1%;
 }
 @media (min-width: 480px) {
   .userSellOrder_SettingContainer .container .salesfiguresblock .info3 {
-    font-size: 0.75rem;
-    margin-left: 11.5%;
+    font-size: 0.3rem;
+    margin-left: 45px;
   }
 }
 @media (min-width: 720px) {
   .userSellOrder_SettingContainer .container .salesfiguresblock .info3 {
-    font-size: 1rem;
-    margin-left: 20%;
+    font-size: 0.85rem;
+    margin-left: 95px;
   }
 }
 @media (min-width: 960px) {
   .userSellOrder_SettingContainer .container .salesfiguresblock .info3 {
-    font-size: 1.25rem;
-    margin-left: 20%;
+    font-size: 1.1rem;
+    margin-left: 135px;
   }
 }
 @media (min-width: 1200px) {
   .userSellOrder_SettingContainer .container .salesfiguresblock .info3 {
     font-size: 1.25rem;
-    margin-left: 22.5%;
+    margin-left: 190px;
   }
 }
 .userSellOrder_SettingContainer .container .salesfiguresblock .button {
-  margin-top: 1.5%;
+  margin-top: 1%;
   margin-left: 1%;
 }
 @media (min-width: 480px) {
@@ -2773,11 +2774,11 @@
 }
 @media (min-width: 720px) {
   .userSellOrder_SettingContainer .container .salesfiguresblock .button {
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
 }
 @media (min-width: 960px) {
   .userSellOrder_SettingContainer .container .salesfiguresblock .button {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 }/*# sourceMappingURL=home.module.css.map */

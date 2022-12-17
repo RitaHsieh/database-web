@@ -155,7 +155,7 @@
                 height: 20%;
                 font-weight: bold;
                 @include sm {
-                    font-size: 1.75rem;
+                    font-size: 1.5rem;
                 }
                 @include md {
                     font-size: 1.75rem;
@@ -164,6 +164,7 @@
                 @include lg { 
                     font-size: 2rem;
                     margin-left: 5%;
+                    margin-bottom: 2%;
                 }
                 @include xl {  
                     font-size: 2rem;   
@@ -176,16 +177,16 @@
             }
             
             .info1{
-                margin-top: 1.5%;
+                margin-top: 1%;
                 @include sm {
-                    font-size: 0.75rem; 
+                    font-size: 0.3rem; 
                 }
                 @include md {
-                    font-size: 1rem; 
+                    font-size: 0.85rem; 
                     margin-left: 2%;
                 }
                 @include lg {     
-                    font-size: 1.25rem; 
+                    font-size: 1.1rem; 
                     margin-left: 5%;
                 }
                 @include xl {   
@@ -194,54 +195,54 @@
                 }
             }
             .info2{
-                margin-top: 1.5%;
+                margin-top: 1%;
                 @include sm {
-                    font-size: 0.75rem;
-                    margin-left: 10%;
+                    font-size: 0.3rem;
+                    margin-left: 20px;
                 }
                 @include md {
-                    font-size: 1rem;
-                    margin-left: 12.5%;
+                    font-size: 0.85rem;
+                    margin-left: 67.5px;
                 }
                 @include lg {     
-                    font-size: 1.25rem;
-                    margin-left: 12.5%;
+                    font-size: 1.1rem;
+                    margin-left: 100px;
                 }
                 @include xl {    
                     font-size: 1.25rem;
-                    margin-left: 17.5%;
+                    margin-left: 150px;
                 }
             }
             .info3{
-                margin-top: 1.5%;
+                margin-top: 1%;
                 @include sm {
-                    font-size: 0.75rem;
-                    margin-left: 11.5%;
+                    font-size: 0.3rem;
+                    margin-left: 45px;
                 }
                 @include md {
-                    font-size: 1rem;
-                    margin-left: 20%;
+                    font-size: 0.85rem;
+                    margin-left: 95px;
                 }
                 @include lg {     
-                    font-size: 1.25rem;
-                    margin-left: 20%;
+                    font-size: 1.1rem;
+                    margin-left: 135px;
                 }
                 @include xl {    
                     font-size: 1.25rem;
-                    margin-left: 22.5%;
+                    margin-left: 190px;
                 }
             }
             .button{
-                margin-top: 1.5%;
+                margin-top: 1%;
                 margin-left: 1%;
                 @include sm {
                     font-size: 0.75rem;
                 }
                 @include md {
-                    font-size: 1rem;
+                    font-size: 0.85rem;
                 }
                 @include lg {     
-                    font-size: 1.25rem;
+                    font-size: 1.1rem;
                 }
             }
         }
