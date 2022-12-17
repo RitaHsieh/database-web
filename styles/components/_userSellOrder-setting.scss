@@ -1,90 +1,124 @@
 .userSellOrder_SettingContainer{
     position: absolute;
     top: 15%;
+    right: 0%;
     width: 100%;
     height: 85%;
     display: flex;
 
+        // //test
+    @include sm {
+        background-color: red;
+    }
+    @include md {
+        background-color: green;
+    }
+    @include lg {
+        background-color: yellow;
+    }
+    @include xl{
+        background-color: #d3d3d3;
+    }
+
     .container{
-        width:70%;
-        height: 100%;
         display:flex;
         flex-direction: column;
         align-items: center;
+        position: absolute;
+        width:85%;
+        height: 100%;
+        right: 0%;
+        padding: 2.5%;
 
         .switch{
-            width: 23%;
-            height: 8%;
             display: flex;
             position: relative;
-            left: 10%;
             top:5%;
             background-color: $decorate-color;
             border-radius: 50px;
             justify-content: center;
             align-items: center;
+            width: 240px;
+            height: 8%;
+
+            .innerbutton{
+                font-weight: bold;
+                color: white;
+                border-radius: 15px;
+                background-color: transparent;
+                font-size: 1rem;
+                height: 50%;
+                width: 50%;
+            }
+        
+            .buttonwhite{
+                background-color: white;
+                border-radius: 50px;
+                padding: 3%;
+                height: 70%;
+                width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .buttontext{
+                    font-weight: bold;
+                    font-size: 1rem;
+                }
+            }
         }
-    
-        .innerbutton{
-            font-weight: bold;
-            font-size: 1rem;
-            color: white;
-            height: 50%;
-            width: 50%;
-            border-radius: 15px;
-            margin-right: 0.5%;
-            background-color: transparent;
-        }
-    
-        .buttontext{
-            background-color: white;
-            font-weight: bold;
-            font-size: 1rem;
-            padding: 3%;
-            border-radius: 50px;
-            margin-left: 3%;
-        }
-    
-        .logo{
-            position: relative;
-            left:70%;
-        }
-    
+
         .filterblock{
             width: 100%;
             height: 10%;
             display: flex;
             position: relative;
-            left: 10%;
             top:7.5%;
-            font-size: 1rem;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
 
             .filterp{
                 height: 50%;
-                width: 5.5%;
                 font-size: 1.25rem;
                 font-weight: bold;
                 margin-top: 0.5%;
+                @include sm {
+                    width: 12.5%;
+                }
+                @include md {          
+                    width: 10%;
+                    margin-bottom: 1px;
+                }
+                @include lg {          
+                    width: 7.5%;
+                    margin-bottom: 3px;
+                }
+                @include xl {          
+                    width: 5%;
+                    margin-bottom: 5px;
+                }
             }
 
             .filterp2{
                 height: 50%;
-                width: 5.5%;
                 font-size: 1.25rem;
                 font-weight: bold;
                 margin-top: 0.5%;
-                margin-left: 3%;
-            }
-
-            .filterp3{
-                height: 50%;
-                width: 9%;
-                font-size: 1.25rem;
-                font-weight: bold;
-                margin-top: 0.5%;
-                margin-left: 3%;
+                margin-left: 5%;
+                @include sm {
+                    width: 19%;
+                }
+                @include md {
+                    width: 14%;    
+                    margin-bottom: 1px;
+                }
+                @include lg {          
+                    width: 11.5%;
+                    margin-bottom: 3px;
+                }
+                @include xl {          
+                    width: 8.5%;
+                    margin-bottom: 5px;
+                }
             }
 
             .selectform{
@@ -99,58 +133,117 @@
 
             .option{
                 font-weight: bold;
+                font-size: 1.25rem;
             }
         }
+        
     
         .salesfiguresblock {
             position: relative;
             top:10%;
-            left: 10%;
             background-color: white;
             padding: $base-padding * 3;
             width: 80%;
             height: 40%;
             border-radius: $base-border-radius;
             border: 1px solid $secondary-color;
-
             display: flex;
             flex-direction: column;
             justify-content: center;
     
-            .title{
-                font-size: 2rem;
+            .title{ 
+                height: 20%;
                 font-weight: bold;
-                width: 20%;
-                margin-left: 10%;
+                @include sm {
+                    font-size: 1.75rem;
+                }
+                @include md {
+                    font-size: 1.75rem;
+                    margin-left: 2%;
+                }
+                @include lg { 
+                    font-size: 2rem;
+                    margin-left: 5%;
+                }
+                @include xl {  
+                    font-size: 2rem;   
+                    margin-left: 10%;
+                }
             }
             
             .infoblock{
                 display: flex;
-                flex-direction: row;
             }
 
             .info1{
-                font-size: 1.25rem;
-                margin-top: 2%;
-                width: 30%;
-                margin-left: 10%;
+                margin-top: 1.5%;
+                @include sm {
+                    font-size: 0.75rem; 
+                }
+                @include md {
+                    font-size: 1rem; 
+                    margin-left: 2%;
+                }
+                @include lg {     
+                    font-size: 1.25rem; 
+                    margin-left: 5%;
+                }
+                @include xl {   
+                    font-size: 1.25rem; 
+                    margin-left: 10%;
+                }
             }
             .info2{
-                font-size: 1.25rem;
-                margin-top: 2%;
-                margin-left: 17.5%;;
+                margin-top: 1.5%;
+                @include sm {
+                    font-size: 0.75rem;
+                    margin-left: 10%;
+                }
+                @include md {
+                    font-size: 1rem;
+                    margin-left: 12.5%;
+                }
+                @include lg {     
+                    font-size: 1.25rem;
+                    margin-left: 12.5%;
+                }
+                @include xl {    
+                    font-size: 1.25rem;
+                    margin-left: 17.5%;
+                }
             }
             .info3{
-                font-size: 1.25rem;
-                margin-top: 2%;
-                margin-left: 10%;
+                margin-top: 1.5%;
+                @include sm {
+                    font-size: 0.75rem;
+                    margin-left: 11.5%;
+                }
+                @include md {
+                    font-size: 1rem;
+                    margin-left: 20%;
+                }
+                @include lg {     
+                    font-size: 1.25rem;
+                    margin-left: 20%;
+                }
+                @include xl {    
+                    font-size: 1.25rem;
+                    margin-left: 22.5%;
+                }
             }
             .button{
-                font-size: 1.25rem;
-                margin-top: 2%;
-                margin-left: 2%;
+                margin-top: 1.5%;
+                margin-left: 1%;
+                @include sm {
+                    font-size: 0.75rem;
+                }
+                @include md {
+                    font-size: 1rem;
+                }
+                @include lg {     
+                    font-size: 1.25rem;
+                }
             }
-            
         }
     }
 }
