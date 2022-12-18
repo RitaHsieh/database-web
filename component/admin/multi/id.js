@@ -8,7 +8,7 @@ export default function ID() {
             <div className={style.idContainer}>
                 <div className={style.idBlock}>
                     
-                    <div className={style.idTitle}><p>管理員識別證</p></div>
+                    <div className={style.idTitle}>管理員識別證</div>
 
                     <div className={style.idImageContainer}>
                         <div className={style.imageFrame}>
