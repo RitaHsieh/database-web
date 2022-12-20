@@ -5,26 +5,27 @@
         @include template;
         
         .roomform {
-
-            padding: 3%;
+            width: 100%;
             background-color: white;
-            display: grid;
-            grid-template-columns: 1fr 5fr;
-            align-items: center;
             border-radius: $base-border-radius;
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            padding-bottom: 2%;
             margin-bottom: 3%;
-
-            * {
-                margin-bottom: $base-margin * 1.5;
-            }
-            
-            p{
-                grid-column: 1/2;
+            p {
+                margin-right: 8%;
             }
             .input {
-                grid-column: 2/3;
                 display: flex;
                 align-items: center;
+                min-width: 200px;
+                @include sm {
+                    flex-direction: column;
+                }
+                @include lg {
+                    flex-direction: row;
+                }
                 p {
                     margin-right: $base-margin * 3;
                 }
@@ -37,7 +38,6 @@
             }
 
             .labelcontainer {
-                grid-column: 1/-1;
                 display: flex;
                 margin: 0;
                 margin-bottom: $base-margin;
@@ -48,7 +48,6 @@
                 height: 10em;
                 width: 100%;
                 @include textarea;
-                grid-column: 1/-1;
             }
             
         } 

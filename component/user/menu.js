@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function menu() {
     const matches = useMediaQuery({
-        query: '(max-width: 720px)'
+        query: '(max-width: 960px)'
       })
     return(
         <div className={style.userMultiMenuContainer}>  

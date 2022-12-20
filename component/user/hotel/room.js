@@ -20,18 +20,28 @@ export default function room() {
                         <button className={style.hotelbutton}><Link href="/">預覽畫面</Link></button>
                     </div>
                     <form className={style.roomform}>
-                        <p>房型資訊</p>
-                        <input className={style.input} type="text"></input>
-                        <p>可容納人數</p>
-                        <input className={style.input} type="text"></input>
-                        <p>床型</p>
-                        <div className={style.input}>
-                            <input type="text"></input>
-                            <p>張單人床</p>
-                            <input type="text"></input>
-                            <p>張雙人床</p>
+                        <div className={style.content}>
+                            <p>房型資訊</p>
+                            <input className={style.input} type="text"></input>
                         </div>
-                        <p>房型介紹</p>
+                        <div className={style.content}>
+                            <p>可容納人數</p>
+                            <input className={style.input} type="text"></input>
+                        </div>
+                        <div className={style.content}>
+                            <p>床型</p>
+                            <div className={style.input}>
+                                <div className={style.content}>
+                                <input type="text"></input>
+                                <p>張單人床</p>
+                                </div>
+                                <div className={style.content}>
+                                <input type="text"></input>
+                                <p>張雙人床</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p className={style.spacing}>房型介紹</p>
                         <textarea className={style.textarea}></textarea>
                         <p>房間設施</p>
                         <div className={style.labelcontainer}>
@@ -39,9 +49,15 @@ export default function room() {
                             <i class="bi bi-plus"></i>
                         </button>
                         </div>
-                        <p>網站價</p><input className={style.input} type="text"></input>
-                        <p>原價</p><input className={style.input} type="text"></input>
-                        <p>房型總數量</p><input className={style.input} type="text"></input>
+                        <div className={style.content}>
+                            <p>網站價</p><input className={style.input} type="text"></input>
+                        </div>
+                        <div className={style.content}>
+                            <p>原價</p><input className={style.input} type="text"></input>
+                        </div>
+                        <div className={style.content}>
+                            <p>房型總數量</p><input className={style.input} type="text"></input>
+                        </div>
                     </form>
                     <div className={style.newroom}>
                         <i class="bi bi-plus"></i>

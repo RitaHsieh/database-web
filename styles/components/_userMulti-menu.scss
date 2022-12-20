@@ -10,15 +10,13 @@
     font-size: $font-size-md;
     padding: $base-padding;
     padding-top: $base-padding * 2;
+    width: 15%;
 
-    @include sm {
-        width: 15%;
-    }
     .title {
         @include sm {
             display: none;
         }
-        @include md {
+        @include lg {
             display: inline-flex;
         }
         
@@ -35,7 +33,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 90%;
+        height: 85%;
         margin: auto;
         margin-bottom: 10%;
         margin-top: 8%;
@@ -52,12 +50,12 @@
             }
             width: 50px;
             height:50px;
-            margin: $base-margin;
+            // margin: $base-margin;
         }
         hr {
             border: 0.5px white solid;
             width: 60%;
-            margin: $base-margin;
+            margin: $base-margin / 2;
         }
     }
     .options {

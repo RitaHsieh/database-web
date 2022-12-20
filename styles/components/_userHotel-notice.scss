@@ -45,19 +45,20 @@
             
         }
         .check_content{
-            margin-bottom: 2%;
+            margin-bottom: 2rem;
             width: 100%;
             display: flex;
             align-items: center;
             .contentname{
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 font-weight: bold;
             }
             .btn{
                 height: 20px;
-                width:20px;
+                width: 20px;
                 margin-left:2%;
                 margin-right: 2%;
+                min-width: 0;
                 border-radius: 5px;
                 cursor: pointer;
                 background-color: white;
