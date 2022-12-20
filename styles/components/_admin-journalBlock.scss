@@ -1,0 +1,94 @@
+.jbContainer{
+    height: 100%;
+    width: 70%;
+    padding: $base-padding * 4;
+
+    .jbTitle{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .journalBlock{
+        height: 90%;
+        width: 100%;
+
+        .jbDetailContainer{
+            height: 30%;
+            width: 100%;
+            background-color: white;
+            border-radius: 30px;
+            padding: $base-padding*2;//待確認
+            display: flex;
+            margin-bottom: calc(10%/3);
+
+            .containerLeft{
+                height: 100%;
+                width: 30%;
+                border-right: solid;
+                display: flex;
+                align-items: center;
+
+                .jbImageContainer{
+                    height: 100%;
+                    width: 40%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .imageFrame{
+                        height: 85px;
+                        width: 85px;
+                        border-radius: 999em;
+                        background-color: #d3d3d3;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                .textFrame{
+                    height: 100%;
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .user{
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                    }
+                    .duration{
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+
+            .containerMiddle{
+                height: 100%;
+                width: 40%;
+                font-size: 1.25rem;
+                border-right: solid;
+                padding: $base-padding;
+                display: flex;
+                align-items: center;
+            }
+
+            .containerRight{
+                height: 100%;
+                width: 30%;
+                font-weight: bold;
+                font-size: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .blockSpace{
+            height: 2.5%;
+            width: 100%;
+        }
+    }
+}
