@@ -7,7 +7,7 @@
     display: flex;
 }
 
-@mixin left-block ($width, $min-width) {
+@mixin left-block($width) {
     position: fixed;
     left: 0%;
     display: flex;
@@ -21,29 +21,40 @@
     padding: $base-padding;
     padding-top: $base-padding * 2;
     width: $width;
-    min-width: $min-width;
 
 }
-@mixin set-leftblock-responsive {
+
+@mixin right-block {
+    position: absolute;
+    width:80%;
+    // top: 20%;
+    // z-index: -1;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin set-leftblock-responsive($sm, $md, $xl) {
     @include sm {
-        width: 25%;
+        width: $sm;
     }
     @include md{
-        width: 23%;
+        width: $md;
+        // background-color: red;
     }
     @include xl {
-        width: 18%;
+        width: $xl;
     }
 }
 
-@mixin set-rightblock-responsive {
+@mixin set-rightblock-responsive($sm, $md, $xl) {
     @include sm {
-        width: 75%;
+        width: $sm;
     }
     @include md{
-        width: 77%;
+        width: $md;
     }
     @include xl {
-        width: 82%;
+        width: $xl;
     }
 }

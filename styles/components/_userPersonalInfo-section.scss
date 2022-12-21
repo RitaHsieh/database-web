@@ -76,6 +76,7 @@
             font-size: $font-size-md;
             padding-right: $base-padding;
             padding-left: $base-padding;
+
             &:hover {
                 background-color: #AAA;
                 border: none;
@@ -87,6 +88,7 @@
             @include lg {
                 font-size: $font-size-md;
             }
+            min-width: 120px;
         }
     }
 

@@ -1,6 +1,6 @@
 .searchSearchformContainer {
-    @include left-block(15%, 15%);
-    @include set-leftblock-responsive;
+    @include left-block(15%);
+    @include set-leftblock-responsive(30%, 23%, 18%);
 
     * {
         height: 2.4rem;

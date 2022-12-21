@@ -1,9 +1,5 @@
 .hotelinfoSectionContainer {
-    position: absolute;
-    top: 15%;
-    right: 0;
-    width: 100%;
-    height: 85%;
+    @include bottom-block;
     .hotelInfoEvaluate, .hotelInfoInformation,
     .hotelInfoAttraction, .hotelInfoTransportation {
         padding: 1.5%;
@@ -43,7 +39,7 @@
         padding-left: 2%;
         padding-right: 2%;
 
-        @include set-rightblock-responsive;
+        @include set-rightblock-responsive(70%, 77%, 82%);
 
     }
 }

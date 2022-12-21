@@ -3,18 +3,21 @@ import Option from "./option"
 import style from "../../styles/layout/home.module.css"
 import Image from 'next/image'
 import Link from 'next/link'
+import Header from '../multi/header'
 
 import logo from '../../public/image/logo2.png'
 
 export default function account() {
     return (
-        <div className={style.userIndexSectionContainer}>
+        <>
+            <Header/>
+            <div className={style.userIndexSectionContainer}>
 
-            <Setting/>
-            <div className={style.columnContainer}>
-                <Link href="/"><Image className={style.logo} src={logo} alt='alter'/></Link>
+                <Setting/>
                 <Option/>
+                
             </div>
-        </div>
+        </>
+        
     )
 }

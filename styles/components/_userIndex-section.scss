@@ -1,33 +1,7 @@
 .userIndexSectionContainer{
-    height:100%;
-    width:100%;
-    display: flex;
+    @include bottom-block;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    .columnContainer {
-        // flex-grow: 1.8;
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-top: $base-padding * 3;
-        @include xs {
-            align-items: center;
-        }
-        @include lg {
-            align-items: flex-end;
-
-            a {
-                margin-right: 8%;
-            }
-        }
-
-        img{
-            height: 100px;
-            width: 100px;
-        }
-
-    }
 }
