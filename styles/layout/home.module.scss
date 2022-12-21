@@ -5,11 +5,10 @@
 // base & layout
 @import 'breakpoints';
 // @import 'grid';
-
+@import 'style';
 
 // components (button, card, navbar etc)
 @import '../components/multi-header';
-@import '../components//multi-leftsearchbar';
 
 @import '../components/home-intro';
 @import '../components/home-login-bt';
@@ -38,6 +37,7 @@
 
 @import '../components/userMulti-menu';
 @import '../components/userPersonalInfo-section';
+@import '../components/_userHotel-multi';
 @import '../components/userHotel-info';
 @import '../components/userHotelFeature-section';
 @import '../components/userHotelRoom-section';

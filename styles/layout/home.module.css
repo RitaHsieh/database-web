@@ -425,19 +425,34 @@
 }
 
 .userIndexOptionContainer {
-  width: 85%;
-  height: 75%;
+  position: absolute;
+  width: 80%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   margin: auto;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
   background-color: white;
-  border: 1px solid black;
-  border-radius: 20px;
   padding: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+}
+@media (min-width: 480px) {
+  .userIndexOptionContainer {
+    width: 60%;
+  }
+}
+@media (min-width: 720px) {
+  .userIndexOptionContainer {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .userIndexOptionContainer {
+    width: 80%;
+  }
 }
 .userIndexOptionContainer .button {
   background-color: #D9D9D9;
@@ -485,17 +500,35 @@
 }
 
 .userIndexSettingContainer {
-  width: 20rem;
-  height: 100vh;
-  margin-left: 2rem;
-  padding: 3.5%;
-  padding-top: 5rem;
-  padding-bottom: 2%;
-  background-color: #858585;
+  position: fixed;
+  left: 0%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-direction: column;
+  align-items: center;
+  background-color: #858585;
+  color: white;
+  height: 100%;
+  font-family: Microsoft JhengHei;
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  padding-top: 1.5rem;
+  width: 20%;
+  padding: 3.5%;
+}
+@media (min-width: 480px) {
+  .userIndexSettingContainer {
+    width: 40%;
+  }
+}
+@media (min-width: 720px) {
+  .userIndexSettingContainer {
+    width: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .userIndexSettingContainer {
+    width: 20%;
+  }
 }
 .userIndexSettingContainer h1 {
   font-size: 2rem;
@@ -505,25 +538,20 @@
 }
 .userIndexSettingContainer .circle {
   position: relative;
-  border-radius: 10rem;
   background-color: #fff;
-}
-@media (min-width: 0) {
-  .userIndexSettingContainer .circle {
-    height: 4rem;
-    width: 4rem;
-  }
 }
 @media (min-width: 480px) {
   .userIndexSettingContainer .circle {
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 4rem;
   }
 }
 @media (min-width: 960px) {
   .userIndexSettingContainer .circle {
-    height: 8rem;
-    width: 8rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 6rem;
   }
 }
 .userIndexSettingContainer .textcontainer {
@@ -532,20 +560,19 @@
   color: white;
   cursor: pointer;
   width: 100%;
-  margin-top: 8%;
-  padding-bottom: 25%;
+  margin-top: 20%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.userIndexSettingContainer .textcontainer * {
-  margin-top: 1.2rem;
-  margin-bottom: 1.2rem;
+.userIndexSettingContainer .textcontainer p, .userIndexSettingContainer .textcontainer button, .userIndexSettingContainer .textcontainer h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .userIndexSettingContainer .btn {
   height: 2.5rem;
-  width: 200px;
+  width: 100%;
   align-self: flex-start;
   font-size: 1.2rem;
   border: transparent;
@@ -563,41 +590,17 @@
   color: black;
   cursor: pointer;
 }
-.userIndexSettingContainer .contact {
-  align-self: flex-end;
-}
 
 .userIndexSectionContainer {
-  height: 100%;
+  position: absolute;
+  top: 15%;
+  right: 0%;
   width: 100%;
+  height: 85%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
-}
-.userIndexSectionContainer .columnContainer {
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 2.25rem;
-}
-@media (min-width: 0) {
-  .userIndexSectionContainer .columnContainer {
-    align-items: center;
-  }
-}
-@media (min-width: 960px) {
-  .userIndexSectionContainer .columnContainer {
-    align-items: flex-end;
-  }
-  .userIndexSectionContainer .columnContainer a {
-    margin-right: 8%;
-  }
-}
-.userIndexSectionContainer .columnContainer img {
-  height: 100px;
-  width: 100px;
+  justify-content: space-between;
 }
 
 .hotelInfoRoomContainer {
@@ -990,9 +993,10 @@
 .hotelinfoSectionContainer {
   position: absolute;
   top: 15%;
-  right: 0;
+  right: 0%;
   width: 100%;
   height: 85%;
+  display: flex;
 }
 .hotelinfoSectionContainer .hotelInfoEvaluate, .hotelinfoSectionContainer .hotelInfoInformation,
 .hotelinfoSectionContainer .hotelInfoAttraction, .hotelinfoSectionContainer .hotelInfoTransportation {
@@ -1002,72 +1006,6 @@
 .hotelinfoSectionContainer .hotelInfoAttraction, .hotelinfoSectionContainer .hotelInfoTransportation {
   margin-top: 2%;
 }
-.hotelinfoSectionContainer .titleLeftContainer {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #858585;
-  color: white;
-  height: 100%;
-  font-family: Microsoft JhengHei;
-  font-size: 1.2rem;
-  padding: 0.75rem;
-  padding-top: 1.5rem;
-  width: 20%;
-}
-@media (min-width: 480px) {
-  .hotelinfoSectionContainer .titleLeftContainer {
-    width: 25%;
-  }
-}
-@media (min-width: 720px) {
-  .hotelinfoSectionContainer .titleLeftContainer {
-    width: 23%;
-  }
-}
-@media (min-width: 960px) {
-  .hotelinfoSectionContainer .titleLeftContainer {
-    width: 23%;
-  }
-}
-@media (min-width: 1200px) {
-  .hotelinfoSectionContainer .titleLeftContainer {
-    width: 18%;
-  }
-}
-@media (min-width: 480px) {
-  .hotelinfoSectionContainer .titleLeftContainer .searchSearchformContainer, .hotelinfoSectionContainer .titleLeftContainer .btnfilter {
-    width: 80%;
-  }
-}
-@media (min-width: 960px) {
-  .hotelinfoSectionContainer .titleLeftContainer .searchSearchformContainer, .hotelinfoSectionContainer .titleLeftContainer .btnfilter {
-    width: 70%;
-  }
-}
-@media (min-width: 1200px) {
-  .hotelinfoSectionContainer .titleLeftContainer .searchSearchformContainer, .hotelinfoSectionContainer .titleLeftContainer .btnfilter {
-    width: 65%;
-  }
-}
-.hotelinfoSectionContainer .titleLeftContainer .btnfilter {
-  border-radius: 5px;
-  cursor: pointer;
-  height: 2.4rem;
-  padding: 10px;
-  margin: 0.75rem;
-  margin-top: 20%;
-  font-weight: bolder;
-  font-size: 1rem;
-}
-.hotelinfoSectionContainer .titleLeftContainer .logo {
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  height: 100px;
-  width: 100px;
-}
 .hotelinfoSectionContainer .main {
   position: absolute;
   width: 80%;
@@ -1075,6 +1013,21 @@
   right: 0%;
   padding-left: 2%;
   padding-right: 2%;
+}
+@media (min-width: 480px) {
+  .hotelinfoSectionContainer .main {
+    width: 70%;
+  }
+}
+@media (min-width: 720px) {
+  .hotelinfoSectionContainer .main {
+    width: 77%;
+  }
+}
+@media (min-width: 1200px) {
+  .hotelinfoSectionContainer .main {
+    width: 82%;
+  }
 }
 
 .roominfo {
@@ -1312,11 +1265,34 @@
 }
 
 .searchSearchformContainer {
+  position: fixed;
+  left: 0%;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  margin-top: 2rem;
+  align-items: center;
+  background-color: #858585;
+  color: white;
+  height: 100%;
+  font-family: Microsoft JhengHei;
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  padding-top: 1.5rem;
+  width: 15%;
+}
+@media (min-width: 480px) {
+  .searchSearchformContainer {
+    width: 30%;
+  }
+}
+@media (min-width: 720px) {
+  .searchSearchformContainer {
+    width: 23%;
+  }
+}
+@media (min-width: 1200px) {
+  .searchSearchformContainer {
+    width: 18%;
+  }
 }
 .searchSearchformContainer * {
   height: 2.4rem;
@@ -1339,57 +1315,10 @@
   box-shadow: 0 2px #666;
   transform: translateY(2px);
 }
-
-.searchBottomContainer {
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
+.searchSearchformContainer .item, .searchSearchformContainer .btn, .searchSearchformContainer .btnfilter {
+  width: 80%;
 }
-.searchBottomContainer .bottomleftcontainer {
-  height: 100%;
-  position: fixed;
-  background-color: gray;
-  top: 15%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media (min-width: 480px) {
-  .searchBottomContainer .bottomleftcontainer {
-    width: 25%;
-  }
-}
-@media (min-width: 720px) {
-  .searchBottomContainer .bottomleftcontainer {
-    width: 23%;
-  }
-}
-@media (min-width: 960px) {
-  .searchBottomContainer .bottomleftcontainer {
-    width: 23%;
-  }
-}
-@media (min-width: 1200px) {
-  .searchBottomContainer .bottomleftcontainer {
-    width: 18%;
-  }
-}
-@media (min-width: 480px) {
-  .searchBottomContainer .bottomleftcontainer .searchSearchformContainer, .searchBottomContainer .bottomleftcontainer .btnfilter {
-    width: 80%;
-  }
-}
-@media (min-width: 960px) {
-  .searchBottomContainer .bottomleftcontainer .searchSearchformContainer, .searchBottomContainer .bottomleftcontainer .btnfilter {
-    width: 70%;
-  }
-}
-@media (min-width: 1200px) {
-  .searchBottomContainer .bottomleftcontainer .searchSearchformContainer, .searchBottomContainer .bottomleftcontainer .btnfilter {
-    width: 65%;
-  }
-}
-.searchBottomContainer .bottomleftcontainer .btnfilter {
+.searchSearchformContainer .btnfilter {
   border-radius: 5px;
   cursor: pointer;
   height: 2.4rem;
@@ -1399,14 +1328,36 @@
   font-weight: bolder;
   font-size: 1rem;
 }
+
+.searchBottomContainer {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
 .searchBottomContainer .hoteldata {
   position: absolute;
   width: 80%;
-  top: 20%;
-  z-index: -1;
   right: 0%;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 480px) {
+  .searchBottomContainer .hoteldata {
+    width: 70%;
+  }
+}
+@media (min-width: 720px) {
+  .searchBottomContainer .hoteldata {
+    width: 77%;
+  }
+}
+@media (min-width: 1200px) {
+  .searchBottomContainer .hoteldata {
+    width: 82%;
+  }
 }
 
 .searchMask {
@@ -1427,6 +1378,7 @@
 
 .userMultiMenuContainer {
   position: fixed;
+  left: 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1437,11 +1389,7 @@
   font-size: 1.2rem;
   padding: 0.75rem;
   padding-top: 1.5rem;
-}
-@media (min-width: 480px) {
-  .userMultiMenuContainer {
-    width: 15%;
-  }
+  width: 15%;
 }
 .userMultiMenuContainer .title {
   align-items: center;
@@ -1451,7 +1399,7 @@
     display: none;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 960px) {
   .userMultiMenuContainer .title {
     display: inline-flex;
   }
@@ -1467,7 +1415,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 90%;
+  height: 85%;
   margin: auto;
   margin-bottom: 10%;
   margin-top: 8%;
@@ -1482,7 +1430,6 @@
 .userMultiMenuContainer .smoptions .button {
   width: 50px;
   height: 50px;
-  margin: 1rem;
 }
 .userMultiMenuContainer .smoptions .button:hover {
   color: black;
@@ -1490,7 +1437,7 @@
 .userMultiMenuContainer .smoptions hr {
   border: 0.5px white solid;
   width: 60%;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 .userMultiMenuContainer .options {
   display: flex;
@@ -1523,21 +1470,25 @@
   display: flex;
 }
 .userPersonalInfoButtonContainer .userinfoblock {
+  position: absolute;
   margin: auto;
   background-color: white;
 }
 @media (min-width: 480px) {
   .userPersonalInfoButtonContainer .userinfoblock {
     padding: 1.5rem;
-    width: 100%;
+    left: 15%;
+    width: 85%;
     height: 100%;
   }
 }
 @media (min-width: 960px) {
   .userPersonalInfoButtonContainer .userinfoblock {
     padding: 3rem;
+    top: 6%;
+    right: 2%;
     width: 70%;
-    height: 84%;
+    height: 88%;
     border-radius: 20px;
     border: 1px solid aliceblue;
   }
@@ -1595,6 +1546,7 @@
   font-size: 1.2rem;
   padding-right: 0.75rem;
   padding-left: 0.75rem;
+  min-width: 120px;
 }
 .userPersonalInfoButtonContainer .usersetting .userbutton:hover, .userPersonalInfoButtonContainer .usersetting .submit:hover {
   background-color: #AAA;
@@ -1744,42 +1696,89 @@
 .userHotelInfoContainer .main {
   position: absolute;
   width: 85%;
-  height: 100%;
   right: 0%;
   padding: 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.userHotelInfoContainer .main p, .userHotelInfoContainer .main .contentname {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 3%;
+}
+.userHotelInfoContainer .main button {
+  font-size: 1rem;
 }
 .userHotelInfoContainer .main .content {
-  margin-bottom: 2%;
+  margin-bottom: 2rem;
   width: 100%;
   display: flex;
 }
-.userHotelInfoContainer .main .content .title {
-  font-size: 2.5rem;
-  margin-bottom: 1%;
+.userHotelInfoContainer .main .content h1 {
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-.userHotelInfoContainer .main .content .contentname {
-  margin-right: 2%;
-  font-size: 1.5rem;
-  font-weight: bold;
+@media (min-width: 480px) {
+  .userHotelInfoContainer .main .content h1 {
+    font-size: 2rem;
+  }
 }
-.userHotelInfoContainer .main .content .short_input {
-  border-radius: 7px;
+@media (min-width: 720px) {
+  .userHotelInfoContainer .main .content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 960px) {
+  .userHotelInfoContainer .main .content h1 {
+    font-size: 3rem;
+  }
+}
+.userHotelInfoContainer .main .content .hotelbutton {
+  margin-left: auto;
+}
+.userHotelInfoContainer .main .spacing {
+  margin-bottom: 1.5rem;
+}
+.userHotelInfoContainer .main .hotelbutton, .userHotelInfoContainer .main .btn {
+  padding: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.userHotelInfoContainer .main .hotelbutton:hover, .userHotelInfoContainer .main .btn:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+.userHotelInfoContainer .main .short_input {
+  border: 2px solid #999;
+  border-radius: 5px;
+  padding: 5px;
   width: 30%;
+  min-width: 100px;
+  line-height: 1.5;
+  margin-right: 0.75rem;
 }
-.userHotelInfoContainer .main .content .long_input {
-  border-radius: 7px;
+.userHotelInfoContainer .main .long_input {
+  border: 2px solid #999;
+  border-radius: 5px;
+  padding: 5px;
   width: 40%;
+  min-width: 100px;
+  line-height: 1.5;
+  margin-right: 0.75rem;
 }
 .userHotelInfoContainer .main .pic_content {
   margin-bottom: 2%;
-  height: 55%;
+  height: 40vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-.userHotelInfoContainer .main .pic_content .contentname {
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 .userHotelInfoContainer .main .pic_content .image {
   margin-top: 2%;
@@ -1806,64 +1805,78 @@
   align-items: center;
   justify-content: end;
 }
-.userHotelInfoContainer .main .btn_content .btn {
-  margin-right: 1%;
-  margin-left: 1%;
-  height: 40%;
-  width: 5%;
-  border-radius: 5px;
-  background-color: white;
-}
-.userHotelInfoContainer .main .btn_content .btn:hover {
-  background-color: black;
-  color: white;
-  transition: linear 0.2s;
-}
 
 .userHotelFeatureContainer {
   position: absolute;
   top: 15%;
-  right: 0%;
   width: 100%;
   height: 85%;
   display: flex;
 }
-.userHotelFeatureContainer .leftContainer {
-  height: 100%;
-  width: 100%;
+.userHotelFeatureContainer .main {
+  position: absolute;
+  width: 85%;
+  right: 0%;
   padding: 2.5%;
-  padding-top: 1%;
-  padding-bottom: 1%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.userHotelFeatureContainer .leftContainer .title {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.userHotelFeatureContainer .main p, .userHotelFeatureContainer .main .contentname {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 3%;
 }
-.userHotelFeatureContainer .leftContainer .title h1 {
-  font-size: 3rem;
-  margin: 0;
-  margin-left: 1rem;
-  margin-right: auto;
-}
-.userHotelFeatureContainer .leftContainer * {
-  margin: 1rem;
+.userHotelFeatureContainer .main button {
   font-size: 1rem;
 }
-.userHotelFeatureContainer .leftContainer * p {
-  font-size: 1.2rem;
-}
-.userHotelFeatureContainer .leftContainer form .labelcontainer {
+.userHotelFeatureContainer .main .content {
+  margin-bottom: 2rem;
+  width: 100%;
   display: flex;
+}
+.userHotelFeatureContainer .main .content h1 {
   margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+@media (min-width: 480px) {
+  .userHotelFeatureContainer .main .content h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 720px) {
+  .userHotelFeatureContainer .main .content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 960px) {
+  .userHotelFeatureContainer .main .content h1 {
+    font-size: 3rem;
+  }
+}
+.userHotelFeatureContainer .main .content .hotelbutton {
+  margin-left: auto;
+}
+.userHotelFeatureContainer .main .spacing {
+  margin-bottom: 1.5rem;
+}
+.userHotelFeatureContainer .main .hotelbutton, .userHotelFeatureContainer .main .btn {
+  padding: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.userHotelFeatureContainer .leftContainer form .textarea {
-  height: 10em;
+.userHotelFeatureContainer .main .hotelbutton:hover, .userHotelFeatureContainer .main .btn:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+.userHotelFeatureContainer .main .textarea {
+  height: 16em;
   width: 100%;
   padding: 0.75rem;
   resize: none;
@@ -1871,55 +1884,46 @@
   border-radius: 5px;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px #999;
+  margin-bottom: 3%;
+  overflow: hidden;
 }
-.userHotelFeatureContainer .leftContainer form .add {
+.userHotelFeatureContainer .main .label_content {
+  display: flex;
+  margin-bottom: 2%;
+}
+.userHotelFeatureContainer .main .label_content .add {
   padding: 6px;
   border-radius: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 1rem;
   max-height: 40px;
   min-width: 80px;
   margin-bottom: 1rem;
   background-color: white;
   border: 2px solid #999;
 }
-.userHotelFeatureContainer .leftContainer form .add:hover {
-  background-color: white;
-  color: black;
-  border: 1px solid #858585;
+.userHotelFeatureContainer .main .label_content .add:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
 }
-.userHotelFeatureContainer .leftContainer form .add:hover {
+.userHotelFeatureContainer .main .label_content .add:hover {
   background-color: #999;
   color: white;
 }
-.userHotelFeatureContainer .leftContainer .added {
+.userHotelFeatureContainer .main .label_content .added {
   padding: 6px;
   border-radius: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 1rem;
   max-height: 40px;
   min-width: 80px;
   margin-bottom: 1rem;
 }
-.userHotelFeatureContainer .leftContainer .added:hover {
-  background-color: white;
-  color: black;
-  border: 1px solid #858585;
+.userHotelFeatureContainer .main .label_content .added:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
 }
-.userHotelFeatureContainer .leftContainer .hotelbutton, .userHotelFeatureContainer .leftContainer .btn {
-  padding: 6px;
-  border-radius: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-height: 40px;
-  min-width: 80px;
-}
-.userHotelFeatureContainer .leftContainer .hotelbutton:hover, .userHotelFeatureContainer .leftContainer .btn:hover {
-  background-color: white;
-  color: black;
-  border: 1px solid #858585;
-}
-.userHotelFeatureContainer .leftContainer .btn_content {
+.userHotelFeatureContainer .main .btn_content {
   margin-top: auto;
   display: flex;
   justify-content: flex-end;
@@ -1929,81 +1933,153 @@
 .userHotelRoomContainer {
   position: absolute;
   top: 15%;
-  right: 0%;
   width: 100%;
   height: 85%;
   display: flex;
 }
-.userHotelRoomContainer .leftContainer {
+.userHotelRoomContainer .main {
   position: absolute;
-  height: 100%;
   width: 85%;
+  right: 0%;
   padding: 2.5%;
-  right: 0;
-  padding-top: 1%;
-  padding-bottom: 1%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.userHotelRoomContainer .leftContainer .title {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.userHotelRoomContainer .main p, .userHotelRoomContainer .main .contentname {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 3%;
 }
-.userHotelRoomContainer .leftContainer .title h1 {
-  font-size: 3rem;
-  margin: 0;
-  margin-left: 1rem;
-  margin-right: auto;
-}
-.userHotelRoomContainer .leftContainer * {
-  margin: 1rem;
+.userHotelRoomContainer .main button {
   font-size: 1rem;
 }
-.userHotelRoomContainer .leftContainer * p {
-  font-size: 1.2rem;
+.userHotelRoomContainer .main .content {
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
 }
-.userHotelRoomContainer .leftContainer .roomform {
-  padding: 3%;
-  background-color: white;
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  align-items: center;
+.userHotelRoomContainer .main .content h1 {
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+@media (min-width: 480px) {
+  .userHotelRoomContainer .main .content h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 720px) {
+  .userHotelRoomContainer .main .content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 960px) {
+  .userHotelRoomContainer .main .content h1 {
+    font-size: 3rem;
+  }
+}
+.userHotelRoomContainer .main .content .hotelbutton {
+  margin-left: auto;
+}
+.userHotelRoomContainer .main .spacing {
+  margin-bottom: 1.5rem;
+}
+.userHotelRoomContainer .main .hotelbutton, .userHotelRoomContainer .main .btn {
+  padding: 6px;
   border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-.userHotelRoomContainer .leftContainer .roomform p, .userHotelRoomContainer .leftContainer .roomform .input, .userHotelRoomContainer .leftContainer .roomform input, .userHotelRoomContainer .leftContainer .roomform .textarea {
-  margin-left: 0;
+.userHotelRoomContainer .main .hotelbutton:hover, .userHotelRoomContainer .main .btn:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
 }
-.userHotelRoomContainer .leftContainer .roomform p {
-  grid-column: 1/2;
+.userHotelRoomContainer .main .roomform {
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  padding-bottom: 2%;
+  margin-bottom: 3%;
 }
-.userHotelRoomContainer .leftContainer .roomform .input {
-  grid-column: 2/3;
+.userHotelRoomContainer .main .roomform p {
+  margin-right: 8%;
+}
+.userHotelRoomContainer .main .roomform .input {
   display: flex;
   align-items: center;
+  min-width: 200px;
 }
-.userHotelRoomContainer .leftContainer .roomform .input p {
+@media (min-width: 480px) {
+  .userHotelRoomContainer .main .roomform .input {
+    flex-direction: column;
+  }
+}
+@media (min-width: 960px) {
+  .userHotelRoomContainer .main .roomform .input {
+    flex-direction: row;
+  }
+}
+.userHotelRoomContainer .main .roomform .input p {
   margin-right: 3rem;
 }
-.userHotelRoomContainer .leftContainer .roomform .input input {
+.userHotelRoomContainer .main .roomform .input input {
   width: 10%;
 }
-.userHotelRoomContainer .leftContainer .roomform input {
+.userHotelRoomContainer .main .roomform input {
   border: 2px solid #999;
   border-radius: 5px;
   padding: 5px;
   width: 30%;
   min-width: 100px;
+  line-height: 1.5;
+  margin-right: 0.75rem;
 }
-.userHotelRoomContainer .leftContainer .roomform .labelcontainer {
-  grid-column: 1/-1;
+.userHotelRoomContainer .main .roomform .labelcontainer {
   display: flex;
   margin: 0;
   margin-bottom: 1rem;
 }
-.userHotelRoomContainer .leftContainer .roomform .textarea {
+.userHotelRoomContainer .main .roomform .labelcontainer .add {
+  padding: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  margin-bottom: 1rem;
+  background-color: white;
+  border: 2px solid #999;
+}
+.userHotelRoomContainer .main .roomform .labelcontainer .add:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+.userHotelRoomContainer .main .roomform .labelcontainer .add:hover {
+  background-color: #999;
+  color: white;
+}
+.userHotelRoomContainer .main .roomform .labelcontainer .added {
+  padding: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  margin-bottom: 1rem;
+}
+.userHotelRoomContainer .main .roomform .labelcontainer .added:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+.userHotelRoomContainer .main .roomform .textarea {
   height: 10em;
   width: 100%;
   padding: 0.75rem;
@@ -2012,102 +2088,129 @@
   border-radius: 5px;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px #999;
-  grid-column: 1/-1;
+  margin-bottom: 3%;
+  overflow: hidden;
 }
-.userHotelRoomContainer .leftContainer .roomform .add {
-  padding: 6px;
-  border-radius: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-height: 40px;
-  min-width: 80px;
-  background-color: white;
-  border: 2px solid #999;
-}
-.userHotelRoomContainer .leftContainer .roomform .add:hover {
-  background-color: white;
-  color: black;
-  border: 1px solid #858585;
-}
-.userHotelRoomContainer .leftContainer .roomform .add:hover {
-  background-color: #999;
-  color: white;
-}
-.userHotelRoomContainer .leftContainer .roomform .add i {
-  margin-left: 1rem;
-}
-.userHotelRoomContainer .leftContainer .added {
-  padding: 6px;
-  border-radius: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-height: 40px;
-  min-width: 80px;
-  margin-bottom: 1rem;
-}
-.userHotelRoomContainer .leftContainer .added:hover {
-  background-color: white;
-  color: black;
-  border: 1px solid #858585;
-}
-.userHotelRoomContainer .leftContainer .hotelbutton, .userHotelRoomContainer .leftContainer .btn {
-  padding: 6px;
-  border-radius: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-height: 40px;
-  min-width: 80px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.userHotelRoomContainer .leftContainer .hotelbutton:hover, .userHotelRoomContainer .leftContainer .btn:hover {
-  background-color: white;
-  color: black;
-  border: 1px solid #858585;
-}
-.userHotelRoomContainer .leftContainer .btn_content {
+.userHotelRoomContainer .main .btn_content {
   margin-top: auto;
   display: flex;
   justify-content: flex-end;
   height: 10%;
 }
+.userHotelRoomContainer .main .newroom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+}
+.userHotelRoomContainer .main .newroom * {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.userHotelRoomContainer .main .newroom i {
+  font-size: 3rem;
+}
 
 .userHotelNoticeContainer {
   position: absolute;
   top: 15%;
-  right: 0%;
   width: 100%;
   height: 85%;
   display: flex;
 }
 .userHotelNoticeContainer .main {
   position: absolute;
-  height: 100%;
   width: 85%;
   right: 0%;
   padding: 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.userHotelNoticeContainer .main p, .userHotelNoticeContainer .main .contentname {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 3%;
+}
+.userHotelNoticeContainer .main button {
+  font-size: 1rem;
 }
 .userHotelNoticeContainer .main .content {
-  margin-bottom: 2%;
+  margin-bottom: 2rem;
   width: 100%;
   display: flex;
 }
-.userHotelNoticeContainer .main .content .title {
-  font-size: 2.5rem;
-  margin-bottom: 1%;
+.userHotelNoticeContainer .main .content h1 {
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-.userHotelNoticeContainer .main .content .contentname {
-  margin-right: 2%;
-  font-size: 1.5rem;
-  font-weight: bold;
+@media (min-width: 480px) {
+  .userHotelNoticeContainer .main .content h1 {
+    font-size: 2rem;
+  }
 }
-.userHotelNoticeContainer .main .content .short_input {
-  border-radius: 7px;
+@media (min-width: 720px) {
+  .userHotelNoticeContainer .main .content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 960px) {
+  .userHotelNoticeContainer .main .content h1 {
+    font-size: 3rem;
+  }
+}
+.userHotelNoticeContainer .main .content .hotelbutton {
+  margin-left: auto;
+}
+.userHotelNoticeContainer .main .spacing {
+  margin-bottom: 1.5rem;
+}
+.userHotelNoticeContainer .main .hotelbutton, .userHotelNoticeContainer .main .btn {
+  padding: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.userHotelNoticeContainer .main .hotelbutton:hover, .userHotelNoticeContainer .main .btn:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+.userHotelNoticeContainer .main .short_input {
+  border: 2px solid #999;
+  border-radius: 5px;
+  padding: 5px;
   width: 30%;
+  min-width: 100px;
+  line-height: 1.5;
+  margin-right: 0.75rem;
 }
-.userHotelNoticeContainer .main .content .long_input {
-  border-radius: 7px;
+.userHotelNoticeContainer .main .long_input {
+  border: 2px solid #999;
+  border-radius: 5px;
+  padding: 5px;
   width: 40%;
+  min-width: 100px;
+  line-height: 1.5;
+  margin-right: 0.75rem;
+}
+.userHotelNoticeContainer .main textarea {
+  padding: 0.75rem;
+  resize: none;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  margin-bottom: 3%;
+  overflow: hidden;
+  height: 7rem;
+  width: 100%;
+  margin-bottom: 2%;
 }
 .userHotelNoticeContainer .main .pic_content {
   margin-bottom: 2%;
@@ -2139,13 +2242,13 @@
   transition: linear 0.1s;
 }
 .userHotelNoticeContainer .main .check_content {
-  margin-bottom: 2%;
+  margin-bottom: 2rem;
   width: 100%;
   display: flex;
   align-items: center;
 }
 .userHotelNoticeContainer .main .check_content .contentname {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 .userHotelNoticeContainer .main .check_content .btn {
@@ -2153,6 +2256,7 @@
   width: 20px;
   margin-left: 2%;
   margin-right: 2%;
+  min-width: 0;
   border-radius: 5px;
   cursor: pointer;
   background-color: white;
@@ -2173,13 +2277,11 @@
   justify-content: end;
 }
 .userHotelNoticeContainer .main .btn_content .btn {
-  margin-right: 1%;
-  margin-left: 1%;
-  margin-bottom: 1%;
-  height: 50%;
-  width: 5%;
-  border-radius: 5px;
-  background-color: white;
+  padding: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
 }
 .userHotelNoticeContainer .main .btn_content .btn:hover {
   background-color: black;

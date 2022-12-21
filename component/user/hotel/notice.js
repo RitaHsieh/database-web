@@ -3,6 +3,7 @@ import Header from "../../multi/header";
 // import Option from "./option"
 import style from "../../../styles/layout/home.module.css";
 import React, {useState} from 'react'
+import Link from "next/link";
 import 'react-day-picker/dist/style.css';
 
 export default function account() {
@@ -15,11 +16,8 @@ export default function account() {
                 <Menu/>
                 <div className={style.main}>
                     <div className={style.content}>
-                        <h1 className={style.title}>
-                            STEP 4/4 旅館資訊
-                        </h1>
-                        {/* <icon></icon> */}
-                        {/* <logo></logo> */}
+                        <h1 className={style.title}>STEP 4/4 旅館資訊</h1>
+                        <button className={style.hotelbutton}><Link href="/">預覽畫面</Link></button>
                     </div>
 
                     <div className={style.content}>
@@ -59,18 +57,19 @@ export default function account() {
                         <p className={style.selection}>禁止</p>
                     </div>
 
-                    <div className={style.pic_content}>
+                    <p className={style.spacing}>交通描述</p>
+                    <textarea className={style.textarea}></textarea>
+                    {/* <div className={style.pic_content}>
                         <div className={style.contentname}>交通描述</div>
                         <input className={style.image}>
                         
                         </input>
-                    </div>
+
+                    </div> */}
                     <div className={style.btn_content}>
+                    <button className={style.btn}><Link href="/user/hotel/room">上一步</Link></button>
                         <button className={style.btn}>完成</button>
                     </div>
-
-
-
                 </div>
             
             </div>

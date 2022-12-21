@@ -13,9 +13,8 @@ export default function setting() {
                 <p className={style.cellphone}>電話號碼</p>
                 <p className={style.email}>電子郵件</p>
                 <Link href='/user/personalinfo'><button className={style.btn}>個人資訊更改</button></Link>
+                <Link href='/user/hotel/info'><button className={style.btn}>升級成賣家</button></Link>
             </div>
-            <p className={style.contact}><a href="">聯絡我們Contact us</a></p>
-            
         </div>
        </>
     )

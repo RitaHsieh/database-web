@@ -2,6 +2,11 @@ import style from "../../styles/layout/home.module.css"
 
 
 export default function Searchform_2(){
+
+    const btnClick = () => {
+        setFloat(float => !float);
+    };
+    
     return (
         <>
             <div className={style.searchSearchformContainer}>
@@ -16,6 +21,7 @@ export default function Searchform_2(){
                 <input className={style.item} placeholder="出發時間"></input>
                 <input className={style.item} placeholder="抵達時間"></input>
                 <button className={style.btn}><span>搜尋 →</span></button>
+                <button className={style.btnfilter} onClick={btnClick}>篩選</button>
             </div>
         </>
     )

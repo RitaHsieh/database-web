@@ -1,9 +1,5 @@
 .hotelinfoSectionContainer {
-    position: absolute;
-    top: 15%;
-    right: 0;
-    width: 100%;
-    height: 85%;
+    @include bottom-block;
     .hotelInfoEvaluate, .hotelInfoInformation,
     .hotelInfoAttraction, .hotelInfoTransportation {
         padding: 1.5%;
@@ -13,28 +9,28 @@
     {
         margin-top: 2%;
     }
-    .titleLeftContainer{
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: $decorate-color;
-        color: white;
-        height: 100%;
-        font-family: $heading-font;
-        font-size: $font-size-md;
-        padding: $base-padding;
-        padding-top: $base-padding * 2;
-        width: 20%;
-        @include leftsearchbar;
-            .logo{
-                margin: auto;
-                margin-top: $base-margin * 1;
-                margin-bottom: $base-margin * 1;
-                height: 100px;
-                width: 100px;
-            }
-    }
+    // .titleLeftContainer{
+    //     position: fixed;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     background-color: $decorate-color;
+    //     color: white;
+    //     height: 100%;
+    //     font-family: $heading-font;
+    //     font-size: $font-size-md;
+    //     padding: $base-padding;
+    //     padding-top: $base-padding * 2;
+    //     width: 20%;
+    //     // @include leftsearchbar;
+    //         .logo{
+    //             margin: auto;
+    //             margin-top: $base-margin * 1;
+    //             margin-bottom: $base-margin * 1;
+    //             height: 100px;
+    //             width: 100px;
+    //         }
+    // }
     .main{
         position: absolute;
         width:80%;
@@ -42,6 +38,8 @@
         right: 0%;
         padding-left: 2%;
         padding-right: 2%;
+
+        @include set-rightblock-responsive(70%, 77%, 82%);
 
     }
 }
