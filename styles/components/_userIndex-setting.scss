@@ -1,18 +1,13 @@
 
 .userIndexSettingContainer{
-    
-    width: 20rem;
-    height: 100vh;
-    margin-left: 2rem;
+    @include left-block(20%, 20%);
+
     padding: 3.5%;
     padding-top: 5rem;
     padding-bottom: 2%;
-    background-color: $decorate-color;
-
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-direction: column;
+
+    
 
     h1{
         font-size: $font-size-xl;
@@ -54,7 +49,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
 
-        *{
+        p, button, h2{
 
             margin-top: $base-margin * 1.2;
             margin-bottom: $base-margin * 1.2;

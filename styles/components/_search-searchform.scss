@@ -1,11 +1,7 @@
 .searchSearchformContainer {
+    @include left-block(15%, 15%);
+    @include set-leftblock-responsive;
 
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    margin-top: $base-margin * 2;
-    
     * {
         height: 2.4rem;
         padding: 10px;
@@ -27,6 +23,21 @@
             box-shadow: 0 2px #666;
             transform: translateY(2px);
         }
+    }
+    .item, .btn, .btnfilter {
+        width: 80%;
+    }
+    .btnfilter{
+        border-radius: 5px;
+        cursor: pointer;
+        
+        height: 2.4rem;
+        padding: 10px;
+        margin: $base-margin * 0.75;
+        margin-top: 20%;
+        font-weight: bolder;
+        font-size: $base-font-size; 
+        
     }
     
 }

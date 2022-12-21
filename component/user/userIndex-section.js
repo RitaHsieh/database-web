@@ -15,8 +15,6 @@ export default function account() {
                 <Link href="/"><Image className={style.logo} src={logo} alt='alter'/></Link>
                 <Option/>
             </div>
-            
-            
         </div>
     )
 }

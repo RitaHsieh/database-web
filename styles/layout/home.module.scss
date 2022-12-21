@@ -5,11 +5,10 @@
 // base & layout
 @import 'breakpoints';
 // @import 'grid';
-
+@import 'style';
 
 // components (button, card, navbar etc)
 @import '../components/multi-header';
-@import '../components//multi-leftsearchbar';
 
 @import '../components/home-intro';
 @import '../components/home-login-bt';

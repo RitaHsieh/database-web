@@ -27,11 +27,7 @@ export default function HotelinfoSection() {
         <>
             <Header/>
             <div className={style.hotelinfoSectionContainer}>
-                <div className = {style.titleLeftContainer}>
-                    <Image className={style.logo} src={logo} alt='alter'/>
-                    <Searchform_2/>
-                    <button className={style.btnfilter} onClick={btnClick}>篩選</button>
-                </div>
+                <Searchform_2/>
                 <div className={style.main}>
                     <Title/>
                     <Introduction/>

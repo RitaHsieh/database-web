@@ -24,10 +24,9 @@ export default function search_section() {
         <>
             <Header/>
             <div className={style.searchBottomContainer}>
-                <div className={style.bottomleftcontainer}>
-                    <Searchform_2/>
-                    <button className={style.btnfilter} onClick={btnClick}>篩選</button>
-                </div>
+                <Searchform_2/>
+                    {/* <button className={style.btnfilter} onClick={btnClick}>篩選</button> */}
+                
                 <div className={style.hoteldata}>
                     <Order/>
                     <Search_result 
@@ -72,8 +71,8 @@ export default function search_section() {
                     />
                 </div>
             </div>
-            <div className={float===true?mask[0]:mask[1]} onClick={event=>btnClick()}></div>
-            <Filter float={float===true?0:1}/>
+            {/* <div className={float===true?mask[0]:mask[1]} onClick={event=>btnClick()}></div> */}
+            {/* <Filter float={float===true?0:1}/> */}
 
         </>
     )

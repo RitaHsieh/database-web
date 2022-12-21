@@ -485,17 +485,24 @@
 }
 
 .userIndexSettingContainer {
-  width: 20rem;
-  height: 100vh;
-  margin-left: 2rem;
+  position: fixed;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #858585;
+  color: white;
+  height: 100%;
+  font-family: Microsoft JhengHei;
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  padding-top: 1.5rem;
+  width: 20%;
+  min-width: 20%;
   padding: 3.5%;
   padding-top: 5rem;
   padding-bottom: 2%;
-  background-color: #858585;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex-direction: column;
 }
 .userIndexSettingContainer h1 {
   font-size: 2rem;
@@ -539,7 +546,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.userIndexSettingContainer .textcontainer * {
+.userIndexSettingContainer .textcontainer p, .userIndexSettingContainer .textcontainer button, .userIndexSettingContainer .textcontainer h2 {
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
 }
@@ -1002,72 +1009,6 @@
 .hotelinfoSectionContainer .hotelInfoAttraction, .hotelinfoSectionContainer .hotelInfoTransportation {
   margin-top: 2%;
 }
-.hotelinfoSectionContainer .titleLeftContainer {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #858585;
-  color: white;
-  height: 100%;
-  font-family: Microsoft JhengHei;
-  font-size: 1.2rem;
-  padding: 0.75rem;
-  padding-top: 1.5rem;
-  width: 20%;
-}
-@media (min-width: 480px) {
-  .hotelinfoSectionContainer .titleLeftContainer {
-    width: 25%;
-  }
-}
-@media (min-width: 720px) {
-  .hotelinfoSectionContainer .titleLeftContainer {
-    width: 23%;
-  }
-}
-@media (min-width: 960px) {
-  .hotelinfoSectionContainer .titleLeftContainer {
-    width: 23%;
-  }
-}
-@media (min-width: 1200px) {
-  .hotelinfoSectionContainer .titleLeftContainer {
-    width: 18%;
-  }
-}
-@media (min-width: 480px) {
-  .hotelinfoSectionContainer .titleLeftContainer .searchSearchformContainer, .hotelinfoSectionContainer .titleLeftContainer .btnfilter {
-    width: 80%;
-  }
-}
-@media (min-width: 960px) {
-  .hotelinfoSectionContainer .titleLeftContainer .searchSearchformContainer, .hotelinfoSectionContainer .titleLeftContainer .btnfilter {
-    width: 70%;
-  }
-}
-@media (min-width: 1200px) {
-  .hotelinfoSectionContainer .titleLeftContainer .searchSearchformContainer, .hotelinfoSectionContainer .titleLeftContainer .btnfilter {
-    width: 65%;
-  }
-}
-.hotelinfoSectionContainer .titleLeftContainer .btnfilter {
-  border-radius: 5px;
-  cursor: pointer;
-  height: 2.4rem;
-  padding: 10px;
-  margin: 0.75rem;
-  margin-top: 20%;
-  font-weight: bolder;
-  font-size: 1rem;
-}
-.hotelinfoSectionContainer .titleLeftContainer .logo {
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  height: 100px;
-  width: 100px;
-}
 .hotelinfoSectionContainer .main {
   position: absolute;
   width: 80%;
@@ -1075,6 +1016,21 @@
   right: 0%;
   padding-left: 2%;
   padding-right: 2%;
+}
+@media (min-width: 480px) {
+  .hotelinfoSectionContainer .main {
+    width: 75%;
+  }
+}
+@media (min-width: 720px) {
+  .hotelinfoSectionContainer .main {
+    width: 77%;
+  }
+}
+@media (min-width: 1200px) {
+  .hotelinfoSectionContainer .main {
+    width: 82%;
+  }
 }
 
 .roominfo {
@@ -1312,11 +1268,35 @@
 }
 
 .searchSearchformContainer {
+  position: fixed;
+  left: 0%;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  margin-top: 2rem;
+  align-items: center;
+  background-color: #858585;
+  color: white;
+  height: 100%;
+  font-family: Microsoft JhengHei;
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  padding-top: 1.5rem;
+  width: 15%;
+  min-width: 15%;
+}
+@media (min-width: 480px) {
+  .searchSearchformContainer {
+    width: 25%;
+  }
+}
+@media (min-width: 720px) {
+  .searchSearchformContainer {
+    width: 23%;
+  }
+}
+@media (min-width: 1200px) {
+  .searchSearchformContainer {
+    width: 18%;
+  }
 }
 .searchSearchformContainer * {
   height: 2.4rem;
@@ -1339,57 +1319,10 @@
   box-shadow: 0 2px #666;
   transform: translateY(2px);
 }
-
-.searchBottomContainer {
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
+.searchSearchformContainer .item, .searchSearchformContainer .btn, .searchSearchformContainer .btnfilter {
+  width: 80%;
 }
-.searchBottomContainer .bottomleftcontainer {
-  height: 100%;
-  position: fixed;
-  background-color: gray;
-  top: 15%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media (min-width: 480px) {
-  .searchBottomContainer .bottomleftcontainer {
-    width: 25%;
-  }
-}
-@media (min-width: 720px) {
-  .searchBottomContainer .bottomleftcontainer {
-    width: 23%;
-  }
-}
-@media (min-width: 960px) {
-  .searchBottomContainer .bottomleftcontainer {
-    width: 23%;
-  }
-}
-@media (min-width: 1200px) {
-  .searchBottomContainer .bottomleftcontainer {
-    width: 18%;
-  }
-}
-@media (min-width: 480px) {
-  .searchBottomContainer .bottomleftcontainer .searchSearchformContainer, .searchBottomContainer .bottomleftcontainer .btnfilter {
-    width: 80%;
-  }
-}
-@media (min-width: 960px) {
-  .searchBottomContainer .bottomleftcontainer .searchSearchformContainer, .searchBottomContainer .bottomleftcontainer .btnfilter {
-    width: 70%;
-  }
-}
-@media (min-width: 1200px) {
-  .searchBottomContainer .bottomleftcontainer .searchSearchformContainer, .searchBottomContainer .bottomleftcontainer .btnfilter {
-    width: 65%;
-  }
-}
-.searchBottomContainer .bottomleftcontainer .btnfilter {
+.searchSearchformContainer .btnfilter {
   border-radius: 5px;
   cursor: pointer;
   height: 2.4rem;
@@ -1399,6 +1332,15 @@
   font-weight: bolder;
   font-size: 1rem;
 }
+
+.searchBottomContainer {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
 .searchBottomContainer .hoteldata {
   position: absolute;
   width: 80%;
@@ -1407,6 +1349,21 @@
   right: 0%;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 480px) {
+  .searchBottomContainer .hoteldata {
+    width: 75%;
+  }
+}
+@media (min-width: 720px) {
+  .searchBottomContainer .hoteldata {
+    width: 77%;
+  }
+}
+@media (min-width: 1200px) {
+  .searchBottomContainer .hoteldata {
+    width: 82%;
+  }
 }
 
 .searchMask {
@@ -1427,6 +1384,7 @@
 
 .userMultiMenuContainer {
   position: fixed;
+  left: 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1438,6 +1396,7 @@
   padding: 0.75rem;
   padding-top: 1.5rem;
   width: 15%;
+  min-width: 15%;
 }
 .userMultiMenuContainer .title {
   align-items: center;
