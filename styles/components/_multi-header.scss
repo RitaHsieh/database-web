@@ -1,5 +1,5 @@
 .searchTopContainer{
-    background-color: dimgrey;
+    background-color: $header-background;
 
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,8 @@
 
     .text{
         color: white;
-        font-weight: bold;
+        font-weight: bolder;
+        font-family: $title-font;
 
         @include sm {
             font-size: $font-size-xl;
@@ -45,7 +46,7 @@
             height: 59px;
             width: 50px;
             border-radius: 25px;
-            background-color: dimgrey;
+            background-color: $header-background;
             * {
                 font-size: 50px;
                 margin: auto;

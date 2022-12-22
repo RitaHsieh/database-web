@@ -1,18 +1,7 @@
 
 .searchResultContainer{
-    //display
-    display: flex;
-    padding: $base-padding * 1.2;
 
-    //position
-    margin: auto;
-    margin-top: $base-margin;
-    margin-bottom: $base-margin;
-
-    //style
-    background:white;
-    border-radius: $base-border-radius;
-    color:black;
+    @include white-board;
 
     @include sm {
         height: 38%;
@@ -28,10 +17,7 @@
     @include xl {
         width: 75%;
     }
-    // .imgcontainer {
-    //     width: 100%;
-    //     height: 20%;
-    // }
+
     .img{
         
         width: null;

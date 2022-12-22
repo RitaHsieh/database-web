@@ -1,18 +1,9 @@
 .searchOrderContainer {
 
-    // margin-left: auto;
     align-self: flex-end;
 
-    background: $background-color;
-
-    font-size: $base-font-size;
-    font-weight: 600;
-    padding-left: $base-padding;
-
-    border: None;
-    border-radius: 0.5rem;
-
-    // align-self: flex-end;
+    @include input-box;
+    border: 1px solid $light-grey;
     .option {
         font-weight: 600;
         background: #FFFFFF;

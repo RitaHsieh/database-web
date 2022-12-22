@@ -1,0 +1,68 @@
+@mixin button {
+    padding: $base-padding;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: $base-border-radius;
+    margin: $base-margin;
+    max-height: 40px;
+    min-width: 80px;
+    text-align: center;
+    font-size: $base-font-size;
+    background-color: $decorate-color;
+    color: white;
+    * {
+        font-size: $base-font-size;
+    }
+    &:hover {
+        background-color: black;
+        color: white;
+        transition: linear 0.2s;
+    }
+}
+
+//based on button
+@mixin label {
+    padding: $base-padding;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: $base-border-radius;
+    margin: $base-margin;
+    margin-right: 0.5rem;
+    max-height: 35px;
+    min-width: 70px;
+    text-align: center;
+    background-color: $decorate-color;
+    color: white;
+}
+
+@mixin white-board {
+    //display
+    display: flex;
+    padding: $base-padding * 1.2;
+
+    //position
+    margin: auto;
+    margin-top: $base-margin;
+    margin-bottom: $base-margin;
+
+    //style
+    background-color: white;
+    border-radius: $base-border-radius;
+    border: $light-grey solid 2px;
+}
+
+@mixin white-board-style {
+    //style
+    background-color: white;
+    border-radius: $base-border-radius;
+    border: $light-grey solid 1px;
+}
+
+@mixin input-box {
+    height: 2.4rem;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    font-weight: bolder;
+    font-size: $base-font-size;
+}
