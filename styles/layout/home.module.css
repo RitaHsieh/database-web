@@ -2912,6 +2912,11 @@
     background-color: #d3d3d3;
   }
 }
+.adminJournalSection_SettingContainer .imageFrame {
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
 
 .idContainer {
   height: 100%;
@@ -3080,4 +3085,66 @@
   margin-top: 25%;
   height: 10%;
   font-size: 2rem;
+}
+
+.searchContainer {
+  height: 100%;
+  width: 40%;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.searchContainer .textBlock {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.searchContainer .formBlock {
+  height: 60%;
+  padding-top: 3rem;
+}
+.searchContainer .formBlock .idDetail {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchContainer .formBlock .idDetail .detailP {
+  height: 50%;
+  width: 30%;
+  font-size: 1.25rem;
+}
+.searchContainer .formBlock .idDetail .or {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5%;
+}
+.searchContainer .formBlock .idDetail .detailForm {
+  background-color: white;
+  border-radius: 10px;
+  height: 50%;
+  width: 50%;
+  font-size: 1.25rem;
+  margin-left: 2%;
+  margin-bottom: 1.75%;
+  padding-left: 0.75rem;
+}
+.searchContainer .buttonBlock {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchContainer .buttonBlock .button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 50%;
+  width: 50%;
+  border-radius: 20px;
 }/*# sourceMappingURL=home.module.css.map */
