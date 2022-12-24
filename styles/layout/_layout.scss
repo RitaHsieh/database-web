@@ -21,14 +21,12 @@
     padding: $base-padding;
     padding-top: $base-padding * 2;
     width: $width;
-
+    z-index: 2;
 }
 
 @mixin right-block {
     position: absolute;
-    width:80%;
-    // top: 20%;
-    // z-index: -1;
+    width:85%;
     right: 0%;
     display: flex;
     flex-direction: column;

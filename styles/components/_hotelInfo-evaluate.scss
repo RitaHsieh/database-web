@@ -29,26 +29,20 @@
       grid-row: 1/-1;
       display: inline-block;  
       padding: $base-padding;
-      background: white;
-      border-radius: 10px;
+      @include white-board-style;
       height: 200px;
       width: 280px;
       left: 0px;
       * {
-        margin: $base-margin * 0.8;
+        margin-left: $base-margin * 0.8;
+        margin-right: $base-margin * 0.8;
       }
       .name {
         word-wrap: break-word;
       }
       .evaluatecontainergray {
-        display: flex;
-        align-items: center;
-        padding: 2%;
-        background: rgb(180, 180, 180);
-        border-radius: 10px;
-        height: 30px;
+        @include label;
         width:fit-content;
-        left: 0px;
       }
       .circle{
         width:50px; 
