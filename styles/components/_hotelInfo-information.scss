@@ -8,16 +8,20 @@
     }
 
     .searchcontainer {
-        display: flex;
+        @include white-board;
         flex-direction: column;
-
         justify-content: space-between;
-        margin-top: $base-margin * 2;
-        padding: $base-padding * 2;
-        background: white;
-        border-radius: $base-border-radius;
+        // display: flex;
+        // flex-direction: column;
+
+        // justify-content: space-between;
+        // margin-top: $base-margin * 2;
+        // padding: $base-padding * 2;
+        // background: white;
+        // border-radius: $base-border-radius;
         height: 300px;
-        width: 60%;
+        width: 94%;
+        margin-top: $base-margin * 2;
     }
 
     .searchcontainerALL {

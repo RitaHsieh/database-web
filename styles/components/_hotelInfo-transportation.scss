@@ -7,14 +7,16 @@
         position: relative;
       }
     .name {
+        @include white-board;
+        margin: auto;
         margin-top: $base-margin * 2;
-        width: 60%;
-        font-size: $base-font-size;
-        position: relative;
-        background-color: white;
-        padding: $base-padding * 2;
-        font-weight: bold;
-        border-radius: $base-border-radius;
+        width: 94%;
+        // font-size: $base-font-size;
+        // position: relative;
+        // background-color: white;
+        // padding: $base-padding * 2;
+        // font-weight: bold;
+        // border-radius: $base-border-radius;
 
     }
 

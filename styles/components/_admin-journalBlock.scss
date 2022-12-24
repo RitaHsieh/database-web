@@ -91,4 +91,24 @@
             width: 100%;
         }
     }
+
+    .nojournalBlock{
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //justify-content: center;
+        .noInfo{
+            margin-top: 100px;
+            height: 10%;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .back{
+            margin-top: 25%;
+            height: 10%;
+            font-size: 2rem;
+        }
+    }
 }

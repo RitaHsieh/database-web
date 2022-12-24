@@ -56,9 +56,9 @@
             grid-column-end: 2;
         }
     }
-    @include lg {
+    @include xl {
 
-        grid-template-columns: 7fr 1fr;
+        grid-template-columns: 6fr 1fr;
         .right {
             grid-column-start: 2;
             grid-column-end:3;
