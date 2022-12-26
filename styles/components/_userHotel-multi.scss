@@ -18,11 +18,13 @@
 @mixin input($width) {
     border: 2px solid #999;
     border-radius: 5px;
-    padding: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
     width: $width;
     min-width: 100px;
     line-height: 1.5;
     margin-right: $base-padding;
+    font-size: $base-font-size;
 }
 
 @mixin textarea {

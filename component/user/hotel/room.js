@@ -4,19 +4,49 @@ import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../../../public/image/logo2.png'
 import Header from "../../multi/header";
+import Label from "./additem";
 
-
+import {useState} from 'react';
+import useSWR from "swr";
 
 export default function room() {
-    
+
+    const initialList=[];
+
+    const [label, setLabel] = useState(true);
+    const [list, setList] = useState(initialList);
+    const [name, setName] = useState('');
+
+    const label_input = [style.addLabel, style.addLabel_hide];
+
+
+    const addOnClick = () => {
+        setLabel(label => !label);
+    };
+    const handleChange = (e) => {
+        setName(e.target.value);
+    }
+
+    const handler = (e) => {
+
+        if (e.key==='Enter'){
+            setLabel(label => !label);
+            const newList = list.concat([{name: name, id: '1'},]);
+            setList(newList);
+            setName('');
+        }
+    };
+
+
     return (
         <>
             <Header/>
             <div className={style.userHotelRoomContainer}>
+                {console.log("render")}
                 <Menu/>
                 <div className={style.main}>
                     <div className={style.content}>
-                        <h1>STEP 3/4 房型資訊設定</h1>
+                        <h1>房型設定</h1>
                         <button className={style.hotelbutton}><Link href="/">預覽畫面</Link></button>
                     </div>
                     <form className={style.roomform}>
@@ -45,9 +75,17 @@ export default function room() {
                         <textarea className={style.textarea}></textarea>
                         <p>房間設施</p>
                         <div className={style.labelcontainer}>
-                        <button className={style.add}>
-                            <i class="bi bi-plus"></i>
-                        </button>
+                            <ul>
+                            {list.map((item) => (    
+                                <Label name={item.name}></Label>
+                            ))}
+                            </ul>
+                            <button className={style.add} type="button" onClick={event=>addOnClick()}> 
+                                <i class="bi bi-plus"></i>
+                            </button>
+                        </div>
+                        <div className={label_input[label===true?1:0]}> 
+                            <input type="text" onKeyDown={(e) => handler(e)} onChange={(e) => handleChange(e)} value={name} placeholder="add label here"></input>
                         </div>
                         <div className={style.content}>
                             <p>網站價</p><input className={style.input} type="text"></input>
@@ -60,12 +98,11 @@ export default function room() {
                         </div>
                     </form>
                     <div className={style.newroom}>
-                        <i class="bi bi-plus"></i>
+                        <i className="bi bi-plus"></i>
                         <p>新增房型</p>
                     </div>
                     <div className={style.btn_content}>
-                        <button className={style.btn}><Link href="/user/hotel/feature">上一步</Link></button>
-                        <button className={style.btn}><Link href="/user/hotel/notice">下一步</Link></button>
+                        <button className={style.btn}><Link href="/user/hotel/">確認</Link></button>
                     </div>
                 </div>
             

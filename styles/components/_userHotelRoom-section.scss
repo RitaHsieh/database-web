@@ -73,5 +73,14 @@
             background-color: white;
             border-radius: $base-border-radius;
         }
+
+        .addLabel{
+            display: inline;
+            margin-bottom: 2rem;
+        }
+        .addLabel_hide{
+            display: none;
+            height: 0;
+        }
     }
 }

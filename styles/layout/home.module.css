@@ -1230,6 +1230,9 @@
   font-size: 1rem;
   border: 1px solid #EEEEEE;
 }
+.searchOrderContainer * {
+  font-size: 1rem;
+}
 .searchOrderContainer .option {
   font-weight: 600;
   background: #FFFFFF;
@@ -1378,6 +1381,9 @@
   font-size: 1rem;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+.searchSearchformContainer * * {
+  font-size: 1rem;
 }
 .searchSearchformContainer .btn {
   cursor: pointer;
@@ -1842,20 +1848,24 @@
 .userHotelInfoContainer .main .short_input {
   border: 2px solid #999;
   border-radius: 5px;
-  padding: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
   width: 30%;
   min-width: 100px;
   line-height: 1.5;
   margin-right: 0.75rem;
+  font-size: 1rem;
 }
 .userHotelInfoContainer .main .long_input {
   border: 2px solid #999;
   border-radius: 5px;
-  padding: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
   width: 40%;
   min-width: 100px;
   line-height: 1.5;
   margin-right: 0.75rem;
+  font-size: 1rem;
 }
 .userHotelInfoContainer .main .pic_content {
   margin-bottom: 2%;
@@ -2158,11 +2168,13 @@
 .userHotelRoomContainer .main .roomform input {
   border: 2px solid #999;
   border-radius: 5px;
-  padding: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
   width: 30%;
   min-width: 100px;
   line-height: 1.5;
   margin-right: 0.75rem;
+  font-size: 1rem;
 }
 .userHotelRoomContainer .main .roomform .labelcontainer {
   display: flex;
@@ -2251,6 +2263,14 @@
 .userHotelRoomContainer .main .newroom i {
   font-size: 3rem;
 }
+.userHotelRoomContainer .main .addLabel {
+  display: inline;
+  margin-bottom: 2rem;
+}
+.userHotelRoomContainer .main .addLabel_hide {
+  display: none;
+  height: 0;
+}
 
 .userHotelNoticeContainer {
   position: absolute;
@@ -2334,20 +2354,24 @@
 .userHotelNoticeContainer .main .short_input {
   border: 2px solid #999;
   border-radius: 5px;
-  padding: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
   width: 30%;
   min-width: 100px;
   line-height: 1.5;
   margin-right: 0.75rem;
+  font-size: 1rem;
 }
 .userHotelNoticeContainer .main .long_input {
   border: 2px solid #999;
   border-radius: 5px;
-  padding: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
   width: 40%;
   min-width: 100px;
   line-height: 1.5;
   margin-right: 0.75rem;
+  font-size: 1rem;
 }
 .userHotelNoticeContainer .main textarea {
   padding: 0.75rem;
