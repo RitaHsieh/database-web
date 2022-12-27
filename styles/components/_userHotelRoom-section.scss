@@ -39,6 +39,7 @@
 
             .labelcontainer {
                 display: flex;
+                flex-wrap: wrap;
                 margin: 0;
                 margin-bottom: $base-margin;
                 @include styled_botton;

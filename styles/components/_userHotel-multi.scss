@@ -12,6 +12,9 @@
     .added {
         @include button;
         margin-bottom: $base-margin;
+        &:hover{
+            background-color: #7d0e0e;
+        }
     }
 }
 

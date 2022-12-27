@@ -2045,6 +2045,9 @@
   color: white;
   transition: linear 0.2s;
 }
+.userHotelFeatureContainer .main .label_content .added:hover {
+  background-color: #7d0e0e;
+}
 .userHotelFeatureContainer .main .btn_content {
   margin-top: auto;
   display: flex;
@@ -2178,6 +2181,7 @@
 }
 .userHotelRoomContainer .main .roomform .labelcontainer {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 1rem;
 }
@@ -2230,6 +2234,9 @@
   background-color: black;
   color: white;
   transition: linear 0.2s;
+}
+.userHotelRoomContainer .main .roomform .labelcontainer .added:hover {
+  background-color: #7d0e0e;
 }
 .userHotelRoomContainer .main .roomform .textarea {
   height: 10em;
