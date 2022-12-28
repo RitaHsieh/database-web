@@ -2,13 +2,13 @@ import style from "../../../styles/layout/home.module.css"
 import Image from 'next/image'
 import logo from '../../../public/image/logo2.png'
 
-export default function HouseResult() {
+export default function UserResult() {
 
     const options = [
-        {name : '房屋名稱 (營業證字號)', owner : '房屋持有者：', roomStyle:'房型數量：', comment : '評價星級', rent : '租房次數',detail :'詳細資訊' },
-        {name : '房屋名稱 (營業證字號)', owner : '房屋持有者：', roomStyle:'房型數量：', comment : '評價星級', rent : '租房次數',detail :'詳細資訊' }
+        {name : '使用者名稱 (使用者ID)', permission : '帳號權限：', register:'登記房屋數量：', accomodation : '住宿次數', rent : '租房次數',personalInfo :'個人資訊' },
+        {name : '使用者名稱 (使用者ID)', permission : '帳號權限：', register:'登記房屋數量：', accomodation : '住宿次數', rent : '租房次數',personalInfo :'個人資訊' }
     ]
-
+    
     return (
         <>
             <div className={style.SearchResultContainer}>
@@ -20,7 +20,7 @@ export default function HouseResult() {
                         <div className={style.rbDetailContainer}>
                             <div className={style.containerLeft}>
                                 <div className={style.jbImageContainer}>
-                                    <div className={style.houseImageFrame}>
+                                    <div className={style.userImageFrame}>
                                         <Image className={style.logo} src={logo} alt='alter'/>
                                     </div>
                                 </div>
@@ -28,13 +28,13 @@ export default function HouseResult() {
                             
                             <div className={style.containerRight}>
                                 <div className={style.title}>{option.name}</div>
-                                <div className={style.middleInfo}>{option.owner}</div>
-                                <div className={style.middleInfo}>{option.roomStyle}</div>
+                                <div className={style.middleInfo}>{option.permission}</div>
+                                <div className={style.middleInfo}>{option.register}</div>
                                 <div className={style.space}></div>
                                 <div className={style.rowContainer}>
-                                    <div className={style.content}>{option.comment}</div>
+                                    <div className={style.content}>{option.accomodation}</div>
                                     <div className={style.content}>{option.rent}</div>
-                                    <div className={style.bigcontent}>{option.detail}</div>
+                                    <div className={style.bigcontent}>{option.personalInfo}</div>
                                 </div>
                             </div>
                         </div>
