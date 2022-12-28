@@ -1,7 +1,8 @@
 .idContainer{
     height: 100%;
-    width: 30%;
-    padding: $base-padding * 4;
+    width: 27.5%;
+    padding-left: $base-padding * 4;
+    padding-top: $base-padding * 4;
     padding-bottom: $base-padding * 8;
 
     .idBlock{
@@ -9,7 +10,7 @@
         height: 100%;
         width: 100%;
         border-radius: 30px;
-        padding: $base-padding * 2;
+        padding: $base-padding ;
 
         .idTitle{
             height: 10%;

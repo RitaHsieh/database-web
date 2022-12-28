@@ -1,0 +1,100 @@
+.SearchHouseResultContainer{
+    height: 100%;
+    width: 90%;
+    padding-right: $base-padding * 4;
+    padding-top: $base-padding * 4;
+    padding-bottom: $base-padding * 4;
+
+    .rbTitle{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .resultBlock{
+        height: 90%;
+        width: 100%;
+
+        .blockSpace{
+            height: 5%;
+            width: 100%;
+        }
+
+        .rbDetailContainer{
+            height: 45%;
+            width: 100%;
+            background-color: white;
+            border-radius: 30px;
+            padding: $base-padding*2;
+            display: flex;
+            margin-bottom: 3.5%;
+
+            .containerLeft{
+                height: 100%;
+                width: 30%;
+                display: flex;
+                align-items: center;
+
+                .jbImageContainer{
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    .imageFrame{
+                        height: 175px;
+                        width: 175px;
+                        border-radius: 999em;
+                        background-color: #d3d3d3;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            .containerRight{
+                height: 100%;
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+
+                .title{
+                    font-size: 2rem;
+                    font-weight: bold;
+                    height: 25%;
+                }
+
+                .middleInfo{
+                    padding-top: 1%;
+                    height: 20%;
+                    font-size: 1.25rem;
+                }
+
+                .space{
+                    height:10%;
+                }
+
+                .rowContainer{
+                    display: flex;
+                    align-items: center;
+                    height: 25%;
+
+                    .content{
+                        font-size: 1.25rem;
+                        margin-right: 13%;
+                    }
+                    .bigcontent{
+                        font-size: 2rem;
+                        font-weight: bold;
+                        margin-left: 13%;
+                    }
+                }
+            }
+        }
+    }
+}
