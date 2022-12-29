@@ -1990,6 +1990,7 @@
   box-shadow: 1px 1px 1px #999;
   margin-bottom: 3%;
   overflow: hidden;
+  font-size: 1rem;
 }
 .userHotelFeatureContainer .main .label_content {
   display: flex;
@@ -2249,6 +2250,7 @@
   box-shadow: 1px 1px 1px #999;
   margin-bottom: 3%;
   overflow: hidden;
+  font-size: 1rem;
 }
 .userHotelRoomContainer .main .btn_content {
   margin-top: auto;
@@ -2389,6 +2391,7 @@
   box-shadow: 1px 1px 1px #999;
   margin-bottom: 3%;
   overflow: hidden;
+  font-size: 1rem;
   height: 7rem;
   width: 100%;
   margin-bottom: 2%;
