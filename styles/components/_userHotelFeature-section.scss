@@ -1,0 +1,25 @@
+.userHotelFeatureContainer {
+    @include bottom-block;
+
+    .main {
+        @include template;
+        .textarea {
+            height: 16em;
+            width: 100%;
+            @include textarea;
+        }
+        .label_content {
+            display: flex;
+            margin-bottom: 2%;
+            @include styled_botton;
+            
+        }   
+        
+        .btn_content {
+            margin-top: auto;
+            display: flex;
+            justify-content: flex-end;
+            height: 10%;
+        }
+    }
+}

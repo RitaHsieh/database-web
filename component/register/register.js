@@ -3,17 +3,54 @@ import Script from 'next/script'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from "react"
+import useSWR from "swr"
 
-import logo from '../../public/image/logo.png'
-import arrow from '../../public/image/arrow.png'
+import logo from '../../public/image/logo2.png'
+import arrow from '../../public/image/304.png'
+
+
 
 
 export default function loginform() {
+
     const [username,setUsername] = useState('');
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
-    const [gender,setGender] = useState('');
+    const [gender,setGender] = useState(1);
     const [phonenumber,setPhonenumber] = useState('');
+    const [shouldFetch,setShouldFetch] = useState(false);
+
+    const options = [
+        {value: 1 , text: '男'},
+        {value: 2 , text: '女'},
+        {value: 0 , text: '其他'},
+    ];
+
+    const buttonClick=()=>{
+        setShouldFetch(shouldFetch => !shouldFetch);
+    }
+
+    const fetcher = (url,username,email,password,gender,phonenumber) => {fetch(url, {
+        headers: {
+            'content-type': 'application/json',
+        },
+        body: JSON.stringify({  
+            "email": email,
+            "password": password,
+            "name": username,
+            "gender": gender,
+            "phone": phonenumber,
+            "member_type": 0
+        }),
+        method: 'POST'}).then((response)=>{
+            setShouldFetch(shouldFetch => !shouldFetch);
+        })
+    
+    }
+
+
+
+    const { data } = useSWR(shouldFetch ? ['https://dhkmj1jao2.execute-api.us-east-1.amazonaws.com/test/auth/register', username,email,password,gender,phonenumber] : null, fetcher)
 
     
     return(
@@ -26,7 +63,7 @@ export default function loginform() {
                     <Script src="https://accounts.google.com/gsi/client" async defer />
                     <div id="g_id_onload"
                         data-client_id="278424498443-1su4ostu34uq6m9lqavag4pm8e916pt9.apps.googleusercontent.com"
-                        data-login_uri="http://localhost:3000/login"
+                        data-login_uri="/login"
                         data-auto_prompt="false">
                     </div>
                     <div class="g_id_signin"
@@ -56,11 +93,13 @@ export default function loginform() {
                     <input type="text" name="password" className={style.block} placeholder="password" onChange={event=>{setPassword(event.target.value)}}></input>
                     </p>
                     <p>
-                    <select className={style.block}>
-                        <option className={style.option} value="none" selected disabled hidden onChange={event=>{setGender(event.target.value)}}>性別</option> 
-                        <option className={style.option} value="male">男</option> 
-                        <option className={style.option} value="female">女 </option> 
-                        <option className={style.option} value="other">其他</option> 
+                    
+                    <select className={style.block} onChange={event=>{setGender(event.target.value)}}> 
+                        {options.map(option => (
+                            <option className={style.option} key={option.value} value={option.value}>
+                                {option.text}
+                            </option>
+                        ))}
                     </select>
                     </p>
                     <p>
@@ -69,9 +108,7 @@ export default function loginform() {
                 </form>
 
                 <hr className={style.line}></hr>
-                <Link className={style.button2} href="https://www.youtube.com/watch?v=4JNb4fiT1VA&list=RDV91B6aQOn4k&index=13&ab_channel=%E9%BA%8B%E5%85%88%E7%94%9FMIXER">
-                    <Image src={arrow} alt='alter' />
-                </Link>
+                <Image src={arrow} alt='alter' onClick={buttonClick}/>
             </div>
         </>
     )

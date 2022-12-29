@@ -1,0 +1,22 @@
+.hotelInfoIntroduction{
+    padding: 1.5%;
+    .title{
+        font-size: $font-size-xl;
+        font-weight: bold;
+    }
+    .content{
+        margin: $base-margin;
+    }
+    .s_title{
+        font-size: $font-size-md;
+        margin: 0.5rem;
+        font-weight: bold;
+    }
+    .block{
+        display: flex;
+        p{
+            @include label;
+        }
+    }
+    
+}

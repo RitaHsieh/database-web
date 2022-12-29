@@ -7,17 +7,22 @@
     display: flex;
 
     .userinfoblock {
+        position: absolute;
+        
         margin: auto;
         background-color: white;
         @include sm {
             padding: $base-padding * 2;
-            width: 100%;
+            left: 15%;
+            width: 85%;
             height: 100%;
         }
         @include lg {
             padding: $base-padding * 4;
+            top: 6%;
+            right: 2%;
             width: 70%;
-            height: 84%;
+            height: 88%;
             border-radius: $base-border-radius;
             border: 1px solid $secondary-color;
         }
@@ -65,22 +70,25 @@
         }
         .userbutton, .submit {
             background-color: white;
-            border: 1px solid $decorate-color;
+            border: 2px solid $decorate-color;
             border-radius: 5px;
             height: 2.3rem;
             font-size: $font-size-md;
+            padding-right: $base-padding;
+            padding-left: $base-padding;
+
             &:hover {
-                background-color: $decorate-color;
+                background-color: #AAA;
+                border: none;
                 color: white;
             }
             @include sm {
                 font-size: $base-font-size;
-                width: 90px;
             }
             @include lg {
                 font-size: $font-size-md;
-                width: 100px;
             }
+            min-width: 120px;
         }
     }
 
@@ -144,7 +152,7 @@
             margin-left: 8%;
         }
         
-        input {
+        input, button {
             border: 1px solid $decorate-color;
             border-radius: 3px;
             height: 2rem;
@@ -152,6 +160,7 @@
             padding-right: $base-padding;
             grid-column-start: 2;
             grid-column-end: 4;
+            background-color: white;
         }
         
         p {
@@ -164,5 +173,30 @@
             grid-column-start: 3;
             grid-column-end: 4;
         }  
+    }
+    .mask{
+        visibility: hidden;
+    }
+    .mask1{
+        height: 100%;
+        background-color: #000;
+        opacity: 0.4;
+        z-index: 1;
+        width:100%;
+        position: fixed; 
+    }
+    .daypicker{
+        visibility: hidden;
+        position: absolute;
+    }
+    .daypicker1{
+        background-color: #fff;
+        border-radius: $base-border-radius;
+        padding: 40px;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        z-index: 2;
+        transform: translate(-50%,-50%);
     }
 }

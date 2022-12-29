@@ -1,18 +1,23 @@
 import Setting from "./Setting"
 import Option from "./option"
 import style from "../../styles/layout/home.module.css"
+import Image from 'next/image'
+import Link from 'next/link'
+import Header from '../multi/header'
+
+import logo from '../../public/image/logo2.png'
 
 export default function account() {
     return (
-        <div className={style.userIndexSectionContainer}>
+        <>
+            <Header/>
+            <div className={style.userIndexSectionContainer}>
 
-            <Setting/>
-            <div className={style.columnContainer}>
-                <a href="http://localhost:3000/home"><img src="logo.png" alt="image" /></a>
+                <Setting/>
                 <Option/>
+                
             </div>
-            
-            
-        </div>
+        </>
+        
     )
 }

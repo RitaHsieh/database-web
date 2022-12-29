@@ -1,24 +1,9 @@
-import Left from "../component/hotelInfo/room"
-import Right from "../component/hotelInfo/book"
-import Evaluate from "../component/hotelInfo/evaluate"
-import Attraction from "../component/hotelInfo/attraction"
-import Information from "../component/hotelInfo/information"
-import Transportation from "../component/hotelInfo/transportation"
-export default function Home() {
+import Section from "../component/hotelInfo/section"
+export default function Hotelinfo() {
     return (
         <>
-            <div style={{display:"flex"}}>
-                <div>
-                    <Left/>
-                    <Left/>
-                    <Left/>
-                </div>
-                <Right/>
-            </div>
-            <Evaluate/>
-            <Attraction/>
-            <Information/>
-            <Transportation/>
+            <Section/>
+            {/* <div className={style.intro} ref={ref}><PopularHotel/></div> */}
         </>
     )
 }

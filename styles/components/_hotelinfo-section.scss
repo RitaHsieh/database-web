@@ -1,0 +1,77 @@
+.hotelinfoSectionContainer {
+    @include bottom-block;
+    .hotelInfoEvaluate, .hotelInfoInformation,
+    .hotelInfoAttraction, .hotelInfoTransportation {
+        padding: 1.5%;
+    }
+    .roominfo, .hotelInfoEvaluate, .hotelInfoInformation, 
+    .hotelInfoAttraction, .hotelInfoTransportation
+    {
+        margin-top: 2%;
+    }
+    // .titleLeftContainer{
+    //     position: fixed;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     background-color: $decorate-color;
+    //     color: white;
+    //     height: 100%;
+    //     font-family: $heading-font;
+    //     font-size: $font-size-md;
+    //     padding: $base-padding;
+    //     padding-top: $base-padding * 2;
+    //     width: 20%;
+    //     // @include leftsearchbar;
+    //         .logo{
+    //             margin: auto;
+    //             margin-top: $base-margin * 1;
+    //             margin-bottom: $base-margin * 1;
+    //             height: 100px;
+    //             width: 100px;
+    //         }
+    // }
+    .main{
+        position: absolute;
+        width:80%;
+        height: 100%;
+        right: 0%;
+        padding-left: 2%;
+        padding-right: 2%;
+
+        @include set-rightblock-responsive(70%, 77%, 82%);
+
+    }
+}
+
+.roominfo {
+
+    display: grid;
+
+    @include sm {
+        
+        grid-template-columns: 1fr;
+        .right, .left{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
+    @include xl {
+
+        grid-template-columns: 6fr 1fr;
+        .right {
+            grid-column-start: 2;
+            grid-column-end:3;
+        }
+        .left {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
+    
+    .title {
+        font-size: $font-size-xl;
+        font-weight: bold;
+        margin: $base-margin;
+    }
+}

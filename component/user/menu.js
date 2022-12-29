@@ -1,7 +1,12 @@
 import style from "../../styles/layout/home.module.css"
-
+import React from 'react';
+import { useMediaQuery } from 'react-responsive'
+import Link from 'next/link';
 
 export default function menu() {
+    const matches = useMediaQuery({
+        query: '(max-width: 960px)'
+      })
     return(
         <div className={style.userMultiMenuContainer}>  
              <div className={style.title}>
@@ -9,32 +14,33 @@ export default function menu() {
                 <i class="bi bi-gear"></i>
                 <h1>設定</h1>
              </div>
-             <div className={style.options}>
-                <a className={style.button} href="history">
+
+             <div className={matches?style.smoptions:style.options}>
+                <Link className={style.button} href="history">
                 <i class="bi bi-receipt"></i>
                 <p>歷史訂單</p>
-                </a>
-                <a className={style.button} href="payment">
+                </Link>
+                <Link className={style.button} href="payment">
                 <i class="bi bi-credit-card"></i>
                 <p>付款資訊</p>
-                </a>
-                <a className={style.button} href="collection">
+                </Link>
+                <Link className={style.button} href="collection">
                 <i class="bi bi-bag-heart"></i>
                 <p>收藏紀錄</p>
-                </a>
-                <a className={style.button} href="privacysetting">
+                </Link>
+                <Link className={style.button} href="privacysetting">
                 <i class="bi bi-shield-lock"></i>
                 <p>隱私設定</p>
-                </a>
+                </Link>
                 <hr></hr>
-                <a className={style.button} href="">
+                <Link className={style.button} href="">
                 <i class="bi bi-house"></i>
                 <p>旅館管理</p>
-                </a>
-                <a className={style.button} href="">
+                </Link>
+                <Link className={style.button} href="/user/sell/">
                 <i class="bi bi-ui-checks-grid"></i>
                 <p>銷售管理</p>
-                </a>
+                </Link>
              </div>
         </div>
     )

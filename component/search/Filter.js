@@ -2,6 +2,14 @@ import style from "../../styles/layout/home.module.css"
 
 export default function filter({float}) {
     const container=[style.searchFilterContainer,style.containerhidden];
+
+    const options = [
+        {value: '', text: ''},
+        {value: 1 , text: '一人'},
+        {value: 2 , text: '兩人'},
+        {value: 3 , text: '三人'},
+      ];
+
     return(
         <>
             <div className={container[float]}>

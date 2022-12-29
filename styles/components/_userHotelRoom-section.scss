@@ -1,0 +1,77 @@
+.userHotelRoomContainer {
+    @include bottom-block;
+
+    .main{
+        @include template;
+        
+        .roomform {
+            width: 100%;
+            background-color: white;
+            border-radius: $base-border-radius;
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            padding-bottom: 2%;
+            margin-bottom: 3%;
+            p {
+                margin-right: 8%;
+            }
+            .input {
+                display: flex;
+                align-items: center;
+                min-width: 200px;
+                @include sm {
+                    flex-direction: column;
+                }
+                @include lg {
+                    flex-direction: row;
+                }
+                p {
+                    margin-right: $base-margin * 3;
+                }
+                input {
+                    width: 10%;
+                }
+            }
+            input {
+                @include input(30%);
+            }
+
+            .labelcontainer {
+                display: flex;
+                margin: 0;
+                margin-bottom: $base-margin;
+                @include styled_botton;
+            }
+
+            .textarea {
+                height: 10em;
+                width: 100%;
+                @include textarea;
+            }
+            
+        } 
+
+        .btn_content {
+            margin-top: auto;
+            display: flex;
+            justify-content: flex-end;
+            height: 10%;
+        } 
+
+        .newroom {
+            * {
+                font-size: $font-size-xl;
+                font-weight: bold;
+            }
+            i {
+                font-size: $font-size-xxl;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: $base-border-radius;
+        }
+    }
+}

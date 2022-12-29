@@ -2,14 +2,16 @@ import Image from "next/image"
 import { StyleRegistry } from "styled-jsx"
 import style from "../../styles/layout/home.module.css"
 import image from '../../public/image/image.jpg'
-
+import Link from "next/link"
 
 
 export default function search_result(props) {
     return(
         <>
-            <div className={style.searchResultContainer}>
-                <Image src={image} alt="image" className={style.img}/> 
+            <Link href="\hotelinfo" className={style.searchResultContainer}>
+                {/* <div className={style.imgcontainer}> */}
+                    <Image src={image} alt="image" className={style.img}/> 
+                {/* </div> */}
                 <div className={style.content}>
                     <h1>{props.name}</h1>
                     <p className={style.location}>{props.addr}</p>
@@ -20,7 +22,7 @@ export default function search_result(props) {
                         <h1>{props.condition}</h1>
                     </div>
                 </div>
-            </div>
+            </Link>
         </>
     )
 }

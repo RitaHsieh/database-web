@@ -1,0 +1,50 @@
+.userHotelInfoContainer {
+    @include bottom-block;
+
+    .main{
+        @include template;
+        .short_input{
+            @include input(30%);
+        }
+        .long_input{
+            @include input(40%);
+        }
+        .pic_content{
+            margin-bottom: 2%;
+            height: 40vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .image{
+                margin-top: 2%;
+                margin-bottom: 1%;
+                height:100%;
+                width: 100%;
+                background-color: white;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i{
+                    font-size: 1.5rem;
+                    &:hover{
+                        font-size: 2rem;
+                        transition: linear 0.1s;
+                    }
+                }
+            }
+            
+        }
+        .btn_content{
+            height: 10%;
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            
+        }
+    }
+}
+
+
+

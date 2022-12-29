@@ -1,0 +1,87 @@
+.userHotelNoticeContainer {
+    @include bottom-block;
+    .main{
+        @include template;
+        .short_input{
+            @include input(30%);
+        }
+        .long_input{
+            @include input(40%);
+        }
+        textarea {
+            @include textarea;
+            height: 7rem;
+            width: 100%;
+            margin-bottom: 2%;
+        }
+        .pic_content{
+            margin-bottom: 2%;
+            height: 55%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .contentname{
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            .image{
+                margin-top: 2%;
+                margin-bottom: 1%;
+                height:100%;
+                width: 100%;
+                background-color: white;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i{
+                    font-size: 1.5rem;
+                    &:hover{
+                        font-size: 2rem;
+                        transition: linear 0.1s;
+                    }
+                }
+            }
+            
+        }
+        .check_content{
+            margin-bottom: 2rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .contentname{
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+            .btn{
+                height: 20px;
+                width: 20px;
+                margin-left:2%;
+                margin-right: 2%;
+                min-width: 0;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: white;
+                &:hover{
+                    filter: brightness(0.7);
+                    transition: linear 0.1s;
+                }
+                
+            }
+            .selection{
+                    font-size: 1.2rem;
+                    font-weight: bold;
+            }
+        }
+        .btn_content{
+            height: 10%;
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            .btn {
+                @include button;
+            }
+        }
+    }
+}

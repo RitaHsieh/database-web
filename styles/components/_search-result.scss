@@ -1,18 +1,7 @@
 
 .searchResultContainer{
-    //display
-    display: flex;
-    padding: $base-padding * 1.2;
 
-    //position
-    margin: auto;
-    margin-top: $edge-margin;
-    margin-bottom: $base-margin;
-
-    //style
-    background:white;
-    border-radius: $base-border-radius;
-    color:black;
+    @include white-board;
 
     @include sm {
         height: 38%;
@@ -28,10 +17,22 @@
     @include xl {
         width: 75%;
     }
+
     .img{
-        width: 35%; 
+
+        width: null;
+        height: null;
         border-radius: $base-border-radius;
         object-fit: cover;
+        @include sm {
+            width: 40%;
+            height: 250px;
+        }
+        @include md {
+            width: 45%;
+            height: 200px;
+        }
+        
     }
 
     .content{
@@ -63,6 +64,7 @@
 
             padding-right: $base-padding;
             margin-top: auto;
+            margin-bottom: 0;
 
             @include sm {
                 // margin-top: $base-margin;

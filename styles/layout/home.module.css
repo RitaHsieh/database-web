@@ -1,5 +1,84 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+.searchTopContainer {
+  background-color: #FA9500;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  align-items: center;
+  height: 15%;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 0.75rem;
+}
+.searchTopContainer .text {
+  color: white;
+  font-weight: bolder;
+  font-family: "Courgette", cursive;
+}
+@media (min-width: 480px) {
+  .searchTopContainer .text {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 960px) {
+  .searchTopContainer .text {
+    font-size: 3.5rem;
+  }
+}
+.searchTopContainer .logo {
+  margin: 2rem;
+  height: 65px;
+  width: 65px;
+}
+.searchTopContainer .loginbt {
+  margin-left: auto;
+  margin-top: 1.5rem;
+  align-self: flex-start;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.searchTopContainer .loginbt .humanicon {
+  height: 59px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: #FA9500;
+}
+.searchTopContainer .loginbt .humanicon * {
+  font-size: 50px;
+  margin: auto;
+  color: white;
+}
+.searchTopContainer .hide {
+  display: none;
+  height: 0;
+}
+.searchTopContainer .menu {
+  width: 100%;
+  height: 100%;
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+.searchTopContainer .menu * {
+  list-style-type: none;
+  position: relative;
+}
+.searchTopContainer .menu .display {
+  width: 100px;
+  background-color: #96897B;
+  color: white;
+  padding: 0.5rem;
+}
+.searchTopContainer .menu .display:hover {
+  background-color: #D9D9D9;
+}
+
 .homeIntroContainer {
   position: absolute;
   display: flex;
@@ -138,6 +217,15 @@
   transform: translateY(-5%);
   cursor: pointer;
 }
+.homeSearchContainer .input {
+  background-color: aliceblue;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 70%;
+  width: 12%;
+  padding: 0.75rem;
+  border-radius: 20px;
+}
 
 .homeSectionContainer {
   /*background: var(--img) center center/cover no-repeat;*/
@@ -228,7 +316,7 @@
   height: 100%;
   width: 35%;
   left: 3%;
-  z-index: -1;
+  z-index: -2;
   background-color: #000;
   opacity: 0.4;
   position: fixed;
@@ -268,8 +356,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
 }
 .loginFormContainer .logo {
   height: 80px;
@@ -338,19 +426,34 @@
 }
 
 .userIndexOptionContainer {
+  position: absolute;
   width: 85%;
-  height: 75%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   margin: auto;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
   background-color: white;
-  border: 1px solid black;
-  border-radius: 20px;
   padding: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+}
+@media (min-width: 480px) {
+  .userIndexOptionContainer {
+    width: 60%;
+  }
+}
+@media (min-width: 720px) {
+  .userIndexOptionContainer {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .userIndexOptionContainer {
+    width: 80%;
+  }
 }
 .userIndexOptionContainer .button {
   background-color: #D9D9D9;
@@ -393,50 +496,64 @@
 }
 @media (min-width: 960px) {
   .userIndexOptionContainer p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
 .userIndexSettingContainer {
-  width: 20rem;
-  height: 100vh;
-  margin-left: 2rem;
-  padding: 3.5%;
-  padding-top: 5rem;
-  padding-bottom: 2%;
-  background-color: #858585;
+  position: fixed;
+  left: 0%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-direction: column;
+  align-items: center;
+  background-color: #96897B;
+  color: white;
+  height: 100%;
+  font-family: Microsoft JhengHei;
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  padding-top: 1.5rem;
+  width: 20%;
+  z-index: 2;
+  padding: 3.5%;
+}
+@media (min-width: 480px) {
+  .userIndexSettingContainer {
+    width: 40%;
+  }
+}
+@media (min-width: 720px) {
+  .userIndexSettingContainer {
+    width: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .userIndexSettingContainer {
+    width: 20%;
+  }
 }
 .userIndexSettingContainer h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #fff;
   margin-bottom: 1rem;
 }
 .userIndexSettingContainer .circle {
   position: relative;
-  border-radius: 10rem;
   background-color: #fff;
-}
-@media (min-width: 0) {
-  .userIndexSettingContainer .circle {
-    height: 4rem;
-    width: 4rem;
-  }
 }
 @media (min-width: 480px) {
   .userIndexSettingContainer .circle {
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 4rem;
   }
 }
 @media (min-width: 960px) {
   .userIndexSettingContainer .circle {
-    height: 8rem;
-    width: 8rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 6rem;
   }
 }
 .userIndexSettingContainer .textcontainer {
@@ -445,20 +562,19 @@
   color: white;
   cursor: pointer;
   width: 100%;
-  margin-top: 8%;
-  padding-bottom: 25%;
+  margin-top: 20%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.userIndexSettingContainer .textcontainer * {
-  margin-top: 1.2rem;
-  margin-bottom: 1.2rem;
+.userIndexSettingContainer .textcontainer p, .userIndexSettingContainer .textcontainer button, .userIndexSettingContainer .textcontainer h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .userIndexSettingContainer .btn {
   height: 2.5rem;
-  width: 200px;
+  width: 100%;
   align-self: flex-start;
   font-size: 1.2rem;
   border: transparent;
@@ -476,371 +592,227 @@
   color: black;
   cursor: pointer;
 }
-.userIndexSettingContainer .contact {
-  align-self: flex-end;
-}
 
 .userIndexSectionContainer {
-  height: 100%;
+  position: absolute;
+  top: 15%;
+  right: 0%;
   width: 100%;
+  height: 85%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
-}
-.userIndexSectionContainer .columnContainer {
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 2.25rem;
-}
-@media (min-width: 0) {
-  .userIndexSectionContainer .columnContainer {
-    align-items: center;
-  }
-}
-@media (min-width: 960px) {
-  .userIndexSectionContainer .columnContainer {
-    align-items: flex-end;
-  }
-  .userIndexSectionContainer .columnContainer a {
-    margin-right: 8%;
-  }
-}
-.userIndexSectionContainer .columnContainer img {
-  height: 100px;
-  width: 100px;
+  justify-content: space-between;
 }
 
 .hotelInfoRoomContainer {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
-.hotelInfoRoomContainer .container {
+.hotelInfoRoomContainer * {
+  font-size: 1rem;
+}
+@media (min-width: 480px) {
+  .hotelInfoRoomContainer .searchcontainer, .hotelInfoRoomContainer .button_container {
+    margin: 1%;
+  }
+  .hotelInfoRoomContainer .searchcontainer .discount, .hotelInfoRoomContainer .button_container .discount {
+    visibility: hidden;
+  }
+}
+@media (min-width: 720px) {
+  .hotelInfoRoomContainer .searchcontainer, .hotelInfoRoomContainer .button_container {
+    margin: 1rem;
+  }
+  .hotelInfoRoomContainer .searchcontainer .discount, .hotelInfoRoomContainer .button_container .discount {
+    visibility: visible;
+  }
+}
+.hotelInfoRoomContainer .searchcontainer {
+  background-color: white;
+  border-radius: 20px;
+  border: #EEEEEE solid 1px;
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.125rem;
+}
+.hotelInfoRoomContainer .searchcontainer .container {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
-@media (min-width: 480px) {
-  .hotelInfoRoomContainer {
-    background-color: pink;
-  }
-  .hotelInfoRoomContainer .searchcontainer {
-    position: relative;
-    left: 10%;
-    margin-top: 2.5%;
-    background: white;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    height: 240px;
-    width: 450px;
-  }
-  .hotelInfoRoomContainer .name {
-    margin-top: 3%;
-    margin-left: 3%;
-    font-size: 2rem;
-    font-weight: bolder;
-    position: relative;
-  }
-  .hotelInfoRoomContainer .people {
-    font-size: 1rem;
-    position: relative;
-    margin-top: 7.5%;
-    margin-left: 3%;
-    font-weight: bold;
-    font-size: 100%;
-  }
-  .hotelInfoRoomContainer .bed {
-    margin-top: 1%;
-    margin-left: 3%;
-    font-weight: bold;
-    font-size: 100%;
-  }
-  .hotelInfoRoomContainer .intro {
-    width: 50%;
-    margin-top: 5%;
-    margin-left: 3%;
-    font-size: 90%;
-  }
-  .hotelInfoRoomContainer .money {
-    font-size: 150%;
-    font-weight: bold;
-    color: red;
-    margin-top: 70px;
-    margin-left: 16%;
-  }
-  .hotelInfoRoomContainer .button {
-    font-size: 100%;
-    width: 60px;
-    height: 30px;
-    margin-top: 1.5%;
-    margin-left: 3%;
-  }
-  .hotelInfoRoomContainer .discount {
-    font-weight: bold;
-    font-size: 90%;
-    margin-top: 1%;
-    margin-left: 20px;
-  }
-  .hotelInfoRoomContainer .button_container {
-    position: relative;
-    background: white;
-    border-radius: 10px;
-    height: 240px;
-    width: 80px;
-    margin-left: 12.5%;
-    margin-top: 2.5%;
-  }
+.hotelInfoRoomContainer .searchcontainer .container * {
+  margin-right: 1rem;
 }
-@media (min-width: 720px) {
-  .hotelInfoRoomContainer {
-    background-color: blue;
-  }
-  .hotelInfoRoomContainer .searchcontainer {
-    position: relative;
-    left: 10%;
-    margin-top: 2.5%;
-    background: white;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    height: 260px;
-    width: 650px;
-  }
-  .hotelInfoRoomContainer .name {
-    margin-top: 3%;
-    margin-left: 3%;
-    font-size: 2rem;
-    font-weight: bolder;
-    position: relative;
-  }
-  .hotelInfoRoomContainer .people {
-    font-size: 1rem;
-    position: relative;
-    margin-top: 6.5%;
-    margin-left: 3%;
-    font-weight: bold;
-    font-size: 100%;
-  }
-  .hotelInfoRoomContainer .bed {
-    margin-top: 1%;
-    margin-left: 3%;
-    font-weight: bold;
-    font-size: 100%;
-  }
-  .hotelInfoRoomContainer .intro {
-    width: 50%;
-    margin-top: 5%;
-    margin-left: 3%;
-    font-size: 100%;
-  }
-  .hotelInfoRoomContainer .money {
-    font-size: 150%;
-    font-weight: bold;
-    color: red;
-    margin-top: 70px;
-    margin-left: 17%;
-  }
-  .hotelInfoRoomContainer .button {
-    font-size: 100%;
-    width: 80px;
-    height: 40px;
-    margin-top: 1.5%;
-    margin-left: 3%;
-  }
-  .hotelInfoRoomContainer .discount {
-    font-weight: bold;
-    font-size: 100%;
-    margin-top: 1%;
-    margin-left: 10px;
-  }
-  .hotelInfoRoomContainer .button_container {
-    position: relative;
-    background: white;
-    border-radius: 10px;
-    height: 260px;
-    width: 80px;
-    margin-left: 12.5%;
-    margin-top: 2.5%;
-  }
+.hotelInfoRoomContainer .searchcontainer .container .bed, .hotelInfoRoomContainer .searchcontainer .container .people, .hotelInfoRoomContainer .searchcontainer .container .money, .hotelInfoRoomContainer .searchcontainer .container .discount {
+  font-weight: bold;
 }
-@media (min-width: 960px) {
-  .hotelInfoRoomContainer {
-    background-color: red;
-  }
-  .hotelInfoRoomContainer .searchcontainer {
-    position: relative;
-    left: 10%;
-    margin-top: 2.5%;
-    background: white;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    height: 275px;
-    width: 1000px;
-  }
-  .hotelInfoRoomContainer .name {
-    margin-top: 3%;
-    margin-left: 3%;
-    font-size: 2rem;
-    font-weight: bolder;
-    position: relative;
-  }
-  .hotelInfoRoomContainer .people {
-    font-size: 1rem;
-    position: relative;
-    margin-top: 5.5%;
-    margin-left: 3%;
-    font-weight: bold;
-    font-size: 100%;
-  }
-  .hotelInfoRoomContainer .bed {
-    margin-top: 1%;
-    margin-left: 3%;
-    font-weight: bold;
-    font-size: 100%;
-  }
-  .hotelInfoRoomContainer .intro {
-    margin-top: 5%;
-    margin-left: 3%;
-    font-size: 100%;
-  }
-  .hotelInfoRoomContainer .money {
-    font-size: 150%;
-    font-weight: bold;
-    color: red;
-    margin-top: 6%;
-    margin-left: 30%;
-  }
-  .hotelInfoRoomContainer .button {
-    font-size: 100%;
-    width: 100px;
-    height: 40px;
-    margin-top: 1.5%;
-    margin-left: 3%;
-  }
-  .hotelInfoRoomContainer .discount {
-    font-weight: bold;
-    font-size: 100%;
-    margin-top: 1%;
-    margin-left: 20%;
-  }
-  .hotelInfoRoomContainer .button_container {
-    position: relative;
-    background: white;
-    border-radius: 10px;
-    height: 275px;
-    width: 100px;
-    margin-left: 12.5%;
-    margin-top: 2.5%;
-  }
+.hotelInfoRoomContainer .searchcontainer .container .money, .hotelInfoRoomContainer .searchcontainer .container .discount {
+  margin-left: auto;
+  margin-right: 0;
+}
+.hotelInfoRoomContainer .searchcontainer .container .name {
+  font-size: 1.5rem;
+}
+.hotelInfoRoomContainer .searchcontainer .container .people {
+  align-self: flex-end;
+}
+.hotelInfoRoomContainer .searchcontainer .container .money {
+  color: red;
+  align-self: flex-end;
+}
+.hotelInfoRoomContainer .searchcontainer .container .button {
+  padding: 0.75rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  margin-right: 0.5rem;
+  max-height: 35px;
+  min-width: 70px;
+  text-align: center;
+  background-color: #96897B;
+  color: white;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+.hotelInfoRoomContainer .button_container {
+  background-color: white;
+  border-radius: 20px;
+  border: #EEEEEE solid 1px;
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.hotelInfoRoomContainer .button_container .btn {
+  padding: 0.75rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #96897B;
+  color: white;
+  height: 50px;
+  min-width: 25px;
+  margin: 0;
+  border-radius: 0.5rem;
+}
+.hotelInfoRoomContainer .button_container .btn * {
+  font-size: 1rem;
+}
+.hotelInfoRoomContainer .button_container .btn:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+.hotelInfoRoomContainer .button_container .content {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-@media (min-width: 480px) {
-  .hotelInfoBookContainer {
-    background-color: pink;
-  }
-  .hotelInfoBookContainer .right_container {
-    position: relative;
-    background: white;
-    border-radius: 10px;
-    height: 750px;
-    width: 80px;
-    left: 15px;
-    margin-top: 12px;
-  }
+.hotelInfoIntroduction {
+  padding: 1.5%;
 }
-@media (min-width: 720px) {
-  .hotelInfoBookContainer {
-    background-color: blue;
-  }
-  .hotelInfoBookContainer .right_container {
-    position: relative;
-    background: white;
-    border-radius: 10px;
-    height: 820px;
-    width: 80px;
-    left: 15px;
-    margin-top: 17.5px;
-  }
+.hotelInfoIntroduction .title {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
-@media (min-width: 960px) {
-  .hotelInfoBookContainer {
-    background-color: red;
-  }
-  .hotelInfoBookContainer .right_container {
-    position: relative;
-    background: white;
-    border-radius: 10px;
-    height: 880px;
-    width: 100px;
-    left: 30px;
-    margin-top: 27.5px;
-  }
+.hotelInfoIntroduction .content {
+  margin: 1rem;
+}
+.hotelInfoIntroduction .s_title {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+.hotelInfoIntroduction .block {
+  display: flex;
+}
+.hotelInfoIntroduction .block p {
+  padding: 0.75rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  margin-right: 0.5rem;
+  max-height: 35px;
+  min-width: 70px;
+  text-align: center;
+  background-color: #96897B;
+  color: white;
 }
 
-.hotelInfoAttraction {
-  padding-top: 2%;
-  padding-left: 10%;
-  padding-right: 10%;
-}
 .hotelInfoAttraction .attraction {
-  padding-top: 2%;
-  display: flex;
-  flex-direction: row;
+  display: grid;
   width: 100%;
   height: 50%;
 }
-.hotelInfoAttraction .attractionDetailB {
-  width: 28.57%;
+@media (min-width: 480px) {
+  .hotelInfoAttraction .attraction {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-.hotelInfoAttraction .attractionDetailS {
-  width: 14.285%;
+@media (min-width: 960px) {
+  .hotelInfoAttraction .attraction {
+    grid-template-columns: 2fr 2fr 2fr 1.5fr;
+  }
 }
-.hotelInfoAttraction .title {
-  margin-bottom: 1%;
-  font-size: 2rem;
+.hotelInfoAttraction .attraction .attractionDetail {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  padding: 0.75rem;
+}
+.hotelInfoAttraction .attraction .attractionDetail .title {
+  font-size: 1.8rem;
   font-weight: bolder;
-  position: relative;
 }
-.hotelInfoAttraction .name {
+.hotelInfoAttraction .attraction .attractionDetail .name {
+  width: 100%;
   font-size: 1rem;
-  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
-.hotelInfoAttraction .containerB {
+.hotelInfoAttraction .attraction .attractionDetail .subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.hotelInfoAttraction .attraction .attractionDetail .containerB {
   display: grid;
-  grid-template-rows: repeat(3, 50px);
   grid-template-columns: 50% 50%;
-  margin-top: 10px;
-  margin-left: 10px;
 }
-.hotelInfoAttraction .containerS {
+.hotelInfoAttraction .attraction .attractionDetail .containerS {
   display: grid;
-  grid-template-rows: repeat(3, 50px);
   grid-template-columns: 100%;
-  margin-top: 10px;
-  margin-left: 10px;
 }
 
 .hotelInfoEvaluate {
-  padding-top: 2%;
   width: 100%;
-  padding-left: 10%;
 }
-.hotelInfoEvaluate .name {
+.hotelInfoEvaluate * {
   font-size: 1rem;
-  position: relative;
-  word-wrap: break-word;
 }
 .hotelInfoEvaluate .evaluate_gradenumber {
   font-size: 1rem;
   font-weight: bold;
-  font-size: 500%;
+  font-size: 6rem;
 }
-.hotelInfoEvaluate .evaluate_grade {
-  font-size: 1rem;
-  font-size: 100%;
+.hotelInfoEvaluate .title {
+  font-size: 1.8rem;
 }
 .hotelInfoEvaluate .inline {
   width: 100%;
@@ -849,110 +821,317 @@
 .hotelInfoEvaluate .container {
   display: grid;
   grid-template-rows: 220px;
-  grid-template-columns: repeat(3, 300px);
+  grid-auto-columns: minmax(100px, auto);
   grid-column-gap: 2%;
   margin-top: 2%;
 }
 .hotelInfoEvaluate .evaluatecontainer {
-  position: relative;
+  grid-row: 1/-1;
   display: inline-block;
-  padding-top: 7%;
-  padding-left: 7%;
-  padding-right: 7%;
-  background: white;
-  border-radius: 10px;
+  padding: 0.75rem;
+  background-color: white;
+  border-radius: 20px;
+  border: #EEEEEE solid 1px;
   height: 200px;
-  width: 300px;
+  width: 280px;
   left: 0px;
 }
-.hotelInfoEvaluate .evaluatecontainergray {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 2%;
-  padding: 2%;
-  background: rgb(180, 180, 180);
-  border-radius: 10px;
-  height: 22px;
+.hotelInfoEvaluate .evaluatecontainer * {
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+.hotelInfoEvaluate .evaluatecontainer .name {
+  word-wrap: break-word;
+}
+.hotelInfoEvaluate .evaluatecontainer .evaluatecontainergray {
+  padding: 0.75rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  margin-right: 0.5rem;
+  max-height: 35px;
+  min-width: 70px;
+  text-align: center;
+  background-color: #96897B;
+  color: white;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  left: 0px;
 }
-.hotelInfoEvaluate .circle {
+.hotelInfoEvaluate .evaluatecontainer .circle {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-right: 20px;
+  background-color: aquamarine;
+  margin-left: 0;
 }
-.hotelInfoEvaluate .imgname {
+.hotelInfoEvaluate .evaluatecontainer .imgname {
   height: 50px;
   width: 100%;
   display: flex;
   align-items: center;
 }
+.hotelInfoEvaluate .addcomment {
+  grid-row: 1/-1;
+  background: none;
+  width: 35%;
+  height: 100%;
+}
+.hotelInfoEvaluate .addcomment * {
+  font-size: 3rem;
+}
 
 .hotelInfoInformation {
-  padding-top: 2%;
   width: 100%;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 .hotelInfoInformation .title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bolder;
-  position: relative;
 }
 .hotelInfoInformation .searchcontainer {
-  position: relative;
   display: flex;
+  padding: 0.9rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 20px;
+  border: #EEEEEE solid 2px;
   flex-direction: column;
-  margin-top: 5%;
-  padding-top: 5%;
-  padding-left: 8%;
-  padding-right: 8%;
-  background: white;
-  border-radius: 10px;
-  height: 600px;
-  width: 100%;
-  left: 0px;
+  justify-content: space-between;
+  height: 300px;
+  width: 94%;
+  margin-top: 2rem;
 }
 .hotelInfoInformation .searchcontainerALL {
   width: 100%;
-  height: 15%;
   display: flex;
   flex-direction: row;
 }
-.hotelInfoInformation .searchcontainerTitle {
-  width: 30%;
+.hotelInfoInformation .searchcontainerALL .searchcontainerTitle {
+  width: 40%;
   height: 100%;
 }
-.hotelInfoInformation .searchcontainerName {
-  width: 70%;
+.hotelInfoInformation .searchcontainerALL .searchcontainerName {
+  width: 60%;
   height: 100%;
 }
-.hotelInfoInformation .name {
+.hotelInfoInformation .searchcontainerALL .name {
   font-size: 1rem;
   position: relative;
+  font-weight: bold;
 }
 
 .hotelInfoTransportation {
-  padding-top: 2%;
-  width: 20%;
-  padding-left: 10%;
+  width: 100%;
 }
 .hotelInfoTransportation .title {
-  margin-top: 10%;
-  margin-bottom: 15%;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bolder;
   position: relative;
 }
 .hotelInfoTransportation .name {
+  display: flex;
+  padding: 0.9rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 20px;
+  border: #EEEEEE solid 2px;
+  margin: auto;
+  margin-top: 2rem;
+  width: 94%;
+}
+
+.hotelInfoBookContainer .right_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 480px) {
+  .hotelInfoBookContainer {
+    padding: 0.5rem;
+  }
+  .hotelInfoBookContainer .right_container {
+    background-color: white;
+    border-radius: 20px;
+    border: #EEEEEE solid 1px;
+    height: 60px;
+    width: 100%;
+  }
+}
+@media (min-width: 720px) {
+  .hotelInfoBookContainer {
+    padding: 1rem;
+  }
+}
+@media (min-width: 960px) {
+  .hotelInfoBookContainer .right_container {
+    background-color: white;
+    border-radius: 20px;
+    border: #EEEEEE solid 1px;
+    height: 100%;
+    width: 100%;
+  }
+}
+.hotelInfoBookContainer .button {
+  padding: 0.75rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  text-align: center;
   font-size: 1rem;
-  position: relative;
+  background-color: #96897B;
+  color: white;
+  margin: auto;
+}
+.hotelInfoBookContainer .button * {
+  font-size: 1rem;
+}
+.hotelInfoBookContainer .button:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+
+.infoTitleContainer {
+  margin-top: 3%;
+  display: flex;
+  height: 97%;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 2%;
+  flex-direction: row;
+  align-items: start;
+  padding: 1.5%;
+}
+.infoTitleContainer .title {
+  font-size: 3rem;
+}
+.infoTitleContainer p {
+  font-size: 1rem;
+}
+.infoTitleContainer .titleTopContainer {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.infoTitleContainer .titleTopContainer * {
+  margin: 0.25rem;
+}
+.infoTitleContainer .titleTopContainer .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.infoTitleContainer .titleBottomContainer {
+  background: #cdcdcd;
+  width: 70%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1%;
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-bottom: 2%;
+}
+.infoTitleContainer .titleBottomContainer .img {
+  background-color: white;
+  height: 100%;
+  width: 90%;
+}
+.infoTitleContainer .titleBottomContainer .icon {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.infoTitleContainer .titleBottomContainer .icon i {
+  font-size: 1.5rem;
+}
+.infoTitleContainer .titleBottomContainer .icon i:hover {
+  font-size: 2rem;
+}
+
+.hotelinfoSectionContainer {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+.hotelinfoSectionContainer .hotelInfoEvaluate, .hotelinfoSectionContainer .hotelInfoInformation,
+.hotelinfoSectionContainer .hotelInfoAttraction, .hotelinfoSectionContainer .hotelInfoTransportation {
+  padding: 1.5%;
+}
+.hotelinfoSectionContainer .roominfo, .hotelinfoSectionContainer .hotelInfoEvaluate, .hotelinfoSectionContainer .hotelInfoInformation,
+.hotelinfoSectionContainer .hotelInfoAttraction, .hotelinfoSectionContainer .hotelInfoTransportation {
+  margin-top: 2%;
+}
+.hotelinfoSectionContainer .main {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  right: 0%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+@media (min-width: 480px) {
+  .hotelinfoSectionContainer .main {
+    width: 70%;
+  }
+}
+@media (min-width: 720px) {
+  .hotelinfoSectionContainer .main {
+    width: 77%;
+  }
+}
+@media (min-width: 1200px) {
+  .hotelinfoSectionContainer .main {
+    width: 82%;
+  }
+}
+
+.roominfo {
+  display: grid;
+}
+@media (min-width: 480px) {
+  .roominfo {
+    grid-template-columns: 1fr;
+  }
+  .roominfo .right, .roominfo .left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .roominfo {
+    grid-template-columns: 6fr 1fr;
+  }
+  .roominfo .right {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .roominfo .left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+.roominfo .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1rem;
 }
 
 .containerhidden {
@@ -1042,12 +1221,14 @@
 }
 
 .searchOrderContainer {
-  background: #D9D9D9;
+  align-self: flex-end;
+  height: 2.4rem;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-weight: bolder;
   font-size: 1rem;
-  font-weight: 600;
-  padding-left: 0.75rem;
-  border: None;
-  border-radius: 0.5rem;
+  border: 1px solid #EEEEEE;
 }
 .searchOrderContainer .option {
   font-weight: 600;
@@ -1056,7 +1237,7 @@
 @media (min-width: 480px) {
   .searchOrderContainer {
     margin-top: 0;
-    margin-right: 1.2rem;
+    margin-right: 8%;
     width: 7rem;
     height: 1.5rem;
   }
@@ -1065,7 +1246,7 @@
   .searchOrderContainer {
     width: 10rem;
     height: 2rem;
-    margin-right: 2.5rem;
+    margin-right: 12.5%;
     margin-top: 1rem;
   }
 }
@@ -1074,11 +1255,11 @@
   display: flex;
   padding: 0.9rem;
   margin: auto;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
-  background: white;
+  background-color: white;
   border-radius: 20px;
-  color: black;
+  border: #EEEEEE solid 2px;
 }
 @media (min-width: 480px) {
   .searchResultContainer {
@@ -1103,11 +1284,21 @@
   }
 }
 .searchResultContainer .img {
-  width: 35%;
-  height:100%;
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 480px) {
+  .searchResultContainer .img {
+    width: 40%;
+    height: 250px;
+  }
+}
+@media (min-width: 720px) {
+  .searchResultContainer .img {
+    width: 45%;
+    height: 200px;
+  }
 }
 .searchResultContainer .content {
   padding: 0.6rem;
@@ -1133,6 +1324,7 @@
   width: 100%;
   padding-right: 0.75rem;
   margin-top: auto;
+  margin-bottom: 0;
 }
 @media (min-width: 480px) {
   .searchResultContainer .content .container {
@@ -1147,133 +1339,95 @@
 }
 
 .searchSearchformContainer {
+  position: fixed;
+  left: 0%;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  margin-top: 2rem;
+  align-items: center;
+  background-color: #96897B;
+  color: white;
+  height: 100%;
+  font-family: Microsoft JhengHei;
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  padding-top: 1.5rem;
+  width: 15%;
+  z-index: 2;
+}
+@media (min-width: 480px) {
+  .searchSearchformContainer {
+    width: 30%;
+  }
+}
+@media (min-width: 720px) {
+  .searchSearchformContainer {
+    width: 23%;
+  }
+}
+@media (min-width: 1200px) {
+  .searchSearchformContainer {
+    width: 18%;
+  }
 }
 .searchSearchformContainer * {
   height: 2.4rem;
   padding: 10px;
-  display: flex;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-  align-items: center;
-  justify-content: center;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 8px;
   font-weight: bolder;
   font-size: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 .searchSearchformContainer .btn {
   cursor: pointer;
 }
 .searchSearchformContainer .btn:active {
-  background-color: #d9d9d9;
+  background-color: #D9D9D9;
   box-shadow: 0 2px #666;
   transform: translateY(2px);
 }
-
-.searchTopContainer {
-  background-color: dimgrey;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  align-items: center;
-  height: 15%;
-  padding-right: 3%;
-  padding-left: 3%;
-  padding-top: 0.75rem;
+.searchSearchformContainer .btn:active * {
+  background-color: #D9D9D9;
 }
-.searchTopContainer .text {
-  position: relative;
-  color: white;
-  font-weight: bold;
+.searchSearchformContainer .item, .searchSearchformContainer .btn, .searchSearchformContainer .btnfilter {
+  width: 80%;
 }
-@media (min-width: 480px) {
-  .searchTopContainer .text {
-    font-size: 2rem;
-  }
-}
-@media (min-width: 720px) {
-  .searchTopContainer .text {
-    font-size: 3rem;
-  }
-}
-@media (min-width: 960px) {
-  .searchTopContainer .text {
-    font-size: 3.5rem;
-  }
+.searchSearchformContainer .btnfilter {
+  cursor: pointer;
+  margin-top: 20%;
+  background-color: #D9D9D9;
 }
 
 .searchBottomContainer {
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-}
-.searchBottomContainer .bottomleftcontainer {
-  height: 100%;
-  position: fixed;
-  background-color: gray;
+  position: absolute;
   top: 15%;
+  right: 0%;
+  width: 100%;
+  height: 85%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media (min-width: 480px) {
-  .searchBottomContainer .bottomleftcontainer {
-    width: 25%;
-  }
-}
-@media (min-width: 720px) {
-  .searchBottomContainer .bottomleftcontainer {
-    width: 23%;
-  }
-}
-@media (min-width: 960px) {
-  .searchBottomContainer .bottomleftcontainer {
-    width: 23%;
-  }
-}
-@media (min-width: 1200px) {
-  .searchBottomContainer .bottomleftcontainer {
-    width: 18%;
-  }
-}
-@media (min-width: 480px) {
-  .searchBottomContainer .bottomleftcontainer .searchSearchformContainer, .searchBottomContainer .bottomleftcontainer .btnfilter {
-    width: 80%;
-  }
-}
-@media (min-width: 960px) {
-  .searchBottomContainer .bottomleftcontainer .searchSearchformContainer, .searchBottomContainer .bottomleftcontainer .btnfilter {
-    width: 70%;
-  }
-}
-@media (min-width: 1200px) {
-  .searchBottomContainer .bottomleftcontainer .searchSearchformContainer, .searchBottomContainer .bottomleftcontainer .btnfilter {
-    width: 65%;
-  }
-}
-.searchBottomContainer .bottomleftcontainer .btnfilter {
-  border-radius: 5px;
-  cursor: pointer;
-  height: 2.4rem;
-  padding: 10px;
-  margin: 0.75rem;
-  margin-top: 20%;
-  font-weight: bolder;
-  font-size: 1rem;
 }
 .searchBottomContainer .hoteldata {
   position: absolute;
-  height: 100%;
-  width: 80%;
-  top: 20%;
-  z-index: -1;
+  width: 85%;
   right: 0%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 480px) {
+  .searchBottomContainer .hoteldata {
+    width: 70%;
+  }
+}
+@media (min-width: 720px) {
+  .searchBottomContainer .hoteldata {
+    width: 77%;
+  }
+}
+@media (min-width: 1200px) {
+  .searchBottomContainer .hoteldata {
+    width: 82%;
+  }
 }
 
 .searchMask {
@@ -1293,35 +1447,33 @@
 }
 
 .userMultiMenuContainer {
+  position: fixed;
+  left: 0%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #858585;
+  background-color: #96897B;
   color: white;
   height: 100%;
   font-family: Microsoft JhengHei;
   font-size: 1.2rem;
   padding: 0.75rem;
   padding-top: 1.5rem;
+  width: 15%;
+  z-index: 2;
+}
+.userMultiMenuContainer .title {
+  align-items: center;
 }
 @media (min-width: 480px) {
-  .userMultiMenuContainer {
-    width: 30%;
+  .userMultiMenuContainer .title {
+    display: none;
   }
 }
 @media (min-width: 960px) {
-  .userMultiMenuContainer {
-    width: 18%;
+  .userMultiMenuContainer .title {
+    display: inline-flex;
   }
-}
-@media (min-width: 1200px) {
-  .userMultiMenuContainer {
-    width: 15%;
-  }
-}
-.userMultiMenuContainer .title {
-  display: inline-flex;
-  align-items: center;
 }
 .userMultiMenuContainer .title i {
   font-size: 35px;
@@ -1329,6 +1481,34 @@
 .userMultiMenuContainer .title h1 {
   font-size: 1.5rem;
   margin: 1rem;
+}
+.userMultiMenuContainer .smoptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 85%;
+  margin: auto;
+  margin-bottom: 10%;
+  margin-top: 8%;
+}
+.userMultiMenuContainer .smoptions p {
+  display: none;
+}
+.userMultiMenuContainer .smoptions i {
+  margin-right: 1rem;
+  font-size: 45px;
+}
+.userMultiMenuContainer .smoptions .button {
+  width: 50px;
+  height: 50px;
+}
+.userMultiMenuContainer .smoptions .button:hover {
+  color: black;
+}
+.userMultiMenuContainer .smoptions hr {
+  border: 0.5px white solid;
+  width: 60%;
+  margin: 0.5rem;
 }
 .userMultiMenuContainer .options {
   display: flex;
@@ -1339,26 +1519,20 @@
   align-items: center;
   margin: 1rem;
 }
+.userMultiMenuContainer .options .button:hover {
+  color: black;
+}
 .userMultiMenuContainer .options i {
   margin-right: 1rem;
-}
-@media (min-width: 480px) {
-  .userMultiMenuContainer .options a {
-    width: 90px;
-  }
-}
-@media (min-width: 720px) {
-  .userMultiMenuContainer .options a {
-    width: 115px;
-  }
-}
-.userMultiMenuContainer .options a:hover {
-  color: black;
+  font-size: 30px;
 }
 .userMultiMenuContainer .options hr {
   border: 0.5px white solid;
   width: 80%;
   margin: 1rem;
+}
+.userMultiMenuContainer .options p {
+  width: 80px;
 }
 
 .userPersonalInfoButtonContainer {
@@ -1370,21 +1544,25 @@
   display: flex;
 }
 .userPersonalInfoButtonContainer .userinfoblock {
+  position: absolute;
   margin: auto;
   background-color: white;
 }
 @media (min-width: 480px) {
   .userPersonalInfoButtonContainer .userinfoblock {
     padding: 1.5rem;
-    width: 100%;
+    left: 15%;
+    width: 85%;
     height: 100%;
   }
 }
 @media (min-width: 960px) {
   .userPersonalInfoButtonContainer .userinfoblock {
     padding: 3rem;
+    top: 6%;
+    right: 2%;
     width: 70%;
-    height: 84%;
+    height: 88%;
     border-radius: 20px;
     border: 1px solid aliceblue;
   }
@@ -1436,25 +1614,27 @@
 }
 .userPersonalInfoButtonContainer .usersetting .userbutton, .userPersonalInfoButtonContainer .usersetting .submit {
   background-color: white;
-  border: 1px solid #858585;
+  border: 2px solid #96897B;
   border-radius: 5px;
   height: 2.3rem;
   font-size: 1.2rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  min-width: 120px;
 }
 .userPersonalInfoButtonContainer .usersetting .userbutton:hover, .userPersonalInfoButtonContainer .usersetting .submit:hover {
-  background-color: #858585;
+  background-color: #AAA;
+  border: none;
   color: white;
 }
 @media (min-width: 480px) {
   .userPersonalInfoButtonContainer .usersetting .userbutton, .userPersonalInfoButtonContainer .usersetting .submit {
     font-size: 1rem;
-    width: 90px;
   }
 }
 @media (min-width: 960px) {
   .userPersonalInfoButtonContainer .usersetting .userbutton, .userPersonalInfoButtonContainer .usersetting .submit {
     font-size: 1.2rem;
-    width: 100px;
   }
 }
 .userPersonalInfoButtonContainer .usertitle {
@@ -1534,14 +1714,15 @@
     margin-left: 8%;
   }
 }
-.userPersonalInfoButtonContainer .userinfo input {
-  border: 1px solid #858585;
+.userPersonalInfoButtonContainer .userinfo input, .userPersonalInfoButtonContainer .userinfo button {
+  border: 1px solid #96897B;
   border-radius: 3px;
   height: 2rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   grid-column-start: 2;
   grid-column-end: 4;
+  background-color: white;
 }
 .userPersonalInfoButtonContainer .userinfo p {
   grid-column-start: 1;
@@ -1552,4 +1733,1577 @@
   margin-left: auto;
   grid-column-start: 3;
   grid-column-end: 4;
+}
+.userPersonalInfoButtonContainer .mask {
+  visibility: hidden;
+}
+.userPersonalInfoButtonContainer .mask1 {
+  height: 100%;
+  background-color: #000;
+  opacity: 0.4;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+}
+.userPersonalInfoButtonContainer .daypicker {
+  visibility: hidden;
+  position: absolute;
+}
+.userPersonalInfoButtonContainer .daypicker1 {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+.userHotelInfoContainer {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+.userHotelInfoContainer .main {
+  position: absolute;
+  width: 85%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  justify-content: flex-start;
+}
+.userHotelInfoContainer .main p, .userHotelInfoContainer .main .contentname {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 3%;
+}
+.userHotelInfoContainer .main button {
+  font-size: 1rem;
+}
+.userHotelInfoContainer .main .content {
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+}
+.userHotelInfoContainer .main .content h1 {
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+@media (min-width: 480px) {
+  .userHotelInfoContainer .main .content h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 720px) {
+  .userHotelInfoContainer .main .content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 960px) {
+  .userHotelInfoContainer .main .content h1 {
+    font-size: 3rem;
+  }
+}
+.userHotelInfoContainer .main .content .hotelbutton {
+  margin-left: auto;
+}
+.userHotelInfoContainer .main .spacing {
+  margin-bottom: 1.5rem;
+}
+.userHotelInfoContainer .main .hotelbutton, .userHotelInfoContainer .main .btn {
+  padding: 0.75rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #96897B;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.userHotelInfoContainer .main .hotelbutton *, .userHotelInfoContainer .main .btn * {
+  font-size: 1rem;
+}
+.userHotelInfoContainer .main .hotelbutton:hover, .userHotelInfoContainer .main .btn:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+.userHotelInfoContainer .main .short_input {
+  border: 2px solid #999;
+  border-radius: 5px;
+  padding: 5px;
+  width: 30%;
+  min-width: 100px;
+  line-height: 1.5;
+  margin-right: 0.75rem;
+}
+.userHotelInfoContainer .main .long_input {
+  border: 2px solid #999;
+  border-radius: 5px;
+  padding: 5px;
+  width: 40%;
+  min-width: 100px;
+  line-height: 1.5;
+  margin-right: 0.75rem;
+}
+.userHotelInfoContainer .main .pic_content {
+  margin-bottom: 2%;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.userHotelInfoContainer .main .pic_content .image {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userHotelInfoContainer .main .pic_content .image i {
+  font-size: 1.5rem;
+}
+.userHotelInfoContainer .main .pic_content .image i:hover {
+  font-size: 2rem;
+  transition: linear 0.1s;
+}
+.userHotelInfoContainer .main .btn_content {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.userHotelFeatureContainer {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+.userHotelFeatureContainer .main {
+  position: absolute;
+  width: 85%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  justify-content: flex-start;
+}
+.userHotelFeatureContainer .main p, .userHotelFeatureContainer .main .contentname {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 3%;
+}
+.userHotelFeatureContainer .main button {
+  font-size: 1rem;
+}
+.userHotelFeatureContainer .main .content {
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+}
+.userHotelFeatureContainer .main .content h1 {
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+@media (min-width: 480px) {
+  .userHotelFeatureContainer .main .content h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 720px) {
+  .userHotelFeatureContainer .main .content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 960px) {
+  .userHotelFeatureContainer .main .content h1 {
+    font-size: 3rem;
+  }
+}
+.userHotelFeatureContainer .main .content .hotelbutton {
+  margin-left: auto;
+}
+.userHotelFeatureContainer .main .spacing {
+  margin-bottom: 1.5rem;
+}
+.userHotelFeatureContainer .main .hotelbutton, .userHotelFeatureContainer .main .btn {
+  padding: 0.75rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #96897B;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.userHotelFeatureContainer .main .hotelbutton *, .userHotelFeatureContainer .main .btn * {
+  font-size: 1rem;
+}
+.userHotelFeatureContainer .main .hotelbutton:hover, .userHotelFeatureContainer .main .btn:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+.userHotelFeatureContainer .main .textarea {
+  height: 16em;
+  width: 100%;
+  padding: 0.75rem;
+  resize: none;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  margin-bottom: 3%;
+  overflow: hidden;
+}
+.userHotelFeatureContainer .main .label_content {
+  display: flex;
+  margin-bottom: 2%;
+}
+.userHotelFeatureContainer .main .label_content .add {
+  padding: 0.75rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #96897B;
+  color: white;
+  margin-bottom: 1rem;
+  background-color: white;
+  border: 2px solid #999;
+}
+.userHotelFeatureContainer .main .label_content .add * {
+  font-size: 1rem;
+}
+.userHotelFeatureContainer .main .label_content .add:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+.userHotelFeatureContainer .main .label_content .add:hover {
+  background-color: #999;
+  color: white;
+}
+.userHotelFeatureContainer .main .label_content .added {
+  padding: 0.75rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #96897B;
+  color: white;
+  margin-bottom: 1rem;
+}
+.userHotelFeatureContainer .main .label_content .added * {
+  font-size: 1rem;
+}
+.userHotelFeatureContainer .main .label_content .added:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+.userHotelFeatureContainer .main .btn_content {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  height: 10%;
+}
+
+.userHotelRoomContainer {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+.userHotelRoomContainer .main {
+  position: absolute;
+  width: 85%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  justify-content: flex-start;
+}
+.userHotelRoomContainer .main p, .userHotelRoomContainer .main .contentname {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 3%;
+}
+.userHotelRoomContainer .main button {
+  font-size: 1rem;
+}
+.userHotelRoomContainer .main .content {
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+}
+.userHotelRoomContainer .main .content h1 {
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+@media (min-width: 480px) {
+  .userHotelRoomContainer .main .content h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 720px) {
+  .userHotelRoomContainer .main .content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 960px) {
+  .userHotelRoomContainer .main .content h1 {
+    font-size: 3rem;
+  }
+}
+.userHotelRoomContainer .main .content .hotelbutton {
+  margin-left: auto;
+}
+.userHotelRoomContainer .main .spacing {
+  margin-bottom: 1.5rem;
+}
+.userHotelRoomContainer .main .hotelbutton, .userHotelRoomContainer .main .btn {
+  padding: 0.75rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #96897B;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.userHotelRoomContainer .main .hotelbutton *, .userHotelRoomContainer .main .btn * {
+  font-size: 1rem;
+}
+.userHotelRoomContainer .main .hotelbutton:hover, .userHotelRoomContainer .main .btn:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+.userHotelRoomContainer .main .roomform {
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  padding-bottom: 2%;
+  margin-bottom: 3%;
+}
+.userHotelRoomContainer .main .roomform p {
+  margin-right: 8%;
+}
+.userHotelRoomContainer .main .roomform .input {
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+}
+@media (min-width: 480px) {
+  .userHotelRoomContainer .main .roomform .input {
+    flex-direction: column;
+  }
+}
+@media (min-width: 960px) {
+  .userHotelRoomContainer .main .roomform .input {
+    flex-direction: row;
+  }
+}
+.userHotelRoomContainer .main .roomform .input p {
+  margin-right: 3rem;
+}
+.userHotelRoomContainer .main .roomform .input input {
+  width: 10%;
+}
+.userHotelRoomContainer .main .roomform input {
+  border: 2px solid #999;
+  border-radius: 5px;
+  padding: 5px;
+  width: 30%;
+  min-width: 100px;
+  line-height: 1.5;
+  margin-right: 0.75rem;
+}
+.userHotelRoomContainer .main .roomform .labelcontainer {
+  display: flex;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.userHotelRoomContainer .main .roomform .labelcontainer .add {
+  padding: 0.75rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #96897B;
+  color: white;
+  margin-bottom: 1rem;
+  background-color: white;
+  border: 2px solid #999;
+}
+.userHotelRoomContainer .main .roomform .labelcontainer .add * {
+  font-size: 1rem;
+}
+.userHotelRoomContainer .main .roomform .labelcontainer .add:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+.userHotelRoomContainer .main .roomform .labelcontainer .add:hover {
+  background-color: #999;
+  color: white;
+}
+.userHotelRoomContainer .main .roomform .labelcontainer .added {
+  padding: 0.75rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #96897B;
+  color: white;
+  margin-bottom: 1rem;
+}
+.userHotelRoomContainer .main .roomform .labelcontainer .added * {
+  font-size: 1rem;
+}
+.userHotelRoomContainer .main .roomform .labelcontainer .added:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+.userHotelRoomContainer .main .roomform .textarea {
+  height: 10em;
+  width: 100%;
+  padding: 0.75rem;
+  resize: none;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  margin-bottom: 3%;
+  overflow: hidden;
+}
+.userHotelRoomContainer .main .btn_content {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  height: 10%;
+}
+.userHotelRoomContainer .main .newroom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+}
+.userHotelRoomContainer .main .newroom * {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.userHotelRoomContainer .main .newroom i {
+  font-size: 3rem;
+}
+
+.userHotelNoticeContainer {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+.userHotelNoticeContainer .main {
+  position: absolute;
+  width: 85%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  justify-content: flex-start;
+}
+.userHotelNoticeContainer .main p, .userHotelNoticeContainer .main .contentname {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 3%;
+}
+.userHotelNoticeContainer .main button {
+  font-size: 1rem;
+}
+.userHotelNoticeContainer .main .content {
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+}
+.userHotelNoticeContainer .main .content h1 {
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+@media (min-width: 480px) {
+  .userHotelNoticeContainer .main .content h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 720px) {
+  .userHotelNoticeContainer .main .content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 960px) {
+  .userHotelNoticeContainer .main .content h1 {
+    font-size: 3rem;
+  }
+}
+.userHotelNoticeContainer .main .content .hotelbutton {
+  margin-left: auto;
+}
+.userHotelNoticeContainer .main .spacing {
+  margin-bottom: 1.5rem;
+}
+.userHotelNoticeContainer .main .hotelbutton, .userHotelNoticeContainer .main .btn {
+  padding: 0.75rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #96897B;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.userHotelNoticeContainer .main .hotelbutton *, .userHotelNoticeContainer .main .btn * {
+  font-size: 1rem;
+}
+.userHotelNoticeContainer .main .hotelbutton:hover, .userHotelNoticeContainer .main .btn:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+.userHotelNoticeContainer .main .short_input {
+  border: 2px solid #999;
+  border-radius: 5px;
+  padding: 5px;
+  width: 30%;
+  min-width: 100px;
+  line-height: 1.5;
+  margin-right: 0.75rem;
+}
+.userHotelNoticeContainer .main .long_input {
+  border: 2px solid #999;
+  border-radius: 5px;
+  padding: 5px;
+  width: 40%;
+  min-width: 100px;
+  line-height: 1.5;
+  margin-right: 0.75rem;
+}
+.userHotelNoticeContainer .main textarea {
+  padding: 0.75rem;
+  resize: none;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  margin-bottom: 3%;
+  overflow: hidden;
+  height: 7rem;
+  width: 100%;
+  margin-bottom: 2%;
+}
+.userHotelNoticeContainer .main .pic_content {
+  margin-bottom: 2%;
+  height: 55%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.userHotelNoticeContainer .main .pic_content .contentname {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.userHotelNoticeContainer .main .pic_content .image {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userHotelNoticeContainer .main .pic_content .image i {
+  font-size: 1.5rem;
+}
+.userHotelNoticeContainer .main .pic_content .image i:hover {
+  font-size: 2rem;
+  transition: linear 0.1s;
+}
+.userHotelNoticeContainer .main .check_content {
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.userHotelNoticeContainer .main .check_content .contentname {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.userHotelNoticeContainer .main .check_content .btn {
+  height: 20px;
+  width: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+  min-width: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+}
+.userHotelNoticeContainer .main .check_content .btn:hover {
+  filter: brightness(0.7);
+  transition: linear 0.1s;
+}
+.userHotelNoticeContainer .main .check_content .selection {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.userHotelNoticeContainer .main .btn_content {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.userHotelNoticeContainer .main .btn_content .btn {
+  padding: 0.75rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #96897B;
+  color: white;
+}
+.userHotelNoticeContainer .main .btn_content .btn * {
+  font-size: 1rem;
+}
+.userHotelNoticeContainer .main .btn_content .btn:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
+}
+
+.userSellIndex_SettingContainer {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+.userSellIndex_SettingContainer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  right: 0%;
+  padding: 2.5%;
+}
+.userSellIndex_SettingContainer .container .switch {
+  display: flex;
+  position: relative;
+  top: 5%;
+  background-color: #96897B;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 8%;
+}
+.userSellIndex_SettingContainer .container .switch .innerbutton {
+  font-weight: bold;
+  color: white;
+  border-radius: 15px;
+  background-color: transparent;
+  font-size: 1rem;
+  height: 50%;
+  width: 50%;
+  margin-right: 10px;
+}
+.userSellIndex_SettingContainer .container .switch .buttonwhite {
+  background-color: white;
+  border-radius: 50px;
+  padding: 3%;
+  margin-left: 7.5%;
+  height: 70%;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userSellIndex_SettingContainer .container .switch .buttonwhite .buttontext {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.userSellIndex_SettingContainer .container .filterblock {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  position: relative;
+  top: 7.5%;
+  justify-content: center;
+  align-items: center;
+}
+.userSellIndex_SettingContainer .container .filterblock .filterp {
+  height: 50%;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 0.5%;
+}
+@media (min-width: 480px) {
+  .userSellIndex_SettingContainer .container .filterblock .filterp {
+    width: 12.5%;
+  }
+}
+@media (min-width: 720px) {
+  .userSellIndex_SettingContainer .container .filterblock .filterp {
+    width: 10%;
+    margin-bottom: 1px;
+  }
+}
+@media (min-width: 960px) {
+  .userSellIndex_SettingContainer .container .filterblock .filterp {
+    width: 7.5%;
+    margin-bottom: 3px;
+  }
+}
+@media (min-width: 1200px) {
+  .userSellIndex_SettingContainer .container .filterblock .filterp {
+    width: 5%;
+    margin-bottom: 5px;
+  }
+}
+.userSellIndex_SettingContainer .container .filterblock .filterp2 {
+  height: 50%;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 0.5%;
+  margin-left: 5%;
+}
+@media (min-width: 480px) {
+  .userSellIndex_SettingContainer .container .filterblock .filterp2 {
+    width: 12.5%;
+  }
+}
+@media (min-width: 720px) {
+  .userSellIndex_SettingContainer .container .filterblock .filterp2 {
+    width: 10%;
+    margin-bottom: 1px;
+  }
+}
+@media (min-width: 960px) {
+  .userSellIndex_SettingContainer .container .filterblock .filterp2 {
+    width: 7.5%;
+    margin-bottom: 3px;
+  }
+}
+@media (min-width: 1200px) {
+  .userSellIndex_SettingContainer .container .filterblock .filterp2 {
+    width: 5%;
+    margin-bottom: 5px;
+  }
+}
+.userSellIndex_SettingContainer .container .filterblock .selectform {
+  height: 50%;
+  width: 20%;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 10px;
+}
+.userSellIndex_SettingContainer .container .filterblock .option {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.userSellIndex_SettingContainer .container .salesfiguresblock {
+  display: flex;
+  position: relative;
+  top: 10%;
+  width: 100%;
+  max-width: 1000px;
+  height: 67.5%;
+  background-color: white;
+  padding: 2.25rem;
+  border-radius: 20px;
+  border: 1px solid aliceblue;
+}
+.userSellIndex_SettingContainer .container .salesfiguresblock .title {
+  font-weight: bold;
+}
+@media (min-width: 480px) {
+  .userSellIndex_SettingContainer .container .salesfiguresblock .title {
+    font-size: 1.65rem;
+  }
+}
+@media (min-width: 720px) {
+  .userSellIndex_SettingContainer .container .salesfiguresblock .title {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 960px) {
+  .userSellIndex_SettingContainer .container .salesfiguresblock .title {
+    font-size: 2rem;
+  }
+}
+.userSellIndex_SettingContainer .container .salesfiguresblock .textcontainer {
+  height: 100%;
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+}
+.userSellIndex_SettingContainer .container .salesfiguresblock .moneycontainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+@media (min-width: 480px) {
+  .userSellIndex_SettingContainer .container .salesfiguresblock .moneycontainer {
+    top: 80%;
+  }
+}
+@media (min-width: 720px) {
+  .userSellIndex_SettingContainer .container .salesfiguresblock .moneycontainer {
+    top: 72.5%;
+  }
+}
+@media (min-width: 960px) {
+  .userSellIndex_SettingContainer .container .salesfiguresblock .moneycontainer {
+    top: 67.5%;
+  }
+}
+@media (min-width: 720px) {
+  .userSellIndex_SettingContainer .container .salesfiguresblock .moneycontainer .sale {
+    font-size: 1rem;
+    margin-top: 1%;
+  }
+}
+@media (min-width: 960px) {
+  .userSellIndex_SettingContainer .container .salesfiguresblock .moneycontainer .sale {
+    font-size: 1.25rem;
+    margin-top: 1%;
+  }
+}
+.userSellIndex_SettingContainer .container .salesfiguresblock .moneycontainer .money {
+  font-weight: bold;
+  color: red;
+}
+@media (min-width: 480px) {
+  .userSellIndex_SettingContainer .container .salesfiguresblock .moneycontainer .money {
+    font-size: 1.15rem;
+  }
+}
+@media (min-width: 720px) {
+  .userSellIndex_SettingContainer .container .salesfiguresblock .moneycontainer .money {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 960px) {
+  .userSellIndex_SettingContainer .container .salesfiguresblock .moneycontainer .money {
+    font-size: 2rem;
+  }
+}
+
+.userSellIndex_TableContainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .userSellIndex_TableContainer {
+    border: hidden;
+  }
+}
+@media (min-width: 720px) {
+  .userSellIndex_TableContainer {
+    border: solid;
+  }
+}
+.userSellIndex_TableContainer .columnContainer {
+  height: 100%;
+  width: 16.6666666667%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 480px) {
+  .userSellIndex_TableContainer .columnContainer {
+    visibility: hidden;
+  }
+}
+@media (min-width: 720px) {
+  .userSellIndex_TableContainer .columnContainer {
+    font-size: 0.7rem;
+    visibility: visible;
+  }
+}
+@media (min-width: 960px) {
+  .userSellIndex_TableContainer .columnContainer {
+    font-size: 0.9rem;
+    visibility: visible;
+  }
+}
+@media (min-width: 1200px) {
+  .userSellIndex_TableContainer .columnContainer {
+    font-size: 1.1rem;
+    visibility: visible;
+  }
+}
+.userSellIndex_TableContainer .columnContainer .tabletop {
+  background-color: #d3d3d3;
+  height: 12.5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: solid;
+}
+.userSellIndex_TableContainer .columnContainer .tablemiddle {
+  height: 62.5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: solid;
+}
+.userSellIndex_TableContainer .columnContainer .tablebottom1 {
+  height: 12.5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: solid;
+}
+.userSellIndex_TableContainer .columnContainer .tablebottom2 {
+  height: 12.5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userSellOrder_SettingContainer {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+@media (min-width: 480px) {
+  .userSellOrder_SettingContainer {
+    background-color: red;
+  }
+}
+@media (min-width: 720px) {
+  .userSellOrder_SettingContainer {
+    background-color: green;
+  }
+}
+@media (min-width: 960px) {
+  .userSellOrder_SettingContainer {
+    background-color: yellow;
+  }
+}
+@media (min-width: 1200px) {
+  .userSellOrder_SettingContainer {
+    background-color: #d3d3d3;
+  }
+}
+.userSellOrder_SettingContainer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  right: 0%;
+  padding: 2.5%;
+}
+.userSellOrder_SettingContainer .container .switch {
+  display: flex;
+  position: relative;
+  top: 5%;
+  background-color: #96897B;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 8%;
+}
+.userSellOrder_SettingContainer .container .switch .innerbutton {
+  font-weight: bold;
+  color: white;
+  border-radius: 15px;
+  background-color: transparent;
+  font-size: 1rem;
+  height: 50%;
+  width: 50%;
+}
+.userSellOrder_SettingContainer .container .switch .buttonwhite {
+  background-color: white;
+  border-radius: 50px;
+  padding: 3%;
+  height: 70%;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userSellOrder_SettingContainer .container .switch .buttonwhite .buttontext {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.userSellOrder_SettingContainer .container .filterblock {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  position: relative;
+  top: 7.5%;
+  align-items: center;
+  justify-content: center;
+}
+.userSellOrder_SettingContainer .container .filterblock .filterp {
+  height: 50%;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 0.5%;
+}
+@media (min-width: 480px) {
+  .userSellOrder_SettingContainer .container .filterblock .filterp {
+    width: 12.5%;
+  }
+}
+@media (min-width: 720px) {
+  .userSellOrder_SettingContainer .container .filterblock .filterp {
+    width: 10%;
+    margin-bottom: 1px;
+  }
+}
+@media (min-width: 960px) {
+  .userSellOrder_SettingContainer .container .filterblock .filterp {
+    width: 7.5%;
+    margin-bottom: 3px;
+  }
+}
+@media (min-width: 1200px) {
+  .userSellOrder_SettingContainer .container .filterblock .filterp {
+    width: 5%;
+    margin-bottom: 5px;
+  }
+}
+.userSellOrder_SettingContainer .container .filterblock .filterp2 {
+  height: 50%;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 0.5%;
+  margin-left: 5%;
+}
+@media (min-width: 480px) {
+  .userSellOrder_SettingContainer .container .filterblock .filterp2 {
+    width: 19%;
+  }
+}
+@media (min-width: 720px) {
+  .userSellOrder_SettingContainer .container .filterblock .filterp2 {
+    width: 14%;
+    margin-bottom: 1px;
+  }
+}
+@media (min-width: 960px) {
+  .userSellOrder_SettingContainer .container .filterblock .filterp2 {
+    width: 11.5%;
+    margin-bottom: 3px;
+  }
+}
+@media (min-width: 1200px) {
+  .userSellOrder_SettingContainer .container .filterblock .filterp2 {
+    width: 8.5%;
+    margin-bottom: 5px;
+  }
+}
+.userSellOrder_SettingContainer .container .filterblock .selectform {
+  height: 50%;
+  width: 20%;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.userSellOrder_SettingContainer .container .filterblock .option {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.userSellOrder_SettingContainer .container .salesfiguresblock {
+  position: relative;
+  top: 10%;
+  background-color: white;
+  padding: 2.25rem;
+  width: 80%;
+  height: 40%;
+  border-radius: 20px;
+  border: 1px solid aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.userSellOrder_SettingContainer .container .salesfiguresblock .title {
+  height: 20%;
+  font-weight: bold;
+}
+@media (min-width: 480px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .title {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 720px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .title {
+    font-size: 1.75rem;
+    margin-left: 2%;
+  }
+}
+@media (min-width: 960px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .title {
+    font-size: 2rem;
+    margin-left: 5%;
+    margin-bottom: 2%;
+  }
+}
+@media (min-width: 1200px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .title {
+    font-size: 2rem;
+    margin-left: 10%;
+  }
+}
+.userSellOrder_SettingContainer .container .salesfiguresblock .infoblock {
+  display: flex;
+}
+.userSellOrder_SettingContainer .container .salesfiguresblock .info1 {
+  margin-top: 1%;
+}
+@media (min-width: 480px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .info1 {
+    font-size: 0.3rem;
+  }
+}
+@media (min-width: 720px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .info1 {
+    font-size: 0.85rem;
+    margin-left: 2%;
+  }
+}
+@media (min-width: 960px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .info1 {
+    font-size: 1.1rem;
+    margin-left: 5%;
+  }
+}
+@media (min-width: 1200px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .info1 {
+    font-size: 1.25rem;
+    margin-left: 10%;
+  }
+}
+.userSellOrder_SettingContainer .container .salesfiguresblock .info2 {
+  margin-top: 1%;
+}
+@media (min-width: 480px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .info2 {
+    font-size: 0.3rem;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 720px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .info2 {
+    font-size: 0.85rem;
+    margin-left: 67.5px;
+  }
+}
+@media (min-width: 960px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .info2 {
+    font-size: 1.1rem;
+    margin-left: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .info2 {
+    font-size: 1.25rem;
+    margin-left: 150px;
+  }
+}
+.userSellOrder_SettingContainer .container .salesfiguresblock .info3 {
+  margin-top: 1%;
+}
+@media (min-width: 480px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .info3 {
+    font-size: 0.3rem;
+    margin-left: 45px;
+  }
+}
+@media (min-width: 720px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .info3 {
+    font-size: 0.85rem;
+    margin-left: 95px;
+  }
+}
+@media (min-width: 960px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .info3 {
+    font-size: 1.1rem;
+    margin-left: 135px;
+  }
+}
+@media (min-width: 1200px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .info3 {
+    font-size: 1.25rem;
+    margin-left: 190px;
+  }
+}
+.userSellOrder_SettingContainer .container .salesfiguresblock .button {
+  margin-top: 1%;
+  margin-left: 1%;
+}
+@media (min-width: 480px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .button {
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 720px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .button {
+    font-size: 0.85rem;
+  }
+}
+@media (min-width: 960px) {
+  .userSellOrder_SettingContainer .container .salesfiguresblock .button {
+    font-size: 1.1rem;
+  }
+}
+
+.adminJournalSection_SettingContainer {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+@media (min-width: 480px) {
+  .adminJournalSection_SettingContainer {
+    background-color: red;
+  }
+}
+@media (min-width: 720px) {
+  .adminJournalSection_SettingContainer {
+    background-color: green;
+  }
+}
+@media (min-width: 960px) {
+  .adminJournalSection_SettingContainer {
+    background-color: yellow;
+  }
+}
+@media (min-width: 1200px) {
+  .adminJournalSection_SettingContainer {
+    background-color: #d3d3d3;
+  }
+}
+.adminJournalSection_SettingContainer .imageFrame {
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+
+.idContainer {
+  height: 100%;
+  width: 30%;
+  padding: 3rem;
+  padding-bottom: 6rem;
+}
+.idContainer .idBlock {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  padding: 1.5rem;
+}
+.idContainer .idBlock .idTitle {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.idContainer .idBlock .idImageContainer {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.idContainer .idBlock .idImageContainer .imageFrame {
+  height: 160px;
+  width: 160px;
+  border-radius: 999em;
+  background-color: #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.idContainer .idBlock .idDetailContainer {
+  height: 45%;
+  width: 100%;
+}
+.idContainer .idBlock .idDetailContainer .idDetail {
+  height: 33.3333333333%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.idContainer .idBlock .idDetailContainer .idDetail .detailP {
+  height: 50%;
+  width: 30%;
+  font-size: 1.25rem;
+}
+.idContainer .idBlock .idDetailContainer .idDetail .detailForm {
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  height: 50%;
+  width: 50%;
+  font-size: 1.25rem;
+  margin-left: 2%;
+  margin-bottom: 2.5%;
+  padding-left: 0.75rem;
+}
+
+.jbContainer {
+  height: 100%;
+  width: 70%;
+  padding: 3rem;
+}
+.jbContainer .jbTitle {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.jbContainer .journalBlock {
+  height: 90%;
+  width: 100%;
+}
+.jbContainer .journalBlock .jbDetailContainer {
+  height: 30%;
+  width: 100%;
+  background-color: white;
+  border-radius: 30px;
+  padding: 1.5rem;
+  display: flex;
+  margin-bottom: 3.3333333333%;
+}
+.jbContainer .journalBlock .jbDetailContainer .containerLeft {
+  height: 100%;
+  width: 30%;
+  border-right: solid;
+  display: flex;
+  align-items: center;
+}
+.jbContainer .journalBlock .jbDetailContainer .containerLeft .jbImageContainer {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jbContainer .journalBlock .jbDetailContainer .containerLeft .jbImageContainer .imageFrame {
+  height: 85px;
+  width: 85px;
+  border-radius: 999em;
+  background-color: #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jbContainer .journalBlock .jbDetailContainer .containerLeft .textFrame {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.jbContainer .journalBlock .jbDetailContainer .containerLeft .textFrame .user {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.jbContainer .journalBlock .jbDetailContainer .containerLeft .textFrame .duration {
+  font-size: 1.25rem;
+}
+.jbContainer .journalBlock .jbDetailContainer .containerMiddle {
+  height: 100%;
+  width: 40%;
+  font-size: 1.25rem;
+  border-right: solid;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+.jbContainer .journalBlock .jbDetailContainer .containerRight {
+  height: 100%;
+  width: 30%;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jbContainer .journalBlock .blockSpace {
+  height: 2.5%;
+  width: 100%;
+}
+.jbContainer .nojournalBlock {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.jbContainer .nojournalBlock .noInfo {
+  margin-top: 100px;
+  height: 10%;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.jbContainer .nojournalBlock .back {
+  margin-top: 25%;
+  height: 10%;
+  font-size: 2rem;
+}
+
+.searchContainer {
+  height: 100%;
+  width: 40%;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.searchContainer .textBlock {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.searchContainer .formBlock {
+  height: 60%;
+  padding-top: 3rem;
+}
+.searchContainer .formBlock .idDetail {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchContainer .formBlock .idDetail .detailP {
+  height: 50%;
+  width: 30%;
+  font-size: 1.25rem;
+}
+.searchContainer .formBlock .idDetail .or {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5%;
+}
+.searchContainer .formBlock .idDetail .detailForm {
+  background-color: white;
+  border-radius: 10px;
+  height: 50%;
+  width: 50%;
+  font-size: 1.25rem;
+  margin-left: 2%;
+  margin-bottom: 1.75%;
+  padding-left: 0.75rem;
+}
+.searchContainer .buttonBlock {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchContainer .buttonBlock .button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 50%;
+  width: 50%;
+  border-radius: 20px;
 }/*# sourceMappingURL=home.module.css.map */

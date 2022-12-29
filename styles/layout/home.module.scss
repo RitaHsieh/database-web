@@ -5,9 +5,12 @@
 // base & layout
 @import 'breakpoints';
 // @import 'grid';
-
+@import 'layout';
+@import 'component-style';
 
 // components (button, card, navbar etc)
+@import '../components/multi-header';
+
 @import '../components/home-intro';
 @import '../components/home-login-bt';
 @import '../components/home-searchform';
@@ -18,11 +21,14 @@
 @import '../components/userIndex-section';
 
 @import '../components/hotelInfo-room';
+@import '../components/hotelInfo-intro';
 @import '../components/hotelInfo-attraction';
 @import '../components/hotelInfo-evaluate';
 @import '../components/hotelInfo-information';
 @import '../components/hotelInfo-transportation';
 @import '../components/hotelInfo-book';
+@import '../components/hotelinfo-title';
+@import '../components/hotelinfo-section';
 
 
 @import '../components/search-filter';
@@ -30,7 +36,21 @@
 @import '../components/search-result';
 @import '../components/search-searchform';
 @import '../components/search-section';
+
 @import '../components/userMulti-menu';
 @import '../components/userPersonalInfo-section';
+@import '../components/_userHotel-multi';
+@import '../components/userHotel-info';
+@import '../components/userHotelFeature-section';
+@import '../components/userHotelRoom-section';
+@import '../components/userHotel-notice';
+@import '../components/userSellIndex-setting';
+@import '../components/userSellIndex-table';
+@import '../components/userSellOrder-setting';
+
+@import '../components/adminJournal-section';
+@import '../components/admin-id';
+@import '../components/admin-journalBlock';
+@import '../components/admin-search';
 // utilities (margin, padding, opacity, etc)
 // @import 'utilities';

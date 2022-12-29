@@ -1,0 +1,208 @@
+.userSellIndex_SettingContainer{
+    @include bottom-block;
+
+    // //test
+    // @include sm {
+    //     background-color: red;
+    // }
+    // @include md {
+    //     background-color: green;
+    // }
+    // @include lg {
+    //     background-color: #d3d3d3;
+    // }
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width:85%;
+        height: 100%;
+        right: 0%;
+        padding: 2.5%;
+
+        .switch{ 
+            display: flex;
+            position: relative;
+            top:5%;
+            background-color: $decorate-color;
+            border-radius: 50px;
+            justify-content: center;
+            align-items: center;
+            width: 240px;
+            height: 8%;
+
+            .innerbutton{
+                font-weight: bold;
+                color: white;
+                border-radius: 15px;
+                background-color: transparent;
+                font-size: 1rem;
+                height: 50%;
+                width: 50%;
+                margin-right: 10px;
+            }
+            
+            .buttonwhite{
+                background-color: white;
+                border-radius: 50px;
+                padding: 3%;
+                margin-left: 7.5%;
+                height: 70%;
+                width: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .buttontext{
+                    font-weight: bold;
+                    font-size: 1rem;
+                }
+            }
+            
+        }
+    
+        .filterblock{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            position: relative;
+            top:7.5%;
+            justify-content: center;
+            align-items: center;
+
+            .filterp{
+                height: 50%;
+                font-size: 1.25rem;
+                font-weight: bold;
+                margin-top: 0.5%;
+                @include sm {
+                    width: 12.5%;
+                }
+                @include md {          
+                    width: 10%;
+                    margin-bottom: 1px;
+                }
+                @include lg {          
+                    width: 7.5%;
+                    margin-bottom: 3px;
+                }
+                @include xl {          
+                    width: 5%;
+                    margin-bottom: 5px;
+                }
+            }
+
+            .filterp2{
+                height: 50%;
+                font-size: 1.25rem;
+                font-weight: bold;
+                margin-top: 0.5%;
+                margin-left: 5%;
+                @include sm {
+                    width: 12.5%;
+                }
+                @include md {
+                    width: 10%;    
+                    margin-bottom: 1px;
+                }
+                @include lg {          
+                    width: 7.5%;
+                    margin-bottom: 3px;
+                }
+                @include xl {          
+                    width: 5%;
+                    margin-bottom: 5px;
+                }
+                
+            }
+
+            .selectform{
+                height: 50%;
+                width: 20%;
+                font-size: 1.25rem;
+                font-weight: bold;
+                background-color: white;
+                border-radius: 10px;
+            }
+
+            .option{
+                font-weight: bold;
+                font-size: 1.25rem;
+            }
+        }
+    
+        .salesfiguresblock {
+            display: flex;
+            position: relative;
+            top:10%;
+            width: 100%;
+            max-width: 1000px;
+            height: 67.5%;
+            background-color: white;
+            padding: $base-padding * 3;
+            border-radius: $base-border-radius;
+            border: 1px solid $secondary-color;
+    
+            .title{
+                font-weight: bold;
+                @include sm {
+                    font-size: 1.65rem;   
+                }
+                @include md {
+                    font-size: 1.75rem;
+                }
+                @include lg {
+                    font-size: 2rem;
+                }
+            }
+            
+            .textcontainer{
+                height: 100%;
+                width: 58%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .moneycontainer{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                @include sm {
+                    top: 80%;  
+                }
+                @include md {
+                    top: 72.5%;
+                }
+                @include lg {
+                    top: 67.5%;
+                }
+
+                .sale{
+                    @include md {
+                        font-size: 1rem;
+                        margin-top: 1%;
+                    }
+                    @include lg {
+                        font-size: 1.25rem;
+                        margin-top: 1%;
+                    }
+                }
+
+                .money{              
+                    font-weight: bold;
+                    color: red;
+                    @include sm {
+                        font-size: 1.15rem;
+                    }
+                    @include md {
+                        font-size: 1.5rem;
+                    }
+                    @include lg {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -3,16 +3,45 @@ import Script from 'next/script'
 import {useState,useEffect} from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../../public/image/logo.png'
+import logo from '../../public/image/logo2.png'
 import arrow from '../../public/image/304.png'
-
+import useSWR from "swr";
+import FormData from 'form-data';
 
 export default function loginform() {
 
-
-    const [account,setAccount] = useState();
-    const [password,setPassword] = useState();
     
+    const [account,setAccount] = useState('');
+    const [password,setPassword] = useState('');
+    const [shouldFetch,setShouldFetch] = useState(false);
+
+    let formData = new FormData();
+    formData.append('username', account);
+    formData.append('password', password);
+    
+    const fetcher = (url,formData) => {fetch(url, {
+            headers: {
+                
+            },
+            body:formData,
+            method: 'POST'
+        })
+        .then((response) => {
+            setShouldFetch(shouldFetch => !shouldFetch);
+            return response.json();
+        })
+        .then( (response) => {
+            console.log(response);
+        })
+        .catch((error) => {
+            console.log(`Error: ${error}`);
+        })
+    }
+    const buttonClick=()=>{
+        setShouldFetch(shouldFetch => !shouldFetch);
+    }
+
+    const { data } = useSWR(shouldFetch ? ['https://dhkmj1jao2.execute-api.us-east-1.amazonaws.com/test/auth/login',formData] : null, fetcher)
 
     const click = () => {
         alert("HI")
@@ -37,7 +66,7 @@ export default function loginform() {
                     <Script src="https://accounts.google.com/gsi/client" async defer />
                     <div id="g_id_onload"
                         data-client_id="278424498443-1su4ostu34uq6m9lqavag4pm8e916pt9.apps.googleusercontent.com"
-                        data-login_uri="http://localhost:3000/login"
+                        data-login_uri="/login"
                         data-auto_prompt="false">
                     </div>
                     <div class="g_id_signin"
@@ -79,12 +108,7 @@ export default function loginform() {
                     <h3 className={style.content}> Register!</h3>
                 </Link>
                 
-                <Link href="https://www.youtube.com/watch?v=4JNb4fiT1VA&list=RDV91B6aQOn4k&index=13&ab_channel=%E9%BA%8B%E5%85%88%E7%94%9FMIXER" className={style.button2}>
-                    <Image src={arrow} alt='alter'/>
-                
-                </Link>
-                
-                <button onClick={click}>Hi</button>
+                <Image src={arrow} alt='alter' onClick={buttonClick}/>
             </div>
         </>
     )
