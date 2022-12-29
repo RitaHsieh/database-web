@@ -10,19 +10,19 @@ export default function menu() {
                 <h1>設定</h1>
              </div>
              <div className={style.options}>
-                <a className={style.button} href="">
+                <a className={style.button} href="history">
                 <i class="bi bi-receipt"></i>
                 <p>歷史訂單</p>
                 </a>
-                <a className={style.button} href="">
+                <a className={style.button} href="payment">
                 <i class="bi bi-credit-card"></i>
                 <p>付款資訊</p>
                 </a>
-                <a className={style.button} href="">
+                <a className={style.button} href="collection">
                 <i class="bi bi-bag-heart"></i>
                 <p>收藏紀錄</p>
                 </a>
-                <a className={style.button} href="">
+                <a className={style.button} href="privacysetting">
                 <i class="bi bi-shield-lock"></i>
                 <p>隱私設定</p>
                 </a>
