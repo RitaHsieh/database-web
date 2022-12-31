@@ -12,17 +12,22 @@
     .added {
         @include button;
         margin-bottom: $base-margin;
+        &:hover{
+            background-color: #7d0e0e;
+        }
     }
 }
 
 @mixin input($width) {
     border: 2px solid #999;
     border-radius: 5px;
-    padding: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
     width: $width;
     min-width: 100px;
     line-height: 1.5;
     margin-right: $base-padding;
+    font-size: $base-font-size;
 }
 
 @mixin textarea {
@@ -34,6 +39,7 @@
     box-shadow: 1px 1px 1px #999;
     margin-bottom: 3%;
     overflow: hidden;
+    font-size: $base-font-size;
 }
 
 

@@ -1230,6 +1230,9 @@
   font-size: 1rem;
   border: 1px solid #EEEEEE;
 }
+.searchOrderContainer * {
+  font-size: 1rem;
+}
 .searchOrderContainer .option {
   font-weight: 600;
   background: #FFFFFF;
@@ -1378,6 +1381,9 @@
   font-size: 1rem;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+.searchSearchformContainer * * {
+  font-size: 1rem;
 }
 .searchSearchformContainer .btn {
   cursor: pointer;
@@ -1842,20 +1848,24 @@
 .userHotelInfoContainer .main .short_input {
   border: 2px solid #999;
   border-radius: 5px;
-  padding: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
   width: 30%;
   min-width: 100px;
   line-height: 1.5;
   margin-right: 0.75rem;
+  font-size: 1rem;
 }
 .userHotelInfoContainer .main .long_input {
   border: 2px solid #999;
   border-radius: 5px;
-  padding: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
   width: 40%;
   min-width: 100px;
   line-height: 1.5;
   margin-right: 0.75rem;
+  font-size: 1rem;
 }
 .userHotelInfoContainer .main .pic_content {
   margin-bottom: 2%;
@@ -1980,6 +1990,7 @@
   box-shadow: 1px 1px 1px #999;
   margin-bottom: 3%;
   overflow: hidden;
+  font-size: 1rem;
 }
 .userHotelFeatureContainer .main .label_content {
   display: flex;
@@ -2034,6 +2045,9 @@
   background-color: black;
   color: white;
   transition: linear 0.2s;
+}
+.userHotelFeatureContainer .main .label_content .added:hover {
+  background-color: #7d0e0e;
 }
 .userHotelFeatureContainer .main .btn_content {
   margin-top: auto;
@@ -2158,14 +2172,17 @@
 .userHotelRoomContainer .main .roomform input {
   border: 2px solid #999;
   border-radius: 5px;
-  padding: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
   width: 30%;
   min-width: 100px;
   line-height: 1.5;
   margin-right: 0.75rem;
+  font-size: 1rem;
 }
 .userHotelRoomContainer .main .roomform .labelcontainer {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 1rem;
 }
@@ -2219,6 +2236,9 @@
   color: white;
   transition: linear 0.2s;
 }
+.userHotelRoomContainer .main .roomform .labelcontainer .added:hover {
+  background-color: #7d0e0e;
+}
 .userHotelRoomContainer .main .roomform .textarea {
   height: 10em;
   width: 100%;
@@ -2230,6 +2250,7 @@
   box-shadow: 1px 1px 1px #999;
   margin-bottom: 3%;
   overflow: hidden;
+  font-size: 1rem;
 }
 .userHotelRoomContainer .main .btn_content {
   margin-top: auto;
@@ -2250,6 +2271,14 @@
 }
 .userHotelRoomContainer .main .newroom i {
   font-size: 3rem;
+}
+.userHotelRoomContainer .main .addLabel {
+  display: inline;
+  margin-bottom: 2rem;
+}
+.userHotelRoomContainer .main .addLabel_hide {
+  display: none;
+  height: 0;
 }
 
 .userHotelNoticeContainer {
@@ -2334,20 +2363,24 @@
 .userHotelNoticeContainer .main .short_input {
   border: 2px solid #999;
   border-radius: 5px;
-  padding: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
   width: 30%;
   min-width: 100px;
   line-height: 1.5;
   margin-right: 0.75rem;
+  font-size: 1rem;
 }
 .userHotelNoticeContainer .main .long_input {
   border: 2px solid #999;
   border-radius: 5px;
-  padding: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
   width: 40%;
   min-width: 100px;
   line-height: 1.5;
   margin-right: 0.75rem;
+  font-size: 1rem;
 }
 .userHotelNoticeContainer .main textarea {
   padding: 0.75rem;
@@ -2358,6 +2391,7 @@
   box-shadow: 1px 1px 1px #999;
   margin-bottom: 3%;
   overflow: hidden;
+  font-size: 1rem;
   height: 7rem;
   width: 100%;
   margin-bottom: 2%;
