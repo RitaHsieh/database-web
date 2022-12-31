@@ -1,9 +1,10 @@
-import Section from "../../../component/user/hotel/userhotelindex-section"
 
-export default function index() {
+import HotelSection from "../../../component/user/hotel/indexsection";
+
+export default function UserHotelFeature() {
     return (
         <>
-            <Section/>
+            <HotelSection/>
         </>
     )
 }
