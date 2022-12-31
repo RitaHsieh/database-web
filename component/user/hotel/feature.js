@@ -4,10 +4,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../../../public/image/logo2.png'
 import Header from "../../multi/header";
+import { useRouter } from 'next/router'
 
 
 
 export default function feature() {
+    const router = useRouter()
+    console.log(router.query);
     
     return (
         <>

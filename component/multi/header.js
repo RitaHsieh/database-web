@@ -33,15 +33,6 @@ export default function header() {
                         <Link href="/" className={login?style.display:style.hide}> 登出</Link>
                     </div>
                 </div>
-                {/* <Menu menuButton={
-                    <MenuButton className={style.loginbt}><i class="bi bi-person-circle"></i></MenuButton>} 
-                    menuClassName={style.menu}>
-                    <MenuItem className={login?style.hide:style.display}>登入</MenuItem>
-                    <MenuItem className={login?style.hide:style.display}>註冊</MenuItem>
-
-                    <MenuItem className={login?style.display:style.hide}>個人頁面</MenuItem>
-                    <MenuItem className={login?style.display:style.hide}>登出</MenuItem>
-                </Menu> */}
                 <Link href="/"><Image className={style.logo} src={logo} alt='alter'/></Link>
             </div>
           
