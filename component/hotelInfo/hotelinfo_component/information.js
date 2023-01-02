@@ -1,6 +1,7 @@
 import style from "../../../styles/layout/home.module.css"
 
-export default function information() {
+export default function information(props) {
+    const regulation=props.regulation;
     const options = [
         {title: '入住時間', content: 'xxx'},
         {title: '退房時間' , content: 'xxx'},

@@ -1,12 +1,12 @@
-import Menu from "../menu";
+
 import style from "../../../styles/layout/home.module.css";
-import Image from 'next/image';
 import Link from 'next/link';
-import logo from '../../../public/image/logo2.png'
 import Header from "../../multi/header";
-import Room from "./aroom";
-import { useRouter } from 'next/router'
 import Label from './additem';
+import Menu from "../menu";
+
+import Cookies from 'js-cookie';
+import { useRouter } from 'next/router'
 import {useState, useEffect} from 'react';
 import useSWR from "swr";
 
@@ -14,6 +14,7 @@ export default function room() {
     // label 新增動畫
     const router = useRouter();
     const room = router.query;
+    const authToken = Cookies.get('authToken');
 
     const [room_name,setRoomName] = useState(room["room_name"]);
     const [quantity,setQuantity] = useState(room["quantity"]);
@@ -40,9 +41,10 @@ export default function room() {
     }
     const [original_price,setOriginalPrice] = useState(room["original_price"]);
     const [price, setPrice] = useState(room["price"]);
-    const [shouldFetch,setShouldFetch] = useState(false);
-    const hotel_id=9;
-    const id=room["id"];
+    const [shouldPost,setShouldPost] = useState(false);
+    const [shouldPut,setShouldPut] = useState(false);
+    const hotel_id=1;
+    const [id, setId] = useState(room["id"]);
 
     const [label, setLabel] = useState(true);
     const [list, setList] = useState(initialList);
@@ -52,61 +54,70 @@ export default function room() {
     if (typeof(room["room_name"]) === 'undefined'){
         console.log("do not recieve room info");
         console.log(room);
-        const post_fetcher = (url,room_name,quantity,singleBed,doubleBed,capacity,introduction,installation,original_price,price,hotel_id) => {fetch(url, {
-            headers: {
-                'content-type': 'application/json',
-            },
-            body: JSON.stringify({  
-                "room_name": room_name,
-                "quantity": quantity,
-                "bed_type": singleBed.toString() + "," + doubleBed.toString(),
-                "capacity": capacity,
-                "introduction": introduction,
-                "installation": installation, 
-                "original_price": original_price,
-                "price": price,
-                "hotel_id": 9,
-                "images": ["string"]
-            }),
-            method: 'POST'}).then((response)=>{
-                console.log("fetch finish");
-                setShouldFetch(shouldFetch => !shouldFetch);
-            })
-        }
-
-        const { post_data } = useSWR(shouldFetch ? ['https://dhkmj1jao2.execute-api.us-east-1.amazonaws.com/test/room/',
-        room_name, quantity, singleBed, doubleBed, capacity, introduction, installation, original_price, price, hotel_id] : null, post_fetcher)
+        var post_flag = true;
     }
     else {
         console.log("recieved room info");
-        const put_fetcher = (url,id,room_name,quantity,singleBed,doubleBed,capacity,introduction,installation,original_price,price,hotel_id) => {fetch(url, {
-            headers: {
-                'content-type': 'application/json',
-            },
-            body: JSON.stringify({  
-                "id": id,
-                "room_name": room_name,
-                "quantity": quantity,
-                "bed_type": singleBed.toString() + "," + doubleBed.toString(),
-                "capacity": capacity,
-                "introduction": introduction,
-                "installation": installation, 
-                "original_price": original_price,
-                "price": price,
-                "hotel_id": 9,
-                "images": ["string"]
-            }),
-            method: 'PUT'}).then((response)=>{
-                console.log("fetch finish");
-                setShouldFetch(shouldFetch => !shouldFetch);
-            })
-        }
-
-        const { put_data } = useSWR(shouldFetch ? ['https://dhkmj1jao2.execute-api.us-east-1.amazonaws.com/test/room/',
-        id, room_name, quantity, singleBed, doubleBed, capacity, introduction, installation, original_price, price, hotel_id] : null, put_fetcher)
-        
+        var post_flag = false;
     }
+    const [post, setPost] = useState(post_flag);
+
+    const post_fetcher = (url,room_name,quantity,singleBed,doubleBed,capacity,introduction,installation,original_price,price,hotel_id) => {fetch(url, {
+        headers: {
+            'content-type': 'application/json',
+            'Authorization': "Bearer " + authToken,
+        },
+        body: JSON.stringify({  
+            "room_name": room_name,
+            "quantity": quantity,
+            "bed_type": singleBed.toString() + "," + doubleBed.toString(),
+            "capacity": capacity,
+            "introduction": introduction,
+            "installation": installation, 
+            "original_price": original_price,
+            "price": price,
+            "hotel_id": 9,
+            "images": ["string"]
+        }),
+        method: 'POST'}).then((response)=>{
+            console.log("post fetch finish");
+            console.log(response);
+            setShouldPost(shouldPost => !shouldPost);
+            setPost(false);
+        })
+    }
+
+    const { post_data } = useSWR(shouldPost ? ['https://dhkmj1jao2.execute-api.us-east-1.amazonaws.com/test/room/',
+    room_name, quantity, singleBed, doubleBed, capacity, introduction, installation, original_price, price, hotel_id] : null, post_fetcher)
     
+    const put_fetcher = (url,id,room_name,quantity,singleBed,doubleBed,capacity,introduction,installation,original_price,price,hotel_id) => {fetch(url, {
+        headers: {
+            'content-type': 'application/json',
+            'Authorization': "Bearer " + authToken,
+        },
+        body: JSON.stringify({  
+            "id": id,
+            "room_name": room_name,
+            "quantity": quantity,
+            "bed_type": singleBed.toString() + "," + doubleBed.toString(),
+            "capacity": capacity,
+            "introduction": introduction,
+            "installation": installation, 
+            "original_price": original_price,
+            "price": price,
+            "hotel_id": 1,
+            "images": ["string"]
+        }),
+        method: 'PUT'}).then((response)=>{
+            console.log("put fetch finish");
+            setShouldPut(shouldPut => !shouldPut);
+        })
+    }
+
+    const { put_data } = useSWR(shouldPut ? ['https://dhkmj1jao2.execute-api.us-east-1.amazonaws.com/test/room/',
+    id, room_name, quantity, singleBed, doubleBed, capacity, introduction, installation, original_price, price, hotel_id] : null, put_fetcher)
+    
+
     const addOnClick = () => {
         setLabel(label => !label);
     };
@@ -123,12 +134,13 @@ export default function room() {
             setName('');
         }
     };
-
-
-    
-
-    const buttonClick=()=>{
-        setShouldFetch(shouldFetch => !shouldFetch);
+    const buttonClick=(e, post)=>{
+        if (post===true) {
+            setShouldPost(shouldPost => !shouldPost);
+        }
+        else {
+            setShouldPut(shouldPut => ! shouldPut);
+        }
         console.log("end");
     }
 
@@ -137,6 +149,10 @@ export default function room() {
     }
 
   
+    useEffect(() => {
+
+    });
+
     return (
         <>
             <Header/>
@@ -194,8 +210,7 @@ export default function room() {
                             <p>房型總數量</p><input className={style.input} type="number" onChange={event=>{setQuantity(parseInt(event.target.value))}} value={quantity}></input>
                         </div>
                         <div className={style.btn_content}>
-                            <button className={style.btn} onClick={event=>buttonClick()}>確認</button>
-                            <button className={style.btn} onClick={event=>buttonClick()}>刪除</button>
+                            <button className={style.btn} onClick={event=>buttonClick(event, post)}>確認</button>
                         </div>
                     </form>
                     

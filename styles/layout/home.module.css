@@ -680,6 +680,10 @@
   margin-bottom: 0;
   margin-left: 0;
 }
+.hotelInfoRoomContainer .searchcontainer .container .intro, .hotelInfoRoomContainer .searchcontainer .container .bed {
+  max-width: 60%;
+  margin-top: 1rem;
+}
 .hotelInfoRoomContainer .button_container {
   background-color: white;
   border-radius: 20px;

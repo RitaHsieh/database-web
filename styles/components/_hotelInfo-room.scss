@@ -67,6 +67,11 @@
                 margin-bottom: 0;
                 margin-left: 0;
             }
+
+            .intro, .bed {
+                max-width: 60%;
+                margin-top: $base-margin;
+            }
             
         }
     }
