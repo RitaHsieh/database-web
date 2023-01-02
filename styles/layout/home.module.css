@@ -3439,4 +3439,135 @@
   font-size: 2rem;
   font-weight: bold;
   margin-left: 13%;
+}
+
+.UserDetailContainer {
+  height: 100%;
+  width: 90%;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.UserDetailContainer .whiteBlock {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  padding: 1.5rem;
+}
+.UserDetailContainer .whiteBlock .left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.UserDetailContainer .whiteBlock .left .userNameBlock {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.UserDetailContainer .whiteBlock .left .userNameBlock .imageContainer {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.UserDetailContainer .whiteBlock .left .userNameBlock .imageContainer .imageFrame {
+  height: 150px;
+  width: 150px;
+  border-radius: 999em;
+  background-color: #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.UserDetailContainer .whiteBlock .left .userNameBlock .textFrame {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.UserDetailContainer .whiteBlock .left .userNameBlock .textFrame .user {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.UserDetailContainer .whiteBlock .left .userNameBlock .textFrame .space {
+  height: 10%;
+}
+.UserDetailContainer .whiteBlock .left .userNameBlock .textFrame .email {
+  font-size: 1.5rem;
+}
+.UserDetailContainer .whiteBlock .left .userInfoBlock {
+  height: 65%;
+  width: 100%;
+}
+.UserDetailContainer .whiteBlock .left .userInfoBlock .row {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
+}
+.UserDetailContainer .whiteBlock .left .userInfoBlock .row .text {
+  font-size: 1.5rem;
+  width: 50%;
+}
+.UserDetailContainer .whiteBlock .right {
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.UserDetailContainer .whiteBlock .right .button {
+  background-color: #D9D9D9;
+  border-radius: 20px;
+  border: transparent;
+  cursor: pointer;
+  transition: 0.1s;
+  box-shadow: inset 0 0 0 0 transparent;
+}
+.UserDetailContainer .whiteBlock .right .button:hover {
+  box-shadow: inset 0 0 6px 2px gray;
+}
+.UserDetailContainer .whiteBlock .right .button:active {
+  box-shadow: inset 0 0 6px 4px gray;
+}
+@media (min-width: 0) {
+  .UserDetailContainer .whiteBlock .right .button {
+    width: 80%;
+    height: 20%;
+  }
+}
+@media (min-width: 960px) {
+  .UserDetailContainer .whiteBlock .right .button {
+    width: 40%;
+    height: 40%;
+  }
+}
+.UserDetailContainer .whiteBlock .right p {
+  font-weight: bold;
+}
+@media (min-width: 480px) {
+  .UserDetailContainer .whiteBlock .right p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 720px) {
+  .UserDetailContainer .whiteBlock .right p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 960px) {
+  .UserDetailContainer .whiteBlock .right p {
+    font-size: 1.8rem;
+  }
 }/*# sourceMappingURL=home.module.css.map */
