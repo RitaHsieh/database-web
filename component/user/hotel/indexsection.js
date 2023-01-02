@@ -15,19 +15,6 @@ export default function room() {
     // const navigate=useNavigation();
     const [shouldFetch, setShouldFetch]=useState(true);
     const [list, setList] = useState([]);
-    const room_object = 
-    {
-        "room_name": "testing",
-        "quantity": 0,
-        "bed_type": "string",
-        "capacity": 0,
-        "introduction": "string",
-        "installation": "string",
-        "original_price": 0,
-        "price": 0,
-        "hotel_id": 9,
-        "images": ["string"]
-    }
     // var list=[];
 
     const get_fetcher = (url, hotel_id) => {
@@ -63,7 +50,7 @@ export default function room() {
         )
     }
    
-    const { data, error } = useSWR(shouldFetch?['https://dhkmj1jao2.execute-api.us-east-1.amazonaws.com/test/room/',{hotel_id:9}]:null, get_fetcher);
+    const { data, error } = useSWR(shouldFetch?['https://dhkmj1jao2.execute-api.us-east-1.amazonaws.com/test/room/',{hotel_id:1}]:null, get_fetcher);
     // console.log("now, that's see...");
     // console.log(data);
     
