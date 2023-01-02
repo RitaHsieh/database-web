@@ -39,6 +39,7 @@
 
             .labelcontainer {
                 display: flex;
+                flex-wrap: wrap;
                 margin: 0;
                 margin-bottom: $base-margin;
                 @include styled_botton;
@@ -72,6 +73,15 @@
             align-items: center;
             background-color: white;
             border-radius: $base-border-radius;
+        }
+
+        .addLabel{
+            display: inline;
+            margin-bottom: 2rem;
+        }
+        .addLabel_hide{
+            display: none;
+            height: 0;
         }
     }
 }

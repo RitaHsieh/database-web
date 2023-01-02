@@ -1,0 +1,136 @@
+.userHistoryButtonContainer {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    
+    .bottomleftcontainer{
+        height:100%;
+        position: fixed;
+        top: 15%;
+        display: flex;
+        flex-direction:column;
+        width: 100%;
+    }
+
+    .hoteldata {
+        position: absolute;
+        height:100%;
+        width:85%;
+        top: 20%;
+        z-index: -1;
+        right: 0%;
+        z-index: 2;
+        .infoSearch{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            margin-left: 13%;
+            .text2{
+                margin: 1%;
+                position: relative;
+                color: black;
+                font-weight: bold;
+                font-size: xx-large;
+            }
+        
+            .text3{
+                position: relative;
+                color: red;
+                font-weight: bold;
+                font-size: xx-large;
+            }
+        
+            .select{
+                height: 1.8rem;
+                width: 4rem;
+                padding: 10px;
+                display: flex;
+                margin-top: $base-margin * 0.75;
+                margin-bottom: $base-margin * 0.75;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                border-radius: 5px;
+                font-weight:bolder;
+                font-size: $base-font-size; 
+            }
+        
+            .search{
+                height: 1.8rem;
+                width: 10rem;
+                padding: 10px;
+                display: flex;
+                margin-top: $base-margin * 0.75;
+                margin-bottom: $base-margin * 0.75;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                border-radius: 5px;
+                font-weight:bolder;
+                font-size: $base-font-size; 
+            }
+
+            .button {
+                display: inline-flex;
+                align-items: center;
+                margin: $base-margin;
+            }
+            i {
+                margin-right: $base-margin;
+            }
+            a {
+                @include sm {
+                    width: 90px;
+                }
+                @include md {
+                    width: 115px;
+                }
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+        
+    }
+}
+
+.userHistoryTopContainer{
+    background-color: dimgrey;
+    display:flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    height: 15%;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: $base-padding;
+    z-index: 3;
+    
+
+    .text{
+        position: relative;
+        color: white;
+        font-weight: bold;
+
+        @include sm {
+            font-size: $font-size-xl;
+        }
+        @include md {
+            font-size: $font-size-xxl;
+        }
+        @include lg {
+            font-size: $base-font-size * 3.5;
+        }
+    }
+
+
+    .btn {
+        cursor: pointer;
+
+        &:active {
+            background-color: #d9d9d9;
+            box-shadow: 0 2px #666;
+            transform: translateY(2px);
+        }
+    }
+}

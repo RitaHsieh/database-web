@@ -14,20 +14,21 @@ export default function menu() {
                 <i class="bi bi-gear"></i>
                 <h1>設定</h1>
              </div>
+
              <div className={matches?style.smoptions:style.options}>
-                <Link className={style.button} href="">
+                <Link className={style.button} href="history">
                 <i class="bi bi-receipt"></i>
                 <p>歷史訂單</p>
                 </Link>
-                <Link className={style.button} href="">
+                <Link className={style.button} href="payment">
                 <i class="bi bi-credit-card"></i>
                 <p>付款資訊</p>
                 </Link>
-                <Link className={style.button} href="">
+                <Link className={style.button} href="collection">
                 <i class="bi bi-bag-heart"></i>
                 <p>收藏紀錄</p>
                 </Link>
-                <Link className={style.button} href="">
+                <Link className={style.button} href="privacysetting">
                 <i class="bi bi-shield-lock"></i>
                 <p>隱私設定</p>
                 </Link>

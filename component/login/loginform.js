@@ -7,6 +7,7 @@ import logo from '../../public/image/logo2.png'
 import arrow from '../../public/image/304.png'
 import useSWR from "swr";
 import FormData from 'form-data';
+import Cookies from 'js-cookie';
 
 export default function loginform() {
 
@@ -31,7 +32,8 @@ export default function loginform() {
             return response.json();
         })
         .then( (response) => {
-            console.log(response);
+            let authToken = response['access_token'];
+            Cookies.set('authToken', authToken, { expires: 7 });
         })
         .catch((error) => {
             console.log(`Error: ${error}`);
