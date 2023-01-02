@@ -11,6 +11,7 @@ export default function SearchHouseSection() {
             <div className={style.adminJournalSection_SettingContainer}>
                 <Search/>
                 <SearchHouseResult/>
+                {/* name={0} */}
             </div>  
         </>
     )
