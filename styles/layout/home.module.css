@@ -3480,10 +3480,19 @@
   align-items: center;
   justify-content: center;
 }
-.UserDetailContainer .whiteBlock .left .userNameBlock .imageContainer .imageFrame {
+.UserDetailContainer .whiteBlock .left .userNameBlock .imageContainer .imageUserFrame {
   height: 150px;
   width: 150px;
   border-radius: 999em;
+  background-color: #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.UserDetailContainer .whiteBlock .left .userNameBlock .imageContainer .imageHouseFrame {
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
   background-color: #d3d3d3;
   display: flex;
   align-items: center;
