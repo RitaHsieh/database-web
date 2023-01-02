@@ -4,19 +4,19 @@ import style from "../../styles/layout/home.module.css"
 
 
 
-export default function Title_copy() {
+export default function Title_copy(props) {
 
-
+    console.log(props.name, props.address,props. img)
 
     return (
         <>
             <div className = {style.infoTitleContainer}>
                 <div className = {style.titleTopContainer}>
                     <br/>
-                    <h1 className = {style.title}>旅館名稱</h1>
+                    <h1 className = {style.title}>{props.name}</h1>
                     <br/>
                     <div className={style.content}>
-                        <p>地址：台北市大安區忠孝東路3段1號</p>                   
+                        <p>地址：{props.address}</p>                   
                     </div>
                 </div>
                 <div className = {style.titleBottomContainer}>
