@@ -1159,10 +1159,9 @@
   height: 100%;
   background-color: white;
   border-radius: 30px;
-  padding: 3rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .HotelinfoDataContainer .blockContainer1 .personalInfoBlock .blockTitle {
@@ -1214,6 +1213,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.5rem;
 }
 .HotelinfoDataContainer .blockContainer1 .personalInfoBlock .dateBlock .filterblock .filterp {
   height: 50%;
@@ -1231,32 +1231,73 @@
   padding-left: 10px;
   margin-bottom: 10px;
 }
-.HotelinfoDataContainer .blockContainer1 .personalInfoBlock .dateBlock .filterblock .option {
-  font-size: 1.5rem;
-}
 .HotelinfoDataContainer .blockContainer2 {
   padding: 1.5rem;
-  height: 50%;
+  height: 60%;
   display: flex;
   justify-content: center;
 }
-.HotelinfoDataContainer .blockContainer2 .roomConfirmBlock {
+.HotelinfoDataContainer .blockContainer2 .smallBlock {
   width: 90%;
   height: 100%;
   background-color: white;
   border-radius: 30px;
-  padding: 3rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
-.HotelinfoDataContainer .blockContainer2 .roomConfirmBlock .blockTitle {
+.HotelinfoDataContainer .blockContainer2 .smallBlock .blockTitle {
   font-size: 2.25rem;
   font-weight: bold;
   height: 33%;
   display: flex;
   align-items: center;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock .filterblock {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock .filterblock .filterp {
+  height: 50%;
+  font-size: 1.5rem;
+  width: 15%;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock .filterblock .selectform {
+  height: 50%;
+  width: 30%;
+  font-size: 1.5rem;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock .specialForm {
+  height: 62.5%;
+  width: 90%;
+  font-size: 1.5rem;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+.HotelinfoDataContainer .blockContainer3 {
+  padding: 1.5rem;
+  height: 12.5%;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.HotelinfoDataContainer .blockContainer3 .confirmButton {
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 10px;
+  height: 100%;
+  width: 7.5%;
+  margin-right: 5%;
 }
 
 .containerhidden {
