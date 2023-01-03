@@ -1,5 +1,7 @@
 import style from "../../styles/layout/home.module.css"
 import { useState } from "react";
+import Image from 'next/image'
+import logo from '../../public/image/logo2.png'
 
 export default function HotelinfoData() {
     const [arrive,setArrive] = useState('');
@@ -110,14 +112,23 @@ export default function HotelinfoData() {
                                 ))}
                             </select>
                         </div>
-                        
-
                     </div>
                 </div>
 
                 <div className={style.blockContainer2}>
                     <div className={style.smallBlock}>
                         <div className={style.blockTitle}>付款方式</div>
+                        <div className={style.paymentBlock}>
+                            <div className={style.paymentImage}><Image src={logo} alt='alter'/></div>
+                            <div className={style.paymentText}>信用卡卡號</div>
+                            <button type="button" className={style.paymentButton}>編輯</button>
+                        </div>
+                        <div className={style.paymentBlock}>
+                            <div className={style.paymentImage}><Image src={logo} alt='alter'/></div>
+                            <div className={style.paymentText}>抵用卷號碼</div>
+                            <button type="button" className={style.paymentButton}>編輯</button>
+                        </div>
+                        
                     </div>
                 </div>
 

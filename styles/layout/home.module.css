@@ -1276,6 +1276,28 @@
   padding-left: 10px;
   margin-bottom: 20px;
 }
+.HotelinfoDataContainer .blockContainer2 .smallBlock .paymentBlock {
+  height: 33%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock .paymentBlock .paymentImage {
+  width: 10%;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock .paymentBlock .paymentText {
+  font-size: 1.5rem;
+  width: 20%;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock .paymentBlock .paymentButton {
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 10px;
+  height: 40%;
+  width: 10%;
+  margin-right: 5%;
+}
 .HotelinfoDataContainer .blockContainer2 .smallBlock .specialForm {
   height: 62.5%;
   width: 90%;
