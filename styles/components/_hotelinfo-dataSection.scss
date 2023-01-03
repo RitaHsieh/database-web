@@ -1,0 +1,134 @@
+.HotelinfoDataContainer{
+    padding: $base-padding*4;
+    height: 100%;
+    width: 100%;
+
+    .title{
+        font-size: 2.5rem;
+        font-weight: bold;
+        height: 10%;
+    }
+    
+    .blockContainer1{
+        padding: $base-padding*2;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+
+        .personalInfoBlock{
+            width: 90%;
+            height: 100%;
+            background-color: white;
+            border-radius: 30px;
+            padding: $base-padding*4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .blockTitle{
+                font-size: 2.25rem;
+                font-weight: bold;
+                height: 16%;
+                display: flex;
+                align-items: center;
+            }
+
+            .option{
+                display: flex;
+                align-items: center;
+                font-size: 1.5rem;
+                height:16%;
+            }
+
+            .fill{
+                height:16%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .fillP{
+                    height: 50%;
+                    width: 7.5%;
+                    font-size: 1.5rem;
+                }
+
+                .fillForm{
+                    background-color: #d3d3d3;
+                    border-radius: 10px;
+                    height: 50%;
+                    width: 50%;
+                    font-size: 1.5rem;
+                    margin-left: 2%;
+                    margin-bottom: 10px;
+                    padding-left: $base-padding;
+                }
+            }
+
+            .dateBlock{
+                width: 60%;
+                height: 16%;
+                display: flex;
+                .space{
+                    width: 7.5%;
+                }
+
+                .filterblock{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    .filterp{
+                        height: 50%;
+                        font-size: 1.5rem;
+                        margin-top: 0.5%;    
+                        width: 35%;
+                        margin-bottom: 5px;
+                    }
+    
+                    .selectform{
+                        height: 50%;
+                        width: 65%;
+                        font-size: 1.5rem;
+                        background-color: #d3d3d3;
+                        border-radius: 10px;
+                        padding-left: 10px; 
+                        margin-bottom: 10px;
+                    }
+        
+                    .option{
+                        font-size: 1.5rem;
+                    }
+                }
+            }   
+        }
+    }
+
+    .blockContainer2{
+        padding: $base-padding*2;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        .roomConfirmBlock{
+            width: 90%;
+            height: 100%;
+            background-color: white;
+            border-radius: 30px;
+            padding: $base-padding*4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .blockTitle{
+                font-size: 2.25rem;
+                font-weight: bold;
+                height: 33%;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
