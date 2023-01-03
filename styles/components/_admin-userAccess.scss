@@ -1,0 +1,135 @@
+.UserAccessContainer{
+    height: 100%;
+    width: 90%;
+    padding-right: $base-padding * 4;
+    padding-top: $base-padding * 4;
+    padding-bottom: $base-padding * 4;
+
+    .top{
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        .switch{
+            display: flex;
+            background-color: $decorate-color;
+            border-radius: 50px;
+            justify-content: center;
+            align-items: center;
+            width: 240px;
+            height: 100%;
+
+            .innerbutton{
+                font-weight: bold;
+                color: white;
+                border-radius: 15px;
+                background-color: transparent;
+                font-size: 1rem;
+                height: 50%;
+                width: 50%;
+            }
+        
+            .buttonwhite{
+                background-color: white;
+                border-radius: 50px;
+                padding: 3%;
+                height: 70%;
+                width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .buttontext{
+                    font-weight: bold;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .middle{
+        height: 35%;
+        padding-top: $base-padding*2;
+        .middleBlock{
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            border-radius: 30px;
+            display: flex;
+            padding: $base-padding*2;
+
+            .userNameBlock{
+                height: 100%;
+                width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .imageContainer{
+                    height: 100%;
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .imageUserFrame{
+                        height: 125px;
+                        width: 125px;
+                        border-radius: 999em;
+                        background-color: #d3d3d3;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                .textFrame{
+                    height: 100%;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .user{
+                        font-size: 2rem;
+                        font-weight: bold;
+                    }
+                    .space{
+                        height:10%;
+                    }
+                    .email{
+                        font-size: 1.5rem;
+                    }
+                }
+            }    
+        }
+    }
+
+    .bottom{
+        height:55%;
+        padding:  $base-padding*4;
+        .accessBlock{
+            height: 25%;
+            display: flex;
+            align-items: center;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .or{
+            height: 25%;
+            display: flex;
+            align-items: center;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .stopBlock{
+            height: 25%;
+            display: flex;
+            align-items: center;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .confirm{
+            height: 25%;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+    }
+}

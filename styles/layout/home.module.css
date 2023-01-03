@@ -3417,10 +3417,20 @@
   display: flex;
   flex-direction: column;
 }
-.SearchResultContainer .resultBlock .rbDetailContainer .containerRight .title {
+.SearchResultContainer .resultBlock .rbDetailContainer .containerRight .flexContainer {
+  height: 25%;
+  display: flex;
+}
+.SearchResultContainer .resultBlock .rbDetailContainer .containerRight .flexContainer .title {
   font-size: 2rem;
   font-weight: bold;
-  height: 25%;
+}
+.SearchResultContainer .resultBlock .rbDetailContainer .containerRight .flexContainer .deleteButton {
+  border-radius: 10px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 20%;
 }
 .SearchResultContainer .resultBlock .rbDetailContainer .containerRight .middleInfo {
   padding-top: 1%;
@@ -3583,4 +3593,134 @@
   .UserDetailContainer .whiteBlock .right p {
     font-size: 1.8rem;
   }
+}
+
+.UserAccessContainer {
+  height: 100%;
+  width: 90%;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.UserAccessContainer .top {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+.UserAccessContainer .top .switch {
+  display: flex;
+  background-color: #96897B;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 100%;
+}
+.UserAccessContainer .top .switch .innerbutton {
+  font-weight: bold;
+  color: white;
+  border-radius: 15px;
+  background-color: transparent;
+  font-size: 1rem;
+  height: 50%;
+  width: 50%;
+}
+.UserAccessContainer .top .switch .buttonwhite {
+  background-color: white;
+  border-radius: 50px;
+  padding: 3%;
+  height: 70%;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.UserAccessContainer .top .switch .buttonwhite .buttontext {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.UserAccessContainer .middle {
+  height: 35%;
+  padding-top: 1.5rem;
+}
+.UserAccessContainer .middle .middleBlock {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  padding: 1.5rem;
+}
+.UserAccessContainer .middle .middleBlock .userNameBlock {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.UserAccessContainer .middle .middleBlock .userNameBlock .imageContainer {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.UserAccessContainer .middle .middleBlock .userNameBlock .imageContainer .imageUserFrame {
+  height: 125px;
+  width: 125px;
+  border-radius: 999em;
+  background-color: #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.UserAccessContainer .middle .middleBlock .userNameBlock .textFrame {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.UserAccessContainer .middle .middleBlock .userNameBlock .textFrame .user {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.UserAccessContainer .middle .middleBlock .userNameBlock .textFrame .space {
+  height: 10%;
+}
+.UserAccessContainer .middle .middleBlock .userNameBlock .textFrame .email {
+  font-size: 1.5rem;
+}
+.UserAccessContainer .bottom {
+  height: 55%;
+  padding: 3rem;
+}
+.UserAccessContainer .bottom .accessBlock {
+  height: 25%;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.UserAccessContainer .bottom .or {
+  height: 25%;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.UserAccessContainer .bottom .stopBlock {
+  height: 25%;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.UserAccessContainer .bottom .confirm {
+  height: 25%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: bold;
 }/*# sourceMappingURL=home.module.css.map */
