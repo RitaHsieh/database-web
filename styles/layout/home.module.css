@@ -1149,6 +1149,190 @@
   margin: 1rem;
 }
 
+.HotelinfoDataContainer {
+  padding: 3rem;
+  height: 100%;
+  width: 100%;
+}
+.HotelinfoDataContainer .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  height: 10%;
+}
+.HotelinfoDataContainer .blockContainer1 {
+  padding: 1.5rem;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+.HotelinfoDataContainer .blockContainer1 .personalInfoBlock {
+  width: 90%;
+  height: 100%;
+  background-color: white;
+  border-radius: 30px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.HotelinfoDataContainer .blockContainer1 .personalInfoBlock .blockTitle {
+  font-size: 2.25rem;
+  font-weight: bold;
+  height: 16%;
+  display: flex;
+  align-items: center;
+}
+.HotelinfoDataContainer .blockContainer1 .personalInfoBlock .option {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  height: 16%;
+}
+.HotelinfoDataContainer .blockContainer1 .personalInfoBlock .fill {
+  height: 16%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HotelinfoDataContainer .blockContainer1 .personalInfoBlock .fill .fillP {
+  height: 50%;
+  width: 7.5%;
+  font-size: 1.5rem;
+}
+.HotelinfoDataContainer .blockContainer1 .personalInfoBlock .fill .fillForm {
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  height: 50%;
+  width: 50%;
+  font-size: 1.5rem;
+  margin-left: 2%;
+  margin-bottom: 10px;
+  padding-left: 0.75rem;
+}
+.HotelinfoDataContainer .blockContainer1 .personalInfoBlock .dateBlock {
+  width: 60%;
+  height: 16%;
+  display: flex;
+}
+.HotelinfoDataContainer .blockContainer1 .personalInfoBlock .dateBlock .space {
+  width: 7.5%;
+}
+.HotelinfoDataContainer .blockContainer1 .personalInfoBlock .dateBlock .filterblock {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.HotelinfoDataContainer .blockContainer1 .personalInfoBlock .dateBlock .filterblock .filterp {
+  height: 50%;
+  font-size: 1.5rem;
+  margin-top: 0.5%;
+  width: 35%;
+  margin-bottom: 5px;
+}
+.HotelinfoDataContainer .blockContainer1 .personalInfoBlock .dateBlock .filterblock .selectform {
+  height: 50%;
+  width: 65%;
+  font-size: 1.5rem;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.HotelinfoDataContainer .blockContainer2 {
+  padding: 1.5rem;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock {
+  width: 90%;
+  height: 100%;
+  background-color: white;
+  border-radius: 30px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock .blockTitle {
+  font-size: 2.25rem;
+  font-weight: bold;
+  height: 33%;
+  display: flex;
+  align-items: center;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock .filterblock {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock .filterblock .filterp {
+  height: 50%;
+  font-size: 1.5rem;
+  width: 15%;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock .filterblock .selectform {
+  height: 50%;
+  width: 30%;
+  font-size: 1.5rem;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock .paymentBlock {
+  height: 33%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock .paymentBlock .paymentImage {
+  width: 10%;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock .paymentBlock .paymentText {
+  font-size: 1.5rem;
+  width: 20%;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock .paymentBlock .paymentButton {
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 10px;
+  height: 40%;
+  width: 10%;
+  margin-right: 5%;
+}
+.HotelinfoDataContainer .blockContainer2 .smallBlock .specialForm {
+  height: 62.5%;
+  width: 90%;
+  font-size: 1.5rem;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+.HotelinfoDataContainer .blockContainer3 {
+  padding: 1.5rem;
+  height: 12.5%;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.HotelinfoDataContainer .blockContainer3 .confirmButton {
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 10px;
+  height: 100%;
+  width: 7.5%;
+  margin-right: 5%;
+}
+
 .containerhidden {
   visibility: hidden;
   z-index: -3;
@@ -3592,10 +3776,20 @@
   display: flex;
   flex-direction: column;
 }
-.SearchResultContainer .resultBlock .rbDetailContainer .containerRight .title {
+.SearchResultContainer .resultBlock .rbDetailContainer .containerRight .flexContainer {
+  height: 25%;
+  display: flex;
+}
+.SearchResultContainer .resultBlock .rbDetailContainer .containerRight .flexContainer .title {
   font-size: 2rem;
   font-weight: bold;
-  height: 25%;
+}
+.SearchResultContainer .resultBlock .rbDetailContainer .containerRight .flexContainer .deleteButton {
+  border-radius: 10px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 20%;
 }
 .SearchResultContainer .resultBlock .rbDetailContainer .containerRight .middleInfo {
   padding-top: 1%;
@@ -3758,4 +3952,134 @@
   .UserDetailContainer .whiteBlock .right p {
     font-size: 1.8rem;
   }
+}
+
+.UserAccessContainer {
+  height: 100%;
+  width: 90%;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.UserAccessContainer .top {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+.UserAccessContainer .top .switch {
+  display: flex;
+  background-color: #96897B;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 100%;
+}
+.UserAccessContainer .top .switch .innerbutton {
+  font-weight: bold;
+  color: white;
+  border-radius: 15px;
+  background-color: transparent;
+  font-size: 1rem;
+  height: 50%;
+  width: 50%;
+}
+.UserAccessContainer .top .switch .buttonwhite {
+  background-color: white;
+  border-radius: 50px;
+  padding: 3%;
+  height: 70%;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.UserAccessContainer .top .switch .buttonwhite .buttontext {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.UserAccessContainer .middle {
+  height: 35%;
+  padding-top: 1.5rem;
+}
+.UserAccessContainer .middle .middleBlock {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  padding: 1.5rem;
+}
+.UserAccessContainer .middle .middleBlock .userNameBlock {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.UserAccessContainer .middle .middleBlock .userNameBlock .imageContainer {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.UserAccessContainer .middle .middleBlock .userNameBlock .imageContainer .imageUserFrame {
+  height: 125px;
+  width: 125px;
+  border-radius: 999em;
+  background-color: #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.UserAccessContainer .middle .middleBlock .userNameBlock .textFrame {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.UserAccessContainer .middle .middleBlock .userNameBlock .textFrame .user {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.UserAccessContainer .middle .middleBlock .userNameBlock .textFrame .space {
+  height: 10%;
+}
+.UserAccessContainer .middle .middleBlock .userNameBlock .textFrame .email {
+  font-size: 1.5rem;
+}
+.UserAccessContainer .bottom {
+  height: 55%;
+  padding: 3rem;
+}
+.UserAccessContainer .bottom .accessBlock {
+  height: 25%;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.UserAccessContainer .bottom .or {
+  height: 25%;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.UserAccessContainer .bottom .stopBlock {
+  height: 25%;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.UserAccessContainer .bottom .confirm {
+  height: 25%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: bold;
 }/*# sourceMappingURL=home.module.css.map */
