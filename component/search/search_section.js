@@ -30,6 +30,7 @@ export default function search_section() {
                 <div className={style.hoteldata}>
                     <Order/>
                     <Search_result 
+                        link={"/hotelinfo"}
                         name={"旅館名稱"} 
                         addr={"旅館地址"} 
                         room={"訂購房型"} 
@@ -38,6 +39,7 @@ export default function search_section() {
                         condition={"訂單狀態"}
                     />
                     <Search_result 
+                        link={"\hotelinfo"}
                         name={"旅館名稱"} 
                         addr={"旅館地址"} 
                         room={"訂購房型"} 
@@ -46,6 +48,7 @@ export default function search_section() {
                         condition={"訂單狀態"}
                     />
                     <Search_result 
+                        link={"\hotelinfo"}
                         name={"旅館名稱"} 
                         addr={"旅館地址"} 
                         room={"訂購房型"} 
@@ -54,6 +57,7 @@ export default function search_section() {
                         condition={"訂單狀態"}
                     />
                     <Search_result 
+                        link={"\hotelinfo"}
                         name={"旅館名稱"} 
                         addr={"旅館地址"} 
                         room={"訂購房型"} 
@@ -62,6 +66,7 @@ export default function search_section() {
                         condition={"訂單狀態"}
                     />
                     <Search_result 
+                        link={"\hotelinfo"}
                         name={"旅館名稱"} 
                         addr={"旅館地址"} 
                         room={"訂購房型"} 

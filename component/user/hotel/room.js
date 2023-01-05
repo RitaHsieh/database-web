@@ -15,6 +15,9 @@ export default function room() {
     const router = useRouter();
     const room = router.query;
     const authToken = Cookies.get('authToken');
+    // console.log("auth:")
+    // console.log(authToken)
+    // console.log(room)
 
     const [room_name,setRoomName] = useState(room["room_name"]);
     const [quantity,setQuantity] = useState(room["quantity"]);
@@ -27,13 +30,12 @@ export default function room() {
     const [doubleBed,setDoubleBed] = useState(flag?bed[1]:0);
     const [capacity,setCapacity] = useState(room["capacity"]);
     const [introduction,setIntroduction] = useState(room["introduction"]);
-    const [installation,setInstallation] = useState(room["installation"]);
+    const [installation,setInstallation] = useState(room["installation"]?room["installation"]:"");
     const install = String(room["installation"]);
     console.log(install);
     const initialList=[]
     if (install.includes(",")){
-        const lists= install.split(',');
-        lists.shift();
+        const lists= install.split(',').filter(Boolean);
         console.log(lists);
         lists.forEach(function(value){
             initialList.push({name: value})
@@ -43,8 +45,8 @@ export default function room() {
     const [price, setPrice] = useState(room["price"]);
     const [shouldPost,setShouldPost] = useState(false);
     const [shouldPut,setShouldPut] = useState(false);
-    const hotel_id=1;
-    const [id, setId] = useState(room["id"]);
+    const hotel_id = room.hotel_id;
+    const id = room["id"];
 
     const [label, setLabel] = useState(true);
     const [list, setList] = useState(initialList);
@@ -76,7 +78,7 @@ export default function room() {
             "installation": installation, 
             "original_price": original_price,
             "price": price,
-            "hotel_id": 9,
+            "hotel_id": hotel_id,
             "images": ["string"]
         }),
         method: 'POST'}).then((response)=>{
@@ -90,7 +92,8 @@ export default function room() {
     const { post_data } = useSWR(shouldPost ? ['https://dhkmj1jao2.execute-api.us-east-1.amazonaws.com/test/room/',
     room_name, quantity, singleBed, doubleBed, capacity, introduction, installation, original_price, price, hotel_id] : null, post_fetcher)
     
-    const put_fetcher = (url,id,room_name,quantity,singleBed,doubleBed,capacity,introduction,installation,original_price,price,hotel_id) => {fetch(url, {
+    const put_fetcher = (url,id,room_name,quantity,singleBed,doubleBed,capacity,introduction,installation,original_price,price,hotel_id) => 
+    {fetch(url, {
         headers: {
             'content-type': 'application/json',
             'Authorization': "Bearer " + authToken,
@@ -105,7 +108,7 @@ export default function room() {
             "installation": installation, 
             "original_price": original_price,
             "price": price,
-            "hotel_id": 1,
+            "hotel_id": hotel_id,
             "images": ["string"]
         }),
         method: 'PUT'}).then((response)=>{
@@ -130,7 +133,7 @@ export default function room() {
             setLabel(label => !label);
             const newList = list.concat([{name: name},]);
             setList(newList);
-            setInstallation(installation + "," + name);
+            setInstallation(installation + name + ",");
             setName('');
         }
     };
@@ -162,7 +165,7 @@ export default function room() {
                 <div className={style.main}>
                     <div className={style.content}>
                         <h1>新增/更改房型</h1>
-                        <button className={style.hotelbutton}><Link href="/">預覽畫面</Link></button>
+                        {/* <button className={style.hotelbutton}><Link href="/">預覽畫面</Link></button> */}
                     </div>
                     <form className={style.roomform} onSubmit={handleSubmit}>
                         <div className={style.content}>

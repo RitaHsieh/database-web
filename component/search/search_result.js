@@ -6,9 +6,14 @@ import Link from "next/link"
 
 
 export default function search_result(props) {
+    console.log("search_result props.msg: ")
+    console.log(props.msg)
     return(
         <>
-            <Link href="\hotelinfo" className={style.searchResultContainer}>
+            <Link href={{
+                    pathname: props.linking,
+                    query: props.msg?props.msg:[] // the data
+                    }} className={style.searchResultContainer}>
                 {/* <div className={style.imgcontainer}> */}
                     <Image src={image} alt="image" className={style.img}/> 
                 {/* </div> */}

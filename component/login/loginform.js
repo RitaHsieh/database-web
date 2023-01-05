@@ -32,6 +32,7 @@ export default function loginform() {
             return response.json();
         })
         .then( (response) => {
+            console.log(response)
             let authToken = response['access_token'];
             Cookies.set('authToken', authToken, { expires: 7 });
         })

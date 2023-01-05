@@ -60,19 +60,28 @@
             height: 10%;
         } 
 
-        .newroom {
+        .room {
             * {
                 font-size: $font-size-xl;
                 font-weight: bold;
             }
             i {
-                font-size: $font-size-xxl;
+                font-size: $font-size-xl;
+                margin-right: $base-margin;
             }
+            .room_link{
+                display: flex;
+            
+            }
+            width: 80%;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: white;
-            border-radius: $base-border-radius;
+            padding: $base-padding;
+            margin:auto;
+            margin-bottom: $base-margin;
+            @include white-board-style;
+
         }
 
         .addLabel{

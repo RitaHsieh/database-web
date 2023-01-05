@@ -1,5 +1,5 @@
 
-import HotelSection from "../../../component/user/hotel/indexsection";
+import HotelSection from "../../../component/user/hotel/index";
 
 export default function UserHotelFeature() {
     return (
