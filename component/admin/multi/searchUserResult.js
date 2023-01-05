@@ -27,7 +27,10 @@ export default function UserResult() {
                             </div>
                             
                             <div className={style.containerRight}>
-                                <div className={style.title}>{option.name}</div>
+                                <div className={style.flexContainer}>
+                                    <div className={style.title}>{option.name}</div>
+                                    <button type="button" className={style.deleteButton}>刪除使用者</button>
+                                </div>
                                 <div className={style.middleInfo}>{option.permission}</div>
                                 <div className={style.middleInfo}>{option.register}</div>
                                 <div className={style.space}></div>
