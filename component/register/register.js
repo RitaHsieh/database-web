@@ -83,32 +83,37 @@ export default function loginform() {
                 <hr className={style.line}></hr>
             
                 <form className={style.form}>
-                    <p>
-                    <input type="text" name="username" className={style.block} placeholder="username" onChange={event=>{setUsername(event.target.value)}}></input>
-                    </p>
-                    <p>
-                    <input type="text" name="email" className={style.block} placeholder="email" onChange={event=>{setEmail(event.target.value)}}></input>
-                    </p>
-                    <p>
-                    <input type="text" name="password" className={style.block} placeholder="password" onChange={event=>{setPassword(event.target.value)}}></input>
-                    </p>
-                    <p>
+                    <div className={style.userinput}>
+                        <p>姓名</p>
+                        <input type="text" name="username" className={style.block} placeholder="username" onChange={event=>{setUsername(event.target.value)}}></input>
+                    </div>
+                    <div className={style.userinput}>
+                        <p>email</p>
+                        <input type="text" name="email" className={style.block} placeholder="email" onChange={event=>{setEmail(event.target.value)}}></input>
+                    </div>
+                    <div className={style.userinput}>
+                        <p>密碼</p>
+                        <input type="password" name="password" className={style.block} placeholder="password" onChange={event=>{setPassword(event.target.value)}}></input>
+                    </div>
+                    <div className={style.userinput}>
+                        <p>性別</p>
+                        <select className={style.block} onChange={event=>{setGender(event.target.value)}}> 
+                            {options.map(option => (
+                                <option className={style.option} key={option.value} value={option.value}>
+                                    {option.text}
+                                </option>
+                            ))}
+                        </select>
                     
-                    <select className={style.block} onChange={event=>{setGender(event.target.value)}}> 
-                        {options.map(option => (
-                            <option className={style.option} key={option.value} value={option.value}>
-                                {option.text}
-                            </option>
-                        ))}
-                    </select>
-                    </p>
-                    <p>
-                    <input type="text" name="phone" className={style.block} placeholder="phone number" onChange={event=>{setPhonenumber(event.target.value)}}></input>
-                    </p>
+                    </div>
+                    <div className={style.userinput}>
+                        <p>電話</p>
+                        <input type="text" name="phone" className={style.block} placeholder="phone number" onChange={event=>{setPhonenumber(event.target.value)}}></input>
+                    </div>
                 </form>
 
                 <hr className={style.line}></hr>
-                <Image src={arrow} alt='alter' onClick={buttonClick}/>
+                <button className={style.submit} onClick={buttonClick}><i class="bi bi-arrow-right-circle"></i></button>
             </div>
         </>
     )

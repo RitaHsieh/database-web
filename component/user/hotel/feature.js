@@ -58,8 +58,8 @@ export default function feature(context) {
                 <Menu/>
                 <div className={style.main}>
                     <div className={style.content}>
-                        <h1>STEP 2/4 旅館特色簡介</h1>
-                        <button className={style.hotelbutton}><Link href="/">預覽畫面</Link></button>
+                        <h1>STEP 2/3 旅館特色簡介</h1>
+                        {/* <button className={style.hotelbutton}><Link href="/">預覽畫面</Link></button> */}
                     </div>
 
                     <p className={style.spacing}>請輸入一段文字描述旅館特色</p>

@@ -42,20 +42,10 @@ export default function index() {
             <div className={style.userHotelIndexButtonContainer}>
                 <Menu/>
                 <div className={style.hoteldata}>
+                    <h1 className={style.pagetitle}>旅館管理</h1>
                     <div className={style.infoSearch}>
-                        <p className={style.text2}>顯示</p>
-                        <select className={style.select}>
-                            <option selected disabled hidden></option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select>
-                        <p className={style.text2}>筆</p>
-                        <p className={style.text2}>搜尋</p>
-                        <input className={style.search} placeholder=""></input>
-                        <p className={style.text2}>+新增</p>
-                        <p className={style.text3}>-刪除</p>
+                        <Link href="/user/hotel/info"><button className={style.btn}>+新增旅館</button></Link>
+                        <button className={style.btn}>-刪除旅館</button>
                     </div>
                     {
                         data ?

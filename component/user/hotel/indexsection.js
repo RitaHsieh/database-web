@@ -16,15 +16,11 @@ export default function room() {
 
     const router = useRouter();
     const hotel = router.query;
-    console.log("recieve router")
-    console.log(hotel)
 
     // const navigate=useNavigation();
     const [shouldFetch, setShouldFetch]=useState(true);
     const [list, setList] = useState([]);
     const authToken = Cookies.get('authToken');
-    console.log("auth:")
-    console.log(authToken)
     // var list=[];
 
     const get_fetcher = (url) => {

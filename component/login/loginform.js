@@ -89,12 +89,14 @@ export default function loginform() {
                 <hr className={style.line}></hr>
             
                 <form className={style.form}>
-                    <p>
-                    <input type="text" name="acount" className={style.block} placeholder="email address or phone number" onChange={event=>{setAccount(event.target.value)}}></input>
-                    </p>
-                    <p>
-                    <input type="text" name="password" className={style.block} placeholder="password" onChange={event=>{setPassword(event.target.value)}}></input>
-                    </p>
+                    <div className={style.userinput}>
+                        <p>帳號</p>
+                        <input type="text" name="acount" className={style.block} placeholder="email or phone number" onChange={event=>{setAccount(event.target.value)}}></input>
+                        </div>
+                    <div className={style.userinput}>
+                        <p>密碼</p>
+                        <input type="password" name="password" className={style.block} placeholder="password" onChange={event=>{setPassword(event.target.value)}}></input>
+                    </div>
                     <p>
                     <input type="checkbox" id="remember-account" value="remember-account" className={style.checkbox}></input>
                     <label for="remember-account" className={style.chcontent}> Remember account for 30 days.</label>
@@ -110,8 +112,8 @@ export default function loginform() {
                 <Link href="/register" className={style.link}>
                     <h3 className={style.content}> Register!</h3>
                 </Link>
-                
-                <Image src={arrow} alt='alter' onClick={buttonClick}/>
+                <button className={style.submit} onClick={buttonClick}><i class="bi bi-arrow-right-circle"></i></button>
+                {/* <Image src={arrow} alt='alter' onClick={buttonClick}/> */}
             </div>
         </>
     )

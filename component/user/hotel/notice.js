@@ -16,8 +16,8 @@ export default function account() {
                 <Menu/>
                 <div className={style.main}>
                     <div className={style.content}>
-                        <h1 className={style.title}>STEP 4/4 旅館資訊</h1>
-                        <button className={style.hotelbutton}><Link href="/">預覽畫面</Link></button>
+                        <h1 className={style.title}>STEP 3/3 旅館資訊</h1>
+                        {/* <button className={style.hotelbutton}><Link href="/">預覽畫面</Link></button> */}
                     </div>
 
                     <div className={style.content}>

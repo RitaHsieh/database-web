@@ -36,9 +36,20 @@
         margin-bottom: $base-margin * 0.75;
         width: 68%;
     }
+    .userinput {
+        display: flex;
+        align-items: center;
+        p{
+            display: inline;
+            width: 20%;
+            // font-weight: bold;
+            font-size: $font-size-md;
+        }
+        margin-bottom: 0.5rem;
+    }
     .block {
         background: #ffffff;
-        width: 100%;
+        width: 90%;
         height: 2.5rem;
         // margin-top: $base-margin * 0.75;
         // margin-bottom: $base-margin * 0.75;
@@ -79,15 +90,6 @@
         border: 1px solid #333333;
     }
 
-    .button2 {
-        width: 50px;
-        height: 50px;
-        border: none;
-        background-color: none;
-        margin-top: $base-margin * 0.5;
-        margin-left: 50%;
-
-    }
 
     .link .content {
         color: #4CB6C5;
@@ -97,7 +99,13 @@
         text-align: left;
 
     }
-
+    .submit {
+        font-size: $font-size-xxl;
+        margin-top: $base-margin;
+        margin-right: 15%;
+        align-self: flex-end;
+        background-color: transparent;
+    }
     
 }
 

@@ -374,9 +374,19 @@
   margin-bottom: 0.75rem;
   width: 68%;
 }
+.loginFormContainer .userinput {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.loginFormContainer .userinput p {
+  display: inline;
+  width: 20%;
+  font-size: 1.2rem;
+}
 .loginFormContainer .block {
   background: #ffffff;
-  width: 100%;
+  width: 90%;
   height: 2.5rem;
   padding-left: 0.75rem;
 }
@@ -409,20 +419,19 @@
   width: 70%;
   border: 1px solid #333333;
 }
-.loginFormContainer .button2 {
-  width: 50px;
-  height: 50px;
-  border: none;
-  background-color: none;
-  margin-top: 0.5rem;
-  margin-left: 50%;
-}
 .loginFormContainer .link .content {
   color: #4CB6C5;
   width: 286px;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
   text-align: left;
+}
+.loginFormContainer .submit {
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-right: 15%;
+  align-self: flex-end;
+  background-color: transparent;
 }
 
 .userIndexOptionContainer {
@@ -704,6 +713,7 @@
   margin: 1rem;
   max-height: 40px;
   min-width: 80px;
+  white-space: nowrap;
   text-align: center;
   font-size: 1rem;
   background-color: #96897B;
@@ -988,6 +998,7 @@
   margin: 1rem;
   max-height: 40px;
   min-width: 80px;
+  white-space: nowrap;
   text-align: center;
   font-size: 1rem;
   background-color: #96897B;
@@ -1307,7 +1318,7 @@
     height: 200px;
   }
 }
-.searchResultContainer .content {
+.searchResultContainer .contents {
   padding: 0.6rem;
   padding-left: 1.5rem;
   padding-bottom: 0;
@@ -1316,15 +1327,15 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.searchResultContainer .content h1 {
+.searchResultContainer .contents h1 {
   font-size: 1.5rem;
   font-weight: bold;
 }
-.searchResultContainer .content * {
+.searchResultContainer .contents * {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
-.searchResultContainer .content .container {
+.searchResultContainer .contents .container {
   display: flex;
   justify-content: space-between;
   justify-self: end;
@@ -1334,12 +1345,12 @@
   margin-bottom: 0;
 }
 @media (min-width: 480px) {
-  .searchResultContainer .content .container {
+  .searchResultContainer .contents .container {
     flex-direction: column;
   }
 }
 @media (min-width: 720px) {
-  .searchResultContainer .content .container {
+  .searchResultContainer .contents .container {
     flex-direction: row;
     align-items: flex-end;
   }
@@ -1543,6 +1554,12 @@
 }
 .userMultiMenuContainer .options p {
   width: 80px;
+}
+.userMultiMenuContainer .display {
+  visibility: visible;
+}
+.userMultiMenuContainer .hide {
+  visibility: hidden;
 }
 
 .userPersonalInfoButtonContainer {
@@ -1834,6 +1851,7 @@
   margin: 1rem;
   max-height: 40px;
   min-width: 80px;
+  white-space: nowrap;
   text-align: center;
   font-size: 1rem;
   background-color: #96897B;
@@ -1968,6 +1986,7 @@
   margin: 1rem;
   max-height: 40px;
   min-width: 80px;
+  white-space: nowrap;
   text-align: center;
   font-size: 1rem;
   background-color: #96897B;
@@ -2008,6 +2027,7 @@
   margin: 1rem;
   max-height: 40px;
   min-width: 80px;
+  white-space: nowrap;
   text-align: center;
   font-size: 1rem;
   background-color: #96897B;
@@ -2036,6 +2056,7 @@
   margin: 1rem;
   max-height: 40px;
   min-width: 80px;
+  white-space: nowrap;
   text-align: center;
   font-size: 1rem;
   background-color: #96897B;
@@ -2124,6 +2145,7 @@
   margin: 1rem;
   max-height: 40px;
   min-width: 80px;
+  white-space: nowrap;
   text-align: center;
   font-size: 1rem;
   background-color: #96897B;
@@ -2198,6 +2220,7 @@
   margin: 1rem;
   max-height: 40px;
   min-width: 80px;
+  white-space: nowrap;
   text-align: center;
   font-size: 1rem;
   background-color: #96897B;
@@ -2226,6 +2249,7 @@
   margin: 1rem;
   max-height: 40px;
   min-width: 80px;
+  white-space: nowrap;
   text-align: center;
   font-size: 1rem;
   background-color: #96897B;
@@ -2358,6 +2382,7 @@
   margin: 1rem;
   max-height: 40px;
   min-width: 80px;
+  white-space: nowrap;
   text-align: center;
   font-size: 1rem;
   background-color: #96897B;
@@ -2481,6 +2506,7 @@
   margin: 1rem;
   max-height: 40px;
   min-width: 80px;
+  white-space: nowrap;
   text-align: center;
   font-size: 1rem;
   background-color: #96897B;
@@ -2510,24 +2536,39 @@
   display: flex;
   flex-direction: column;
 }
+.userHotelIndexButtonContainer .hoteldata .pagetitle {
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  font-size: 3rem;
+}
 .userHotelIndexButtonContainer .hoteldata .infoSearch {
   display: flex;
-  width: 100%;
+  width: 85%;
   align-items: center;
   margin-left: 13%;
 }
-.userHotelIndexButtonContainer .hoteldata .infoSearch .text2 {
-  margin: 1%;
-  position: relative;
-  color: black;
-  font-weight: bold;
-  font-size: xx-large;
+.userHotelIndexButtonContainer .hoteldata .infoSearch .btn {
+  padding: 0.75rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  margin: 1rem;
+  max-height: 40px;
+  min-width: 80px;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #96897B;
+  color: white;
 }
-.userHotelIndexButtonContainer .hoteldata .infoSearch .text3 {
-  position: relative;
-  color: red;
-  font-weight: bold;
-  font-size: xx-large;
+.userHotelIndexButtonContainer .hoteldata .infoSearch .btn * {
+  font-size: 1rem;
+}
+.userHotelIndexButtonContainer .hoteldata .infoSearch .btn:hover {
+  background-color: black;
+  color: white;
+  transition: linear 0.2s;
 }
 .userHotelIndexButtonContainer .hoteldata .infoSearch .select {
   height: 1.8rem;

@@ -32,7 +32,7 @@ export default function header() {
     const loginOnClick = () => {
         setLoginFloat(loginFloat => !loginFloat);
     };
-    const logoout = () => {
+    const logout = () => {
         Cookies.remove('authToken');
     }
     
@@ -42,23 +42,21 @@ export default function header() {
         {
             (data || error)?
             <div className={style.searchTopContainer}>
-                {console.log(data, error)}
                 {console.log("data")}
+                {console.log(data, error)}
                 <p className={style.text}>Rent You on Sunday</p>
                 <div className={style.loginbt}>
                     <button onClick={event => loginOnClick()} className={style.humanicon}><i class="bi bi-person-circle"></i></button>
                     <div className={loginFloat? style.hide:style.menu}>
-                        <Link href="/login" className={data?style.hide:style.display}> 登入</Link>
-                        <Link href="/register" className={data?style.hide:style.display}> 註冊</Link>
-                        <Link href="/user" className={data?style.display:style.hide}> 個人頁面</Link>
-                        <button onClick={e=>logout()} className={data?style.display:style.hide}> 登出</button>
+                        <Link href="/login" className={data["detail"]?style.display:style.hide}> 登入</Link>
+                        <Link href="/register" className={data["detail"]?style.display:style.hide}> 註冊</Link>
+                        <Link href="/user" className={data["detail"]?style.hide:style.display}> 個人頁面</Link>
+                        <Link href="/" className={data["detail"]?style.hide:style.display} onClick={e=>logout()}>登出</Link>
                     </div>
                 </div>
                 <Link href="/"><Image className={style.logo} src={logo} alt='alter'/></Link>
             </div>
             :<></>
-     
-
         }
            
         </>

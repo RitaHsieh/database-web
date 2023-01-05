@@ -17,7 +17,7 @@ export default function search_result(props) {
                 {/* <div className={style.imgcontainer}> */}
                     <Image src={image} alt="image" className={style.img}/> 
                 {/* </div> */}
-                <div className={style.content}>
+                <div className={style.contents}>
                     <h1>{props.name}</h1>
                     <p className={style.location}>{props.addr}</p>
                     <p className={style.room}>{props.room}</p>
