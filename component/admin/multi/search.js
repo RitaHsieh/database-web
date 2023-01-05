@@ -10,7 +10,7 @@ export default function Search() {
 
                 <div className={style.formBlock}>
                         <div className={style.idDetail}>
-                            <div className={style.detailP}>使用者Email</div>
+                            <div className={style.detailP}>使用者 Email</div>
                             <input className={style.detailForm} placeholder="請輸入Email"></input>
                         </div>
                         <div className={style.idDetail}>

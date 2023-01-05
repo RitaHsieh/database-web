@@ -1,0 +1,146 @@
+.UserDetailContainer{
+    height: 100%;
+    width: 90%;
+    padding-right: $base-padding * 4;
+    padding-top: $base-padding * 4;
+    padding-bottom: $base-padding * 4;
+
+    .whiteBlock{
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        border-radius: 30px;
+        display: flex;
+        padding: $base-padding*2;
+        .left{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            .userNameBlock{
+                height: 35%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .imageContainer{
+                    height: 100%;
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .imageUserFrame{
+                        height: 150px;
+                        width: 150px;
+                        border-radius: 999em;
+                        background-color: #d3d3d3;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .imageHouseFrame{
+                        height: 150px;
+                        width: 150px;
+                        border-radius: 20px;
+                        background-color: #d3d3d3;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                .textFrame{
+                    height: 100%;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .user{
+                        font-size: 2rem;
+                        font-weight: bold;
+                    }
+                    .space{
+                        height:10%;
+                    }
+                    .email{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            .userInfoBlock{
+                height: 65%;
+                width: 100%;
+
+                .row{
+                    height: 25%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .text{
+                        font-size: 1.5rem;
+                        width: 50%;
+                    }
+                    margin-left: 5%;    
+                }
+            }
+            
+        }
+
+        .right{
+            height: 100%;
+            width: 50%;
+            
+            background-color: white;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items:center;
+
+            .button{
+        
+                background-color: $background-color;
+                border-radius: $base-border-radius;
+                border: transparent;
+                
+                cursor: pointer;
+                transition: .1s;
+                box-shadow: inset 0 0 0 0 transparent;
+        
+                &:hover{
+                    box-shadow: inset 0 0 6px 2px gray;
+                }
+        
+                &:active {
+                    box-shadow: inset 0 0 6px 4px gray;
+                }
+        
+                @include xs {
+                    width: 80%;
+                    height: 20%;
+                }
+                @include lg {
+                    width: 40%;
+                    height: 40%;
+                }
+            }
+        
+            p{
+                font-weight: bold;
+        
+                @include sm {
+                    font-size: $base-font-size;
+                }
+                @include md {
+                    font-size: $font-size-lg;
+                }
+                @include lg {
+                    font-size: $font-size-xl;
+                }
+            }
+        }
+
+    }
+}
